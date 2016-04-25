@@ -1,0 +1,28 @@
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+
+// Bootstrap Ingresso overrides
+//
+// Corrections for some issues in Bootstrap
+// Ul default model
+
+ul{
+	list-style: none;
+	padding: 0;
+}
+ol{
+	padding: 0;
+	list-style-position: inside;
+}
+
+// Problems with Headings size. ex.: H1 - fixed pixel...
+.title1{font-size: $font-size-base;}
+.title2{font-size: $font-size-base;}
+
+
+// ingresso components
+@import "ing-components/ing-header";
+@import "ing-components/ing-footer";
+@import "ing-components/ing-product-list";
+@import "ing-components/ing-accordion";

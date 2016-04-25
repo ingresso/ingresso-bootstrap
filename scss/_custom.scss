@@ -2,3 +2,25 @@
 //
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !default;
+$font-size-base: .8rem;
+
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+$brand-primary:#0db6b5;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-color: #666;
+
+// Forms
+
+$input-border-focus: $brand-primary;

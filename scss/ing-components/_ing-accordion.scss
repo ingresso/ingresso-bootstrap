@@ -1,0 +1,48 @@
+// tab accordion with ingresso
+
+.tab-accordion{
+	display: block;
+	padding:10px;
+	border-bottom:1px solid #eee;
+	position: relative;
+	text-decoration: none;
+	font-size: 14px;
+	&:focus, &:active, &:hover{
+		text-decoration: none;
+	}
+	&:before{
+		content: '';
+		display: block;
+		width:2px;
+		height:8px;
+		background: $brand-primary;
+		position: absolute;
+		top:50%;
+		right:20px;
+		margin-top: -5px;
+		transform: translate( 2px , 0 ) rotate( 45deg );
+		transition: all 0.25s ease-in-out;
+	}
+	&:after{
+		content: '';
+		display: block;
+		width:2px;
+		height:8px;
+		background: $brand-primary;
+		position: absolute;
+		top:50%;
+		right:15px;
+		margin-top: -5px;
+		transform: translate( 2px , 0 ) rotate( -45deg );
+		transition: all 0.25s ease-in-out;
+	}
+}
+.tab-accordion.collapsed{
+	&:before{transform: translate( 2px , 0 ) rotate( -45deg );}
+	&:after{transform: translate( 2px , 0 ) rotate( 45deg );}
+}
+.tab-content{
+   .tab-cont-wp{
+      padding:10px;
+   }
+}

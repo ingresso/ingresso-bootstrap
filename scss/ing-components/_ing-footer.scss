@@ -1,0 +1,106 @@
+// header Ingresso
+#footer{
+  max-width: 980px;
+
+  //all bottom space
+  .ft-newsletter, .ft-user-channel, .ft-social, .ft-sitemap, .ft-apps, .ft-phone-buy{
+    margin-bottom: 10px;
+  }
+  //social, payment and app lists
+  .ft-app-it, .ft-payment-it, .ft-social-it{
+    display: inline-block;
+  }
+  .ft-app-it, .ft-social-it{
+    margin-right: 10px;
+  }
+
+  //phone number
+  .ft-phone-icon{
+    width:50px;
+    height:50px;
+    float:left;
+    margin-right:10px;
+  }
+  .ft-phn-number{
+    font-size: 1.4em;
+  }
+
+  //newsletter
+  .ft-newsletter{
+    background: #eee;
+  }
+  .ft-nws-wp{
+    margin: 0 auto;
+    padding:10px 0;
+    text-align: center;
+  }
+  .ft-nws-title{
+    font-size: 1.3em;
+    color: #666;
+    margin:0 10px 0 0;
+    vertical-align: middle;
+    margin-bottom:10px;
+  }
+
+  //social
+  .ft-facebook, .ft-youtube{
+    width: 50px;
+    height:50px;
+    display: inline-block;
+  }
+  // app and payment
+  .ft-app-lt{
+    line-height: 0;
+    margin-bottom: 0;
+  }
+
+  .ft-app-icon{
+    width:50px;
+    height:50px;
+  }
+  .ft-payment-icon{
+    width:63px;
+    height:42px;
+  }
+  //sitemap
+  .ft-smap-sub-it{
+     margin:5px 0;
+ }
+}
+
+//address
+.ft-address{
+  text-align: left;
+  margin:10px 0 40px 0;
+  font-size: 10px;
+}
+//mobile footer
+@media screen and (min-width: 35.5em){
+  #footer{
+    .ft-nws-ipt{
+      min-width: 360px;
+    }
+    .ft-facebook, .ft-youtube, .ft-app-icon, .ft-phone-icon{
+      width:30px;
+      height:30px;
+    }
+    .ft-sitemap, .ft-user-channel{
+      padding:10px 0;
+    }
+    .ft-phone-info{
+      font-size: 13px;
+    }
+    //all bottom bar
+  .ft-user-channel{
+    //border-bottom:1px solid #eee;
+  }
+  }
+}
+
+@media screen and (min-width:48.063em){
+  #footer{
+    .ft-nws-title{
+      margin-bottom: 0;
+    }
+  }
+}
