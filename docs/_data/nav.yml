@@ -28,9 +28,15 @@
     - title: Tables
     - title: Figures
 
+- title: Ingresso Components
+  pages:
+    - title: Footer Ingresso
+    - title: Menu Dropdown
+
 - title: Components
   pages:
     - title: Buttons
+    - title: ButtonsIng
     - title: Button group
     - title: Button dropdown
     - title: Forms
