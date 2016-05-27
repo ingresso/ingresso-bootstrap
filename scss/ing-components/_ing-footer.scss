@@ -66,6 +66,15 @@
   .ft-smap-sub-it{
      margin:5px 0;
  }
+ .ft-nws-wp{
+    text-align:left;
+    .input-group{
+      display:flex;
+    }
+    .form-group{
+      display:block;
+    }
+  }
 }
 
 //address
@@ -78,7 +87,7 @@
 @media screen and (min-width: 35.5em){
   #footer{
     .ft-nws-ipt{
-      min-width: 360px;
+      min-width: 320px;
     }
     .ft-facebook, .ft-youtube, .ft-app-icon, .ft-phone-icon{
       width:30px;
@@ -102,8 +111,24 @@
     .ft-nws-title{
       margin-bottom: 0;
     }
-    .ft-nws-wp{
-      text-align:left;
+  }
+}
+
+@media screen and (min-width:62em){
+  #footer{
+    .ft-nws-title{
+      margin: 8px 10px 8px 0;
+      min-width: 280px;
+    }
+    .ft-nws-wp {
+      .form-group {
+        display: flex;
+      }
+      .ft-nws-ipt{
+        min-width: auto;
+      }
     }
   }
 }
+
+
