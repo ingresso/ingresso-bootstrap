@@ -3,7 +3,7 @@
   max-width: 980px;
 
   //all bottom space
-  .ft-newsletter, .ft-user-channel, .ft-social, .ft-sitemap, .ft-apps, .ft-phone-buy{
+  .ft-newsletter, .ft-user-channel, .ft-sitemap, .ft-social, .ft-apps, .ft-phone-buy{
     margin-bottom: 10px;
   }
   //social, payment and app lists
@@ -127,6 +127,12 @@
       .ft-nws-ipt{
         min-width: auto;
       }
+    }
+    .ft-social-lt, .ft-social, .ft-apps, .ft-phone-buy, .ft-smap-lt, .ft-user-channel{
+      margin-bottom:0;
+    }
+    .ft-payment-lt{
+      margin-bottom:10px;
     }
   }
 }
