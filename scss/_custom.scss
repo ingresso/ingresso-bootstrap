@@ -7,7 +7,8 @@
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !default;
+$font-family-ingresso: Calibri, "Trebuchet MS", sans-serif, Arial !default;
+$font-family-base:     $font-family-ingresso !default;
 $font-size-base: .8rem;
 
 // Colors
@@ -24,3 +25,21 @@ $body-color: #666;
 // Forms
 
 $input-border-focus: $brand-primary;
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 #0db6b5 !default;
+$btn-primary-border:             #0db0b0 !default;
+
+$btn-secondary-color:            #fff !default;
+$btn-secondary-bg:               #10e0df !default;
+$btn-secondary-border:           #10e0df !default;
+
+
+// Tooltips
+
+$tooltip-bg:                  #666 !default;
