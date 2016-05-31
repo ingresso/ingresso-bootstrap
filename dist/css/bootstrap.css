@@ -309,7 +309,7 @@ html {
 }
 
 body {
-  font-family: "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: Calibri, "Trebuchet MS", sans-serif, Arial;
   font-size: 0.8rem;
   line-height: 1.5;
   color: #666;
@@ -2743,26 +2743,26 @@ fieldset[disabled] a.btn {
 .btn-primary {
   color: #fff;
   background-color: #0db6b5;
-  border-color: #0db6b5;
+  border-color: #0db0b0;
 }
 
 .btn-primary:hover {
   color: #fff;
   background-color: #0a8686;
-  border-color: #097d7c;
+  border-color: #097777;
 }
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
   background-color: #0a8686;
-  border-color: #097d7c;
+  border-color: #097777;
 }
 
 .btn-primary:active, .btn-primary.active,
 .open > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: #0a8686;
-  border-color: #097d7c;
+  border-color: #097777;
   background-image: none;
 }
 
@@ -2772,42 +2772,42 @@ fieldset[disabled] a.btn {
 .open > .btn-primary.dropdown-toggle.focus {
   color: #fff;
   background-color: #076565;
-  border-color: #053f3f;
+  border-color: #043939;
 }
 
 .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary:disabled:focus, .btn-primary:disabled.focus {
   background-color: #0db6b5;
-  border-color: #0db6b5;
+  border-color: #0db0b0;
 }
 
 .btn-primary.disabled:hover, .btn-primary:disabled:hover {
   background-color: #0db6b5;
-  border-color: #0db6b5;
+  border-color: #0db0b0;
 }
 
 .btn-secondary {
-  color: #373a3c;
-  background-color: #fff;
-  border-color: #ccc;
+  color: #fff;
+  background-color: #10e0df;
+  border-color: #10e0df;
 }
 
 .btn-secondary:hover {
-  color: #373a3c;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  color: #fff;
+  background-color: #0db0b0;
+  border-color: #0ca7a6;
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
-  color: #373a3c;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  color: #fff;
+  background-color: #0db0b0;
+  border-color: #0ca7a6;
 }
 
 .btn-secondary:active, .btn-secondary.active,
 .open > .btn-secondary.dropdown-toggle {
-  color: #373a3c;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  color: #fff;
+  background-color: #0db0b0;
+  border-color: #0ca7a6;
   background-image: none;
 }
 
@@ -2815,19 +2815,19 @@ fieldset[disabled] a.btn {
 .open > .btn-secondary.dropdown-toggle:hover,
 .open > .btn-secondary.dropdown-toggle:focus,
 .open > .btn-secondary.dropdown-toggle.focus {
-  color: #373a3c;
-  background-color: #d4d4d4;
-  border-color: #8c8c8c;
+  color: #fff;
+  background-color: #0a8f8e;
+  border-color: #086969;
 }
 
 .btn-secondary.disabled:focus, .btn-secondary.disabled.focus, .btn-secondary:disabled:focus, .btn-secondary:disabled.focus {
-  background-color: #fff;
-  border-color: #ccc;
+  background-color: #10e0df;
+  border-color: #10e0df;
 }
 
 .btn-secondary.disabled:hover, .btn-secondary:disabled:hover {
-  background-color: #fff;
-  border-color: #ccc;
+  background-color: #10e0df;
+  border-color: #10e0df;
 }
 
 .btn-info {
@@ -3054,29 +3054,29 @@ fieldset[disabled] a.btn {
 }
 
 .btn-outline-secondary {
-  color: #ccc;
+  color: #10e0df;
   background-image: none;
   background-color: transparent;
-  border-color: #ccc;
+  border-color: #10e0df;
 }
 
 .btn-outline-secondary:hover {
   color: #fff;
-  background-color: #ccc;
-  border-color: #ccc;
+  background-color: #10e0df;
+  border-color: #10e0df;
 }
 
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
   color: #fff;
-  background-color: #ccc;
-  border-color: #ccc;
+  background-color: #10e0df;
+  border-color: #10e0df;
 }
 
 .btn-outline-secondary:active, .btn-outline-secondary.active,
 .open > .btn-outline-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #ccc;
-  border-color: #ccc;
+  background-color: #10e0df;
+  border-color: #10e0df;
 }
 
 .btn-outline-secondary:active:hover, .btn-outline-secondary:active:focus, .btn-outline-secondary:active.focus, .btn-outline-secondary.active:hover, .btn-outline-secondary.active:focus, .btn-outline-secondary.active.focus,
@@ -3084,16 +3084,16 @@ fieldset[disabled] a.btn {
 .open > .btn-outline-secondary.dropdown-toggle:focus,
 .open > .btn-outline-secondary.dropdown-toggle.focus {
   color: #fff;
-  background-color: #a1a1a1;
-  border-color: #8c8c8c;
+  background-color: #0a8f8e;
+  border-color: #086969;
 }
 
 .btn-outline-secondary.disabled:focus, .btn-outline-secondary.disabled.focus, .btn-outline-secondary:disabled:focus, .btn-outline-secondary:disabled.focus {
-  border-color: white;
+  border-color: #62f4f3;
 }
 
 .btn-outline-secondary.disabled:hover, .btn-outline-secondary:disabled:hover {
-  border-color: white;
+  border-color: #62f4f3;
 }
 
 .btn-outline-info {
@@ -3298,7 +3298,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 0.75rem 1.5rem;
+  padding: 0.42rem 1.5rem;
   font-size: 1.25rem;
 }
 
@@ -4346,7 +4346,7 @@ input[type="button"].btn-block {
 
 .card-outline-secondary {
   background-color: transparent;
-  border-color: #ccc;
+  border-color: #10e0df;
 }
 
 .card-outline-info {
@@ -5397,7 +5397,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: Calibri, "Trebuchet MS", sans-serif, Arial;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5430,7 +5430,7 @@ button.close {
   left: 50%;
   margin-left: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #000;
+  border-top-color: #666;
 }
 
 .tooltip.tooltip-right, .tooltip.bs-tether-element-attached-left {
@@ -5443,7 +5443,7 @@ button.close {
   left: 0;
   margin-top: -5px;
   border-width: 5px 5px 5px 0;
-  border-right-color: #000;
+  border-right-color: #666;
 }
 
 .tooltip.tooltip-bottom, .tooltip.bs-tether-element-attached-top {
@@ -5456,7 +5456,7 @@ button.close {
   left: 50%;
   margin-left: -5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000;
+  border-bottom-color: #666;
 }
 
 .tooltip.tooltip-left, .tooltip.bs-tether-element-attached-right {
@@ -5469,7 +5469,7 @@ button.close {
   right: 0;
   margin-top: -5px;
   border-width: 5px 0 5px 5px;
-  border-left-color: #000;
+  border-left-color: #666;
 }
 
 .tooltip-inner {
@@ -5477,7 +5477,7 @@ button.close {
   padding: 3px 8px;
   color: #fff;
   text-align: center;
-  background-color: #000;
+  background-color: #666;
 }
 
 .tooltip-arrow {
@@ -5496,7 +5496,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: Calibri, "Trebuchet MS", sans-serif, Arial;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7049,7 +7049,7 @@ ol {
   max-width: 980px;
 }
 
-#footer .ft-newsletter, #footer .ft-user-channel, #footer .ft-social, #footer .ft-sitemap, #footer .ft-apps, #footer .ft-phone-buy {
+#footer .ft-newsletter, #footer .ft-user-channel, #footer .ft-sitemap, #footer .ft-social, #footer .ft-apps, #footer .ft-phone-buy {
   margin-bottom: 10px;
 }
 
@@ -7115,6 +7115,21 @@ ol {
   margin: 5px 0;
 }
 
+#footer .ft-nws-wp {
+  text-align: left;
+}
+
+#footer .ft-nws-wp .input-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .ft-nws-wp .form-group {
+  display: block;
+}
+
 .ft-address {
   text-align: left;
   margin: 10px 0 40px 0;
@@ -7123,7 +7138,7 @@ ol {
 
 @media screen and (min-width: 35.5em) {
   #footer .ft-nws-ipt {
-    min-width: 360px;
+    min-width: 320px;
   }
   #footer .ft-facebook, #footer .ft-youtube, #footer .ft-app-icon, #footer .ft-phone-icon {
     width: 30px;
@@ -7140,6 +7155,28 @@ ol {
 @media screen and (min-width: 48.063em) {
   #footer .ft-nws-title {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  #footer .ft-nws-title {
+    margin: 8px 10px 8px 0;
+    min-width: 280px;
+  }
+  #footer .ft-nws-wp .form-group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #footer .ft-nws-wp .ft-nws-ipt {
+    min-width: auto;
+  }
+  #footer .ft-social-lt, #footer .ft-social, #footer .ft-apps, #footer .ft-phone-buy, #footer .ft-smap-lt, #footer .ft-user-channel {
+    margin-bottom: 0;
+  }
+  #footer .ft-payment-lt {
+    margin-bottom: 10px;
   }
 }
 
