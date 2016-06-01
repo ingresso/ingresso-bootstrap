@@ -78,7 +78,8 @@
 
   @include hover-focus {
     color: $dropdown-link-hover-color;
-    text-decoration: none;
+    //text-decoration: none; preciso avaliar uma forma de dar override em mixins
+    text-decoration: underline;
     background-color: $dropdown-link-hover-bg;
   }
 

@@ -3,6 +3,20 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+.btn {
+  text-transform: uppercase;
+}
+
+.btn.disabled, .btn:disabled {
+  opacity: 1;
+  background: #ddd;
+  border: 0;
+}
+
+.btn-link {
+  text-transform: initial;
+}
+
 /*! normalize.css commit fe56763 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -309,7 +323,7 @@ html {
 }
 
 body {
-  font-family: Calibri, "Trebuchet MS", sans-serif, Arial;
+  font-family: "Trebuchet MS", "Klavika-Regular", "Klavika-Bold", sans-serif, Arial;
   font-size: 0.8rem;
   line-height: 1.5;
   color: #666;
@@ -499,7 +513,7 @@ output {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
+  font-family: "Klavika-Regular";
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -3369,9 +3383,9 @@ input[type="button"].btn-block {
   margin-left: .25rem;
   vertical-align: middle;
   content: "";
-  border-top: 0.3em solid;
-  border-right: 0.3em solid transparent;
-  border-left: 0.3em solid transparent;
+  border-top: 0.45em solid;
+  border-right: 0.45em solid transparent;
+  border-left: 0.45em solid transparent;
 }
 
 .dropdown-toggle:focus {
@@ -3380,7 +3394,7 @@ input[type="button"].btn-block {
 
 .dropup .dropdown-toggle::after {
   border-top: 0;
-  border-bottom: 0.3em solid;
+  border-bottom: 0.45em solid;
 }
 
 .dropdown-menu {
@@ -3416,7 +3430,7 @@ input[type="button"].btn-block {
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  color: #373a3c;
+  color: #0db6b5;
   text-align: inherit;
   white-space: nowrap;
   background: none;
@@ -3424,9 +3438,9 @@ input[type="button"].btn-block {
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
-  color: #2b2d2f;
-  text-decoration: none;
-  background-color: #f5f5f5;
+  color: #086f6e;
+  text-decoration: underline;
+  background-color: transparent;
 }
 
 .dropdown-item.active, .dropdown-item.active:focus, .dropdown-item.active:hover {
@@ -3437,7 +3451,7 @@ input[type="button"].btn-block {
 }
 
 .dropdown-item.disabled, .dropdown-item.disabled:focus, .dropdown-item.disabled:hover {
-  color: #818a91;
+  color: #ddd;
 }
 
 .dropdown-item.disabled:focus, .dropdown-item.disabled:hover {
@@ -3470,7 +3484,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 5px 20px;
   font-size: 0.875rem;
-  color: #818a91;
+  color: #999;
   white-space: nowrap;
 }
 
@@ -3487,7 +3501,7 @@ input[type="button"].btn-block {
 .navbar-fixed-bottom .dropdown .caret {
   content: "";
   border-top: 0;
-  border-bottom: 0.3em solid;
+  border-bottom: 0.45em solid;
 }
 
 .dropup .dropdown-menu,
@@ -3586,12 +3600,12 @@ input[type="button"].btn-block {
 }
 
 .btn-lg .caret, .btn-group-lg > .btn .caret {
-  border-width: 0.3em 0.3em 0;
+  border-width: 0.45em 0.45em 0;
   border-bottom-width: 0;
 }
 
 .dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret {
-  border-width: 0 0.3em 0.3em;
+  border-width: 0 0.45em 0.45em;
 }
 
 .btn-group-vertical > .btn,
@@ -4466,10 +4480,10 @@ input[type="button"].btn-block {
 }
 
 .breadcrumb {
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #eceeef;
+  background-color: transparent;
 }
 
 .breadcrumb::after {
@@ -4643,7 +4657,7 @@ a.tag:focus, a.tag:hover {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #eceeef;
+  background-color: #f2f2f2;
 }
 
 @media (min-width: 544px) {
@@ -4653,7 +4667,7 @@ a.tag:focus, a.tag:hover {
 }
 
 .jumbotron-hr {
-  border-top-color: #d0d5d8;
+  border-top-color: #d9d9d9;
 }
 
 .jumbotron-fluid {
@@ -4785,16 +4799,16 @@ a.tag:focus, a.tag:hover {
 }
 
 .progress[value]::-ms-fill {
-  background-color: #0074d9;
+  background-color: #666;
   border: 0;
 }
 
 .progress[value]::-moz-progress-bar {
-  background-color: #0074d9;
+  background-color: #666;
 }
 
 .progress[value]::-webkit-progress-value {
-  background-color: #0074d9;
+  background-color: #666;
 }
 
 .progress[value]::-webkit-progress-bar {
@@ -4814,7 +4828,7 @@ base::-moz-progress-bar,
     display: inline-block;
     height: 1rem;
     text-indent: -999rem;
-    background-color: #0074d9;
+    background-color: #666;
   }
 }
 
@@ -5397,7 +5411,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: Calibri, "Trebuchet MS", sans-serif, Arial;
+  font-family: "Trebuchet MS", "Klavika-Regular", "Klavika-Bold", sans-serif, Arial;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5496,7 +5510,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: Calibri, "Trebuchet MS", sans-serif, Arial;
+  font-family: "Trebuchet MS", "Klavika-Regular", "Klavika-Bold", sans-serif, Arial;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6982,6 +6996,20 @@ ol {
 
 .title2 {
   font-size: 0.8rem;
+}
+
+@font-face {
+  font-family: 'Klavika-Regular';
+  src: url("../../fonts/Klavika-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Klavika-Regular.otf") format("opentype"), url("../../fonts/Klavika-Regular.woff") format("woff"), url("../../fonts/Klavika-Regular.ttf") format("truetype"), url("../../fonts/Klavika-Regular.svg#Klavika-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Klavika-Bold';
+  src: url("../../fonts/Klavika-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Klavika-Bold.otf") format("opentype"), url("../../fonts/Klavika-Bold.woff") format("woff"), url("../../fonts/Klavika-Bold.ttf") format("truetype"), url("../../fonts/Klavika-Bold.svg#Klavika-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 #header {

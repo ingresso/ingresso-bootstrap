@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Collapse
-group: components
+group: components 
 ---
 
 The Bootstrap collapse plugin allows you to toggle content on your pages with a bit of JavaScript and some classes. Flexible plugin that utilizes a handful of classes (from the **required [transitions plugin]({{ site.baseurl }}/components/transitions/)**) for easy toggle behavior.

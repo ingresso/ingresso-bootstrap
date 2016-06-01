@@ -7,9 +7,18 @@
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-ingresso: Calibri, "Trebuchet MS", sans-serif, Arial !default;
+$font-family-ingresso: "Trebuchet MS", 'Klavika-Regular', 'Klavika-Bold', sans-serif, Arial !default;
 $font-family-base:     $font-family-ingresso !default;
 $font-size-base: .8rem;
+
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$headings-font-family:   'Klavika-Regular' !default;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$caret-width:            .45em !default;
 
 // Colors
 //
@@ -39,7 +48,55 @@ $btn-secondary-color:            #fff !default;
 $btn-secondary-bg:               #10e0df !default;
 $btn-secondary-border:           #10e0df !default;
 
+//$btn-link-disabled-color:        #ddd !default;
+
+$btn-padding-y-lg:               .42rem !default;
 
 // Tooltips
 
 $tooltip-bg:                  #666 !default;
+
+
+// scss-lint:disable QualifyingElement
+
+//
+// Base styles
+//
+
+.btn {
+  &.disabled,
+  &:disabled {
+    opacity: 1;
+    background: #ddd;
+    border:0;
+  }
+  text-transform: uppercase;
+}
+
+//Link não segue o padrão de uppercase dos botoes
+.btn-link {
+  text-transform: initial;
+}
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+$dropdown-link-hover-color:      #086f6e !default;
+$dropdown-link-color:            #0db6b5 !default;
+$dropdown-header-color:          #999 !default;
+$dropdown-link-hover-bg:         transparent !default;
+$dropdown-link-disabled-color:   #ddd !default;
+
+
+// Jumbotron
+
+$jumbotron-bg:                   #f2f2f2 !default;
+
+// Breadcrumbs
+$breadcrumb-padding-x:          0 !default;
+$breadcrumb-bg:                 transparent !default;
+
+
+// Progress bars
+
+$progress-bar-color:          #666 !default;
