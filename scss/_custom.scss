@@ -56,28 +56,6 @@ $btn-padding-y-lg:               .42rem !default;
 
 $tooltip-bg:                  #666 !default;
 
-
-// scss-lint:disable QualifyingElement
-
-//
-// Base styles
-//
-
-.btn {
-  &.disabled,
-  &:disabled {
-    opacity: 1;
-    background: #ddd;
-    border:0;
-  }
-  text-transform: uppercase;
-}
-
-//Link não segue o padrão de uppercase dos botoes
-.btn-link {
-  text-transform: initial;
-}
-
 // Dropdowns
 //
 // Dropdown menu container and contents.
@@ -100,3 +78,37 @@ $breadcrumb-bg:                 transparent !default;
 // Progress bars
 
 $progress-bar-color:          #666 !default;
+
+
+// Navs
+
+$nav-disabled-link-color:       #ccc !default;
+
+$nav-tabs-border-color:                       #0db6b5 !default;
+$nav-tabs-active-link-hover-color:            #fff !default;
+$nav-tabs-active-link-hover-bg:               #0db6b5 !default;
+$nav-tabs-active-link-hover-border-color:     #0db6b5 !default;
+
+
+// Pagination
+
+$pagination-color:                     #0db6b5 !default;
+$pagination-bg:                        #f2f2f2 !default;
+$pagination-disabled-color:            #ccc !default;
+$pagination-disabled-bg:               #f2f2f2 !default;
+$pagination-hover-bg:                  #f2f2f2 !default;
+
+// Popovers
+
+$popover-bg:                          #555 !default;
+$popover-border-width:                0 !default;
+$popover-title-bg:                    #555 !default;
+
+
+// Padding applied to the modal body
+
+$modal-content-border-width:     0 !default;
+
+// Close
+
+$close-color:                 #0db5b6 !default;
