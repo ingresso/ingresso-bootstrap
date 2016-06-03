@@ -7221,56 +7221,85 @@ ol {
   text-decoration: none;
 }
 
-.tab-accordion:before {
+.tab-accordion:before, .tab-accordion:after {
   content: '';
+  position: absolute;
+  top: 50%;
+  background: #0db6b5;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.tab-accordion.model1:before, .tab-accordion.model1:after {
   display: block;
   width: 2px;
   height: 8px;
-  background: #0db6b5;
-  position: absolute;
-  top: 50%;
+  margin-top: -5px;
+}
+
+.tab-accordion.model1:before {
   right: 20px;
-  margin-top: -5px;
   -webkit-transform: translate(2px, 0) rotate(45deg);
       -ms-transform: translate(2px, 0) rotate(45deg);
        -o-transform: translate(2px, 0) rotate(45deg);
           transform: translate(2px, 0) rotate(45deg);
-  -webkit-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
 }
 
-.tab-accordion:after {
-  content: '';
-  display: block;
-  width: 2px;
-  height: 8px;
-  background: #0db6b5;
-  position: absolute;
-  top: 50%;
+.tab-accordion.model1:after {
   right: 15px;
-  margin-top: -5px;
-  -webkit-transform: translate(2px, 0) rotate(-45deg);
-      -ms-transform: translate(2px, 0) rotate(-45deg);
-       -o-transform: translate(2px, 0) rotate(-45deg);
-          transform: translate(2px, 0) rotate(-45deg);
-  -webkit-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-
-.tab-accordion.collapsed:before {
   -webkit-transform: translate(2px, 0) rotate(-45deg);
       -ms-transform: translate(2px, 0) rotate(-45deg);
        -o-transform: translate(2px, 0) rotate(-45deg);
           transform: translate(2px, 0) rotate(-45deg);
 }
 
-.tab-accordion.collapsed:after {
+.tab-accordion.model1.collapsed:before {
+  -webkit-transform: translate(2px, 0) rotate(-45deg);
+      -ms-transform: translate(2px, 0) rotate(-45deg);
+       -o-transform: translate(2px, 0) rotate(-45deg);
+          transform: translate(2px, 0) rotate(-45deg);
+}
+
+.tab-accordion.model1.collapsed:after {
   -webkit-transform: translate(2px, 0) rotate(45deg);
       -ms-transform: translate(2px, 0) rotate(45deg);
        -o-transform: translate(2px, 0) rotate(45deg);
           transform: translate(2px, 0) rotate(45deg);
+}
+
+.tab-accordion.model2:before, .tab-accordion.model2:after {
+  right: 0;
+  margin: -8px 0 0;
+}
+
+.tab-accordion.model2:before {
+  right: 15px;
+  width: 2px;
+  height: 12px;
+  margin-top: -7px;
+  -webkit-transform: translate(0, 0) rotate(90deg);
+      -ms-transform: translate(0, 0) rotate(90deg);
+       -o-transform: translate(0, 0) rotate(90deg);
+          transform: translate(0, 0) rotate(90deg);
+}
+
+.tab-accordion.model2:after {
+  right: 10px;
+  width: 12px;
+  height: 2px;
+  margin-top: -2px;
+  -webkit-transform: translate(0, 0) rotate(0);
+      -ms-transform: translate(0, 0) rotate(0);
+       -o-transform: translate(0, 0) rotate(0);
+          transform: translate(0, 0) rotate(0);
+}
+
+.tab-accordion.model2.collapsed:before {
+  -webkit-transform: translate(0, 0) rotate(0);
+      -ms-transform: translate(0, 0) rotate(0);
+       -o-transform: translate(0, 0) rotate(0);
+          transform: translate(0, 0) rotate(0);
 }
 
 .tab-content .tab-cont-wp {

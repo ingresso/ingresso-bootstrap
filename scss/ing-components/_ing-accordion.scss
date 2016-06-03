@@ -10,36 +10,57 @@
 	&:focus, &:active, &:hover{
 		text-decoration: none;
 	}
-	&:before{
-		content: '';
-		display: block;
-		width:2px;
-		height:8px;
-		background: $brand-primary;
-		position: absolute;
-		top:50%;
-		right:20px;
-		margin-top: -5px;
-		transform: translate( 2px , 0 ) rotate( 45deg );
-		transition: all 0.25s ease-in-out;
-	}
-	&:after{
-		content: '';
-		display: block;
-		width:2px;
-		height:8px;
-		background: $brand-primary;
-		position: absolute;
-		top:50%;
-		right:15px;
-		margin-top: -5px;
-		transform: translate( 2px , 0 ) rotate( -45deg );
-		transition: all 0.25s ease-in-out;
-	}
-}
-.tab-accordion.collapsed{
-	&:before{transform: translate( 2px , 0 ) rotate( -45deg );}
-	&:after{transform: translate( 2px , 0 ) rotate( 45deg );}
+  &:before, &:after {
+     content: '';
+     position: absolute;
+     top:50%;
+     background: $brand-primary;
+     transition: all 0.25s ease-in-out;
+  }
+  &.model1{
+    &:before, &:after {
+      display: block;
+      width:2px;
+      height:8px;
+      margin-top: -5px;
+    }
+    &:before{
+      right:20px;
+      transform: translate( 2px , 0 ) rotate( 45deg );
+    }
+    &:after{
+      right:15px;
+      transform: translate( 2px , 0 ) rotate( -45deg );
+    }
+    &.collapsed {
+      &:before{transform: translate( 2px , 0 ) rotate( -45deg );}
+      &:after{transform: translate( 2px , 0 ) rotate( 45deg );}
+    }
+  }
+
+  &.model2{
+    &:before, &:after{
+      right: 0;
+      margin: -8px 0 0;
+    }
+    &:before{
+      right: 15px;
+      width: 2px;
+      height: 12px;
+      margin-top: -7px;
+      transform: translate( 0 , 0 ) rotate( 90deg );
+    }
+    &:after{
+      right: 10px;
+      width: 12px;
+      height: 2px;
+      margin-top: -2px;
+      transform: translate( 0 , 0 ) rotate( 0 );
+    }
+     &.collapsed {
+      &:before{transform: translate( 0 , 0 ) rotate( 0 );}
+    }
+  }
 }
 .tab-content{
    .tab-cont-wp{
