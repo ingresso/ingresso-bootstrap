@@ -1,0 +1,31 @@
+//
+// Tabs
+//
+
+.tag {
+  letter-spacing: 0.1em;
+}
+
+// Colors
+//
+// Contextual variations (linked tags get darker on :hover).
+
+.tag-rating {
+  background-color: #999;
+}
+
+.tag-subtitle {
+  background-color: #b30b0a;
+}
+
+.tag-session {
+  background-color: #09a111;
+}
+
+.tag-room {
+  background-color: #296495;
+}
+
+.tag-movies {
+  background-color: #df7446;
+}
