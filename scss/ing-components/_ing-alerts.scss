@@ -1,0 +1,34 @@
+//
+// Base styles
+//
+
+.alert {
+  *{
+    vertical-align: middle;
+  }
+}
+
+// Alternate styles
+//
+// Generate contextual modifier classes for colorizing the alert.
+
+.alert-success {
+  .svg-icon{
+      fill:#3c763d;
+  }
+}
+.alert-info {
+  .svg-icon{
+      fill:#31708f;
+  }
+}
+.alert-warning {
+  .svg-icon{
+      fill:#8a6d3b;
+  }
+}
+.alert-danger {
+  .svg-icon{
+      fill:#a94442;
+  }
+}
