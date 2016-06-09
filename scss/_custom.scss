@@ -40,6 +40,8 @@ $input-border-focus: $brand-primary;
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
+$btn-line-height:                1.8 !default;
+
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 #0db6b5 !default;
 $btn-primary-border:             #0db0b0 !default;

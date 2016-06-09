@@ -2697,7 +2697,7 @@ input[type="checkbox"].disabled {
 .btn {
   display: inline-block;
   font-weight: normal;
-  line-height: 1.25;
+  line-height: 1.8;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;

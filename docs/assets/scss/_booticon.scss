@@ -6,8 +6,10 @@
   display: block;
   width: 9rem;
   height: 9rem;
+  overflow: hidden;
   font-size: 6.5rem;
-  line-height: 9rem;
+  //line-height: 9rem;
+  line-height: 7rem;
   color: #fff;
   text-align: center;
   cursor: default;
@@ -18,8 +20,10 @@
     color: $bd-purple;
     background-color: #fff;
   }
-  &.outline {
-    background-color: transparent;
-    border: 1px solid $bd-purple-light;
-  }
+  //&.outline {
+    //background-color: transparent;
+    //border: 1px solid $bd-purple-light;
+  //}
 }
+
+
