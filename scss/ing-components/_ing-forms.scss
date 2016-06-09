@@ -229,6 +229,10 @@
     .form-control{
       padding: 0.15rem 0.75rem;
       height: 40px;
+      -webkit-transition: .5s padding;
+       -moz-transition: .5s padding;
+        -ms-transition: .5s padding;
+            transition: .5s padding;
     }
     &.frm-grp-02{
       .fl-label{
