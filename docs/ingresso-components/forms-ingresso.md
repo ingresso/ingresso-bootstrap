@@ -92,12 +92,10 @@ Bootstrap includes validation styles for danger, warning, and success states on 
   <div class="form-group fl-form-group has-success">
     <label class="fl-label" for="exampleInputEmail2">Email address</label>
     <input type="email" class="form-control form-control-success" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter email">
-    <span class="frm-msg-error">É obrigatório preencher o Email.</span>
   </div>
   <div class="form-group fl-form-group has-warning">
     <label class="fl-label" for="exampleInputEmail3">Email address</label>
     <input type="email" class="form-control form-control-warning" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="Enter email">
-    <span class="frm-msg-error">É obrigatório preencher o Email.</span>
   </div>
   <div class="form-group fl-form-group has-danger">
     <label class="fl-label" for="exampleInputEmail4">Email address</label>

@@ -7635,7 +7635,7 @@ ol {
 }
 
 .frm-msg-error {
-  display: none;
+  display: inline-block;
   padding: 5px;
   margin-top: 5px;
   font-size: 0.75rem;
