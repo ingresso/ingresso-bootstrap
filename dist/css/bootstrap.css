@@ -2326,7 +2326,7 @@ pre code {
 .form-control {
   display: block;
   width: 100%;
-  padding: 0.5rem 0.75rem;
+  padding: 0.719rem 0.75rem;
   font-size: 0.8rem;
   line-height: 1.25;
   color: #55595c;
@@ -2377,7 +2377,7 @@ pre code {
 }
 
 select.form-control:not([size]):not([multiple]) {
-  height: 2.2rem;
+  height: 2.638rem;
 }
 
 .form-control-file,
@@ -2386,12 +2386,12 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .form-control-label {
-  padding: 0.5rem 0.75rem;
+  padding: 0.719rem 0.75rem;
   margin-bottom: 0;
 }
 
 .form-control-legend {
-  padding: 0.5rem 0.75rem;
+  padding: 0.719rem 0.75rem;
   margin-bottom: 0;
   font-size: 0.8rem;
 }
@@ -2401,7 +2401,7 @@ input[type="date"].form-control,
 input[type="time"].form-control,
 input[type="datetime-local"].form-control,
 input[type="month"].form-control {
-  line-height: 2.2rem;
+  line-height: 2.638rem;
 }
 
 _::-webkit-full-page-media.input-sm,
@@ -2439,9 +2439,9 @@ input[type="month"].form-control {
 }
 
 .form-control-static {
-  min-height: 2.2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  min-height: 2.638rem;
+  padding-top: 0.719rem;
+  padding-bottom: 0.719rem;
   margin-bottom: 0;
 }
 
@@ -2542,9 +2542,9 @@ input[type="checkbox"].disabled {
 .form-control-danger {
   padding-right: 2.25rem;
   background-repeat: no-repeat;
-  background-position: center right 0.55rem;
-  -webkit-background-size: 1.1rem 1.1rem;
-          background-size: 1.1rem 1.1rem;
+  background-position: center right 0.6595rem;
+  -webkit-background-size: 1.319rem 1.319rem;
+          background-size: 1.319rem 1.319rem;
 }
 
 .has-success .text-help,
@@ -2697,7 +2697,7 @@ input[type="checkbox"].disabled {
 .btn {
   display: inline-block;
   font-weight: normal;
-  line-height: 1.25;
+  line-height: 1.8;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -3668,7 +3668,7 @@ input[type="button"].btn-block {
 }
 
 .input-group-addon {
-  padding: 0.5rem 0.75rem;
+  padding: 0.719rem 0.75rem;
   margin-bottom: 0;
   font-size: 0.8rem;
   font-weight: normal;
@@ -3745,7 +3745,7 @@ input[type="button"].btn-block {
 .custom-control {
   position: relative;
   display: inline;
-  padding-left: 1.5rem;
+  padding-left: 1.7rem;
   cursor: pointer;
 }
 
@@ -3761,12 +3761,12 @@ input[type="button"].btn-block {
 
 .custom-control-input:checked ~ .custom-control-indicator {
   color: #fff;
-  background-color: #0074d9;
+  background-color: #0db6b5;
 }
 
 .custom-control-input:focus ~ .custom-control-indicator {
-  -webkit-box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #0074d9;
-          box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #0074d9;
+  -webkit-box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #0db6b5;
+          box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #0db6b5;
 }
 
 .custom-control-input:active ~ .custom-control-indicator {
@@ -3789,8 +3789,8 @@ input[type="button"].btn-block {
   top: .0625rem;
   left: 0;
   display: block;
-  width: 1rem;
-  height: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -3808,7 +3808,7 @@ input[type="button"].btn-block {
 }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-indicator {
-  background-color: #0074d9;
+  background-color: #0db6b5;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E");
 }
 
@@ -7425,5 +7425,319 @@ ol {
 
 .alert-danger .svg-icon {
   fill: #a94442;
+}
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Input
+  1.1 - Wrapper
+  1.2 - Combo
+  1.3 - Input field
+    1.3.1 - Input w/ button
+2.0 - Validation
+3.0 - Labels
+4.0 - Custom Select
+5.0 - Custom Checkbox
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+  1.0 - Input
+  --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+  1.1 - Wrapper - Form Group (Bootstrap)
+  --------------------------------------------------------------*/
+.form-group {
+  position: relative;
+  padding: 0 5px;
+  /* display:inline-block; */
+  vertical-align: top;
+}
+
+.form-group .form-icon-group {
+  padding: 0 10px;
+  position: absolute;
+  display: block;
+  border-right: 1px solid #e0e0e0;
+  background-color: #fff;
+  left: 9px;
+  top: 50%;
+  margin-top: -11.5px;
+  overflow: visible;
+}
+
+.form-group .form-icon-group .svg-icon {
+  fill: #999;
+}
+
+.form-group .form-icon-group ~ .form-control {
+  padding-left: 60px;
+}
+
+.form-group .form-icon-group ~ .fl-label {
+  padding-left: 48px;
+}
+
+.form-group.fl-form-group-with-value .fl-label {
+  font-size: 0.625rem;
+  padding-top: 2px;
+}
+
+.form-group.fl-form-group-with-value .form-control {
+  padding-top: 15px;
+}
+
+/*--------------------------------------------------------------
+  1.2 - Combo
+  --------------------------------------------------------------*/
+.form-group-combo {
+  margin: 0;
+}
+
+.form-group-combo .form-group {
+  padding-right: 0;
+}
+
+.form-group-combo .form-group:last-child {
+  padding-left: 0;
+  padding-right: 5px;
+}
+
+.form-group-combo .form-group:last-child .form-control {
+  border-left-width: 1px;
+}
+
+.form-group-combo .form-group:last-child .frm-lbl {
+  padding-left: 0;
+}
+
+/*--------------------------------------------------------------
+  1.3 - Input field - Form Control (Bootstrap)
+  --------------------------------------------------------------*/
+.form-control {
+  border: 1px solid #ddd;
+  border-left-width: 4px;
+  border-left-color: #ddd;
+  border-radius: 0;
+  outline: 0;
+  margin: 0;
+}
+
+.form-control:focus {
+  border-color: #0db6b5;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #9a9a9a;
+}
+
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #9a9a9a;
+}
+
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #9a9a9a;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #9a9a9a;
+}
+
+.form-control:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-control :-moz-submit-invalid {
+  box-shadow: none;
+}
+
+.form-control :-moz-ui-invalid {
+  box-shadow: none;
+}
+
+.form-control[disabled] {
+  background: #f2f2f2;
+  color: #B8B8B8;
+}
+
+.form-control[disabled] [class^="icon-"]:after, .form-control[disabled] .form-icon-group:after {
+  background: #f2f2f2;
+}
+
+.form-control[disabled]::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+.form-control[disabled]:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ccc;
+}
+
+.form-control[disabled]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ccc;
+}
+
+.form-control[disabled]:-ms-input-placeholder {
+  color: #ccc;
+}
+
+/*--------------------------------------------------------------
+  1.3.1 - Input w/ button
+  --------------------------------------------------------------*/
+.form-group-btn .form-control {
+  padding-right: 50px;
+}
+
+.form-group-btn .btn {
+  position: absolute;
+  right: 8px;
+  top: 3px;
+  height: 34px;
+  line-height: 34px;
+  width: 40px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form-group-btn .btn.is-loading {
+  position: absolute;
+}
+
+/*--------------------------------------------------------------
+  2.0 - Valdation
+  --------------------------------------------------------------*/
+.form-group.has-success .form-control {
+  border-color: #5cb85c;
+}
+
+.form-group.has-success .svg-icon {
+  fill: #5cb85c;
+}
+
+.form-group.has-warning .form-control {
+  border-color: #f0ad4e;
+}
+
+.form-group.has-warning .svg-icon {
+  fill: #f0ad4e;
+}
+
+.form-group.has-danger .form-control {
+  border-color: #d9534f;
+}
+
+.form-group.has-danger .svg-icon {
+  fill: #d9534f;
+}
+
+.frm-msg-error {
+  display: inline-block;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 0.75rem;
+  color: #a30001;
+  background: #fac4c4;
+  -webkit-animation-duration: .25s;
+  -o-animation-duration: .25s;
+     animation-duration: .25s;
+  line-height: normal;
+}
+
+.frm-msg-error:before {
+  content: "";
+  display: block;
+  width: 0;
+  margin: -14px 0 5px 0;
+  border-right: 5px solid transparent;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid #fac4c4;
+}
+
+/*--------------------------------------------------------------
+  3.0 - Labels
+  --------------------------------------------------------------*/
+.fl-form-group .form-control {
+  padding: 0.15rem 0.75rem;
+  height: 40px;
+  -webkit-transition: .5s padding;
+  -o-transition: .5s padding;
+  transition: .5s padding;
+}
+
+.fl-form-group.frm-grp-02 .fl-label {
+  left: 13px;
+}
+
+.fl-form-group .fl-label {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 21px;
+  opacity: 0;
+  z-index: 0;
+  font-size: 0.85em;
+  -webkit-transition: top 0.5s ease, opacity 0.5s ease;
+  -o-transition: top 0.5s ease, opacity 0.5s ease;
+  transition: top 0.5s ease, opacity 0.5s ease;
+}
+
+.fl-form-group-with-value .fl-label {
+  top: 0;
+  left: 21px;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+  4.0 - Custom Select
+  --------------------------------------------------------------*/
+.frm-customselect {
+  position: relative;
+}
+
+.frm-customselect select.form-control {
+  padding-right: 1.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.frm-customselect:before, .frm-customselect:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  background: #0db6b5;
+  display: block;
+  width: 2px;
+  height: 8px;
+  margin-top: -5px;
+}
+
+.frm-customselect:before {
+  right: 20px;
+  -webkit-transform: translate(2px, 0) rotate(-45deg);
+      -ms-transform: translate(2px, 0) rotate(-45deg);
+       -o-transform: translate(2px, 0) rotate(-45deg);
+          transform: translate(2px, 0) rotate(-45deg);
+}
+
+.frm-customselect:after {
+  right: 15px;
+  -webkit-transform: translate(2px, 0) rotate(45deg);
+      -ms-transform: translate(2px, 0) rotate(45deg);
+       -o-transform: translate(2px, 0) rotate(45deg);
+          transform: translate(2px, 0) rotate(45deg);
+}
+
+/*--------------------------------------------------------------
+  5.0 - Custom Checkbox
+  --------------------------------------------------------------*/
+.custom-control {
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 /*# sourceMappingURL=bootstrap.css.map */

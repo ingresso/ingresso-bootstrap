@@ -1,0 +1,302 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Input
+  1.1 - Wrapper
+  1.2 - Combo
+  1.3 - Input field
+    1.3.1 - Input w/ button
+2.0 - Validation
+3.0 - Labels
+4.0 - Custom Select
+5.0 - Custom Checkbox
+--------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+  1.0 - Input
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+  1.1 - Wrapper - Form Group (Bootstrap)
+  --------------------------------------------------------------*/
+  .form-group {
+    position: relative;
+    padding: 0 5px;    /* display:inline-block; */
+    vertical-align: top;
+
+    .form-icon-group {
+      padding: 0 10px;
+      position: absolute;
+      display: block;
+      border-right: 1px solid #e0e0e0;
+      background-color: #fff;
+      left: 9px;
+      top: 50%;
+      margin-top: -11.5px;
+      overflow: visible;
+
+      .svg-icon {
+        fill: #999;
+      }
+      & ~ .form-control {
+        padding-left: 60px;
+      }
+      & ~ .fl-label {
+        padding-left: 48px;
+      }
+    }
+
+    &.fl-form-group-with-value {
+      .fl-label{
+        font-size:0.625rem;
+        padding-top:2px;
+      }
+      .form-control{
+        padding-top:15px;
+      }
+    }
+  }
+
+  /*--------------------------------------------------------------
+  1.2 - Combo
+  --------------------------------------------------------------*/
+  .form-group-combo {
+    margin: 0;
+
+    .form-group {
+      padding-right: 0;
+    }
+    .form-group:last-child {
+      padding-left: 0;
+      padding-right: 5px;
+
+      .form-control {
+        border-left-width: 1px;
+      }
+      .frm-lbl {
+        padding-left: 0;
+      }
+    }
+  }
+
+  /*--------------------------------------------------------------
+  1.3 - Input field - Form Control (Bootstrap)
+  --------------------------------------------------------------*/
+  .form-control {
+    border: 1px solid #ddd;
+    border-left-width: 4px;
+    border-left-color: #ddd;
+    border-radius: 0;
+    outline: 0;
+    margin: 0;
+
+    &:focus {
+      border-color: #0db6b5;
+    }
+    $placeholder_color: #9a9a9a;
+
+    &::-webkit-input-placeholder {
+      color: $placeholder_color;
+    }
+    &:-moz-placeholder {
+
+      /* Firefox 18- */
+      color: $placeholder_color;
+    }
+    &::-moz-placeholder {
+
+      /* Firefox 19+ */
+      color: $placeholder_color;
+    }
+    &:-ms-input-placeholder {
+      color: $placeholder_color;
+    }
+    &:invalid {
+      box-shadow: none;
+    }
+    :-moz-submit-invalid {
+      box-shadow: none;
+    }
+    :-moz-ui-invalid {
+      box-shadow: none;
+    }
+  }
+  .form-control[disabled] {
+    background: #f2f2f2;
+    color: #B8B8B8;
+
+    [class^="icon-"]:after, .form-icon-group:after {
+      background: #f2f2f2;
+    }
+    $placeholder_color: #ccc;
+
+    &::-webkit-input-placeholder {
+      color: $placeholder_color;
+    }
+    &:-moz-placeholder {
+
+      /* Firefox 18- */
+      color: $placeholder_color;
+    }
+    &::-moz-placeholder {
+
+      /* Firefox 19+ */
+      color: $placeholder_color;
+    }
+    &:-ms-input-placeholder {
+      color: $placeholder_color;
+    }
+  }
+
+  /*--------------------------------------------------------------
+  1.3.1 - Input w/ button
+  --------------------------------------------------------------*/
+  .form-group-btn {
+    .form-control {
+      padding-right: 50px;
+    }
+    .btn {
+      position: absolute;
+      right: 8px;
+      top: 3px;
+      height: 34px;
+      line-height: 34px;
+      width: 40px;
+      padding: 0;
+      box-sizing: border-box;
+
+      &.is-loading {
+        position: absolute;
+      }
+    }
+  }
+
+  /*--------------------------------------------------------------
+  2.0 - Valdation
+  --------------------------------------------------------------*/
+  .form-group.has-success {
+    .form-control {
+      border-color: #5cb85c;
+    }
+    .svg-icon {
+      fill: #5cb85c;
+    }
+  }
+  .form-group.has-warning {
+    .form-control {
+      border-color: #f0ad4e;
+    }
+    .svg-icon {
+      fill: #f0ad4e;
+    }
+  }
+  .form-group.has-danger {
+    .form-control {
+      border-color: #d9534f;
+    }
+    .svg-icon {
+      fill: #d9534f;
+    }
+  }
+  .frm-msg-error {
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 0.75rem;
+    color: #a30001;
+    background: #fac4c4;
+    -webkit-animation-duration: .25s;
+    animation-duration: .25s;
+    line-height: normal;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 0;
+      margin: -14px 0 5px 0;
+      border-right: 5px solid transparent;
+      border-top: 5px solid transparent;
+      border-left: 5px solid transparent;
+      border-bottom: 5px solid #fac4c4;
+    }
+  }
+
+  /*--------------------------------------------------------------
+  3.0 - Labels
+  --------------------------------------------------------------*/
+
+  .fl-form-group{
+    .form-control{
+      padding: 0.15rem 0.75rem;
+      height: 40px;
+      -webkit-transition: .5s padding;
+       -moz-transition: .5s padding;
+        -ms-transition: .5s padding;
+            transition: .5s padding;
+    }
+    &.frm-grp-02{
+      .fl-label{
+        left:13px;
+      }
+    }
+  }
+  .fl-form-group .fl-label {
+    display: block;
+    position: absolute;
+    top:1rem;
+    left:21px;
+    opacity: 0;
+    z-index: 0;
+    font-size: 0.85em;
+    -webkit-transition: top 0.5s ease, opacity 0.5s ease;
+       -moz-transition: top 0.5s ease, opacity 0.5s ease;
+        -ms-transition: top 0.5s ease, opacity 0.5s ease;
+            transition: top 0.5s ease, opacity 0.5s ease;
+  }
+  .fl-form-group-with-value .fl-label {
+    top: 0;
+    left:21px;
+    opacity: 1;
+  }
+
+
+  /*--------------------------------------------------------------
+  4.0 - Custom Select
+  --------------------------------------------------------------*/
+  .frm-customselect {
+    position: relative;
+
+    select.form-control {
+      padding-right: 1.5rem;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+    }
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      background: $brand-primary;
+      display: block;
+      width: 2px;
+      height: 8px;
+      margin-top: -5px;
+    }
+    &:before {
+      right: 20px;
+      transform: translate(2px, 0) rotate(-45deg);
+    }
+    &:after {
+      right: 15px;
+      transform: translate(2px, 0) rotate(45deg);
+    }
+  }
+
+/*--------------------------------------------------------------
+  5.0 - Custom Checkbox
+  --------------------------------------------------------------*/
+
+  .custom-control {
+    padding-top:3px;
+    padding-bottom:3px;
+  }
