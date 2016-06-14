@@ -166,6 +166,7 @@ A lightweight, flexible footer that can be used on your site.
     </defs>
     </svg>
       <footer id="footer" class="container-fluid">
+        
         <div class="row ft-newsletter">
 
           <div class="col-xs-12">
@@ -269,18 +270,17 @@ A lightweight, flexible footer that can be used on your site.
               </ul>
            </div>
         </article>
-
        <div class="row">
            <article class="ft-payments col-xs-12">
              <h1 class="title2">Você pode comprar com:</h1>
              <ul class="ft-payment-lt">
-               <li class="ft-payment-it"><svg class="ft-payment-icon"><use xlink:href="#ft-icon-visa"></use></svg></li>
-               <li class="ft-payment-it"><svg class="ft-payment-icon"><use xlink:href="#ft-icon-master"></use></svg></li>
-               <li class="ft-payment-it"><svg class="ft-payment-icon"><use xlink:href="#ft-icon-elo"></use></svg></li>
-               <li class="ft-payment-it"><svg class="ft-payment-icon"><use xlink:href="#ft-icon-diners"></use></svg></li>
-               <li class="ft-payment-it"><svg class="ft-payment-icon"><use xlink:href="#ft-icon-submarino"></use></svg></li>
-               <li class="ft-payment-it"><svg class="ft-payment-icon"><use xlink:href="#ft-icon-aura"></use></svg></li>
-               <li class="ft-payment-it"><svg class="ft-payment-icon"><use xlink:href="#ft-icon-american"></use></svg></li>
+               <li class="ft-payment-it"><span class="sr-only">Visa</span><svg role="img" class="ft-payment-icon"><use xlink:href="#ft-icon-visa"></use></svg></li>
+               <li class="ft-payment-it"><span class="sr-only">MasterCard</span><svg role="img" class="ft-payment-icon"><use xlink:href="#ft-icon-master"></use></svg></li>
+               <li class="ft-payment-it"><span class="sr-only">Diners</span><svg role="img" class="ft-payment-icon"><use xlink:href="#ft-icon-diners"></use></svg></li>
+               <li class="ft-payment-it"><span class="sr-only">Elo</span><svg role="img" class="ft-payment-icon"><use xlink:href="#ft-icon-elo"></use></svg></li>
+               <li class="ft-payment-it"><span itemprop="name" class="sr-only">Cartão Submarino</span><svg role="img" class="ft-payment-icon"><use xlink:href="#ft-icon-submarino"></use></svg></li>
+               <li class="ft-payment-it"><span class="sr-only">Cartão Aura</span><svg role="img" class="ft-payment-icon"><use xlink:href="#ft-icon-aura"></use></svg></li>
+               <li class="ft-payment-it"><span class="sr-only">Cartão American Express</span><svg role="img" class="ft-payment-icon"><use xlink:href="#ft-icon-american"></use></svg></li>
              </ul>
            </article>
            <!-- <div class="ft-security col-xs-12 col-sm-12 col-md-4">
@@ -291,13 +291,142 @@ A lightweight, flexible footer that can be used on your site.
        <div class="row">
          <div class="ft-address col-xs-12">
            <div class="ftr-copyright">
-               <span itemprop="name">Ingresso.com Ltda</span>
-               <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> / CNPJ: 008606400001-71 <br /><strong>Endereço:</strong> <span itemprop="streetAddress">Rua da Quitanda, 86 - 9&ordm; andar</span> - <span itemprop="addressLocality">Centro - RJ</span> - <span itemprop="postalCode">20091-005</span></span><br />
+               <span>Ingresso.com Ltda</span>
+               <span> / CNPJ: 008606400001-71 <br /><strong>Endereço:</strong> <span>Rua da Quitanda, 86 - 9&ordm; andar</span> - <span>Centro - RJ</span> - <span>20091-005</span></span><br />
                <a href="https://atendimentoicom.zendesk.com/hc/pt-br">Atendimento ao cliente</a><br />
                <span>&copy; Copyright Ingresso.com - todos os direitos reservados</span>
            </div>
          </div>
        </div>
+
+       <script type="application/ld+json">
+           {
+               "@context":"http://schema.org",
+               "@type":"Organization",
+               "name":"Ingresso.com",
+               "url":"http://www.ingresso.com",
+               "foundingDate":"1995-09-25",
+               "legalName":"Ingresso.com Ltda",
+               "email":"contato@ingresso.com",
+               "logo":"https://ingresso-a.akamaihd.net/catalogo/img/logo.png",
+               "contactPoint":{
+                   "@type":"ContactPoint",
+                   "contactType":"customer service",
+                   "url":"https://atendimento.ingresso.com/"
+               },
+               "telephone":"4003-2330",
+               "address":{
+                   "@type":"PostalAddress",
+                   "streetAddress":"Rua da Quitanda, 86 - 9&ordm; andar",
+                   "postalCode":"20091-005",
+                   "addressLocality":"Rio de Janeiro",
+                   "addressRegion":"RJ",
+                   "addressCountry":"BR"
+               },
+               "seeks":{
+                   "@type":"Demand",
+                   "acceptedPaymentMethod":[
+                       {
+                           "@type":"PaymentMethod",
+                           "name":"Visa"
+                       },
+                       {
+                           "@type":"PaymentMethod",
+                           "name":"MasterCard"
+                       },
+                       {
+                           "@type":"PaymentMethod",
+                           "name":"Diners"
+                       },
+                       {
+                           "@type":"PaymentMethod",
+                           "name":"Elo"
+                       },
+                       {
+                           "@type":"PaymentMethod",
+                           "name":"Cartão Submarino"
+                       },
+                       {
+                           "@type":"PaymentMethod",
+                           "name":"Aura"
+                       },
+                       {
+                           "@type":"PaymentMethod",
+                           "name":"American Express"
+                       }
+                   ]
+               }
+           },
+        /* exemplo com lista de filmes */
+        {
+            "@context": "http://schema.org",
+              "@type": "ItemList",
+              "itemListElement":[
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "item": {
+                        "@type": "Movie",
+                        "name": "Capitão América: Guerra Civil",
+                        "url": "http://marvel.com/CaptainAmericaPremiere",
+                        "image": "https://upload.wikimedia.org/wikipedia/pt/5/53/Captain_America_Civil_War_poster.jpg",
+                        "director":[
+                            {
+                                "@type": "Person",
+                                "name": "Anthony Russo"
+                            },
+                            {
+                                "@type": "Person",
+                                "name": "Joe Russo"
+                            }
+                        ],
+                        "actor": [
+                        {
+                          "@type": "Person",
+                          "name": "Robert Downey Jr."
+                       },
+                       {
+                        "@type":"Person",
+                        "name": "Chris Evans"
+                       }
+                       ],
+                      "datePublished": "2016-05-06"
+                      }
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "item": {
+                        "@type": "Movie",
+                        "name": "Capitão América: Guerra Civil 2",
+                        "url": "http://marvel.com/CaptainAmericaPremiere",
+                        "image": "https://upload.wikimedia.org/wikipedia/pt/5/53/Captain_America_Civil_War_poster.jpg",
+                        "director":[
+                            {
+                                "@type": "Person",
+                                "name": "Anthony Russo"
+                            },
+                            {
+                                "@type": "Person",
+                                "name": "Joe Russo"
+                            }
+                        ],
+                        "actor": [
+                        {
+                          "@type": "Person",
+                          "name": "Robert Downey Jr."
+                       },
+                       {
+                        "@type":"Person",
+                        "name": "Chris Evans"
+                       }
+                       ],
+                      "datePublished": "2016-05-06"
+                      }
+                    }
+              ]
+        }
+        </script>
 
       </footer>
 {% endexample %}
