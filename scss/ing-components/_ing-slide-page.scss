@@ -1,5 +1,8 @@
-/* essas animacoes estao aqui temporariamente */
-@-webkit-keyframes hide {
+// Slide Page
+
+$slide-page-padding:15px;
+
+@-webkit-keyframes slide-page-hide {
   0% {
     height:auto;
 
@@ -11,7 +14,7 @@
   }
 }
 
-@-moz-keyframes hide {
+@-moz-keyframes slide-page-hide {
   0% {
     height:auto;
   }
@@ -22,7 +25,7 @@
   }
 }
 
-@keyframes hide {
+@keyframes slide-page-hide {
   0% {
     height:auto;
   }
@@ -35,7 +38,8 @@
 
 .slide-page{
   
-  position:absolute;
+  position:relative;
+
   /* pra remover scroll lateral */
   overflow-x:hidden;
   bottom: 0;
@@ -47,14 +51,16 @@
     /*overflow-y:hidden;*/
       .slide-page-wp{
 
+        padding:$slide-page-padding;
+
         -webkit-transform: translate3d(-100%, 0px, 0px);
         -moz-transform: translate3d(-100%, 0px, 0px);
         -ms-transform: translate3d(-100%, 0px, 0px);
         transform: translate3d(-100%, 0px, 0px);
 
 
-        .list-unstyled{
-
+        .slide-page-content{
+          
           overflow:hidden;
           -webkit-animation-duration:.5s;
           -webkit-animation-name:hide;
@@ -80,15 +86,6 @@
       transition: transform 0.5s ease;
     }
 
-  .slide-page-wp .list-unstyled{
-
-    margin-bottom:0;
-    padding:15px;
-    background-color:#666;
-    color:#fff;
-    font-size:20px;
-  }
-
   .slide-page-subitem{
 
     padding:15px;
@@ -106,9 +103,7 @@
     background-color:#fff;
 
     -webkit-transition: opacity 0.5s ease-in;
-      transition: opacity 0.5s ease-in;
-
-
+    transition: opacity 0.5s ease-in;
 
   }
 

@@ -5654,10 +5654,6 @@ button.close {
   display: none;
 }
 
-.popover-title:empty {
-  display: none;
-}
-
 .popover-content {
   padding: 9px 14px;
 }
@@ -7877,8 +7873,7 @@ ol {
   padding-bottom: 3px;
 }
 
-/* essas animacoes estao aqui temporariamente */
-@-webkit-keyframes hide {
+@-webkit-keyframes slide-page-hide {
   0% {
     height: auto;
   }
@@ -7887,7 +7882,7 @@ ol {
   }
 }
 
-@-o-keyframes hide {
+@-o-keyframes slide-page-hide {
   0% {
     height: auto;
   }
@@ -7896,7 +7891,7 @@ ol {
   }
 }
 
-@keyframes hide {
+@keyframes slide-page-hide {
   0% {
     height: auto;
   }
@@ -7906,7 +7901,7 @@ ol {
 }
 
 .slide-page {
-  position: absolute;
+  position: relative;
   /* pra remover scroll lateral */
   overflow-x: hidden;
   bottom: 0;
@@ -7919,12 +7914,13 @@ ol {
 }
 
 .slide-page.active .slide-page-wp {
+  padding: 15px;
   -webkit-transform: translate3d(-100%, 0px, 0px);
   -ms-transform: translate3d(-100%, 0px, 0px);
   transform: translate3d(-100%, 0px, 0px);
 }
 
-.slide-page.active .slide-page-wp .list-unstyled {
+.slide-page.active .slide-page-wp .slide-page-content {
   overflow: hidden;
   -webkit-animation-duration: .5s;
   -webkit-animation-name: hide;
@@ -7952,14 +7948,6 @@ ol {
   -o-transition: transform 0.5s ease, -o-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease, -o-transform 0.5s ease;
-}
-
-.slide-page .slide-page-wp .list-unstyled {
-  margin-bottom: 0;
-  padding: 15px;
-  background-color: #666;
-  color: #fff;
-  font-size: 20px;
 }
 
 .slide-page .slide-page-subitem {
