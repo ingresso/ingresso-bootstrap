@@ -10,6 +10,7 @@
     - title: Build tools
     - title: Best practices
     - title: Accessibility
+    - title: Microformats
 
 - title: Layout
   pages:
@@ -27,6 +28,17 @@
     - title: Images
     - title: Tables
     - title: Figures
+
+- title: Ingresso Components
+  pages:
+    - title: Alerts Ingresso
+    - title: Collapse
+    - title: Footer Ingresso
+    - title: Forms Ingresso
+    - title: Header Ingresso
+    - title: Icons Ingresso
+    - title: Link Dropdown
+    - title: Tag Ingresso
 
 - title: Components
   pages:
