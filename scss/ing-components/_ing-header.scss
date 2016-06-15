@@ -1,9 +1,8 @@
 // header Ingresso
 #header{
-  height: 60px;
-  vertical-align: middle;
-  padding:20px 10px 15px 10px;
   position: relative;
+  overflow:hidden;
+  padding:10px 0;
   &:before{
     content: '';
     position: absolute;
@@ -26,7 +25,6 @@
     background-image: url("../img/ingresso/logo-i.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    margin: -10px 0 0 0;
   }
   // User menu and FAQ
   .hdr-user-lt{

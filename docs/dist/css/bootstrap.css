@@ -6999,10 +6999,9 @@ ol {
 }
 
 #header {
-  height: 60px;
-  vertical-align: middle;
-  padding: 20px 10px 15px 10px;
   position: relative;
+  overflow: hidden;
+  padding: 10px 0;
 }
 
 #header:before {
@@ -7030,7 +7029,6 @@ ol {
   background-repeat: no-repeat;
   -webkit-background-size: contain;
           background-size: contain;
-  margin: -10px 0 0 0;
 }
 
 #header .hdr-user-lt {
