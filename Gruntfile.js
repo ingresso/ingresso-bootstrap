@@ -75,8 +75,7 @@ module.exports = function (grunt) {
           'js/dist/scrollspy.js' : 'js/src/scrollspy.js',
           'js/dist/tab.js'       : 'js/src/tab.js',
           'js/dist/tooltip.js'   : 'js/src/tooltip.js',
-          'js/dist/popover.js'   : 'js/src/popover.js',
-          'js/dist/floating-labels.js'   : 'js/src/floating-labels.js'
+          'js/dist/popover.js'   : 'js/src/popover.js'
         }
       },
       dist: {
@@ -102,8 +101,7 @@ module.exports = function (grunt) {
           'dist/js/umd/scrollspy.js' : 'js/src/scrollspy.js',
           'dist/js/umd/tab.js'       : 'js/src/tab.js',
           'dist/js/umd/tooltip.js'   : 'js/src/tooltip.js',
-          'dist/js/umd/popover.js'   : 'js/src/popover.js',
-          'dist/js/umd/floating-labels.js'   : 'js/src/floating-labels.js'
+          'dist/js/umd/popover.js'   : 'js/src/popover.js'
         }
       }
     },
@@ -168,10 +166,23 @@ module.exports = function (grunt) {
           'js/src/scrollspy.js',
           'js/src/tab.js',
           'js/src/tooltip.js',
-          'js/src/popover.js',
-          'js/src/floating-labels.js'
+          'js/src/popover.js'
         ],
         dest: 'dist/js/<%= pkg.name %>.js'
+      },
+      vendor:{
+        src:[
+          'js/src/vendor/matchMedia.js',
+          'js/src/vendor/enquire.js',
+          'js/src/vendor/floating-labels.js'
+        ],
+        dest: 'dist/js/vendor.js'
+      },
+      ingresso:{
+        src:[
+          'js/src/ingresso/enquireConfig.js'
+        ],
+        dest: 'dist/js/ingresso.js'
       }
     },
 
@@ -186,6 +197,14 @@ module.exports = function (grunt) {
       core: {
         src: '<%= concat.bootstrap.dest %>',
         dest: 'dist/js/<%= pkg.name %>.min.js'
+      },
+      vendor: {
+        src: 'dist/js/vendor.js',
+        dest: 'docs/assets/js/vendor.min.js'
+      },
+      ingresso: {
+        src: 'dist/js/ingresso.js',
+        dest: 'docs/assets/js/ingresso.min.js'
       },
       docsJs: {
         src: configBridge.paths.docsJs,
@@ -460,7 +479,7 @@ module.exports = function (grunt) {
   grunt.registerTask('test-js', ['eslint', 'jscs:core', 'jscs:test', 'jscs:grunt', 'qunit']);
 
   // JS distribution task.
-  grunt.registerTask('dist-js', ['babel:dev', 'concat', 'babel:dist', 'stamp', 'uglify:core', 'commonjs']);
+  grunt.registerTask('dist-js', ['babel:dev', 'concat', 'babel:dist', 'stamp', 'uglify:core','uglify:ingresso','uglify:vendor', 'commonjs']);
 
   grunt.registerTask('test-scss', ['scsslint:core']);
 

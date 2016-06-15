@@ -111,6 +111,13 @@
     .ft-nws-title{
       margin-bottom: 0;
     }
+    .tab-accordion{
+      &.model1{
+        &:before, &:after{
+          display:none;
+        }
+      }
+    }
   }
 }
 

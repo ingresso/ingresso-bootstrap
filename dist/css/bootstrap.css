@@ -7299,6 +7299,9 @@ ol {
   #footer .ft-nws-title {
     margin-bottom: 0;
   }
+  #footer .tab-accordion.model1:before, #footer .tab-accordion.model1:after {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 62em) {
