@@ -2,3 +2,136 @@
 //
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-ingresso: "Trebuchet MS", 'Klavika-Regular', 'Klavika-Bold', sans-serif, Arial !default;
+$font-family-base:     $font-family-ingresso !default;
+$font-size-base: .8rem;
+
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$headings-font-family:   'Klavika-Regular' !default;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$caret-width:            .45em !default;
+
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+$brand-primary:#0db6b5;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-color: #666;
+
+// Forms
+
+$input-border-focus: $brand-primary;
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-line-height:                1.8 !default;
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 #0db6b5 !default;
+$btn-primary-border:             #0db0b0 !default;
+
+$btn-secondary-color:            #fff !default;
+$btn-secondary-bg:               #10e0df !default;
+$btn-secondary-border:           #10e0df !default;
+
+//$btn-link-disabled-color:        #ddd !default;
+
+$btn-padding-y-lg:               .42rem !default;
+
+// Tooltips
+
+$tooltip-bg:                  #666 !default;
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+$dropdown-link-hover-color:      #086f6e !default;
+$dropdown-link-color:            #0db6b5 !default;
+$dropdown-header-color:          #999 !default;
+$dropdown-link-hover-bg:         transparent !default;
+$dropdown-link-disabled-color:   #ddd !default;
+
+
+// Jumbotron
+
+$jumbotron-bg:                   #f2f2f2 !default;
+
+// Breadcrumbs
+$breadcrumb-padding-x:          0 !default;
+$breadcrumb-bg:                 transparent !default;
+
+
+// Progress bars
+
+$progress-bar-color:          #666 !default;
+
+
+// Navs
+
+$nav-disabled-link-color:       #ccc !default;
+
+$nav-tabs-border-color:                       #0db6b5 !default;
+$nav-tabs-active-link-hover-color:            #fff !default;
+$nav-tabs-active-link-hover-bg:               #0db6b5 !default;
+$nav-tabs-active-link-hover-border-color:     #0db6b5 !default;
+
+
+// Pagination
+
+$pagination-color:                     #0db6b5 !default;
+$pagination-bg:                        #f2f2f2 !default;
+$pagination-disabled-color:            #ccc !default;
+$pagination-disabled-bg:               #f2f2f2 !default;
+$pagination-hover-bg:                  #f2f2f2 !default;
+
+// Popovers
+
+$popover-bg:                          #555 !default;
+$popover-border-width:                0 !default;
+$popover-title-bg:                    #555 !default;
+
+
+// Padding applied to the modal body
+
+$modal-content-border-width:     0 !default;
+
+// Close
+
+$close-color:                 #0db5b6 !default;
+
+
+// Tags
+
+$tag-padding-x:             .5em !default;
+$tag-padding-y:             .5em !default;
+
+
+// Forms
+
+$input-padding-y:                0.719rem !default;
+
+
+// Forms
+
+$custom-control-checked-indicator-bg:         #0db6b5 !default;
+$custom-control-focus-indicator-box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0db6b5 !default;
+$custom-checkbox-indeterminate-bg: #0db6b5 !default;
+$custom-control-indicator-size:       1.25rem !default;
+$custom-file-focus-box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0db6b5 !default;
+$custom-control-gutter:   1.7rem !default;

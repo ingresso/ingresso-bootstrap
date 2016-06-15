@@ -169,6 +169,20 @@ module.exports = function (grunt) {
           'js/src/popover.js'
         ],
         dest: 'dist/js/<%= pkg.name %>.js'
+      },
+      vendor:{
+        src:[
+          'js/src/vendor/matchMedia.js',
+          'js/src/vendor/enquire.js',
+          'js/src/vendor/floating-labels.js'
+        ],
+        dest: 'dist/js/vendor.js'
+      },
+      ingresso:{
+        src:[
+          'js/src/ingresso/enquireConfig.js'
+        ],
+        dest: 'dist/js/ingresso.js'
       }
     },
 
@@ -183,6 +197,14 @@ module.exports = function (grunt) {
       core: {
         src: '<%= concat.bootstrap.dest %>',
         dest: 'dist/js/<%= pkg.name %>.min.js'
+      },
+      vendor: {
+        src: 'dist/js/vendor.js',
+        dest: 'docs/assets/js/vendor.min.js'
+      },
+      ingresso: {
+        src: 'dist/js/ingresso.js',
+        dest: 'docs/assets/js/ingresso.min.js'
       },
       docsJs: {
         src: configBridge.paths.docsJs,
@@ -390,10 +412,27 @@ module.exports = function (grunt) {
           }
         ]
       }
+    },
+
+    svgstore: {
+      options: {
+        prefix: "icon-",
+        cleanup: false,
+        svg: {
+          style: "display:none;"
+        }
+      },
+      default: {
+        files: {
+          "docs/_includes/svg-defs.svg":
+           ["docs/assets/img/svg/*.svg"]
+        }
+      }
     }
 
   });
 
+  grunt.loadNpmTasks('grunt-svgstore');
 
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt, { scope: 'devDependencies',
@@ -440,7 +479,7 @@ module.exports = function (grunt) {
   grunt.registerTask('test-js', ['eslint', 'jscs:core', 'jscs:test', 'jscs:grunt', 'qunit']);
 
   // JS distribution task.
-  grunt.registerTask('dist-js', ['babel:dev', 'concat', 'babel:dist', 'stamp', 'uglify:core', 'commonjs']);
+  grunt.registerTask('dist-js', ['babel:dev', 'concat', 'babel:dist', 'stamp', 'uglify:core','uglify:ingresso','uglify:vendor', 'commonjs']);
 
   grunt.registerTask('test-scss', ['scsslint:core']);
 
@@ -455,7 +494,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-css', ['sass-compile', 'postcss:core', 'cssmin:core', 'cssmin:docs']);
 
   // Full distribution task.
-  grunt.registerTask('dist', ['clean:dist', 'dist-css', 'dist-js']);
+  grunt.registerTask('dist', ['clean:dist', 'dist-css', 'dist-js', 'svgstore']);
 
   // Default task.
   grunt.registerTask('default', ['clean:dist', 'test']);

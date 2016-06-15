@@ -1,0 +1,24 @@
+//
+// Tabs
+//
+
+.nav-tabs {
+  .nav-item {
+    // Make the list-items overlay the bottom border
+    margin-bottom: 0;
+  }
+  .nav-link {
+    border: $nav-tabs-border-width solid #f2f2f2;
+    background-color: #f2f2f2;
+
+    &.disabled {
+      @include plain-hover-focus {
+        background-color: #f2f2f2;
+      }
+    }
+    &:focus,
+    &:hover{
+      border-color:transparent;
+    }
+  }
+}

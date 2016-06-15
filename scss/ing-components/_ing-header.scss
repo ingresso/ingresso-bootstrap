@@ -1,0 +1,136 @@
+// header Ingresso
+#header{
+  position: relative;
+  overflow:hidden;
+  padding:10px 0;
+  &:before{
+    content: '';
+    position: absolute;
+    display: block;
+    right: 0;
+    left: 0;
+    top:0;
+    margin-bottom: -5px;
+    height: 5px;
+    text-indent: -99999px;
+    background: #0db5b6;
+    background: -webkit-gradient(linear,left top,right top,color-stop(0,#d3793d),color-stop(19%,#d3793d),color-stop(19%,#b96485),color-stop(40%,#b96485),color-stop(40%,#afbe3f),color-stop(61%,#afbe3f),color-stop(61%,#53488a),color-stop(81%,#53488a),color-stop(81%,#0db5b6),color-stop(100%,#0db5b6)),-webkit-gradient();
+    background: -webkit-linear-gradient(left,#d3793d 0,#d3793d 19%,#b96485 19%,#b96485 40%,#afbe3f 40%,#afbe3f 61%,#53488a 61%,#53488a 81%,#0db5b6 81%,#0db5b6 100%);
+    background: linear-gradient(to right,#d3793d 0,#d3793d 19%,#b96485 19%,#b96485 40%,#afbe3f 40%,#afbe3f 61%,#53488a 61%,#53488a 81%,#0db5b6 81%,#0db5b6 100%);
+  }
+
+  .hdr-logo{
+    width: 60px;
+    height: 47px;
+    background-image: url("../img/ingresso/logo-i.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  // User menu and FAQ
+  .hdr-user-lt{
+    overflow: hidden;
+    text-align: right;
+    .hdr-user-it{
+      display: inline-block;
+    }
+    .btn{
+      border-radius: 20px;
+      padding: 8px 11px;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+
+  .nav-justified {
+    width: 100%;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    clear: both;
+    .nav-item {
+      float: none;
+      &:first-child {
+        .nav-link {
+          border-radius: 5px 5px 0 0;
+        }
+      }
+      &:last-child {
+        .nav-link {
+          border-radius: 0 0 5px 5px;
+        }
+      }
+    }
+    .nav-link {
+      width: 100%;
+      margin-bottom: 5px;
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-bottom: 0;
+      font-weight: bold;
+      color: #777;
+      text-align: center;
+      background-color: #e5e5e5; /* Old browsers */
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e5e5e5));
+      background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
+      background-image:      -o-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5),to(#e5e5e5));
+      background-image: -webkit-linear-gradient(top, #f5f5f5 0%,#e5e5e5 100%);
+      background-image:      -o-linear-gradient(top, #f5f5f5 0%,#e5e5e5 100%);
+      background-image:         linear-gradient(to bottom, #f5f5f5 0%,#e5e5e5 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+      background-repeat: repeat-x; /* Repeat the gradient */
+      border-bottom: 1px solid #d5d5d5;
+      &.active, &:hover, &:focus {
+        background-color: #ddd;
+        background-image: none;
+        -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+        box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+      }
+    }
+  }
+}
+
+//mobile header
+@media screen and (min-width: 35.5em){
+  #header{
+    .hdr-logo{
+      background-image: url("../img/ingresso/logo-completo.svg");
+      width: 123px;
+      height: 46px;
+    }
+
+    .main-menu,.search{
+      display:block !important; /* TEMPORARIO, VERSAO FINAL VAI USAR MATCHMEDIA */
+    }
+
+    .search {
+      height: 55px !important;
+      width: 300px;
+      overflow: hidden;
+    }
+    .hdr-user-menu, .hdr-location-menu{
+      display: inline-block;
+    }
+    .hdr-sub-menu{
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding-right: 50px;
+      width: 225px;
+    }
+    .hdr-support{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav-item {
+      display: table-cell;
+      width: 1%;
+    }
+    .nav-link {
+      margin-bottom: 0;
+    }
+  }
+}

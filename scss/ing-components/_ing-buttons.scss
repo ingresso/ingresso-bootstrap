@@ -1,0 +1,34 @@
+// scss-lint:disable QualifyingElement
+
+//
+// Base styles
+//
+
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger,
+.btn-outline-success,
+.btn-outline-info,
+.btn-outline-warning,
+.btn-outline-danger
+ {
+  display: none;
+}
+
+
+.btn {
+  &.disabled,
+  &:disabled {
+    opacity: 1;
+    background: #ddd;
+    border:0;
+  }
+  text-transform: uppercase;
+}
+
+//Link não segue o padrão de uppercase dos botoes
+.btn-link {
+  text-transform: initial;
+}
+
