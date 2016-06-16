@@ -7969,4 +7969,35 @@ ol {
 .slide-page .sld-pg-lk.active > .slide-page-subitem {
   opacity: 1;
 }
+
+.carousel-ingresso {
+  padding-bottom: 75px;
+}
+
+.carousel-ingresso .carousel-control {
+  bottom: 75px;
+}
+
+.carousel-ingresso .carousel-indicators {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 5px;
+  width: auto;
+  text-align: left;
+}
+
+.carousel-ingresso .carousel-indicators li {
+  opacity: 0.5;
+  background-color: red;
+  width: 65px;
+  height: 65px;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+}
+
+.carousel-ingresso .carousel-indicators .active {
+  opacity: 1;
+}
 /*# sourceMappingURL=bootstrap.css.map */
