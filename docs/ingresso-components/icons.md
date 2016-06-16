@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Icons Ingresso
+title: Icons
 group: ingresso-components
 ---
 

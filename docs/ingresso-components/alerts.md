@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Alerts Ingresso
+title: Alerts
 group: ingresso-components
 ---
 

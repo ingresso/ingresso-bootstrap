@@ -41,8 +41,8 @@ const SlidePage = (($) => {
   }
 
   const Selector = {
-    S                     : 'a',
-    LI                    : 'li',
+    SLIDE_PAGE                     : '.slide-page',
+    SLIDE_PAGE_WP                    : '.slide-page-wp',
 
 
   }

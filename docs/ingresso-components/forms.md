@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Forms Ingresso
+title: Forms
 group: ingresso-components
 ---
 
