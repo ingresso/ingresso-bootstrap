@@ -32,12 +32,14 @@
 - title: Ingresso Components
   pages:
     - title: Alerts Ingresso
+    - title: Card List
     - title: Collapse
     - title: Footer Ingresso
     - title: Forms Ingresso
     - title: Header Ingresso
     - title: Icons Ingresso
     - title: Link Dropdown
+    - title: Rating
     - title: Tag Ingresso
 
 - title: Components

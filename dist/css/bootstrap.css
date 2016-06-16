@@ -7872,4 +7872,91 @@ ol {
   padding-top: 3px;
   padding-bottom: 3px;
 }
+
+.card {
+  width: 225px;
+}
+
+.card .card-img-top {
+  width: 245px;
+  height: 140px;
+}
+
+.card .card-title, .card .card-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card .card-title {
+  min-height: 48px;
+  max-height: 48px;
+  -webkit-line-clamp: 2;
+  font-size: 1.375rem;
+}
+
+.card .card-text {
+  -webkit-line-clamp: 3;
+}
+
+.card-list .cl-wrapper {
+  white-space: nowrap;
+  overflow: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  display: block;
+  -webkit-flex-flow: initial;
+}
+
+.card-list .cl-item {
+  white-space: normal;
+  width: auto;
+  display: inline-block;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  padding: 0;
+  max-width: initial;
+}
+
+@media (min-width: 768px) {
+  .card-list .cl-wrapper {
+    white-space: normal;
+    overflow: hidden;
+  }
+}
+
+.rating {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.rating, .rating-txt {
+  vertical-align: middle;
+}
+
+.r0 rect {
+  width: 0;
+}
+
+.r1 rect {
+  width: 15px;
+}
+
+.r2 rect {
+  width: 30px;
+}
+
+.r3 rect {
+  width: 45px;
+}
+
+.r4 rect {
+  width: 60px;
+}
+
+.r5 rect {
+  width: 75px;
+}
 /*# sourceMappingURL=bootstrap.css.map */

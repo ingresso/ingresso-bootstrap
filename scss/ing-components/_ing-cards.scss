@@ -1,0 +1,54 @@
+.card{
+  width: 225px;
+  .card-img-top{
+    width: 245px;
+    height: 140px;
+  }
+  .card-title,.card-text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-title{
+    min-height: 48px;
+    max-height: 48px;
+    -webkit-line-clamp: 2;
+    font-size: 1.375rem;
+  }
+  .card-text{
+    -webkit-line-clamp: 3;
+  }
+}
+
+
+.card-list{
+  .cl-wrapper {
+    white-space: nowrap;
+    overflow: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    display: block;
+    -webkit-flex-flow: initial;
+  }
+  .cl-item{
+    white-space: normal;
+    width: auto;
+    display: inline-block;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+    padding:0;
+    max-width: initial;
+  }
+}
+
+
+@include media-breakpoint-up(md) {
+  .card-list{
+    .cl-wrapper{
+      white-space: normal;
+      overflow: hidden;
+    }
+  }
+}
