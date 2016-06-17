@@ -7896,7 +7896,35 @@ ol {
 }
 
 .card .card-text {
-  -webkit-line-clamp: 3;
+  position: relative;
+  max-height: 55px;
+}
+
+.card .card-text:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.2em;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, white));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), white 50%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0), white 50%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%);
+}
+
+@supports (-webkit-line-clamp: 3) {
+  .card .card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 55px;
+    height: auto;
+  }
+  .card .card-text:after {
+    display: none;
+  }
 }
 
 .card-list .cl-wrapper {
@@ -7934,29 +7962,5 @@ ol {
 
 .rating, .rating-txt {
   vertical-align: middle;
-}
-
-.r0 rect {
-  width: 0;
-}
-
-.r1 rect {
-  width: 15px;
-}
-
-.r2 rect {
-  width: 30px;
-}
-
-.r3 rect {
-  width: 45px;
-}
-
-.r4 rect {
-  width: 60px;
-}
-
-.r5 rect {
-  width: 75px;
 }
 /*# sourceMappingURL=bootstrap.css.map */

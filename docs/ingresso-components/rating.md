@@ -1,18 +1,21 @@
 ---
 layout: docs
-title: rating
+title: Rating
 group: ingresso-components
 ---
 
+Rating for Ingresso Bootstrap
+
 ## Example
 
-{% example html %}
+It's a simple svg image. The configuration is basically based on the `< rect >` . Changing your `width`.
 
+{% example html %}
 
 <svg class="rating r0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" width="75" height="14" viewBox="0 0 75 14" xml:space="preserve">
   <defs>
     <mask id="svg-stars-mask-0" maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="14">
-      <rect x="0" y="0" height="14" fill="white"/>
+      <rect x="0" y="0" width="0" height="14" fill="white"/>
     </mask>
     <g id="stars-0">
       <path d="M7.2 0.44l-2.25 4.5H0.2l3.56 3.25 -1 5.38L7.2 11.37l4.44 2.19 -1-5.37 3.56-3.25H9.45L7.2 0.44z"/>
@@ -31,7 +34,7 @@ group: ingresso-components
 <svg class="rating r1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" width="75" height="14" viewBox="0 0 75 14" xml:space="preserve">
   <defs>
     <mask id="svg-stars-mask-1" maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="14">
-      <rect x="0" y="0" height="14" fill="white"/>
+      <rect x="0" y="0" width="15" height="14" fill="white"/>
     </mask>
     <g id="stars-1">
       <path d="M7.2 0.44l-2.25 4.5H0.2l3.56 3.25 -1 5.38L7.2 11.37l4.44 2.19 -1-5.37 3.56-3.25H9.45L7.2 0.44z"/>
@@ -50,7 +53,7 @@ group: ingresso-components
 <svg class="rating r2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" width="75" height="14" viewBox="0 0 75 14" xml:space="preserve">
   <defs>
     <mask id="svg-stars-mask-2" maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="14">
-      <rect x="0" y="0" height="14" fill="white"/>
+      <rect x="0" y="0" width="30" height="14" fill="white"/>
     </mask>
     <g id="stars-2">
       <path d="M7.2 0.44l-2.25 4.5H0.2l3.56 3.25 -1 5.38L7.2 11.37l4.44 2.19 -1-5.37 3.56-3.25H9.45L7.2 0.44z"/>
@@ -69,7 +72,7 @@ group: ingresso-components
 <svg class="rating r3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" width="75" height="14" viewBox="0 0 75 14" xml:space="preserve">
   <defs>
     <mask id="svg-stars-mask-3" maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="14">
-      <rect x="0" y="0" height="14" fill="white"/>
+      <rect x="0" y="0" width="45" height="14" fill="white"/>
     </mask>
     <g id="stars-3">
       <path d="M7.2 0.44l-2.25 4.5H0.2l3.56 3.25 -1 5.38L7.2 11.37l4.44 2.19 -1-5.37 3.56-3.25H9.45L7.2 0.44z"/>
@@ -88,7 +91,7 @@ group: ingresso-components
 <svg class="rating r4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" width="75" height="14" viewBox="0 0 75 14" xml:space="preserve">
   <defs>
     <mask id="svg-stars-mask-4" maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="14">
-      <rect x="0" y="0" height="14" fill="white"/>
+      <rect x="0" y="0" width="60" height="14" fill="white"/>
     </mask>
     <g id="stars-4">
       <path d="M7.2 0.44l-2.25 4.5H0.2l3.56 3.25 -1 5.38L7.2 11.37l4.44 2.19 -1-5.37 3.56-3.25H9.45L7.2 0.44z"/>
@@ -107,7 +110,7 @@ group: ingresso-components
 <svg class="rating r5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" width="75" height="14" viewBox="0 0 75 14" xml:space="preserve">
   <defs>
     <mask id="svg-stars-mask-5" maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="14">
-      <rect x="0" y="0" height="14" fill="white"/>
+      <rect x="0" y="0" width="75" height="14" fill="white"/>
     </mask>
     <g id="stars-5">
       <path d="M7.2 0.44l-2.25 4.5H0.2l3.56 3.25 -1 5.38L7.2 11.37l4.44 2.19 -1-5.37 3.56-3.25H9.45L7.2 0.44z"/>
