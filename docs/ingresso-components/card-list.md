@@ -16,11 +16,13 @@ Create a div `card-list` , within it you will create a wrapper ( use the tag you
   <div class="cl-wrapper">
 
     <div class="cl-item">
-      <article class="card">
-        <img class="card-img-top w-100" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13758_d.jpg" alt="Card image cap">
+      <article class="card" itemscope itemtype="http://schema.org/Movie">
+        <meta itemprop="dateCreated" content="2016-06-17">
+        <meta itemprop="director" content="Jon M. Chu">
+        <img class="card-img-top w-100" itemprop="image" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13758_d.jpg" alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">Truque de Mestre: O Segundo ato</h4>
-          <p class="card-text">Após enganar o FBI um ano antes, o grupo de mágicos é forçado a se reunir mais uma vez e realizar uma nova série de golpes elaborados que culminarão na maior ilusão que já fizeram até agora.</p>
+          <h4 class="card-title" itemprop="name">Truque de Mestre: O Segundo ato</h4>
+          <p class="card-text" itemprop="description">Após enganar o FBI um ano antes, o grupo de mágicos é forçado a se reunir mais uma vez e realizar uma nova série de golpes elaborados que culminarão na maior ilusão que já fizeram até agora.</p>
           <a href="#" class="btn btn-primary">Comprar Ingresso</a>
         </div>
         <div class="card-footer text-muted text-xs-center">
@@ -48,11 +50,13 @@ Create a div `card-list` , within it you will create a wrapper ( use the tag you
     </div>
 
     <div class="cl-item">
-      <article class="card">
-        <img class="card-img-top w-100" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14200_d.jpg" alt="Card image cap">
+      <article class="card" itemscope itemtype="http://schema.org/Movie">
+        <meta itemprop="dateCreated" content="2016-06-17">
+        <meta itemprop="director" content="Duncan Jones">
+        <img class="card-img-top w-100" itemprop="image" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14200_d.jpg" alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">Warcraft - O primeiro encontro de dois mundos</h4>
-          <p class="card-text">O reino pacífico de Azeroth está à beira de uma guerra enquanto sua civilização enfrenta uma raça temível de invasores: guerreiros Orcs fugindo de sua casa moribunda para colonizar um novo lugar. Enquanto um portal se abre para conectar os dois mundos, um exército enfrenta destruição e o outro enfrenta a extinção. De lados opostos, dois heróis são colocados em um caminho de colisão que irá decidir o destino de suas famílias, seu povo e seu lar. Então, uma saga espetacular de poder e sacrifício começa, onde a guerra tem muitas faces, e todos lutam por algo.</p>
+          <h4 class="card-title" itemprop="name">Warcraft - O primeiro encontro de dois mundos</h4>
+          <p class="card-text" itemprop="description">O reino pacífico de Azeroth está à beira de uma guerra enquanto sua civilização enfrenta uma raça temível de invasores: guerreiros Orcs fugindo de sua casa moribunda para colonizar um novo lugar. Enquanto um portal se abre para conectar os dois mundos, um exército enfrenta destruição e o outro enfrenta a extinção. De lados opostos, dois heróis são colocados em um caminho de colisão que irá decidir o destino de suas famílias, seu povo e seu lar. Então, uma saga espetacular de poder e sacrifício começa, onde a guerra tem muitas faces, e todos lutam por algo.</p>
           <a href="#" class="btn btn-primary">Comprar Ingresso</a>
         </div>
         <div class="card-footer text-muted text-xs-center">
@@ -80,11 +84,13 @@ Create a div `card-list` , within it you will create a wrapper ( use the tag you
     </div>
 
     <div class="cl-item">
-      <article class="card">
-        <img class="card-img-top w-100" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14204_d.jpg" alt="Card image cap">
+      <article class="card" itemscope itemtype="http://schema.org/Movie">
+        <meta itemprop="dateCreated" content="2016-06-17">
+        <meta itemprop="director" content="James Wan">
+        <img class="card-img-top w-100" itemprop="image" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14204_d.jpg" alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">Invocação do mal 2</h4>
-          <p class="card-text">Sete anos após os eventos de Invocação do Mal, Lorraine e Ed Warren desembarcam na Inglaterra para ajudar uma família atormentada por uma manifestação poltergeist na filha.</p>
+          <h4 class="card-title" itemprop="name">Invocação do mal 2</h4>
+          <p class="card-text" itemprop="description">Sete anos após os eventos de Invocação do Mal, Lorraine e Ed Warren desembarcam na Inglaterra para ajudar uma família atormentada por uma manifestação poltergeist na filha.</p>
           <a href="#" class="btn btn-primary">Comprar Ingresso</a>
         </div>
         <div class="card-footer text-muted text-xs-center">
@@ -112,11 +118,13 @@ Create a div `card-list` , within it you will create a wrapper ( use the tag you
     </div>
 
     <div class="cl-item">
-      <article class="card">
-        <img class="card-img-top w-100" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14036_d.jpg" alt="Card image cap">
+      <article class="card" itemscope itemtype="http://schema.org/Movie">
+        <meta itemprop="dateCreated" content="2016-06-17">
+        <meta itemprop="director" content="James Bobin">
+        <img class="card-img-top w-100" itemprop="image" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14036_d.jpg" alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">Alice Através do Espelho</h4>
-          <p class="card-text">Alice atravessa para o outro lado do espelho e lá encontra um mundo diferente, com muitos conceitos invertidos e acontecimentos imprevisíveis, tendo como tema o jogo de xadrez. Na história, ela descobre um estranho mundo construído como um tabuleiro de xadrez, com peças brancas e vermelhas.</p>
+          <h4 class="card-title" itemprop="name">Alice Através do Espelho</h4>
+          <p class="card-text" itemprop="description">Alice atravessa para o outro lado do espelho e lá encontra um mundo diferente, com muitos conceitos invertidos e acontecimentos imprevisíveis, tendo como tema o jogo de xadrez. Na história, ela descobre um estranho mundo construído como um tabuleiro de xadrez, com peças brancas e vermelhas.</p>
           <a href="#" class="btn btn-primary">Comprar Ingresso</a>
         </div>
         <div class="card-footer text-muted text-xs-center">
@@ -144,11 +152,13 @@ Create a div `card-list` , within it you will create a wrapper ( use the tag you
     </div>
 
     <div class="cl-item">
-      <article class="card">
-        <img class="card-img-top w-100" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13918_d.jpg" alt="Card image cap">
+      <article class="card" itemscope itemtype="http://schema.org/Movie">
+        <meta itemprop="dateCreated" content="2016-06-17">
+        <meta itemprop="director" content="Bryan Singer">
+        <img class="card-img-top w-100" itemprop="image" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13918_d.jpg" alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">X-Men: Apocalipse</h4>
-          <p class="card-text">Apocalipse se passa uma década depois de Dias de um Futuro Esquecido e é uma próxima etapa na história. Desde o início da civilização, ele era adorado como um deus. Apocalipse, o primeiro e mais poderoso mutante do universo X-Men da Marvel, acumulou os poderes de muitos outros mutantes, tornando-se imortal e invencível. Ao acordar depois de milhares de anos, ele está desiludido com o mundo em que se encontra e recruta uma equipe de mutantes poderosos, incluindo um Magneto desanimado, para purificar a humanidade e criar uma nova ordem mundial, sobre a qual ele reinará. Como o destino da Terra está na balança, Raven, com a ajuda do Professor Xavier deve levar uma equipe de jovens X-Men para parar o seu maior inimigo e salvar a humanidade da destruição completa.</p>
+          <h4 class="card-title" itemprop="name">X-Men: Apocalipse</h4>
+          <p class="card-text" itemprop="description">Apocalipse se passa uma década depois de Dias de um Futuro Esquecido e é uma próxima etapa na história. Desde o início da civilização, ele era adorado como um deus. Apocalipse, o primeiro e mais poderoso mutante do universo X-Men da Marvel, acumulou os poderes de muitos outros mutantes, tornando-se imortal e invencível. Ao acordar depois de milhares de anos, ele está desiludido com o mundo em que se encontra e recruta uma equipe de mutantes poderosos, incluindo um Magneto desanimado, para purificar a humanidade e criar uma nova ordem mundial, sobre a qual ele reinará. Como o destino da Terra está na balança, Raven, com a ajuda do Professor Xavier deve levar uma equipe de jovens X-Men para parar o seu maior inimigo e salvar a humanidade da destruição completa.</p>
           <a href="#" class="btn btn-primary">Comprar Ingresso</a>
         </div>
         <div class="card-footer text-muted text-xs-center">
@@ -176,11 +186,13 @@ Create a div `card-list` , within it you will create a wrapper ( use the tag you
     </div>
 
     <div class="cl-item">
-      <article class="card">
-        <img class="card-img-top w-100" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13756_d.jpg" alt="Card image cap">
+      <article class="card" itemscope itemtype="http://schema.org/Movie">
+        <meta itemprop="dateCreated" content="2016-06-17">
+        <meta itemprop="director" content="Anthony Russo, Joe Russo">
+        <img class="card-img-top w-100" itemprop="image" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13756_d.jpg" alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">Capitão América: Guerra Civil</h4>
-          <p class="card-text">Depois dos eventos de Vingadores: Era de Ultron, `Capitão América: Guerra Civil´ da Marvel encontra Steve Rogers liderando o recém formado grupo de Vingadores em seus esforços contínuos para proteger a humanidade. Mas após outro incidente, envolvendo os Vingadores, resultar em danos colaterais, aumenta a pressão política para instalar um sistema de responsabilização, comandado por uma agência do governo para supervisionar e dirigir a equipe. O novo status quo divide os Vingadores, resultando em duas frentes - uma liderada por Steve Rogers e seu desejo de que os Vingadores se mantenham livres para defender a humanidade sem a interferência do governo, e a outra que segue a surpreendente decisão de Tony Stark de apoiar a responsabilização e supervisão do governo.</p>
+          <h4 class="card-title" itemprop="name">Capitão América: Guerra Civil</h4>
+          <p class="card-text" itemprop="description">Depois dos eventos de Vingadores: Era de Ultron, `Capitão América: Guerra Civil´ da Marvel encontra Steve Rogers liderando o recém formado grupo de Vingadores em seus esforços contínuos para proteger a humanidade. Mas após outro incidente, envolvendo os Vingadores, resultar em danos colaterais, aumenta a pressão política para instalar um sistema de responsabilização, comandado por uma agência do governo para supervisionar e dirigir a equipe. O novo status quo divide os Vingadores, resultando em duas frentes - uma liderada por Steve Rogers e seu desejo de que os Vingadores se mantenham livres para defender a humanidade sem a interferência do governo, e a outra que segue a surpreendente decisão de Tony Stark de apoiar a responsabilização e supervisão do governo.</p>
           <a href="#" class="btn btn-primary">Comprar Ingresso</a>
         </div>
         <div class="card-footer text-muted text-xs-center">
