@@ -18,13 +18,15 @@
 
 {% if site.github %}
   <script src="{{ site.baseurl }}/dist/js/bootstrap.min.js"></script>
+  <script src="{{ site.baseurl }}/dist/js/vendor.min.js"></script>
+  <script src="{{ site.baseurl }}/dist/js/ingresso.min.js"></script>
 {% else %}
-  <script src="{{ site.baseurl }}/dist/js/bootstrap.js"></script>
+<script src="{{ site.baseurl }}/dist/js/bootstrap.js"></script>
+<script src="{{ site.baseurl }}/dist/js/vendor.js"></script>
+<script src="{{ site.baseurl }}/dist/js/ingresso.js"></script>
 {% endif %}
 
-<script src="{{ site.baseurl }}/assets/js/vendor.min.js"></script>
 
-<script src="{{ site.baseurl }}/assets/js/ingresso.min.js"></script>
 
 {% if site.github %}
   <script src="{{ site.baseurl }}/assets/js/docs.min.js"></script>

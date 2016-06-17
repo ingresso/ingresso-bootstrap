@@ -33,7 +33,7 @@
 
     // Slide page component
     $('.bd-example .menu-lk, .bd-example .sld-pg-back').click(function (e) {
-      $(this).closest('li').toggleClass('active')
+      $(this).closest('.sld-pg-lk').toggleClass('active')
       $(this).closest('.slide-page').toggleClass('active')
 
     })

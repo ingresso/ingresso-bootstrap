@@ -1,156 +1,161 @@
-var components = {
-
-			collapse:{
-				'js-md':{
-					match:function(){
-
-						//temp
-						$('.js-md[data-toggle="collapse"]').each(function(){
-
-							var $element = $(this);
-
-							$($element.attr('href')).removeClass('collapse').removeAttr('style');
-							$element.data('original-href',$element.attr('href'));
-							$element.removeAttr('href');
+(function(){
+	
+	/* TODO - precisa refazer a estrutura desse codigo */
+	var components = {
 
 
-						});
+				collapse:{
+					'js-md':{
+						match:function(){
 
-						console.log('match dropdown medium');
+							//temp
+							$('.js-md[data-toggle="collapse"]').each(function(){
+
+								var $element = $(this);
+
+								$($element.attr('href')).removeClass('collapse').removeAttr('style');
+								$element.data('original-href',$element.attr('href'));
+								$element.removeAttr('href');
+
+
+							});
+
+							console.log('match dropdown medium');
+						},
+						unmatch:function(){
+
+							//temp
+							$('.js-md[data-toggle="collapse"]').each(function(){
+
+								var $element = $(this);
+
+								$($element.data('original-href')).addClass('collapse');
+								$element.attr('href',$element.data('original-href'));
+								
+
+							});
+
+							console.log('unmatch dropdown medium');
+						},
+						setup:function(){
+							//console.log('iniciou dropdown medium');
+						}
 					},
-					unmatch:function(){
+					'js-sm':{
+						match:function(){
+							
+							console.log('match dropdown small')
+						},
+						unmatch:function(){
+							console.log('unmatch dropdown small');
+						},
+						setup:function(){
+							//console.log('iniciou dropdown small');
+						}
+					}
+				},
+				/*carousel:{
+					'js-md':{
+						match:function(){
+							console.log('match carousel medium');
+						},
+						unmatch:function(){
+							console.log('unmatch carousel medium');
+						},
+						setup:function(){
+							console.log('iniciou carousel medium');
+						}
+					},
+					'js-sm':{
+						match:function(){
+							console.log('match carousel small');
+						},
+						unmatch:function(){
+							console.log('unmatch carousel small');
+						},
+						setup:function(){
+							console.log('iniciou carousel small');
+						}
+					}
+				}*/
+			}
+			var medias = {
+				small:'(min-width:568px)',
+				medium:'(min-width:769px)'
+			};
 
-						//temp
-						$('.js-md[data-toggle="collapse"]').each(function(){
+			for(var media in medias){
 
-							var $element = $(this);
+				var this_media_components = [];
 
-							$($element.data('original-href')).addClass('collapse');
-							$element.attr('href',$element.data('original-href'));
+				/*
+					para cada componente, verifica-se quais batem com a midia atual
+					reune-se todos os componentes dessa media para ser executado posteriormente
+					no local adequado
+				*/
+				for (var component in components){
+
+					if(media == 'small'){
+						
+						this_media_components.push(components[component]['js-sm']);
+					}
+					else if(media == 'medium'){
+
+						this_media_components.push(components[component]['js-md']);	
+					}
+				}
+
+				//para cada media, executa-se equire.register()
+				enquire.register(medias[media], 
+
+					$.extend({},{
+
+						match:function(){
 							
 
-						});
+							//para cada uma das funcoes de cada componente, executa-se essa funcao
+							for(var i=0, media_components_len = this_media_components.length;
+								i < media_components_len;i++
+								){
 
-						console.log('unmatch dropdown medium');
-					},
-					setup:function(){
-						//console.log('iniciou dropdown medium');
-					}
-				},
-				'js-sm':{
-					match:function(){
-						
-						console.log('match dropdown small')
-					},
-					unmatch:function(){
-						console.log('unmatch dropdown small');
-					},
-					setup:function(){
-						//console.log('iniciou dropdown small');
-					}
-				}
-			},
-			/*carousel:{
-				'js-md':{
-					match:function(){
-						console.log('match carousel medium');
-					},
-					unmatch:function(){
-						console.log('unmatch carousel medium');
-					},
-					setup:function(){
-						console.log('iniciou carousel medium');
-					}
-				},
-				'js-sm':{
-					match:function(){
-						console.log('match carousel small');
-					},
-					unmatch:function(){
-						console.log('unmatch carousel small');
-					},
-					setup:function(){
-						console.log('iniciou carousel small');
-					}
-				}
-			}*/
-		}
-		var medias = {
-			small:'(min-width:568px)',
-			medium:'(min-width:769px)'
-		};
+								if(this_media_components[i].match){	
 
-		for(var media in medias){
+									this_media_components[i].match.apply(undefined);
+								}
+							}
+						},
+						unmatch:function(){
+							
+							for(var i=0, media_components_len = this_media_components.length;
+								i < media_components_len;i++
+								){
 
-			var this_media_components = [];
+								if(this_media_components[i].unmatch){
 
-			/*
-				para cada componente, verifica-se quais batem com a midia atual
-				reune-se todos os componentes dessa media para ser executado posteriormente
-				no local adequado
-			*/
-			for (var component in components){
+									this_media_components[i].unmatch.apply(undefined);
+								}
+							}
+						},
+						setup:function(){
+							
+							for(var i=0, media_components_len = this_media_components.length;
+								i < media_components_len;i++
+								){
 
-				if(media == 'small'){
-					
-					this_media_components.push(components[component]['js-sm']);
-				}
-				else if(media == 'medium'){
+								if(this_media_components[i].setup){
 
-					this_media_components.push(components[component]['js-md']);	
-				}
-			}
+									this_media_components[i].setup.apply(undefined);
+								}
 
-			//para cada media, executa-se equire.register()
-			enquire.register(medias[media], 
-
-				$.extend({},{
-
-					match:function(){
-						
-
-						//para cada uma das funcoes de cada componente, executa-se essa funcao
-						for(var i=0, media_components_len = this_media_components.length;
-							i < media_components_len;i++
-							){
-
-							if(this_media_components[i].match){	
-
-								this_media_components[i].match.apply(undefined);
 							}
 						}
 					},
-					unmatch:function(){
-						
-						for(var i=0, media_components_len = this_media_components.length;
-							i < media_components_len;i++
-							){
-
-							if(this_media_components[i].unmatch){
-
-								this_media_components[i].unmatch.apply(undefined);
-							}
-						}
-					},
-					setup:function(){
-						
-						for(var i=0, media_components_len = this_media_components.length;
-							i < media_components_len;i++
-							){
-
-							if(this_media_components[i].setup){
-
-								this_media_components[i].setup.apply(undefined);
-							}
-
-						}
-					}
-				},
-				{	
-				    // OPTIONAL, defaults to false
-				    // If set to true, defers execution of the setup function 
-				    // until the first time the media query is matched
-				    deferSetup : true
-				})
-			);
-		}
+					{	
+					    // OPTIONAL, defaults to false
+					    // If set to true, defers execution of the setup function 
+					    // until the first time the media query is matched
+					    deferSetup : true
+					})
+				);
+			};
+})();
