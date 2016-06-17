@@ -31,16 +31,18 @@
 
 - title: Ingresso Components
   pages:
-    - title: Alerts Ingresso
+    - title: Alerts
     - title: Card List
     - title: Collapse
-    - title: Footer Ingresso
-    - title: Forms Ingresso
-    - title: Header Ingresso
-    - title: Icons Ingresso
+    - title: Footer
+    - title: Forms
+    - title: Header
+    - title: Icons
     - title: Link Dropdown
     - title: Rating
-    - title: Tag Ingresso
+    - title: Tag
+    - title: Slide Page
+    - title: Carousel
 
 - title: Components
   pages:

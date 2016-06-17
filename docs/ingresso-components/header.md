@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Header Ingresso
+title: Header
 group: ingresso-components
 ---
 

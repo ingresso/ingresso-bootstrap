@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Tags Ingresso
+title: Tags
 group: ingresso-components
 ---
 
