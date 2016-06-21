@@ -17,7 +17,7 @@ const CarouselIngresso = (($) => {
    * ------------------------------------------------------------------------
    */
 
-  const NAME                = 'ingressoCarousel'
+  const NAME                = 'carouselIngresso'
   const VERSION             = '4.0.0-alpha.2'
   const DATA_KEY            = 'bs.ingresso.carousel'
   const EVENT_KEY           = `.${DATA_KEY}`

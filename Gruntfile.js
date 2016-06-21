@@ -183,7 +183,6 @@ module.exports = function (grunt) {
       ingresso:{
         src:[
           'js/src/ingresso/enquireConfig.js'
-          /*'js/dist/ingresso/carousel.js'*/
         ],
         dest: 'dist/js/ingresso.js'
       }
