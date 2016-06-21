@@ -7189,7 +7189,7 @@ ol {
 }
 
 #footer {
-  max-width: 980px;
+  max-width: 1140px;
 }
 
 #footer .ft-newsletter, #footer .ft-user-channel, #footer .ft-sitemap, #footer .ft-social, #footer .ft-apps, #footer .ft-phone-buy {
@@ -8090,5 +8090,38 @@ ol {
 
 .carousel-ingresso .carousel-indicators .active {
   opacity: 1;
+}
+
+.media.ing-model .media-body {
+  font-size: 0.75rem;
+}
+
+.media.ing-model .media-body.mb-cinema .media-heading {
+  color: #d3793d;
+}
+
+.media.ing-model .media-body.mb-theater .media-heading {
+  color: #b96485;
+}
+
+.media.ing-model .media-body.mb-show .media-heading {
+  color: #79861b;
+}
+
+.media.ing-model .media-body.mb-events .media-heading {
+  color: #53488a;
+}
+
+.media.ing-model .media-body.mb-circus .media-heading {
+  color: #dadd00;
+}
+
+.media.ing-model .media-body.mb-promo .media-heading {
+  color: #0db5b6;
+}
+
+.media.ing-model .media-heading {
+  font-size: 0.875rem;
+  margin: 0;
 }
 /*# sourceMappingURL=bootstrap.css.map */
