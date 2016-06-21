@@ -167,7 +167,8 @@ module.exports = function (grunt) {
           'js/src/scrollspy.js',
           'js/src/tab.js',
           'js/src/tooltip.js',
-          'js/src/popover.js'
+          'js/src/popover.js',
+          'js/src/ingresso/carousel.js'
         ],
         dest: 'dist/js/<%= pkg.name %>.js'
       },
@@ -181,8 +182,8 @@ module.exports = function (grunt) {
       },
       ingresso:{
         src:[
-          'js/src/ingresso/enquireConfig.js',
-          'js/dist/ingresso/carousel.js'
+          'js/src/ingresso/enquireConfig.js'
+          /*'js/dist/ingresso/carousel.js'*/
         ],
         dest: 'dist/js/ingresso.js'
       }

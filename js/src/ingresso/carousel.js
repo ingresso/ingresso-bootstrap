@@ -4,7 +4,7 @@ import Util from './util'
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0-alpha.2): carousel.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * @author Arthur Franco
  * --------------------------------------------------------------------------
  */
 
@@ -17,9 +17,9 @@ const CarouselIngresso = (($) => {
    * ------------------------------------------------------------------------
    */
 
-  const NAME                = 'carousel-ingresso'
+  const NAME                = 'ingressoCarousel'
   const VERSION             = '4.0.0-alpha.2'
-  const DATA_KEY            = 'bs.carousel-ingresso'
+  const DATA_KEY            = 'bs.ingresso.carousel'
   const EVENT_KEY           = `.${DATA_KEY}`
   const DATA_API_KEY        = '.data-api'
   const JQUERY_NO_CONFLICT  = $.fn[NAME]
@@ -108,8 +108,12 @@ const CarouselIngresso = (($) => {
     _showThumbnails() {
 
 
-      $(Selector.DATA_SLIDE, this._indicatorsElement).each(function(){
-        console.log(this);
+      $(Selector.DATA_SLIDE, this._indicatorsElement).each(function(i){
+
+        let $indicatorElement = $(this);
+        let $slideImage = $(Selector.ITEM).eq(i).children('img');
+        
+        $indicatorElement.css('background-image','url('+$slideImage.attr('src')+')');
 
       })
     }
@@ -167,7 +171,7 @@ const CarouselIngresso = (($) => {
         config.interval = false
       }
 
-      Carousel._jQueryInterface.call($(target), config)
+      CarouselIngresso._jQueryInterface.call($(target), config)
 
       if (slideIndex) {
         $(target).data(DATA_KEY).to(slideIndex)
@@ -209,7 +213,7 @@ const CarouselIngresso = (($) => {
     return CarouselIngresso._jQueryInterface
   }
 
-  return Carousel
+  return CarouselIngresso
 
 })(jQuery)
 

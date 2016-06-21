@@ -14,7 +14,7 @@ The only difference between Bootstrap's one and Ingresso's is the class <span cl
 {% example html %}
 <div id="carousel-example-generic" class="carousel slide carousel-ingresso" data-ride="carousel-ingresso">
   <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active" style="background-image:url(http://localhost:9001/assets/img/europe-wallpaper-30.jpg);background-size:contain;"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>

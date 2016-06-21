@@ -11,7 +11,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== 'function' 
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0-alpha.2): carousel.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * @author Arthur Franco
  * --------------------------------------------------------------------------
  */
 
@@ -23,9 +23,9 @@ var CarouselIngresso = (function ($) {
    * ------------------------------------------------------------------------
    */
 
-  var NAME = 'carousel-ingresso';
+  var NAME = 'ingressoCarousel';
   var VERSION = '4.0.0-alpha.2';
-  var DATA_KEY = 'bs.carousel-ingresso';
+  var DATA_KEY = 'bs.ingresso.carousel';
   var EVENT_KEY = '.' + DATA_KEY;
   var DATA_API_KEY = '.data-api';
   var JQUERY_NO_CONFLICT = $.fn[NAME];
@@ -113,8 +113,13 @@ var CarouselIngresso = (function ($) {
 
       value: function _showThumbnails() {
 
-        $(Selector.DATA_SLIDE, this._indicatorsElement).each(function () {
-          console.log(this);
+        $(Selector.DATA_SLIDE, this._indicatorsElement).each(function (i) {
+
+          var $indicatorElement = $(this);
+          var $slideImage = $(Selector.ITEM).eq(i).children('img');
+
+          $indicatorElement.css('background-image', 'url(' + $slideImage.attr('src') + ')');
+          //$indicatorElement.attr('data-teste','url:('+$slideImage.attr('src')+')');
         });
       }
 
@@ -173,7 +178,7 @@ var CarouselIngresso = (function ($) {
           config.interval = false;
         }
 
-        Carousel._jQueryInterface.call($(target), config);
+        CarouselIngresso._jQueryInterface.call($(target), config);
 
         if (slideIndex) {
           $(target).data(DATA_KEY).to(slideIndex);
@@ -218,6 +223,6 @@ var CarouselIngresso = (function ($) {
     return CarouselIngresso._jQueryInterface;
   };
 
-  return Carousel;
+  return CarouselIngresso;
 })(jQuery);
 //# sourceMappingURL=carousel.js.map
