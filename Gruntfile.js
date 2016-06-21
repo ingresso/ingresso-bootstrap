@@ -75,7 +75,8 @@ module.exports = function (grunt) {
           'js/dist/scrollspy.js' : 'js/src/scrollspy.js',
           'js/dist/tab.js'       : 'js/src/tab.js',
           'js/dist/tooltip.js'   : 'js/src/tooltip.js',
-          'js/dist/popover.js'   : 'js/src/popover.js'
+          'js/dist/popover.js'   : 'js/src/popover.js',
+          'js/dist/ingresso/carousel.js'   : 'js/src/ingresso/carousel.js'
         }
       },
       dist: {
@@ -166,7 +167,8 @@ module.exports = function (grunt) {
           'js/src/scrollspy.js',
           'js/src/tab.js',
           'js/src/tooltip.js',
-          'js/src/popover.js'
+          'js/src/popover.js',
+          'js/src/ingresso/carousel.js'
         ],
         dest: 'dist/js/<%= pkg.name %>.js'
       },
@@ -181,6 +183,7 @@ module.exports = function (grunt) {
       ingresso:{
         src:[
           'js/src/ingresso/enquireConfig.js'
+          /*'js/dist/ingresso/carousel.js'*/
         ],
         dest: 'dist/js/ingresso.js'
       }
@@ -200,15 +203,18 @@ module.exports = function (grunt) {
       },
       vendor: {
         src: 'dist/js/vendor.js',
-        dest: 'docs/assets/js/vendor.min.js'
+        dest: 'dist/js/vendor.min.js'
       },
       ingresso: {
         src: 'dist/js/ingresso.js',
-        dest: 'docs/assets/js/ingresso.min.js'
+        dest: 'dist/js/ingresso.min.js'
       },
       docsJs: {
-        src: configBridge.paths.docsJs,
-        dest: 'docs/assets/js/docs.min.js'
+        files:{
+          'docs/assets/js/docs.min.js' : configBridge.paths.docsJs,
+          'docs/assets/js/ingresso.min.js' : 'dist/js/ingresso.js',
+          'docs/assets/js/vendor.min.js' : 'dist/js/vendor.min.js'
+        }
       }
     },
 
