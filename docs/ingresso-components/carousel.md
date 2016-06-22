@@ -40,10 +40,10 @@ The only difference between Bootstrap's one and Ingresso's is the class <code cl
     <span class="sr-only">Next</span>
   </a>
   <ol class="carousel-indicators row">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active col-md-2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1" class="col-md-2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2" class="col-md-2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3" class="col-md-2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active col-md-2 carousel-indicator"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1" class="col-md-2 carousel-indicator"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2" class="col-md-2 carousel-indicator"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3" class="col-md-2 carousel-indicator"></li>
   </ol>
 </div>
 {% endexample %}

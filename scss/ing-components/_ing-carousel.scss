@@ -13,7 +13,7 @@
 		margin:0;
 
 
-		li{
+		.carousel-indicator{
 			opacity:0.5;
 			width:67px;
 			height:60px;
@@ -62,7 +62,7 @@
 
 	.carousel-ingresso{
 		.carousel-indicators{
-			li{
+			.carousel-indicator{
 				width:95px;
 				height:47px;
 			}
