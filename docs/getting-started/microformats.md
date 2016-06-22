@@ -111,7 +111,7 @@ This is the recommended format by Google and It's more friendly than use HTML at
 </script>
 {% endhighlight %}
 
-## Using a list movie
+## Using a movie list
 
 May be used in any movie catalog.
 

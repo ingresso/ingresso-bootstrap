@@ -23,7 +23,7 @@ var CarouselIngresso = (function ($) {
    * ------------------------------------------------------------------------
    */
 
-  var NAME = 'ingressoCarousel';
+  var NAME = 'carouselIngresso';
   var VERSION = '4.0.0-alpha.2';
   var DATA_KEY = 'bs.ingresso.carousel';
   var EVENT_KEY = '.' + DATA_KEY;

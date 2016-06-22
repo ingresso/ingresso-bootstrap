@@ -1,31 +1,77 @@
 .carousel-ingresso{
-	padding-bottom:75px;
+	overflow:hidden;
+	.carousel-content{position:relative;}
 
 	.carousel-control{
-		bottom:75px;
+		background:transparent;
+		z-index:1;
+
+		.icon-prev, .icon-next{
+			&:before{
+				content:'';
+			}
+			fill:#fff;
+		}
 	}
+
 	.carousel-indicators{
-		bottom:0;
-		left:0;
-		right:0;
-		margin:0 5px;
+		position:static;
 		width:auto;
+		white-space:nowrap;
+		word-spacing:-4px;
+		overflow-x:auto;
 		text-align:left;
+		margin:0 -5px;
 
 
-		li{
+		.carousel-indicator{
 			opacity:0.5;
+			width:70px;
+			height:34px;
 			background-size:contain;
-			width:65px;
-			height:65px;
+			background-position:center;
+			background-repeat:no-repeat;
 			border-radius:0;
 			border:0;
-			margin:0;
+			margin:0 0 0 5px;
 
 		}
 
 		.active{
 			opacity:1;
+		}
+	}
+	
+
+	/* feito dessa forma temporariamente pois nao existe definicao de cores de eventos */
+	.carousel-caption{
+		background:#d3793d;
+		background:rgba(211, 121, 61, 0.5);
+		padding:10px;
+		left:0;
+		right:0;
+		bottom:0;
+		text-align:left;
+	}
+
+	.carousel-inner{
+		margin-bottom:5px;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.carousel-ingresso{
+		.carousel-indicators{
+			white-space:normal;
+			.carousel-indicator{
+				width:80px;
+				height:40px;
+			}
+		}
+		.carousel-caption{
+			padding:15px;
+
+			> :last-child{margin-bottom:0;}
 		}
 	}
 }
