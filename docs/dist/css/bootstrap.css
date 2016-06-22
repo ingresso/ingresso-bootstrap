@@ -7949,9 +7949,27 @@ ol {
 }
 
 @media (min-width: 768px) {
+  .card {
+    max-width: 225px;
+    width: auto;
+  }
   .card-list .cl-wrapper {
     white-space: normal;
     overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .card-list .cl-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0 10px;
   }
 }
 
@@ -8080,7 +8098,8 @@ ol {
 
 .carousel-ingresso .carousel-indicators li {
   opacity: 0.5;
-  background-color: red;
+  -webkit-background-size: contain;
+          background-size: contain;
   width: 65px;
   height: 65px;
   border-radius: 0;
@@ -8105,23 +8124,78 @@ ol {
 }
 
 .media.ing-model .media-body.mb-show .media-heading {
-  color: #79861b;
+  color: #afbe3f;
 }
 
 .media.ing-model .media-body.mb-events .media-heading {
-  color: #53488a;
+  color: #52478a;
 }
 
 .media.ing-model .media-body.mb-circus .media-heading {
-  color: #dadd00;
+  color: #ead11c;
 }
 
 .media.ing-model .media-body.mb-promo .media-heading {
-  color: #0db5b6;
+  color: #0cb0b1;
 }
 
 .media.ing-model .media-heading {
   font-size: 0.875rem;
   margin: 0;
+}
+
+.high-title {
+  color: #fff;
+  padding: 5px 10px 5px 10px;
+  font-size: 1.375rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.high-title * {
+  vertical-align: middle;
+}
+
+.high-title.ht-cinema {
+  background: #d3793d;
+}
+
+.high-title.ht-theater {
+  background: #b96485;
+}
+
+.high-title.ht-show {
+  background: #afbe3f;
+}
+
+.high-title.ht-events {
+  background: #52478a;
+}
+
+.high-title.ht-circus {
+  background: #ead11c;
+}
+
+.high-title.ht-promo {
+  background: #0cb0b1;
+}
+
+.high-title .svg-icon {
+  margin-right: 10px;
+  fill: #fff;
+}
+
+.high-title .ht-lk {
+  float: right;
+  margin-left: auto;
+  font-size: 0.9375rem;
+  color: #fff;
+  font-family: 'Trebuchet Ms';
 }
 /*# sourceMappingURL=bootstrap.css.map */

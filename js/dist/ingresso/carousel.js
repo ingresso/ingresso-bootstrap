@@ -119,7 +119,6 @@ var CarouselIngresso = (function ($) {
           var $slideImage = $(Selector.ITEM).eq(i).children('img');
 
           $indicatorElement.css('background-image', 'url(' + $slideImage.attr('src') + ')');
-          //$indicatorElement.attr('data-teste','url:('+$slideImage.attr('src')+')');
         });
       }
 

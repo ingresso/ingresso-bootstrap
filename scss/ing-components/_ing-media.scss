@@ -1,0 +1,45 @@
+// Ingresso Media
+
+.media{
+  &.ing-model{
+
+    .media-body{
+      font-size: 0.75rem;
+      &.mb-cinema{
+        .media-heading{
+          color:#d3793d;
+        }
+      }
+      &.mb-theater{
+        .media-heading{
+          color:#b96485;
+        }
+      }
+      &.mb-show{
+        .media-heading{
+          color:#afbe3f;
+        }
+      }
+      &.mb-events{
+        .media-heading{
+          color:#52478a;
+        }
+      }
+      &.mb-circus{
+        .media-heading{
+          color:#ead11c;
+        }
+      }
+      &.mb-promo{
+        .media-heading{
+          color:#0cb0b1;
+        }
+      }
+    }
+
+    .media-heading{
+      font-size: 0.875rem;
+      margin:0;
+    }
+  }
+}
