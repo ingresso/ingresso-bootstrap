@@ -1,34 +1,39 @@
 .carousel-ingresso{
+	overflow:hidden;
+	.carousel-content{position:relative;}
 
 	.carousel-control{
-		bottom:53px;
 		background:transparent;
+		z-index:1;
+
+		.icon-prev, .icon-next{
+			&:before{
+				content:'';
+			}
+			fill:#fff;
+		}
 	}
+
 	.carousel-indicators{
 		position:static;
 		width:auto;
 		white-space:nowrap;
+		word-spacing:-4px;
 		overflow-x:auto;
 		text-align:left;
-		margin:0;
+		margin:0 -5px;
 
 
 		.carousel-indicator{
 			opacity:0.5;
-			width:67px;
-			height:60px;
-			padding-left:5px;
-			padding-right:5px;
+			width:70px;
+			height:34px;
 			background-size:contain;
 			background-position:center;
 			background-repeat:no-repeat;
 			border-radius:0;
 			border:0;
-			margin:0;
-
-			&:first-child{
-				margin-left:0;
-			}
+			margin:0 0 0 5px;
 
 		}
 
@@ -36,16 +41,13 @@
 			opacity:1;
 		}
 	}
-	/* temporario ate o tamanho da imagem ser definido */
-	.carousel-inner > .carousel-item > img{
-		width:100%;
-	}
+	
 
 	/* feito dessa forma temporariamente pois nao existe definicao de cores de eventos */
 	.carousel-caption{
 		background:#d3793d;
 		background:rgba(211, 121, 61, 0.5);
-		padding:15px;
+		padding:10px;
 		left:0;
 		right:0;
 		bottom:0;
@@ -57,16 +59,19 @@
 	}
 }
 
-//mobile carousel
-@media screen and (min-width: 35.5em){
-
+@include media-breakpoint-up(md) {
 	.carousel-ingresso{
 		.carousel-indicators{
+			white-space:normal;
 			.carousel-indicator{
-				width:95px;
-				height:47px;
+				width:80px;
+				height:40px;
 			}
 		}
+		.carousel-caption{
+			padding:15px;
+
+			> :last-child{margin-bottom:0;}
+		}
 	}
-	
 }

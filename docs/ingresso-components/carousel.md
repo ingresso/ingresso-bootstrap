@@ -13,37 +13,55 @@ The only difference between Bootstrap's one and Ingresso's is the class <code cl
 
 {% example html %}
 <div id="carousel-example-generic" class="carousel slide carousel-ingresso" data-ride="carousel-ingresso">
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active">
-      <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14207_d.jpg" alt="First slide">
-      <div class="carousel-caption">
-        <h3>Mais forte que o mundo - A história de José Aldo</h3>
-        <p>Baseado na história do expoente brasileiro de lutas de Vale-tudo ...</p>
+  <div class="carousel-content">
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <svg class="svg-icon icon-prev" width="30" height="30">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow2-2"></use>
+      </svg>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <svg class="svg-icon icon-next" width="30" height="30" aria-hidden="true">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow2"></use>
+      </svg>
+      <span class="sr-only">Next</span>
+    </a>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14207_d.jpg" alt="First slide">
+        <div class="carousel-caption">
+          <h3>Mais forte que o mundo - A história de José Aldo</h3>
+          <p class="hidden-xs-down">Baseado na história do expoente brasileiro de lutas de Vale-tudo ...</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14040_d.jpg" alt="Second slide">
+        <div class="carousel-caption">
+          <h3>Mais forte que o mundo - A história de José Aldo</h3>
+          <p class="hidden-xs-down">Baseado na história do expoente brasileiro de lutas de Vale-tudo ...</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13758_d.jpg" alt="Third slide">
+        <div class="carousel-caption">
+          <h3>Mais forte que o mundo - A história de José Aldo</h3>
+          <p class="hidden-xs-down">Baseado na história do expoente brasileiro de lutas de Vale-tudo ...</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14199_d.jpg" alt="Fourth slide">
+        <div class="carousel-caption">
+          <h3>Mais forte que o mundo - A história de José Aldo</h3>
+          <p class="hidden-xs-down">Baseado na história do expoente brasileiro de lutas de Vale-tudo ...</p>
+        </div>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14040_d.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13758_d.jpg" alt="Third slide">
-    </div>
-    <div class="carousel-item">
-      <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14199_d.jpg" alt="Fourth slide">
-    </div>
   </div>
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="icon-prev" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="icon-next" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-  <ol class="carousel-indicators row">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active col-md-2 carousel-indicator"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1" class="col-md-2 carousel-indicator"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2" class="col-md-2 carousel-indicator"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3" class="col-md-2 carousel-indicator"></li>
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active carousel-indicator"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1" class="carousel-indicator"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2" class="carousel-indicator"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3" class="carousel-indicator"></li>
   </ol>
 </div>
 {% endexample %}
