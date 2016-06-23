@@ -176,7 +176,8 @@ module.exports = function (grunt) {
         src:[
           'js/src/vendor/matchMedia.js',
           'js/src/vendor/enquire.js',
-          'js/src/vendor/floating-labels.js'
+          'js/src/vendor/floating-labels.js',
+          'js/src/vendor/swiper.jquery.js'
         ],
         dest: 'dist/js/vendor.js'
       },

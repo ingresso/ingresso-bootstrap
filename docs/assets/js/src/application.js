@@ -43,6 +43,42 @@
       e.preventDefault()
     })
 
+    //swiper
+
+   /* var galleryTop = new Swiper('.bd-example .gallery-top', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+        //autoplay:true
+    });
+    var galleryThumbs = new Swiper('.bd-example .gallery-thumbs', {
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true
+    });
+    galleryTop.params.control = galleryThumbs;
+    galleryThumbs.params.control = galleryTop;*/
+
+
+
+    var galleryTop2 = new Swiper('.bd-example .swiper-ingresso-side .gallery-top', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView:1,
+        centeredSlides: true
+        //autoplay:true
+    });
+    var galleryThumbs2 = new Swiper('.bd-example .swiper-ingresso-side .gallery-thumbs', {
+        slidesPerView:'auto',
+        direction:'vertical',
+        touchRatio: 0.2,
+        slideToClickedSlide: true
+    });
+
+    galleryTop2.params.control = galleryThumbs2;
+    galleryThumbs2.params.control = galleryTop2;
+
+
 
 
 
