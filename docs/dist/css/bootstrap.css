@@ -8080,68 +8080,139 @@ ol {
 }
 
 .carousel-ingresso {
-  padding-bottom: 75px;
+  overflow: hidden;
+  /* feito dessa forma temporariamente pois nao existe definicao de cores de eventos */
+}
+
+.carousel-ingresso .carousel-content {
+  position: relative;
 }
 
 .carousel-ingresso .carousel-control {
-  bottom: 75px;
+  background: transparent;
+  z-index: 1;
+}
+
+.carousel-ingresso .carousel-control .icon-prev, .carousel-ingresso .carousel-control .icon-next {
+  fill: #fff;
+}
+
+.carousel-ingresso .carousel-control .icon-prev:before, .carousel-ingresso .carousel-control .icon-next:before {
+  content: '';
 }
 
 .carousel-ingresso .carousel-indicators {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 5px;
+  position: static;
   width: auto;
+  white-space: nowrap;
+  word-spacing: -4px;
+  overflow-x: auto;
   text-align: left;
+  margin: 0 -5px;
 }
 
-.carousel-ingresso .carousel-indicators li {
+.carousel-ingresso .carousel-indicators .carousel-indicator {
   opacity: 0.5;
+  width: 70px;
+  height: 34px;
   -webkit-background-size: contain;
           background-size: contain;
-  width: 65px;
-  height: 65px;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 0;
   border: 0;
-  margin: 0;
+  margin: 0 0 0 5px;
 }
 
 .carousel-ingresso .carousel-indicators .active {
   opacity: 1;
 }
 
+.carousel-ingresso .carousel-caption {
+  background: #d3793d;
+  background: rgba(211, 121, 61, 0.5);
+  padding: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: left;
+}
+
+.carousel-ingresso .carousel-inner {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .carousel-ingresso .carousel-indicators {
+    white-space: normal;
+  }
+  .carousel-ingresso .carousel-indicators .carousel-indicator {
+    width: 80px;
+    height: 40px;
+  }
+  .carousel-ingresso .carousel-caption {
+    padding: 15px;
+  }
+  .carousel-ingresso .carousel-caption > :last-child {
+    margin-bottom: 0;
+  }
+}
+
 .media.ing-model .media-body {
   font-size: 0.75rem;
-}
-
-.media.ing-model .media-body.mb-cinema .media-heading {
-  color: #d3793d;
-}
-
-.media.ing-model .media-body.mb-theater .media-heading {
-  color: #b96485;
-}
-
-.media.ing-model .media-body.mb-show .media-heading {
-  color: #afbe3f;
-}
-
-.media.ing-model .media-body.mb-events .media-heading {
-  color: #52478a;
-}
-
-.media.ing-model .media-body.mb-circus .media-heading {
-  color: #ead11c;
-}
-
-.media.ing-model .media-body.mb-promo .media-heading {
-  color: #0cb0b1;
 }
 
 .media.ing-model .media-heading {
   font-size: 0.875rem;
   margin: 0;
+}
+
+.media.mb-cinema .media-heading {
+  color: #d3793d;
+}
+
+.media.mb-cinema .svg-icon {
+  fill: #d3793d;
+}
+
+.media.mb-theater .media-heading {
+  color: #b96485;
+}
+
+.media.mb-theater .svg-icon {
+  fill: #b96485;
+}
+
+.media.mb-show .media-heading {
+  color: #afbe3f;
+}
+
+.media.mb-show .svg-icon {
+  fill: #afbe3f;
+}
+
+.media.mb-events .media-heading {
+  color: #52478a;
+}
+
+.media.mb-events .svg-icon {
+  fill: #52478a;
+}
+
+.media.mb-circus .media-heading {
+  color: #ead11c;
+}
+
+.media.mb-circus .svg-icon {
+  fill: #ead11c;
+}
+
+.media.mb-promo .media-heading {
+  color: #0cb0b1;
+}
+
+.media.mb-promo .svg-icon {
+  fill: #0cb0b1;
 }
 
 .high-title {

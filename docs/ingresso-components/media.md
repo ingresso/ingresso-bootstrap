@@ -12,61 +12,61 @@ Media Component of Ingresso.com
 
 {% example html %}
 
-<div class="media ing-model">
+<div class="media ing-model mb-cinema">
   <a class="media-left" href="#">
     <svg class="svg-icon" width="30" height="30">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-popcorn"></use>
     </svg>
   </a>
-  <div class="media-body mb-cinema">
+  <div class="media-body">
     <h1 class="media-heading">Truque de Mestre: O Segundo ato</h1>
     Em cartaz em <a href="">111 Cinemas</a>
   </div>
 </div>
 
-<div class="media ing-model">
+<div class="media ing-model mb-theater">
   <a class="media-left" href="#">
     <svg class="svg-icon" width="30" height="30">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use>
     </svg>
   </a>
-  <div class="media-body mb-theater">
+  <div class="media-body">
     <h1 class="media-heading">Teatro</h1>
     Em cartaz em <a href="">999 Teatros</a>
   </div>
 </div>
 
-<div class="media ing-model">
+<div class="media ing-model mb-events">
   <a class="media-left" href="#">
     <svg class="svg-icon" width="30" height="30">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ticket-full"></use>
     </svg>
   </a>
-  <div class="media-body mb-events">
+  <div class="media-body">
     <h1 class="media-heading">Evento</h1>
     Em cartaz em <a href="">999 Eventos</a>
   </div>
 </div>
 
-<div class="media ing-model">
+<div class="media ing-model mb-show">
   <a class="media-left" href="#">
     <svg class="svg-icon" width="30" height="30">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-show"></use>
     </svg>
   </a>
-  <div class="media-body mb-show">
+  <div class="media-body">
     <h1 class="media-heading">Show</h1>
     Em cartaz em <a href="">1 Show</a>
   </div>
 </div>
 
-<div class="media ing-model">
+<div class="media ing-model mb-circus">
   <a class="media-left" href="#">
     <svg class="svg-icon" width="30" height="30">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-circus"></use>
     </svg>
   </a>
-  <div class="media-body mb-circus">
+  <div class="media-body">
     <h1 class="media-heading">Circo</h1>
     Em cartaz em <a href="">111 Circos</a>
   </div>
