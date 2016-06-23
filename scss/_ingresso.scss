@@ -7,11 +7,11 @@
 // Corrections for some issues in Bootstrap
 // Ul default model
 
-ul{
+ul {
 	list-style: none;
 	padding: 0;
 }
-ol{
+ol {
 	padding: 0;
 	list-style-position: inside;
 }
@@ -38,4 +38,5 @@ ol{
 @import "ing-components/ing-rating";
 @import "ing-components/ing-slide-page";
 @import "ing-components/ing-carousel";
-//@import "ing-components/ing-media";
+@import "ing-components/ing-media";
+@import "ing-components/ing-highlighted-titles";

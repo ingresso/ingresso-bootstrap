@@ -8142,77 +8142,6 @@ ol {
   margin-bottom: 5px;
 }
 
-/* swiper custom */
-.swiper-ingresso {
-  /* feito dessa forma temporariamente pois nao existe definicao de cores de eventos */
-}
-
-.swiper-ingresso .swiper-container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.swiper-ingresso .swiper-container img {
-  max-width: 100%;
-}
-
-.swiper-ingresso .gallery-top {
-  height: 80%;
-  width: 100%;
-}
-
-.swiper-ingresso .gallery-thumbs {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 10px 0;
-}
-
-.swiper-ingresso .gallery-thumbs .swiper-slide {
-  width: 150px;
-  margin-left: 10px;
-  opacity: 0.4;
-}
-
-.swiper-ingresso .gallery-thumbs .swiper-slide:first-child {
-  margin-left: 0;
-}
-
-.swiper-ingresso .gallery-thumbs .swiper-slide-active {
-  opacity: 1;
-}
-
-.swiper-ingresso .swiper-button-next {
-  right: 0;
-}
-
-.swiper-ingresso .swiper-button-prev {
-  left: 0;
-}
-
-.swiper-ingresso .swiper-button-next, .swiper-ingresso .swiper-button-prev {
-  background-image: none;
-  width: auto;
-  height: auto;
-  margin-top: -15px;
-  fill: #fff;
-}
-
-.swiper-ingresso .carousel-caption {
-  background: #d3793d;
-  background: rgba(211, 121, 61, 0.5);
-  padding: 10px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: left;
-}
-
-/* temp */
-.swiper-ingresso img {
-  width: 100%;
-}
-
 @media (min-width: 768px) {
   .carousel-ingresso .carousel-indicators {
     white-space: normal;
@@ -8226,46 +8155,6 @@ ol {
   }
   .carousel-ingresso .carousel-caption > :last-child {
     margin-bottom: 0;
-  }
-  /* swiper custom */
-  .swiper-ingresso {
-    /* arrows */
-    /* arrows on hover */
-  }
-  .swiper-ingresso .gallery-thumbs .swiper-slide {
-    width: 180px;
-  }
-  .swiper-ingresso .swiper-button-next, .swiper-ingresso .swiper-button-prev {
-    opacity: 0;
-    -webkit-transition: opacity 0.5s ease;
-    -o-transition: opacity 0.5s ease;
-    transition: opacity 0.5s ease;
-  }
-  .swiper-ingresso .swiper-button-disabled.swiper-button-next, .swiper-ingresso .swiper-button-disabled.swiper-button-prev {
-    opacity: 0;
-  }
-  .swiper-ingresso .swiper-container:hover .swiper-button-next, .swiper-ingresso .swiper-container:hover .swiper-button-prev {
-    opacity: 1;
-  }
-  .swiper-ingresso .swiper-container:hover .swiper-button-disabled {
-    opacity: 0.35;
-  }
-  /* swiper with side thumbs */
-  .swiper-ingresso-side {
-    padding-right: 190px;
-  }
-  .swiper-ingresso-side .gallery-top {
-    float: left;
-  }
-  .swiper-ingresso-side .gallery-thumbs {
-    width: 180px;
-    float: right;
-    padding: 0;
-    margin-right: -190px;
-  }
-  .swiper-ingresso-side .gallery-thumbs .swiper-slide {
-    margin-left: 0;
-    margin-bottom: 5px;
   }
 }
 

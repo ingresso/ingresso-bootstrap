@@ -69,10 +69,22 @@
 
 
 @include media-breakpoint-up(md) {
+
+  .card{
+    max-width: 225px;
+    width: auto;
+  }
+
   .card-list{
     .cl-wrapper{
       white-space: normal;
       overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .cl-item{
+      flex:1;
+      margin:0 10px;
     }
   }
 }

@@ -1,0 +1,64 @@
+// Ingresso Media
+
+.media{
+  &.ing-model{
+
+    .media-body{
+      font-size: 0.75rem;
+    }
+
+    .media-heading{
+      font-size: 0.875rem;
+      margin:0;
+    }
+  }
+
+  &.mb-cinema{
+    .media-heading{
+      color:#d3793d;
+    }
+    .svg-icon{
+      fill:#d3793d;
+    }
+  }
+  &.mb-theater{
+    .media-heading{
+      color:#b96485;
+    }
+    .svg-icon{
+      fill:#b96485;
+    }
+  }
+  &.mb-show{
+    .media-heading{
+      color:#afbe3f;
+    }
+    .svg-icon{
+      fill:#afbe3f;
+    }
+  }
+  &.mb-events{
+    .media-heading{
+      color:#52478a;
+    }
+    .svg-icon{
+      fill:#52478a;
+    }
+  }
+  &.mb-circus{
+    .media-heading{
+      color:#ead11c;
+    }
+    .svg-icon{
+      fill:#ead11c;
+    }
+  }
+  &.mb-promo{
+    .media-heading{
+      color:#0cb0b1;
+    }
+    .svg-icon{
+      fill:#0cb0b1;
+    }
+  }
+}
