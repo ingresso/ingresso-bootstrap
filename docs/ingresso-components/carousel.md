@@ -134,7 +134,7 @@ Another Carousel used by Ingresso.com is Swiper. See more info on <a href="http:
   </div>
   <div class="swiper-container gallery-thumbs">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14207_d.jpg" alt=""></div>
+      <div class="swiper-slide swiper-slide-active"><img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14207_d.jpg" alt=""></div>
       <div class="swiper-slide"><img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14040_d.jpg" alt=""></div>
       <div class="swiper-slide"><img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13758_d.jpg" alt=""></div>
       <div class="swiper-slide"><img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14199_d.jpg" alt=""></div>
