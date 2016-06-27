@@ -79,3 +79,127 @@ Call carousel manually with:
 {% highlight js %}
 $('.carousel').ingressoCarousel()
 {% endhighlight %}
+
+### Swiper
+
+Another Carousel used by Ingresso.com is Swiper. See more info on <a href="http://idangero.us/swiper/">Swiper</a>.
+
+{% example html %}
+<!-- Swiper -->
+<div class="swiper-ingresso" data-ride="swiper-ingresso">
+  <div class="swiper-container gallery-top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14207_d.jpg" alt="">
+        <div class="carousel-caption">
+          <h3>Mais forte que o mundo - A história de José Aldo</h3>
+          <p class="hidden-xs-down">Baseado na história do expoente brasileiro de lutas de Vale-tudo ...</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14040_d.jpg" alt="">
+        <div class="carousel-caption">
+          <h3>Mais forte que o mundo - A história de José Aldo</h3>
+          <p class="hidden-xs-down">Baseado na história do expoente brasileiro de lutas de Vale-tudo ...</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13758_d.jpg" alt="">
+        <div class="carousel-caption">
+          <h3>Mais forte que o mundo - A história de José Aldo</h3>
+          <p class="hidden-xs-down">Baseado na história do expoente brasileiro de lutas de Vale-tudo ...</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14199_d.jpg" alt="">
+        <div class="carousel-caption">
+          <h3>Mais forte que o mundo - A história de José Aldo</h3>
+          <p class="hidden-xs-down">Baseado na história do expoente brasileiro de lutas de Vale-tudo ...</p>
+        </div>
+      </div>
+    </div>
+    <!-- Add Arrows -->
+    <a class="swiper-button-next hidden-md-down" role="button">
+      <svg class="svg-icon icon-next" width="45" height="45" aria-hidden="true">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow2"></use>
+      </svg>
+      <span class="sr-only">Next</span>
+    </a>
+    <a class="swiper-button-prev hidden-md-down" role="button">
+      <svg class="svg-icon icon-prev" width="45" height="45" aria-hidden="true">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow2-2"></use>
+      </svg>
+      <span class="sr-only">Previous</span>
+    </a>
+  </div>
+  <div class="swiper-container gallery-thumbs">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper-slide-active"><img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14207_d.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14040_d.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13758_d.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14199_d.jpg" alt=""></div>
+    </div>
+  </div>
+</div>
+{% endexample %}
+
+### Vertical
+
+{% example html %}
+<!-- Swiper -->
+<div class="swiper-ingresso swiper-ingresso-side" data-ride="swiper-ingresso-side">
+  <div class="swiper-container gallery-top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14207_d.jpg" alt="">
+        <div class="carousel-caption">
+          <h3>Mais forte que o mundo - A história de José Aldo</h3>
+          <p class="hidden-xs-down">Baseado na história do expoente brasileiro de lutas de Vale-tudo ...</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14040_d.jpg" alt="">
+        <div class="carousel-caption">
+          <h3>Mais forte que o mundo - A história de José Aldo</h3>
+          <p class="hidden-xs-down">Baseado na história do expoente brasileiro de lutas de Vale-tudo ...</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13758_d.jpg" alt="">
+        <div class="carousel-caption">
+          <h3>Mais forte que o mundo - A história de José Aldo</h3>
+          <p class="hidden-xs-down">Baseado na história do expoente brasileiro de lutas de Vale-tudo ...</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14199_d.jpg" alt="">
+        <div class="carousel-caption">
+          <h3>Mais forte que o mundo - A história de José Aldo</h3>
+          <p class="hidden-xs-down">Baseado na história do expoente brasileiro de lutas de Vale-tudo ...</p>
+        </div>
+      </div>
+    </div>
+    <!-- Add Arrows -->
+    <a class="swiper-button-next hidden-md-down" role="button">
+      <svg class="svg-icon icon-next" width="45" height="45" aria-hidden="true">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow2"></use>
+      </svg>
+      <span class="sr-only">Next</span>
+    </a>
+    <a class="swiper-button-prev hidden-md-down" role="button">
+      <svg class="svg-icon icon-prev" width="45" height="45" aria-hidden="true">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow2-2"></use>
+      </svg>
+      <span class="sr-only">Previous</span>
+    </a>
+  </div>
+  <div class="swiper-container gallery-thumbs">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14207_d.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14040_d.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13758_d.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14199_d.jpg" alt=""></div>
+    </div>
+  </div>
+</div>
+{% endexample %}
