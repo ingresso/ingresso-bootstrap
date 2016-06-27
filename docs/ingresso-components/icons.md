@@ -627,6 +627,14 @@ group: ingresso-components
       </svg>
       <!-- End : Zoom Out -->
     </div>
+
+    <div class="col-xs-1">
+      <!-- Start : Error -->
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-icon-error" />
+      </svg>
+      <!-- End : Error -->
+    </div>
   </div>
   
 </div>
