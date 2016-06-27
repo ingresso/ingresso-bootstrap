@@ -43,42 +43,37 @@
       e.preventDefault()
     })
 
-    //swiper
-
+    // swiper
     $('[data-ride="swiper-ingresso"], [data-ride="swiper-ingresso-side"]').each(function () {
-      
       var $elm = $(this);
 
       var options = {
-          carousel:{
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            slideToClickedSlide: true
-          },
-          thumbs:{
-            slideToClickedSlide: true,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-            touchRatio: 0.2,
-            loop:true
-          }
+        carousel:{
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev'
+        },
+        thumbs:{
+          slideToClickedSlide: true,
+          slidesPerView: 'auto',
+          touchRatio: 0.2,
+          loop:true
+        }
       };
 
 
-
-      if($elm.attr('data-ride') == 'swiper-ingresso-side'){
-
-        options.thumbs = $.extend({},{direction:'vertical'},options.thumbs);
+      if ($elm.attr('data-ride') == 'swiper-ingresso-side') {
+        options.thumbs = $.extend({}, { direction:'vertical' }, options.thumbs);
       }
-
-      var galleryTop = new Swiper($('.gallery-top',$elm), options.carousel);
-      var galleryThumbs = new Swiper($('.gallery-thumbs',$elm),options.thumbs);
+      else {
+        options.thumbs = $.extend({}, { centeredSlides: true }, options.thumbs);
+      }
+      var galleryTop = new Swiper($('.gallery-top', $elm), options.carousel);
+      var galleryThumbs = new Swiper($('.gallery-thumbs', $elm), options.thumbs);
 
       galleryTop.params.control = galleryThumbs;
       galleryThumbs.params.control = galleryTop;
 
     });
-  
 
 
 
