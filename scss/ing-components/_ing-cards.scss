@@ -31,6 +31,12 @@
     }
   }
 
+  .ch-condition{
+    font-size: 0.6875rem;
+    margin-bottom: 0.45rem;
+    display: block;
+  }
+
   .rating-txt{
     font-size: 0.6875rem;
   }
@@ -54,6 +60,53 @@
 
   .btn{
     width: 100%;
+  }
+
+  &.horizontal{
+    border:0;
+    max-width: none !important;
+    width: auto;
+    display: block;
+    .card-img-top{
+      width: 100%;
+      height: auto;
+      vertical-align: top;
+      display: inline-block;
+      margin: 0 auto;
+      display: block;
+    }
+    .card-title{
+      min-height: auto;
+      margin-bottom:0.45rem;
+    }
+    .card-footer{
+      display:inline-block;
+      background-color: transparent;
+
+      border: 0;
+    }
+    .card-block{
+      display: inline-block;
+      padding:1rem 0 0;
+    }
+    .btn{
+      width: auto;
+    }
+    @supports (-webkit-line-clamp: 3) {
+      .card-text {
+          -webkit-line-clamp: 3;
+          max-height:48px;
+      }
+    }
+    .ch-more-info{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      font-size: 0.6875rem;
+    }
+    .card-wp {
+      padding-bottom:15px;
+    }
   }
 }
 
@@ -96,6 +149,42 @@
     }
     .cl-item{
       margin:0 4px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .card{
+      &.horizontal{
+      display: flex;
+      flex: 1 0 auto;
+      flex-direction: row;
+      .card-img-top{
+        width: 306px;
+        height: 178px;
+      }
+      .card-block{
+        padding: 0 0 0.5rem 1rem;
+      }
+      .card-footer{
+        padding: 0 0 0 1rem;
+      }
+      &.info-bottom{
+        display: block;
+        .card-img-top{
+          width: 100%;
+          height: auto;
+        }
+        .card-block {
+          padding: 1rem 0 0;
+        }
+        .card-footer{
+          padding:0;
+        }
+        .card-wp {
+          padding-bottom:0;
+        }
+      }
     }
   }
 }
