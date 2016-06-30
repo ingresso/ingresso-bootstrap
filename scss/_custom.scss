@@ -40,6 +40,8 @@ $input-border-focus: $brand-primary;
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
+$btn-padding-x:                  0.5rem !default;
+
 $btn-line-height:                1.8 !default;
 
 $btn-primary-color:              #fff !default;
@@ -139,3 +141,10 @@ $custom-control-gutter:   1.7rem !default;
 
 // Cards
 $card-spacer-x:            1rem !default;
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-gutter-width: 20px !default;
