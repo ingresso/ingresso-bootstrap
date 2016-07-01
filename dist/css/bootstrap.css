@@ -7014,8 +7014,8 @@ a.text-danger:focus, a.text-danger:hover {
 }
 
 ul {
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 ol {

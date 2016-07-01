@@ -422,16 +422,16 @@ module.exports = function (grunt) {
 
     svgstore: {
       options: {
-        prefix: "icon-",
+        prefix: 'icon-',
         cleanup: false,
         svg: {
-          style: "display:none;"
+          style: 'display:none;'
         }
       },
       default: {
         files: {
-          "docs/_includes/svg-defs.svg":
-           ["docs/assets/img/svg/*.svg"]
+          'docs/_includes/svg-defs.svg':
+           ['docs/assets/img/svg/*.svg']
         }
       }
     }

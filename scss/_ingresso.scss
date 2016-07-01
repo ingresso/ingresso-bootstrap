@@ -8,17 +8,21 @@
 // Ul default model
 
 ul {
-	list-style: none;
-	padding: 0;
+  padding: 0;
+  list-style: none;
 }
 ol {
-	padding: 0;
-	list-style-position: inside;
+  padding: 0;
+  list-style-position: inside;
 }
 
 // Problems with Headings size. ex.: H1 - fixed pixel...
-.title1{font-size: $font-size-base;}
-.title2{font-size: $font-size-base;}
+.title1 {
+  font-size: $font-size-base;
+}
+.title2 {
+  font-size: $font-size-base;
+}
 
 
 // ingresso components
