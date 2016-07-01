@@ -1,5 +1,5 @@
-.card{
-  width: 175px;
+.card.ing{
+  width: 174px;
   .card-img-top{
     width: 245px;
     height: 100px;
@@ -80,7 +80,7 @@
       margin-bottom:0.45rem;
     }
     .card-footer{
-      display:inline-block;
+      display:block;
       background-color: transparent;
 
       border: 0;
@@ -137,8 +137,8 @@
 
 @include media-breakpoint-up(md) {
 
-  .card{
-    max-width: 175px;
+  .card.ing{
+    max-width: 174px;
     width: auto;
   }
 
@@ -154,7 +154,7 @@
 }
 
 @include media-breakpoint-up(lg) {
-  .card{
+  .card.ing{
       &.horizontal{
       display: flex;
       flex: 1 0 auto;

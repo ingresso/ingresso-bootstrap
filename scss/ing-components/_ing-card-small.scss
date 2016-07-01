@@ -1,0 +1,22 @@
+.card-small{
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  padding: 12px;
+  small{
+    display: block;
+    font-size: .75rem;
+  }
+  &:nth-child(odd){
+   background-color: #f6f6f6;
+ }
+}
+
+@include media-breakpoint-up(sm) {
+  .card-small{
+    &:nth-child(odd){
+     background-color: transparent;
+   }
+    &:nth-child(4n+1), &:nth-child(4n+2) {
+     background-color: #f6f6f6;
+   }
+  }
+}

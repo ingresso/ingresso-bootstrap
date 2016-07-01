@@ -16,7 +16,7 @@ Create a div `card-list` , within it you will create a wrapper ( use the tag you
   <div class="cl-wrapper">
 
     <div class="cl-item">
-      <article class="card" itemscope itemtype="http://schema.org/Movie">
+      <article class="card ing" itemscope itemtype="http://schema.org/Movie">
         <meta itemprop="dateCreated" content="2016-06-17">
         <meta itemprop="director" content="Jon M. Chu">
         <img class="card-img-top w-100" itemprop="image" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13758_d.jpg" alt="Card image cap">
@@ -55,7 +55,7 @@ Create a div `card-list` , within it you will create a wrapper ( use the tag you
     </div>
 
     <div class="cl-item">
-      <article class="card" itemscope itemtype="http://schema.org/Movie">
+      <article class="card ing" itemscope itemtype="http://schema.org/Movie">
         <meta itemprop="dateCreated" content="2016-06-17">
         <meta itemprop="director" content="Duncan Jones">
         <img class="card-img-top w-100" itemprop="image" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14200_d.jpg" alt="Card image cap">
@@ -94,7 +94,7 @@ Create a div `card-list` , within it you will create a wrapper ( use the tag you
     </div>
 
     <div class="cl-item">
-      <article class="card" itemscope itemtype="http://schema.org/Movie">
+      <article class="card ing" itemscope itemtype="http://schema.org/Movie">
         <meta itemprop="dateCreated" content="2016-06-17">
         <meta itemprop="director" content="James Wan">
         <img class="card-img-top w-100" itemprop="image" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14204_d.jpg" alt="Card image cap">
@@ -133,7 +133,7 @@ Create a div `card-list` , within it you will create a wrapper ( use the tag you
     </div>
 
     <div class="cl-item">
-      <article class="card" itemscope itemtype="http://schema.org/Movie">
+      <article class="card ing" itemscope itemtype="http://schema.org/Movie">
         <meta itemprop="dateCreated" content="2016-06-17">
         <meta itemprop="director" content="James Bobin">
         <img class="card-img-top w-100" itemprop="image" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/14036_d.jpg" alt="Card image cap">
@@ -172,7 +172,7 @@ Create a div `card-list` , within it you will create a wrapper ( use the tag you
     </div>
 
     <div class="cl-item">
-      <article class="card" itemscope itemtype="http://schema.org/Movie">
+      <article class="card ing" itemscope itemtype="http://schema.org/Movie">
         <meta itemprop="dateCreated" content="2016-06-17">
         <meta itemprop="director" content="Bryan Singer">
         <img class="card-img-top w-100" itemprop="image" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13918_d.jpg" alt="Card image cap">
@@ -211,7 +211,7 @@ Create a div `card-list` , within it you will create a wrapper ( use the tag you
     </div>
 
     <div class="cl-item">
-      <article class="card" itemscope itemtype="http://schema.org/Movie">
+      <article class="card ing" itemscope itemtype="http://schema.org/Movie">
         <meta itemprop="dateCreated" content="2016-06-17">
         <meta itemprop="director" content="Anthony Russo, Joe Russo">
         <img class="card-img-top w-100" itemprop="image" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13756_d.jpg" alt="Card image cap">
