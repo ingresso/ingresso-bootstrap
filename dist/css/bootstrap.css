@@ -8260,25 +8260,23 @@ ol {
   max-width: 100%;
 }
 
-.swiper-ingresso .gallery-top {
-  height: 80%;
-  width: 100%;
-}
-
 .swiper-ingresso .gallery-thumbs {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px 0;
+  /* &.swiper-container-vertical{
+		    .swiper-wrapper{
+		    	margin-top:calc(-24% - 5px);
+		    }
+		} */
+}
+
+.swiper-ingresso .gallery-thumbs.swiper-container-horizontal .swiper-wrapper {
+  margin-left: calc(-24% - 5px);
 }
 
 .swiper-ingresso .gallery-thumbs .swiper-slide {
-  width: 150px;
-  margin-left: 10px;
   opacity: 0.4;
-}
-
-.swiper-ingresso .gallery-thumbs .swiper-slide:first-child {
-  margin-left: 0;
 }
 
 .swiper-ingresso .gallery-thumbs .swiper-slide-active {
@@ -8316,6 +8314,22 @@ ol {
   width: 100%;
 }
 
+@media (min-width: 544px) {
+  .swiper-ingresso .gallery-thumbs {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px 0;
+    /* &.swiper-container-vertical{
+			    .swiper-wrapper{
+			    	margin-top:calc(-30% - 5px);
+			    }
+			} */
+  }
+  .swiper-ingresso .gallery-thumbs.swiper-container-horizontal .swiper-wrapper {
+    margin-left: calc(-30% - 5px);
+  }
+}
+
 @media (min-width: 768px) {
   .carousel-ingresso .carousel-indicators {
     white-space: normal;
@@ -8335,8 +8349,15 @@ ol {
     /* arrows */
     /* arrows on hover */
   }
-  .swiper-ingresso .gallery-thumbs .swiper-slide {
-    width: 180px;
+  .swiper-ingresso .gallery-thumbs {
+    /* &.swiper-container-vertical{
+					    	.swiper-wrapper{
+					    		margin-top:calc(-37% - 5px);
+					    	}
+			} */
+  }
+  .swiper-ingresso .gallery-thumbs.swiper-container-horizontal .swiper-wrapper {
+    margin-left: calc(-37% - 5px);
   }
   .swiper-ingresso .swiper-button-next, .swiper-ingresso .swiper-button-prev {
     opacity: 0;
@@ -8356,19 +8377,15 @@ ol {
   /* swiper with side thumbs */
   .swiper-ingresso-side {
     padding-right: 190px;
-  }
-  .swiper-ingresso-side .gallery-top {
-    float: left;
+    /* first value is gallery-thumbs width */
+    position: relative;
+    overflow: hidden;
   }
   .swiper-ingresso-side .gallery-thumbs {
+    position: absolute;
     width: 180px;
-    float: right;
-    padding: 0;
-    margin-right: -190px;
-  }
-  .swiper-ingresso-side .gallery-thumbs .swiper-slide {
-    margin-left: 0;
-    margin-bottom: 5px;
+    top: 0;
+    right: 0;
   }
 }
 
