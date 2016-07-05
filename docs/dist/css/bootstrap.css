@@ -7051,24 +7051,6 @@ ol {
   padding: 10px 0;
 }
 
-#header:before {
-  content: '';
-  position: absolute;
-  display: block;
-  right: 0;
-  left: 0;
-  top: 0;
-  margin-bottom: -5px;
-  height: 5px;
-  text-indent: -99999px;
-  background: #0db5b6;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #d3793d), color-stop(19%, #d3793d), color-stop(19%, #b96485), color-stop(40%, #b96485), color-stop(40%, #afbe3f), color-stop(61%, #afbe3f), color-stop(61%, #53488a), color-stop(81%, #53488a), color-stop(81%, #0db5b6), color-stop(100%, #0db5b6)), -webkit-gradient();
-  background: -webkit-linear-gradient(left, #d3793d 0, #d3793d 19%, #b96485 19%, #b96485 40%, #afbe3f 40%, #afbe3f 61%, #53488a 61%, #53488a 81%, #0db5b6 81%, #0db5b6 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #d3793d), color-stop(19%, #d3793d), color-stop(19%, #b96485), color-stop(40%, #b96485), color-stop(40%, #afbe3f), color-stop(61%, #afbe3f), color-stop(61%, #53488a), color-stop(81%, #53488a), color-stop(81%, #0db5b6), to(#0db5b6));
-  background: -o-linear-gradient(left, #d3793d 0, #d3793d 19%, #b96485 19%, #b96485 40%, #afbe3f 40%, #afbe3f 61%, #53488a 61%, #53488a 81%, #0db5b6 81%, #0db5b6 100%);
-  background: linear-gradient(to right, #d3793d 0, #d3793d 19%, #b96485 19%, #b96485 40%, #afbe3f 40%, #afbe3f 61%, #53488a 61%, #53488a 81%, #0db5b6 81%, #0db5b6 100%);
-}
-
 #header .hdr-logo {
   width: 60px;
   height: 47px;
@@ -7197,7 +7179,7 @@ ol {
 }
 
 #footer .ft-app-it, #footer .ft-social-it {
-  margin-right: 10px;
+  margin: 0 10px 0 5px 0;
 }
 
 #footer .ft-phone-icon {
@@ -7885,8 +7867,8 @@ ol {
 }
 
 .card.ing .card-title {
-  min-height: 48px;
-  max-height: 48px;
+  min-height: 34px;
+  max-height: 34px;
   -webkit-line-clamp: 2;
   font-size: 1rem;
 }
@@ -8309,6 +8291,11 @@ ol {
   text-align: left;
 }
 
+.swiper-ingresso .carousel-caption h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
 /* temp */
 .swiper-ingresso img {
   width: 100%;
@@ -8374,6 +8361,10 @@ ol {
   .swiper-ingresso .swiper-container:hover .swiper-button-disabled {
     opacity: 0.35;
   }
+  .swiper-ingresso .carousel-caption h3 {
+    font-size: 1.75rem;
+    margin-bottom: .5rem;
+  }
   /* swiper with side thumbs */
   .swiper-ingresso-side {
     padding-right: 190px;
@@ -8424,7 +8415,7 @@ ol {
 
 .high-title {
   color: #fff;
-  padding: 0 10px 0 10px;
+  padding: 0 5px 0 10px;
   font-size: 1.125rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -8465,7 +8456,7 @@ ol {
 }
 
 .high-title .svg-icon {
-  margin-right: 10px;
+  margin-right: 5px;
   fill: #fff;
 }
 
@@ -8478,7 +8469,6 @@ ol {
 }
 
 .card-small {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   padding: 12px;
 }
 

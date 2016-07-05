@@ -4,9 +4,11 @@ title: Card Small
 group: components
 ---
 
-
+Event card with little information
 
 ## Example
+
+Div with the class `card-small` involving the title information and locations. See the example below
 
 {% example html %}
 

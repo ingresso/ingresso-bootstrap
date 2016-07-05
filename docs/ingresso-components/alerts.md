@@ -35,7 +35,9 @@ Alerts are available for any length of text, as well as an optional dismiss butt
   <strong>Warning!</strong> Better check yourself, you're not looking too good.
 </div>
 <div class="alert alert-danger" role="alert">
-  
+  <svg class="svg-icon" width="30" height="30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-icon-error"></use>
+  </svg>
   <strong>Oh snap!</strong> Change a few things up and try submitting again.
 </div>
 {% endexample %}

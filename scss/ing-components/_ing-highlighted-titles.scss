@@ -4,10 +4,11 @@
 
 .high-title{
   color:#fff;
-  padding: 0 10px 0 10px;
+  padding: 0 5px 0 10px;
   font-size:1.125rem;
   display: flex;
   align-items: center;
+  min-height: 30px;
   *{
     vertical-align: middle;
   }
@@ -30,7 +31,7 @@
       background:#0cb0b1;
   }
   .svg-icon{
-    margin-right: 10px;
+    margin-right: 5px;
     fill: #fff;
   }
   .ht-lk{

@@ -4,11 +4,12 @@ title: Media
 group: ingresso-components
 ---
 
-Media Component of Ingresso.com
+Media Component of Ingresso.com. It follows the same structure as Bootstrap media component.
 
 ## Example
 
 
+We must add `ing-model` class and a class according to the desired event . The options are `mb-cinema`, `mb-theater`, `mb-events`, `mb-show` and `mb-circus`.
 
 {% example html %}
 

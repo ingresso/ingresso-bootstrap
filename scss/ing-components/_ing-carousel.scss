@@ -41,7 +41,7 @@
 			opacity:1;
 		}
 	}
-	
+
 
 	/* feito dessa forma temporariamente pois nao existe definicao de cores de eventos */
 	.carousel-caption{
@@ -112,6 +112,10 @@
 		right:0;
 		bottom:0;
 		text-align:left;
+    h3{
+      font-size:1rem;
+      margin: 0;
+    }
 	}
 }
 /* temp */
@@ -179,7 +183,7 @@
 			transition:opacity 0.5s ease;
 		}
 		.swiper-button-disabled.swiper-button-next, .swiper-button-disabled.swiper-button-prev{opacity:0;}
-		
+
 		/* arrows on hover */
 		.swiper-container:hover {
 			.swiper-button-next, .swiper-button-prev{
@@ -188,8 +192,15 @@
 			.swiper-button-disabled{opacity:0.35;}
 		}
 
+    .carousel-caption{
+      h3{
+        font-size:1.75rem;
+        margin-bottom: .5rem;
+      }
+    }
+
 	}
-	
+
 	/* swiper with side thumbs */
 	&.swiper-ingresso-side{
 		padding-right:(180px + 10px); /* first value is gallery-thumbs width */
@@ -202,7 +213,7 @@
 			top:0;
 			right:0;
 		}
-	
+
 	}
 }
 

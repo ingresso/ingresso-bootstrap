@@ -4,11 +4,11 @@ title: Highlighted Titles
 group: ingresso-components
 ---
 
-Highlighted Titles
+Highlighted Titles to the website of Ingresso.com
 
 ## Example
 
-
+We use the class `high- title` and add a class according to the desired event . They can also be used without the icon ( svg ) and the link ( view all ). 
 
 {% example html %}
 

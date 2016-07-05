@@ -4,10 +4,12 @@ title: Card
 group: ingresso-components
 ---
 
-Cards of Ingresso.com
+Event Card used throughout the site . There are two options , the standard version ( vertical ) and horizontal version. They use the same HTML and just need to follow some rules.
 
-## Example
+## Examples
 
+
+The vertical version follows all Bootstrap standards. We must only add the `ing` class with the pre `card` defined class Bootstrap.
 
 {% example html %}
 
@@ -47,6 +49,13 @@ Cards of Ingresso.com
     </div>
   </div>
 </article>
+
+{% endexample %}
+
+
+The horizontal version follows the same patterns, and adds a class called `horizontal` as you can see in the example below
+
+{% example html %}
 
 <article class="card ing horizontal" itemscope itemtype="http://schema.org/Movie">
   <meta itemprop="dateCreated" content="2016-06-17">
