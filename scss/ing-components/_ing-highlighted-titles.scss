@@ -42,3 +42,19 @@
     font-family: 'Trebuchet Ms';
   }
 }
+
+.title-bar {
+  background: #F2F2F2;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 10px;
+  .tit-bar-content {
+    font-weight: normal;
+    vertical-align: middle;
+  }
+  .svg-icon{
+    vertical-align: middle;
+    fill:#c3c3c3;
+  }
+}
+

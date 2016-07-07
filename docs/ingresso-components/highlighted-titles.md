@@ -61,3 +61,14 @@ We use the class `high- title` and add a class according to the desired event . 
 </h1>
 
 {% endexample %}
+
+{% example html %}
+
+<header class="title-bar">
+  <svg class="svg-icon d-inline-block" width="30" height="30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star-full"></use>
+  </svg>
+  <h1 class="tit-bar-content h6 d-inline-block"><a href="">Cine 10 Carrefour Sulacap</a></h1>
+</header>
+
+{% endexample %}

@@ -7978,6 +7978,30 @@ ol {
   padding-bottom: 15px;
 }
 
+.card.ing.horizontal .card-wp.cd-cinema .svg-icon {
+  fill: #d3793d;
+}
+
+.card.ing.horizontal .card-wp.cd-theater .svg-icon {
+  fill: #b96485;
+}
+
+.card.ing.horizontal .card-wp.cd-show .svg-icon {
+  fill: #afbe3f;
+}
+
+.card.ing.horizontal .card-wp.cd-events .svg-icon {
+  fill: #52478a;
+}
+
+.card.ing.horizontal .card-wp.cd-circus .svg-icon {
+  fill: #ead11c;
+}
+
+.card.ing.horizontal .card-wp.cd-promo .svg-icon {
+  fill: #0cb0b1;
+}
+
 .card-list .cl-wrapper {
   white-space: nowrap;
   overflow: auto;
@@ -8425,6 +8449,7 @@ ol {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 30px;
 }
 
 .high-title * {
@@ -8468,6 +8493,23 @@ ol {
   font-family: 'Trebuchet Ms';
 }
 
+.title-bar {
+  background: #F2F2F2;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.title-bar .tit-bar-content {
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+.title-bar .svg-icon {
+  vertical-align: middle;
+  fill: #c3c3c3;
+}
+
 .card-small {
   padding: 12px;
 }
@@ -8488,6 +8530,188 @@ ol {
   .card-small:nth-child(4n+1), .card-small:nth-child(4n+2) {
     background-color: #f6f6f6;
   }
+}
+
+.event-name {
+  font-size: 1.125rem;
+}
+
+.event-name.ev-nm-01 {
+  color: #D3793D;
+}
+
+.event-name.ev-nm-02 {
+  color: #B86483;
+}
+
+.event-name.ev-nm-03 {
+  color: #AFBE3F;
+}
+
+.event-name.ev-nm-04 {
+  color: #53488A;
+}
+
+.event-name.ev-nm-05 {
+  color: #DADD00;
+}
+
+.event-name.ev-nm-06 {
+  color: #0DB6B5;
+}
+
+.tickets-lt {
+  font-size: 0;
+}
+
+.tickets-lt .tck-it {
+  font-size: 12px;
+  display: inline-block;
+  position: relative;
+  letter-spacing: normal;
+  margin: 0 10px 10px 0;
+}
+
+.tickets-lt .tck-it.is-disabled .tck-lk, .tickets-lt .tck-it.is-disabled .tck-lk:hover, .tickets-lt .tck-it.is-disabled .tck-lk:active {
+  color: #666;
+  background: #DCDCDC;
+  cursor: not-allowed;
+}
+
+.tickets-lt .tck-it:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  top: 16px;
+  right: -5px;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.tickets-lt .tck-lk {
+  display: block;
+  color: #fff;
+  padding: 15px;
+  background: #0DB6B5;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.tickets-lt .tck-lk:hover {
+  background: #0A9191;
+  color: #fff;
+  text-decoration: none;
+}
+
+.tickets-lt .tck-lk:active {
+  background: #086E6E;
+}
+
+/*lista de datas*/
+.date-lt {
+  white-space: nowrap;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  font-size: 0;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+
+.date-it {
+  display: inline-block;
+  position: relative;
+  letter-spacing: normal;
+  white-space: normal;
+}
+
+.date-it.is-selected .date-lk {
+  color: #fff;
+  background: #0DB6B5;
+  border: 1px solid #0DB6B5;
+  border-top: 10px solid #0DB6B5;
+}
+
+.date-it.is-disabled .date-lk, .date-it.is-disabled .date-lk:hover {
+  color: #DCDCDC;
+  background: #fff;
+  border: 1px solid #DCDCDC;
+  border-top: 10px solid #DCDCDC;
+  cursor: not-allowed;
+}
+
+.date-lk {
+  display: block;
+  color: #0DB6B5;
+  padding: 5px 10px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #0DB6B5;
+  border-top: 10px solid #0DB6B5;
+  text-align: center;
+  width: 62px;
+  min-height: 45px;
+  vertical-align: top;
+  text-decoration: none;
+}
+
+.date-lk:hover {
+  color: #0A9191;
+  border: 1px solid #0A9191;
+  border-top: 10px solid #0A9191;
+  text-decoration: none;
+}
+
+.date-lk:active {
+  color: #086E6E;
+  border: 1px solid #086E6E;
+  border-top: 10px solid #086E6E;
+}
+
+.date-main-info {
+  font-size: 14px;
+}
+
+.date-month-lt .date-main-info {
+  font-size: 18px;
+}
+
+.date-info {
+  font-size: 11px;
+}
+
+.list-type01 {
+  font-size: 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.list-type01 .lt-tp01-it {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 20px 2px 10px;
+  border-left: 1px solid #666;
+  margin: 3px 0 3px -11px;
+}
+
+.list-type02 {
+  margin-bottom: 10px;
+}
+
+.list-type02 .lt-tp02-it {
+  display: block;
+  font-size: 11px;
+  margin: 5px 0;
 }
 
 /**

@@ -61,11 +61,17 @@ The horizontal version follows the same patterns, and adds a class called `horiz
   <meta itemprop="dateCreated" content="2016-06-17">
   <meta itemprop="director" content="Jon M. Chu">
   <img class="card-img-top" itemprop="image" src="https://ingresso-a.akamaihd.net/img/cinema/cartaz/13758_d.jpg" alt="Card image cap">
-  <div class="card-wp">
+  <div class="card-wp cd-cinema">
     <div class="card-block">
-      <h1 class="card-title" itemprop="name">Truque de Mestre: O Segundo ato</h1>
+      <svg class="svg-icon" width="30" height="30">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-movie"></use>
+      </svg>
+      <h1 class="card-title d-inline-block" itemprop="name"><a href="">Truque de Mestre: O Segundo ato</a></h1>
       <span class="ch-condition">Em cartaz em <a href="">11 cinemas</a> | Classificação Livre</span>
       <p class="card-text" itemprop="description">Após enganar o FBI um ano antes, o grupo de mágicos é forçado a se reunir mais uma vez e realizar uma nova série de golpes elaborados que culminarão na maior ilusão que já fizeram até agora.</p>
+
+      <span class="director card-text m-b-1"><strong>Diretor:</strong> <span itemprop="director">Jon M. Chu</span></span>
+      <span class="cast card-text"><strong>Elenco:</strong> <span itemprop="actors">Ana Carolina Borges, Daniel Matias, Gleisson Moreira, Isabel Mamede, Isabela Baiocchi, Jader Chaves, Marianna Lovi, Paula Siqueira.</span></span>
       <a href="#" class="ch-more-info">Veja mais informações</a>  
     </div>
     <div class="card-footer text-muted">
