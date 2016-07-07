@@ -1,0 +1,25 @@
+//
+// Lists
+//
+
+.list-type01 {
+  font-size: 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+  .lt-tp01-it {
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 20px 2px 10px;
+    border-left: 1px solid #666;
+    margin: 3px 0 3px -11px;
+  }
+}
+
+.list-type02 {
+  margin-bottom: 10px;
+  .lt-tp02-it {
+    display: block;
+    font-size: 11px;
+    margin: 5px 0;
+  }
+}
