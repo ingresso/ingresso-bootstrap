@@ -59,3 +59,30 @@
   }
 }
 
+
+//
+// Event Name
+//
+
+.event-name {
+  font-size: 1.375rem;
+  font-weight: bold;
+  &.ev-nm-01 {
+    color: #D3793D;
+  }
+  &.ev-nm-02 {
+    color: #B86483;
+  }
+  &.ev-nm-03 {
+    color: #AFBE3F;
+  }
+  &.ev-nm-04 {
+    color: #53488A;
+  }
+  &.ev-nm-05 {
+    color: #DADD00;
+  }
+  &.ev-nm-06 {
+    color: #0DB6B5;
+  }
+}
