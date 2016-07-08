@@ -17,23 +17,6 @@
   position: relative;
   letter-spacing: normal;
   white-space: normal;
-  &.active {
-    .date-lk {
-      color: #fff;
-      background: #0DB6B5;
-      border: 1px solid #0DB6B5;
-      border-top: 10px solid #0DB6B5;
-    }
-  }
-  &.is-disabled{
-    .date-lk, .date-lk:hover{
-      color: #DCDCDC;
-      background: #fff;
-      border: 1px solid #DCDCDC;
-      border-top: 10px solid #DCDCDC;
-      cursor: not-allowed;
-    }
-  }
 }
 .date-lk {
   display: block;
@@ -62,6 +45,21 @@
     color: #086E6E;
     border: 1px solid #086E6E;
     border-top: 10px solid #086E6E;
+  }
+  &.active {
+    color: #fff;
+    cursor:default;
+    text-decoration:none;
+    background: #0DB6B5;
+    border: 1px solid #0DB6B5;
+    border-top: 10px solid #0DB6B5;
+  }
+  &.is-disabled{
+    color: #DCDCDC;
+    background: #fff;
+    border: 1px solid #DCDCDC;
+    border-top: 10px solid #DCDCDC;
+    cursor: not-allowed;
   }
 }
 
