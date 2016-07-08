@@ -3773,12 +3773,12 @@ input[type="button"].btn-block {
 
 .custom-control-input:checked ~ .custom-control-indicator {
   color: #fff;
-  background-color: #0db6b5;
+  background-color: #fff;
 }
 
 .custom-control-input:focus ~ .custom-control-indicator {
-  -webkit-box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #0db6b5;
-          box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #0db6b5;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .custom-control-input:active ~ .custom-control-indicator {
@@ -3808,7 +3808,7 @@ input[type="button"].btn-block {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: #ddd;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: 50% 50%;
@@ -3816,11 +3816,11 @@ input[type="button"].btn-block {
 }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-indicator {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%230db6b5' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
 }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-indicator {
-  background-color: #0db6b5;
+  background-color: transparent;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E");
 }
 
@@ -3829,7 +3829,7 @@ input[type="button"].btn-block {
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-indicator {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%230db6b5'/%3E%3C/svg%3E");
 }
 
 .custom-controls-stacked .custom-control {
@@ -7843,6 +7843,18 @@ ol {
           transform: translate(2px, 0) rotate(45deg);
 }
 
+.custom-checkbox:hover .custom-control-indicator, .custom-radio:hover .custom-control-indicator {
+  border-color: #0db6b5;
+}
+
+.custom-checkbox:hover .custom-control-input:disabled ~ .custom-control-indicator, .custom-radio:hover .custom-control-input:disabled ~ .custom-control-indicator {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.custom-control-indicator {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
 /*--------------------------------------------------------------
   5.0 - Custom Checkbox
   --------------------------------------------------------------*/
@@ -8503,6 +8515,7 @@ ol {
 .title-bar .tit-bar-content {
   font-weight: normal;
   vertical-align: middle;
+  margin: 0;
 }
 
 .title-bar .svg-icon {
@@ -8534,6 +8547,7 @@ ol {
 
 .event-name {
   font-size: 1.125rem;
+  font-weight: bold;
 }
 
 .event-name.ev-nm-01 {
@@ -8616,7 +8630,7 @@ ol {
 /*lista de datas*/
 .date-lt {
   white-space: nowrap;
-  overflow-x: scroll;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   width: 100%;
   font-size: 0;
@@ -8631,7 +8645,7 @@ ol {
   white-space: normal;
 }
 
-.date-it.is-selected .date-lk {
+.date-it.active .date-lk {
   color: #fff;
   background: #0DB6B5;
   border: 1px solid #0DB6B5;

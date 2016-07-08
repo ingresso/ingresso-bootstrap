@@ -292,6 +292,28 @@
     }
   }
 
+  .custom-checkbox, .custom-radio{
+    &:hover{
+      .custom-control-indicator{
+        border-color: #0db6b5;
+      }
+
+      .custom-control-input {
+        &:disabled {
+          ~ .custom-control-indicator {
+            border-color:rgba(0, 0, 0, 0.15);
+          }
+        }
+      }
+    }
+  }
+
+
+
+  .custom-control-indicator {
+    border:1px solid rgba(0, 0, 0, 0.15);
+  }
+
 /*--------------------------------------------------------------
   5.0 - Custom Checkbox
   --------------------------------------------------------------*/

@@ -1,0 +1,46 @@
+//collapse-see-more-text
+
+.collapse#more-text{
+  height: 100px;
+  overflow: hidden;
+  display: block;
+}
+
+.collapse.in#more-text{
+  height: auto;
+  display: block;
+}
+
+.etmt-see-more {
+  display:none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 135px 0 10px;
+  background-image: linear-gradient(to bottom, transparent, #fff);
+}
+
+.etmt-see-more.collapsed {
+  display:block;
+}
+
+@media (min-width:544px) {
+  .collapse#more-text{
+    height: auto;
+    overflow: visible;
+    display: block;
+  }
+
+  .collapse.in#more-text{
+    height: auto;
+    display: block;
+  }
+
+  .etmt-see-more, .etmt-see-more.collapsed {
+    display:none;
+  }
+
+}
