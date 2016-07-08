@@ -5,7 +5,7 @@
 /*lista de datas*/
 .date-lt {
   white-space: nowrap;
-  overflow-x: scroll;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   width: 100%;
   font-size: 0;
@@ -17,7 +17,7 @@
   position: relative;
   letter-spacing: normal;
   white-space: normal;
-  &.is-selected {
+  &.active {
     .date-lk {
       color: #fff;
       background: #0DB6B5;
