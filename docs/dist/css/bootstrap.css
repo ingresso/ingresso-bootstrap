@@ -8534,6 +8534,7 @@ ol {
 
 .event-name {
   font-size: 1.125rem;
+  font-weight: bold;
 }
 
 .event-name.ev-nm-01 {
