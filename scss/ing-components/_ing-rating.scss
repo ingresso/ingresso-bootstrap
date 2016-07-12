@@ -10,3 +10,18 @@
 .rating,.rating-txt{
   vertical-align: middle;
 }
+
+.rating-details{
+  *{
+    vertical-align: middle;
+  }
+  padding-left:45px;
+  .rd-number{
+    margin:0 5px 0 -40px;
+    display: inline-block;
+  }
+  .progress{
+    display: inline-block;
+    margin:0;
+  }
+}

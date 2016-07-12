@@ -26,6 +26,7 @@ ol {
 
 
 // ingresso components
+@import "ing-components/ing-utilities";
 @import "ing-components/ing-font-face";
 @import "ing-components/ing-header";
 @import "ing-components/ing-footer";
@@ -48,6 +49,7 @@ ol {
 @import "ing-components/ing-tickets-list";
 @import "ing-components/ing-date-list";
 @import "ing-components/ing-lists";
+@import "ing-components/ing-see-more-collapse";
 
 // swiper
 @import "../bower_components/Swiper/dist/css/swiper";

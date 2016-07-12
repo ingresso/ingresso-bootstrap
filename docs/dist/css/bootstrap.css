@@ -7031,6 +7031,18 @@ ol {
   font-size: 0.8rem;
 }
 
+.valign-middle {
+  vertical-align: middle !important;
+}
+
+.valign-top {
+  vertical-align: top !important;
+}
+
+.valign-down {
+  vertical-align: bottom !important;
+}
+
 @font-face {
   font-family: 'Klavika-Regular';
   src: url("../../fonts/Klavika-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Klavika-Regular.otf") format("opentype"), url("../../fonts/Klavika-Regular.woff") format("woff"), url("../../fonts/Klavika-Regular.ttf") format("truetype"), url("../../fonts/Klavika-Regular.svg#Klavika-Regular") format("svg");
@@ -8103,6 +8115,24 @@ ol {
   vertical-align: middle;
 }
 
+.rating-details {
+  padding-left: 45px;
+}
+
+.rating-details * {
+  vertical-align: middle;
+}
+
+.rating-details .rd-number {
+  margin: 0 5px 0 -40px;
+  display: inline-block;
+}
+
+.rating-details .progress {
+  display: inline-block;
+  margin: 0;
+}
+
 @-webkit-keyframes slide-page-hide {
   0% {
     height: auto;
@@ -8518,6 +8548,19 @@ ol {
   margin: 0;
 }
 
+.title-bar .tit-bar-lk1, .title-bar .tit-bar-lk2 {
+  vertical-align: middle;
+}
+
+.title-bar .tit-bar-lk2 {
+  float: right;
+  font-size: 0.813rem;
+}
+
+.title-bar .tit-bar-lk2 .svg-icon {
+  fill: #0DB6B5;
+}
+
 .title-bar .svg-icon {
   vertical-align: middle;
   fill: #c3c3c3;
@@ -8598,8 +8641,9 @@ ol {
   position: absolute;
   width: 10px;
   height: 10px;
+  margin-top: -5px;
   background: #fff;
-  top: 16px;
+  top: 50%;
   right: -5px;
   z-index: 2;
   border-radius: 10px;
@@ -8645,21 +8689,6 @@ ol {
   white-space: normal;
 }
 
-.date-it.active .date-lk {
-  color: #fff;
-  background: #0DB6B5;
-  border: 1px solid #0DB6B5;
-  border-top: 10px solid #0DB6B5;
-}
-
-.date-it.is-disabled .date-lk, .date-it.is-disabled .date-lk:hover {
-  color: #DCDCDC;
-  background: #fff;
-  border: 1px solid #DCDCDC;
-  border-top: 10px solid #DCDCDC;
-  cursor: not-allowed;
-}
-
 .date-lk {
   display: block;
   color: #0DB6B5;
@@ -8692,6 +8721,23 @@ ol {
   border-top: 10px solid #086E6E;
 }
 
+.date-lk.active {
+  color: #fff;
+  cursor: default;
+  text-decoration: none;
+  background: #0DB6B5;
+  border: 1px solid #0DB6B5;
+  border-top: 10px solid #0DB6B5;
+}
+
+.date-lk.disabled {
+  color: #DCDCDC;
+  background: #fff;
+  border: 1px solid #DCDCDC;
+  border-top: 10px solid #DCDCDC;
+  cursor: not-allowed;
+}
+
 .date-main-info {
   font-size: 14px;
 }
@@ -8708,6 +8754,7 @@ ol {
   font-size: 0;
   overflow: hidden;
   margin-bottom: 10px;
+  vertical-align: middle;
 }
 
 .list-type01 .lt-tp01-it {
@@ -8726,6 +8773,72 @@ ol {
   display: block;
   font-size: 11px;
   margin: 5px 0;
+}
+
+.list-type03 .lt-tp03-it {
+  display: block;
+  padding: 10px;
+}
+
+.list-type03 .lt-tp03-it:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+.collapse-description {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.collapse#collapse-more-text {
+  height: 75px;
+  overflow: hidden;
+  display: block;
+}
+
+.collapse.in#collapse-more-text {
+  height: auto;
+  display: block;
+}
+
+.collapse-see-more {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 135px 0 10px;
+  background-image: -webkit-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+  background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+  background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), #ffffff);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0), #ffffff);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255,255,255,0)', endColorstr='#ffffff', GradientType=0);
+  /* IE6-9 */
+}
+
+.collapse-see-more.collapsed {
+  display: block;
+}
+
+@media (min-width: 544px) {
+  .collapse#collapse-more-text {
+    height: auto;
+    overflow: visible;
+    display: block;
+  }
+  .collapse.in#collapse-more-text {
+    height: auto;
+    display: block;
+  }
+  .collapse-see-more,
+  .collapse-see-more.collapsed {
+    display: none;
+  }
 }
 
 /**

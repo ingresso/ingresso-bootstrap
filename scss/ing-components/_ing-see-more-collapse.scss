@@ -1,18 +1,23 @@
-//collapse-see-more-text
+//collapse see more
 
-.collapse#more-text{
-  height: 100px;
+.collapse-description {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.collapse#collapse-more-text {
+  height: 75px;
   overflow: hidden;
   display: block;
 }
 
-.collapse.in#more-text{
+.collapse.in#collapse-more-text {
   height: auto;
   display: block;
 }
 
-.etmt-see-more {
-  display:none;
+.collapse-see-more {
+  display: none;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -20,27 +25,35 @@
   text-align: center;
   margin: 0;
   padding: 135px 0 10px;
-  background-image: linear-gradient(to bottom, transparent, #fff);
+  background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+  background-image: -webkit-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+  background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+  background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+  background-image: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255,255,255,0)', endColorstr='#ffffff', GradientType=0); /* IE6-9 */
 }
 
-.etmt-see-more.collapsed {
-  display:block;
+.collapse-see-more.collapsed {
+  display: block;
 }
 
 @media (min-width:544px) {
-  .collapse#more-text{
+  .collapse#collapse-more-text {
     height: auto;
     overflow: visible;
     display: block;
   }
 
-  .collapse.in#more-text{
+  .collapse.in#collapse-more-text {
     height: auto;
     display: block;
   }
 
-  .etmt-see-more, .etmt-see-more.collapsed {
-    display:none;
+  .collapse-see-more,
+  .collapse-see-more.collapsed {
+    display: none;
   }
 
 }
