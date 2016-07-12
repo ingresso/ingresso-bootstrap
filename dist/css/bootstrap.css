@@ -7013,24 +7013,6 @@ a.text-danger:focus, a.text-danger:hover {
   }
 }
 
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-ol {
-  padding: 0;
-  list-style-position: inside;
-}
-
-.title1 {
-  font-size: 0.8rem;
-}
-
-.title2 {
-  font-size: 0.8rem;
-}
-
 .valign-middle {
   vertical-align: middle !important;
 }
