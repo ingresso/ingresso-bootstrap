@@ -3,8 +3,21 @@
 //
 
 .alert {
+  display: flex;
+  align-items: center;
   *{
     vertical-align: middle;
+  }
+  p{
+    overflow:hidden;
+    margin-bottom:0;
+    flex: 1;
+  }
+  strong{
+    margin-right: .3rem;
+  }
+  svg{
+    margin-right:.5rem;
   }
 }
 
