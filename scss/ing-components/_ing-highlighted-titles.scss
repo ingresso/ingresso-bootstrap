@@ -53,12 +53,23 @@
     vertical-align: middle;
     margin:0;
   }
+  .tit-bar-lk1, .tit-bar-lk2{
+    vertical-align: middle;
+  }
+
+  .tit-bar-lk2{
+    float: right;
+    font-size: 0.813rem;
+    .svg-icon{
+      fill:#0DB6B5;
+    }
+  }
+
   .svg-icon{
     vertical-align: middle;
     fill:#c3c3c3;
   }
 }
-
 
 //
 // Event Name

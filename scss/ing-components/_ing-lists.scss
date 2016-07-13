@@ -2,10 +2,12 @@
 // Lists
 //
 
+// List 1 - Inline
 .list-type01 {
   font-size: 0;
   overflow: hidden;
   margin-bottom: 10px;
+  vertical-align: middle;
   .lt-tp01-it {
     display: inline-block;
     font-size: 11px;
@@ -15,11 +17,23 @@
   }
 }
 
+// List 2
 .list-type02 {
   margin-bottom: 10px;
   .lt-tp02-it {
     display: block;
     font-size: 11px;
     margin: 5px 0;
+  }
+}
+
+// List 3 - odd/even
+.list-type03 {
+  .lt-tp03-it {
+    display: block;
+    padding: 10px;
+    &:nth-child(odd){
+      background-color: #f6f6f6;
+    }
   }
 }

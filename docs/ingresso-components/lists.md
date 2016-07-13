@@ -50,3 +50,45 @@ group: ingresso-components
 </ul>
 
 {% endexample %}
+
+{% example html %}
+
+<ul class="etmt-ur-cmnts-lt list-type03">
+  <li class="etmt-ur-cmnts-it lt-tp03-it">
+     <div class="etmt-ur-cmnts-cont m-b-1">
+      <p>Muito bom o filme !!</p>
+      <strong class="etmt-ur-cmnts-name">Alexandre Santos</strong>
+      <span class="etmt-ur-cmnts-data">08/07/2016 11:35:28</span>
+    </div>
+  </li>
+  <li class="etmt-ur-cmnts-it lt-tp03-it">
+     <div class="etmt-ur-cmnts-cont m-b-1">
+      <p>Muito bom o filme !!</p>
+      <strong class="etmt-ur-cmnts-name">Alexandre Santos</strong>
+      <span class="etmt-ur-cmnts-data">08/07/2016 11:35:28</span>
+    </div>
+  </li>
+  <li class="etmt-ur-cmnts-it lt-tp03-it">
+     <div class="etmt-ur-cmnts-cont m-b-1">
+      <p>Muito bom o filme !!</p>
+      <strong class="etmt-ur-cmnts-name">Alexandre Santos</strong>
+      <span class="etmt-ur-cmnts-data">08/07/2016 11:35:28</span>
+    </div>
+  </li>
+  <li class="etmt-ur-cmnts-it lt-tp03-it">
+     <div class="etmt-ur-cmnts-cont m-b-1">
+      <p>Muito bom o filme !!</p>
+      <strong class="etmt-ur-cmnts-name">Alexandre Santos</strong>
+      <span class="etmt-ur-cmnts-data">08/07/2016 11:35:28</span>
+    </div>
+  </li>
+  <li class="etmt-ur-cmnts-it lt-tp03-it">
+     <div class="etmt-ur-cmnts-cont m-b-1">
+      <p>Muito bom o filme !!</p>
+      <strong class="etmt-ur-cmnts-name">Alexandre Santos</strong>
+      <span class="etmt-ur-cmnts-data">08/07/2016 11:35:28</span>
+    </div>
+  </li>
+</ul>
+
+      {% endexample %}

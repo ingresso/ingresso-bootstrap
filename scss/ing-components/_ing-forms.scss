@@ -21,7 +21,7 @@
   --------------------------------------------------------------*/
   .form-group {
     position: relative;
-    padding: 0 5px;    /* display:inline-block; */
+    //padding: 0 5px;    /* display:inline-block; */
     vertical-align: top;
 
     .form-icon-group {
@@ -53,6 +53,13 @@
       }
       .form-control{
         padding-top:15px;
+      }
+    }
+
+    select.form-control{
+      &:not([size]):not([multiple]) {
+        padding: .15rem .75rem;
+        height: 40px;
       }
     }
   }
