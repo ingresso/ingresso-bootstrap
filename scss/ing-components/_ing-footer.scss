@@ -51,6 +51,7 @@
   .ft-app-lt{
     line-height: 0;
     margin-bottom: 0;
+    padding:0;
   }
 
   .ft-app-icon{
@@ -73,6 +74,21 @@
     .form-group{
       display:block;
     }
+  }
+
+  ul{
+    list-style: none;
+  }
+  ol {
+    list-style-position: inside;
+  }
+
+  .title1, .title2{
+    font-size: .8rem;
+  }
+
+  .ft-smap-lt, .ft-social-lt, .ft-payment-lt{
+    padding:0;
   }
 }
 

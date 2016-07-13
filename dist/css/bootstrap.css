@@ -7214,6 +7214,7 @@ a.text-danger:focus, a.text-danger:hover {
 #footer .ft-app-lt {
   line-height: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 
 #footer .ft-app-icon {
@@ -7243,6 +7244,22 @@ a.text-danger:focus, a.text-danger:hover {
 
 #footer .ft-nws-wp .form-group {
   display: block;
+}
+
+#footer ul {
+  list-style: none;
+}
+
+#footer ol {
+  list-style-position: inside;
+}
+
+#footer .title1, #footer .title2 {
+  font-size: .8rem;
+}
+
+#footer .ft-smap-lt, #footer .ft-social-lt, #footer .ft-payment-lt {
+  padding: 0;
 }
 
 .ft-address {
