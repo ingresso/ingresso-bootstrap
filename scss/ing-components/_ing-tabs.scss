@@ -22,3 +22,17 @@
     }
   }
 }
+
+/* temp */
+@media screen and(max-width:543px){
+  .test-nav-tabs{
+    .nav-item+.nav-item{
+      margin-left: 0;
+    }
+    .nav-item{
+      float: none;
+      margin-bottom: 2px;
+    }
+    .nav-link{padding:1em;}
+  }
+}
