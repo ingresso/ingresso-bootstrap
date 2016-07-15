@@ -7487,6 +7487,20 @@ ol {
   border-color: transparent;
 }
 
+/* temp */
+@media screen and (max-width: 543px) {
+  .test-nav-tabs .nav-item + .nav-item {
+    margin-left: 0;
+  }
+  .test-nav-tabs .nav-item {
+    float: none;
+    margin-bottom: 2px;
+  }
+  .test-nav-tabs .nav-link {
+    padding: 1em;
+  }
+}
+
 .popover-title {
   font-size: 1.125rem;
   color: #fff;
@@ -8071,7 +8085,7 @@ ol {
 }
 
 .card.ing.horizontal .card-wp.cd-promo .svg-icon {
-  fill: #0cb0b1;
+  fill: #ba3a3a;
 }
 
 .card-list .cl-wrapper {
@@ -8524,7 +8538,7 @@ ol {
 }
 
 .media.mb-promo .svg-icon {
-  fill: #0cb0b1;
+  fill: #ba3a3a;
 }
 
 .high-title {
@@ -8567,7 +8581,7 @@ ol {
 }
 
 .high-title.ht-promo {
-  background: #0cb0b1;
+  background: #ba3a3a;
 }
 
 .high-title .svg-icon {
