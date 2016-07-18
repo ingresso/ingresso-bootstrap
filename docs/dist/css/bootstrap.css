@@ -7043,6 +7043,30 @@ ol {
   vertical-align: bottom !important;
 }
 
+.svg-icon.ic-cinema {
+  fill: #d3793d;
+}
+
+.svg-icon.ic-theater {
+  fill: #b96485;
+}
+
+.svg-icon.ic-events {
+  fill: #afbe3f;
+}
+
+.svg-icon.ic-show {
+  fill: #52478a;
+}
+
+.svg-icon.ic-circus {
+  fill: #ead11c;
+}
+
+.svg-icon.ic-promo {
+  fill: #ba3a3a;
+}
+
 @font-face {
   font-family: 'Klavika-Regular';
   src: url("../../fonts/Klavika-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Klavika-Regular.otf") format("opentype"), url("../../fonts/Klavika-Regular.woff") format("woff"), url("../../fonts/Klavika-Regular.ttf") format("truetype"), url("../../fonts/Klavika-Regular.svg#Klavika-Regular") format("svg");
@@ -7489,14 +7513,14 @@ ol {
 
 /* temp */
 @media screen and (max-width: 543px) {
-  .test-nav-tabs .nav-item + .nav-item {
+  .wide-nav-tabs .nav-item + .nav-item {
     margin-left: 0;
   }
-  .test-nav-tabs .nav-item {
+  .wide-nav-tabs .nav-item {
     float: none;
     margin-bottom: 2px;
   }
-  .test-nav-tabs .nav-link {
+  .wide-nav-tabs .nav-link {
     padding: 1em;
   }
 }
@@ -8508,6 +8532,18 @@ ol {
   }
 }
 
+.media.ing-model {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .media.ing-model .media-body {
   font-size: 0.75rem;
 }
@@ -8539,6 +8575,12 @@ ol {
 
 .media.mb-promo .svg-icon {
   fill: #ba3a3a;
+}
+
+@media (min-width: 992px) {
+  .media.ing-model {
+    margin-bottom: 0;
+  }
 }
 
 .high-title {
