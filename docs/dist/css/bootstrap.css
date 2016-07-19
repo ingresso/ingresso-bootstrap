@@ -7043,6 +7043,10 @@ ol {
   vertical-align: bottom !important;
 }
 
+.svg-icon.ic-ingresso {
+  fill: #0db6b5;
+}
+
 .svg-icon.ic-cinema {
   fill: #d3793d;
 }
@@ -7870,7 +7874,7 @@ ol {
   3.0 - Labels
   --------------------------------------------------------------*/
 .fl-form-group .form-control {
-  padding: 0.15rem 0.75rem;
+  padding: 0.15rem 0.5rem;
   height: 40px;
   -webkit-transition: .5s padding;
   -o-transition: .5s padding;
