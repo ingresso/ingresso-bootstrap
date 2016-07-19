@@ -8088,30 +8088,6 @@ ol {
   padding-bottom: 15px;
 }
 
-.card.ing.horizontal .card-wp.cd-cinema .svg-icon {
-  fill: #d3793d;
-}
-
-.card.ing.horizontal .card-wp.cd-theater .svg-icon {
-  fill: #b96485;
-}
-
-.card.ing.horizontal .card-wp.cd-show .svg-icon {
-  fill: #afbe3f;
-}
-
-.card.ing.horizontal .card-wp.cd-events .svg-icon {
-  fill: #52478a;
-}
-
-.card.ing.horizontal .card-wp.cd-circus .svg-icon {
-  fill: #ead11c;
-}
-
-.card.ing.horizontal .card-wp.cd-promo .svg-icon {
-  fill: #ba3a3a;
-}
-
 .card-list .cl-wrapper {
   white-space: nowrap;
   overflow: auto;
@@ -8551,30 +8527,6 @@ ol {
 .media.ing-model .media-heading {
   font-size: 0.875rem;
   margin: 0;
-}
-
-.media.mb-cinema .svg-icon {
-  fill: #d3793d;
-}
-
-.media.mb-theater .svg-icon {
-  fill: #b96485;
-}
-
-.media.mb-show .svg-icon {
-  fill: #afbe3f;
-}
-
-.media.mb-events .svg-icon {
-  fill: #52478a;
-}
-
-.media.mb-circus .svg-icon {
-  fill: #ead11c;
-}
-
-.media.mb-promo .svg-icon {
-  fill: #ba3a3a;
 }
 
 @media (min-width: 992px) {
