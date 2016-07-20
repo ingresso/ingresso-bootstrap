@@ -4,6 +4,20 @@ title: Icons
 group: ingresso-components
 ---
 
+Icons in `<svg>` easy to use.
+
+There are pre-defined colors for the icons . They can be used throughout the site.
+
+classes:
+
+`ic-ingresso`
+`ic-cinema`
+`ic-theater`
+`ic-events`
+`ic-show`
+`ic-circus`
+`ic-promo`
+
 ## Example
 
 {% example html %}
@@ -12,49 +26,49 @@ group: ingresso-components
   <div class="row">
     <div class="col-xs-1">
       <!-- Start : Arrow right -->
-      <svg class="svg-icon" width="30" height="30">
+      <svg class="svg-icon ic-ingresso" width="30" height="30">
         <use xlink:href="#icon-arrow2" />
       </svg>
       <!-- End : Arrow right -->
     </div>
     <div class="col-xs-1">
      <!-- Start : Arrow Up -->
-     <svg class="svg-icon" width="30" height="30">
+     <svg class="svg-icon ic-cinema" width="30" height="30">
         <use xlink:href="#icon-arrow2-1" />
       </svg>
     <!-- End : Arrow Up -->
     </div>
     <div class="col-xs-1">
       <!-- Start : Arrow Left -->
-      <svg class="svg-icon" width="30" height="30">
+      <svg class="svg-icon ic-theater" width="30" height="30">
         <use xlink:href="#icon-arrow2-2" />
       </svg>
       <!-- End : Arrow Left -->
     </div>
     <div class="col-xs-1">
       <!-- Start : Arrow Down -->
-      <svg class="svg-icon" width="30" height="30">
+      <svg class="svg-icon ic-events" width="30" height="30">
         <use xlink:href="#icon-arrow2-3" />
       </svg>
       <!-- End : Arrow Down -->
     </div>
     <div class="col-xs-1">
        <!-- Start : Barcode -->
-      <svg class="svg-icon" width="30" height="30">
+      <svg class="svg-icon ic-show" width="30" height="30">
         <use xlink:href="#icon-barcode" />
       </svg>
       <!-- End : Barcode -->
     </div>
     <div class="col-xs-1">
       <!-- Start : Box -->
-      <svg class="svg-icon" width="30" height="30">
+      <svg class="svg-icon ic-circus" width="30" height="30">
         <use xlink:href="#icon-box" />
       </svg>
       <!-- End : Box -->
     </div>
     <div class="col-xs-1">
       <!-- Start : Calendar 1 -->
-      <svg class="svg-icon" width="30" height="30">
+      <svg class="svg-icon ic-promo" width="30" height="30">
         <use xlink:href="#icon-calendar" />
       </svg>
       <!-- End : Calendar 1 -->

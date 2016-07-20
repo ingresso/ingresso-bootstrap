@@ -9,13 +9,13 @@ Media Component of Ingresso.com. It follows the same structure as Bootstrap medi
 ## Example
 
 
-We must add `ing-model` class and a class according to the desired event . The options are `mb-cinema`, `mb-theater`, `mb-events`, `mb-show` and `mb-circus`.
+We must add `ing-model` class.
 
 {% example html %}
 
-<div class="media ing-model mb-cinema">
+<div class="media ing-model">
   <a class="media-left" href="#">
-    <svg class="svg-icon" width="30" height="30">
+    <svg class="svg-icon ic-cinema" width="30" height="30">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-movie"></use>
     </svg>
   </a>
@@ -25,9 +25,9 @@ We must add `ing-model` class and a class according to the desired event . The o
   </div>
 </div>
 
-<div class="media ing-model mb-theater">
+<div class="media ing-model">
   <a class="media-left" href="#">
-    <svg class="svg-icon" width="30" height="30">
+    <svg class="svg-icon ic-theater" width="30" height="30">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use>
     </svg>
   </a>
@@ -37,9 +37,9 @@ We must add `ing-model` class and a class according to the desired event . The o
   </div>
 </div>
 
-<div class="media ing-model mb-events">
+<div class="media ing-model">
   <a class="media-left" href="#">
-    <svg class="svg-icon" width="30" height="30">
+    <svg class="svg-icon ic-events" width="30" height="30">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ticket"></use>
     </svg>
   </a>
@@ -49,9 +49,9 @@ We must add `ing-model` class and a class according to the desired event . The o
   </div>
 </div>
 
-<div class="media ing-model mb-show">
+<div class="media ing-model">
   <a class="media-left" href="#">
-    <svg class="svg-icon" width="30" height="30">
+    <svg class="svg-icon ic-show" width="30" height="30">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-show"></use>
     </svg>
   </a>
@@ -61,9 +61,9 @@ We must add `ing-model` class and a class according to the desired event . The o
   </div>
 </div>
 
-<div class="media ing-model mb-circus">
+<div class="media ing-model">
   <a class="media-left" href="#">
-    <svg class="svg-icon" width="30" height="30">
+    <svg class="svg-icon ic-circus" width="30" height="30">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-circus"></use>
     </svg>
   </a>

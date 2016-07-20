@@ -32,11 +32,19 @@ Be sure to use the same rules at bootstrap default accordion.
 
 {% endexample %}
 
+The see more description is basically follow the example below. A div called `collapse-description` encompassing tag `<p>` and `<a>`. In the `<p>` tag add `id="collapse-more-text"` and make reference in the href.
+
+{% callout info %}
+**This component is made for the mobile version , so to view set your browser to mobile version.**
+{% endcallout %} 
+
+## Example
+
 {% example html %}
 
 <div class="collapse-description">
   <p class="collapse" id="collapse-more-text">Dois amigos, o diretor Miguel (Gregorio Duvivier) e o ator Rodrigo (Fabio Porchat), são premiados no mais importante festival de cinema do mundo. Eles saem para comemorar e, depois de muitos drinques, assinam um contrato vitalício em que prometem trabalhar juntos para sempre. Naquela mesma noite, porém, Miguel desaparece misteriosamente no banheiro do quarto do hotel, sem deixar vestígios. Dez anos se passam. Rodrigo volta ao mesmo festival, agora como jurado, e assim que entra no mesmo quarto onde havia se hospedado uma década atrás, dá de cara com Miguel. Agora com barbas e cabelos longos, o amigo conta que foi abduzido por seres alienígenas e levado ao centro da Terra, onde presenciou uma rebelião de escravos. Agora, pretende contar essa história em um filme. Já famoso, Rodrigo desconfia da sanidade do amigo, mas será obrigado a honrar o contrato, mesmo sabendo que ele poderá destruir não apenas sua carreira, mas sua vida.</p>
-  <a data-toggle="collapse" class="etmt-see-more collapse-see-more text-xs-center collapsed" href="#collapse-more-text">Continuar lendo</a>
+  <a data-toggle="collapse" class="collapse-see-more text-xs-center collapsed" href="#collapse-more-text">Continuar lendo</a>
 </div>
 
 {% endexample %}
