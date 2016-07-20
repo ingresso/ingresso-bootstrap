@@ -7666,7 +7666,7 @@ ol {
   display: block;
   border-right: 1px solid #e0e0e0;
   background-color: #fff;
-  left: 9px;
+  left: 4px;
   top: 50%;
   margin-top: -11.5px;
   overflow: visible;
@@ -7681,7 +7681,7 @@ ol {
 }
 
 .form-group .form-icon-group ~ .fl-label {
-  padding-left: 48px;
+  padding-left: 43px;
 }
 
 .form-group.fl-form-group-with-value .fl-label {
@@ -7701,17 +7701,13 @@ ol {
 /*--------------------------------------------------------------
   1.2 - Combo
   --------------------------------------------------------------*/
-.form-group-combo {
-  margin: 0;
-}
-
 .form-group-combo .form-group {
   padding-right: 0;
 }
 
 .form-group-combo .form-group:last-child {
   padding-left: 0;
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 .form-group-combo .form-group:last-child .form-control {
@@ -7805,7 +7801,7 @@ ol {
 
 .form-group-btn .btn {
   position: absolute;
-  right: 8px;
+  right: 3px;
   top: 3px;
   height: 34px;
   line-height: 34px;
@@ -7900,7 +7896,7 @@ ol {
 
 .fl-form-group-with-value .fl-label {
   top: 0;
-  left: 21px;
+  left: 13px;
   opacity: 1;
 }
 
