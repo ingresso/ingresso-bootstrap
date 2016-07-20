@@ -43,31 +43,30 @@
   }
 }
 
-.title-bar {
+.high-title2{
+  color:#fff;
+  padding:10px;
+  min-height: 50px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  min-height: 30px;
   background: #F2F2F2;
-  font-size: 14px;
-  padding: 10px;
-  margin-bottom: 10px;
-  .tit-bar-content {
-    font-weight: normal;
-    vertical-align: middle;
-    margin:0;
-  }
-  .tit-bar-lk1, .tit-bar-lk2{
+  *{
     vertical-align: middle;
   }
-
-  .tit-bar-lk2{
-    float: right;
-    font-size: 0.813rem;
-    .svg-icon{
-      fill:#0DB6B5;
-    }
-  }
-
   .svg-icon{
-    vertical-align: middle;
+    margin-right: 5px;
     fill:#c3c3c3;
+  }
+  .ht-lk{
+    float: right;
+    margin-left: auto;
+    font-size: 0.8125rem;
+    font-family: 'Trebuchet Ms';
+    .svg-icon{
+      fill:#0db6b5;
+    }
   }
 }
 

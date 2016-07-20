@@ -37,3 +37,136 @@
     }
   }
 }
+
+//
+// Date List
+//
+
+.date-lt {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  font-size: 0;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+.date-it {
+  display: inline-block;
+  position: relative;
+  letter-spacing: normal;
+  white-space: normal;
+}
+.date-lk {
+  display: block;
+  color: #0DB6B5;
+  padding: 5px 10px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #0DB6B5;
+  border-top: 10px solid #0DB6B5;
+  text-align: center;
+  width: 62px;
+  min-height: 45px;
+  vertical-align: top;
+  text-decoration: none;
+  &:hover {
+    color: #0A9191;
+    border: 1px solid #0A9191;
+    border-top: 10px solid #0A9191;
+    text-decoration: none;
+  }
+  &:active {
+    color: #086E6E;
+    border: 1px solid #086E6E;
+    border-top: 10px solid #086E6E;
+  }
+  &.active {
+    color: #fff;
+    cursor:default;
+    text-decoration:none;
+    background: #0DB6B5;
+    border: 1px solid #0DB6B5;
+    border-top: 10px solid #0DB6B5;
+  }
+  &.disabled{
+    color: #DCDCDC;
+    background: #fff;
+    border: 1px solid #DCDCDC;
+    border-top: 10px solid #DCDCDC;
+    cursor: not-allowed;
+  }
+}
+
+.date-main-info {
+  font-size: 14px;
+}
+.date-month-lt .date-main-info {
+  font-size: 18px;
+}
+.date-info {
+  font-size: 11px;
+}
+
+
+//
+// Tickets List
+//
+
+
+.tickets-lt {
+  font-size: 0;
+
+  .tck-it {
+    font-size: 12px;
+    display: inline-block;
+    position: relative;
+    letter-spacing: normal;
+    margin: 0 10px 10px 0;
+
+    &.is-disabled {
+      .tck-lk, .tck-lk:hover, .tck-lk:active {
+        color: #666;
+        background: #DCDCDC;
+        cursor: not-allowed;
+      }
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      margin-top:-5px;
+      background: #fff;
+      top: 50%;
+      right: -5px;
+      z-index: 2;
+      border-radius: 10px;
+    }
+  }
+  .tck-lk {
+    display: block;
+    color: #fff;
+    padding: 15px;
+    background: #0DB6B5;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:hover {
+      background: #0A9191;
+      color: #fff;
+      text-decoration: none;
+    }
+    &:active {
+      background: #086E6E;
+    }
+  }
+}

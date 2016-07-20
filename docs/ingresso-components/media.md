@@ -9,7 +9,7 @@ Media Component of Ingresso.com. It follows the same structure as Bootstrap medi
 ## Example
 
 
-We must add `ing-model` class and a class according to the desired event . The options are `mb-cinema`, `mb-theater`, `mb-events`, `mb-show` and `mb-circus`.
+We must add `ing-model` class.
 
 {% example html %}
 

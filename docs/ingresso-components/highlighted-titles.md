@@ -62,16 +62,30 @@ We use the class `high- title` and add a class according to the desired event . 
 
 {% endexample %}
 
+## Example
+
+We use the class `high-title2`. They can also be used without the icon. 
+
 {% example html %}
 
-<header class="title-bar">
+<h1 class="high-title2">
   <svg class="svg-icon d-inline-block" width="30" height="30">
     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star-full"></use>
   </svg>
-  <h1 class="tit-bar-content h6 d-inline-block"><a href="">Cine 10 Carrefour Sulacap</a></h1>
-</header>
+  <a href="">Cine 10 Carrefour Sulacap</a>
+  <a class="ht-lk etmt-see-map" href="">
+      <span class="hidden-sm-down">ver no mapa</span>
+      <svg class="svg-icon" width="30" height="30">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-place"></use>
+      </svg>
+  </a>
+</h1>
+
 
 {% endexample %}
+
+## Example
+Title with colors related to the events of Ingresso.com . Just follow the example and use the corresponding classes.
 
 {% example html %}
 
