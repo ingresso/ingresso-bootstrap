@@ -7961,6 +7961,45 @@ ol {
   padding-bottom: 3px;
 }
 
+/*--------------------------------------------------------------
+  6.0 - Security Level
+  --------------------------------------------------------------*/
+.security-level {
+  font-size: 0.750rem;
+}
+
+.security-level * {
+  vertical-align: middle;
+}
+
+.security-level .sl-level {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  vertical-align: middle;
+  display: inline-block;
+  background: #c8c8c8;
+  -webkit-transition: background .3s;
+  -o-transition: background .3s;
+  transition: background .3s;
+}
+
+.security-level .sl-wp {
+  margin: 0 5px;
+}
+
+.security-level .sl-1 {
+  color: #C00000;
+}
+
+.security-level .sl-2 {
+  color: orange;
+}
+
+.security-level .sl-3 {
+  color: #00ba1b;
+}
+
 .card.ing {
   width: 174px;
 }

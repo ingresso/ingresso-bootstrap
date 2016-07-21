@@ -329,3 +329,36 @@
     padding-top:3px;
     padding-bottom:3px;
   }
+
+
+/*--------------------------------------------------------------
+  6.0 - Security Level
+  --------------------------------------------------------------*/
+
+.security-level{
+  font-size: 0.750rem;
+  *{
+    vertical-align: middle;
+  }
+  .sl-level{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+    background: #c8c8c8;
+    transition: background .3s;
+  }
+  .sl-wp{
+    margin:0 5px;
+  }
+  .sl-1{
+    color:#C00000;
+  }
+  .sl-2{
+    color:orange;
+  }
+  .sl-3{
+    color:#00ba1b;
+  }
+}
