@@ -103,3 +103,20 @@ Bootstrap includes validation styles for danger, warning, and success states on 
     <span class="frm-msg-error">É obrigatório preencher o Email.</span>
   </div>
 {% endexample %}
+
+## Ingresso Password Security Level
+
+{% example html %}
+
+<div class="security-level">
+    <span>Sua senha está:</span>
+    <span class="sl-wp">
+      <span class="sl-level"></span>
+      <span class="sl-level"></span>
+      <span class="sl-level"></span>
+      <span class="sl-level"></span>
+    </span>
+    <span class="sl-1">Muito Simples</span>
+</div>
+
+{% endexample %}
