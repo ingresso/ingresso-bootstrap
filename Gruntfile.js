@@ -169,7 +169,8 @@ module.exports = function (grunt) {
           'js/src/tab.js',
           'js/src/tooltip.js',
           'js/src/popover.js',
-          'js/src/ingresso/carousel.js'
+          'js/src/ingresso/carousel.js',
+          'js/src/ingresso/lazyload.js'
         ],
         dest: 'dist/js/<%= pkg.name %>.js'
       },
@@ -178,7 +179,8 @@ module.exports = function (grunt) {
           'js/src/vendor/matchMedia.js',
           'js/src/vendor/enquire.js',
           'js/src/vendor/floating-labels.js',
-          'js/src/vendor/swiper.jquery.js'
+          'js/src/vendor/swiper.jquery.js',
+          'js/src/vendor/jquery.lazyload.js'
         ],
         dest: 'dist/js/vendor.js'
       },
