@@ -10,7 +10,7 @@ import Util from './util'
  * --------------------------------------------------------------------------
  */
 
-const Lazyload = (($) => {
+const LazyloadIngresso = (($) => {
 
   /**
    * Check for Lazyload dependency
@@ -27,7 +27,7 @@ const Lazyload = (($) => {
    * ------------------------------------------------------------------------
    */
 
-  const NAME                = 'lazyload'
+  const NAME                = 'lazyloadIngresso'
   const VERSION             = '4.0.0-alpha.2'
   const DATA_KEY            = 'bs.lazyload'
   const DATA_API_KEY        = '.data-api'
@@ -49,17 +49,17 @@ const Lazyload = (($) => {
   const DefaultType = {
     animation       : 'boolean',
     trigger         : 'string',
-    container       : 'object',
+    container       : 'window|object',
     effect          : 'string',
     offset          : 'number',
     skip_invisible  : 'boolean',
-    load            : 'function',
+    load            : 'null|function',
     placeholder     : 'string'
   }
 
   const Event = {
     SCROLL          : `scroll${EVENT_KEY}${DATA_API_KEY}`,
-    LOAD_DATA_API   : `load${EVENT_KEY}${DATA_API_KEY}`,
+    LOAD_DATA_API   : `load${EVENT_KEY}${DATA_API_KEY}`
   }
 
   const ClassName = {
@@ -86,7 +86,7 @@ const Lazyload = (($) => {
    * ------------------------------------------------------------------------
    */
 
-  class Lazyload {
+  class LazyloadIngresso {
 
     constructor(element, config) {
 
@@ -96,10 +96,11 @@ const Lazyload = (($) => {
 
       // protected
       this.element = element
+      this.container = window
       this.config  = this._getConfig(config)
       this.tip     = null
 
-      this._addEventListeners()
+      this._init()
 
     }
 
@@ -115,7 +116,7 @@ const Lazyload = (($) => {
     }
 
     static get NAME() {
-      return NAME
+      return NAME$(Selector.IMG, $el)
     }
 
     static get DATA_KEY() {
@@ -157,63 +158,86 @@ const Lazyload = (($) => {
       return config
     }
 
-    _addEventListeners(){
+    _init() {
 
       let $el = $(this.element);
 
-      if(this.element.nodeType == Node.ELEMENT_NODE){
+      if(this._isImage()) {
 
+         if(!$el.hasClass(ClassName.INITIATED)){
 
-         if(this.element.tagName == 'IMG' && !$el.hasClass(ClassName.INITIATED)){
+             // verify if the last image lazyloaded has container
+             if(!$el.closest(Default.container).length && Default.container !== window){
 
-             /* verify if the last image lazyloaded has container */
-             if(!$el.closest(container).length && container !== window){
-
-                 container = window;
+                 Default.container = window;
              }
 
-             _applyLazyload();
+             this._applyLazyload();
 
 
          }else{
+           // if not image
 
-             // Use for Bootstrap Tabs
-             if($el.attr('data-lazyload') == 'tab'){
-
-                 // set referenced tab
-                 var $tab = $($el.attr('href'));
-
-                 $el.on('shown.bs.tab',function(){
-
-                     // fire scroll on tab to force images to show
-                     $(Selector.IMG, $tab).trigger(Event.SCROLL);
-
-                 });
-
-                 return;
-             }
+            if(_isBootstrapTabs()){
+              return true
+            }else{
+              return false
+            }
 
              // set container for recursive use of this function
-             container = $el;
+             Default.container = $el;
 
-             // execute it recursively on container's element
-             $(Selector.IMG, $el).each(_addEventListeners);
+             $(Selector.IMG, $el).each(function(){
+
+               Default.container = $el;
+               _applyLazyload(this)
+             });
 
 
          }
       }
-
-      console.log('teste');
-
-      //_addClasses();
-      //_applyLazyload();
+      return;
 
     }
 
-    _applyLazyload(){
+    _applyLazyload(el) {
 
-      $(this.element).lazyload(Default);
+      $(el | this.element).lazyload(Default)
 
+    }
+
+    _isImage(){
+
+      if(this.element.nodeType == Node.ELEMENT_NODE) {
+
+        if(this.element.tagName == 'IMG'){
+          return true
+        }
+
+        return false
+      }
+    }
+
+    // Use for Bootstrap Tabs
+    _isBootstrapTabs() {
+
+      if($(this.element).attr('href')){
+
+        let $el = $(this.element)
+        // set referenced tab
+        let $tab = $($el.attr('href'));
+
+        if($el.attr('data-lazyload') && $el.attr('data-toggle') == 'tab'){
+
+            $el.on('shown.bs.tab',function(){
+
+                // fire scroll on tab to force images to show
+                $(Selector.IMG, $tab).trigger(Event.SCROLL);
+
+                return true;
+            });
+        }
+      }
     }
 
     _onloadCallback(){
@@ -222,15 +246,14 @@ const Lazyload = (($) => {
     }
 
     _addClasses(){
-
       $(this.element).addClass(ClassName.INITIATED);
     }
-
 
     // static
 
     static _jQueryInterface(config) {
       return this.each(function () {
+        console.log('jq interface')
         let data   = $(this).data(DATA_KEY)
         let _config = typeof config === 'object' ?
           config : null
@@ -240,7 +263,7 @@ const Lazyload = (($) => {
         }
 
         if (!data) {
-          data = new Lazyload(this, _config)
+          data = new LazyloadIngresso(this, _config)
           $(this).data(DATA_KEY, data)
         }
 
@@ -262,9 +285,9 @@ const Lazyload = (($) => {
    */
 
    $(window).on(Event.LOAD_DATA_API, () => {
-     $(Selector.LAZY).each(function () {
+     $(Selector.DATA_LAZY).each(function () {
        let $lazy = $(this)
-       Lazyload._jQueryInterface.call($lazy, $lazy.data())
+       LazyloadIngresso._jQueryInterface.call($lazy, $lazy.data())
      })
    })
 
@@ -276,15 +299,15 @@ const Lazyload = (($) => {
    * ------------------------------------------------------------------------
    */
 
-  $.fn[NAME]             = Lazyload._jQueryInterface
-  $.fn[NAME].Constructor = Lazyload
+  $.fn[NAME]             = LazyloadIngresso._jQueryInterface
+  $.fn[NAME].Constructor = LazyloadIngresso
   $.fn[NAME].noConflict  = function () {
     $.fn[NAME] = JQUERY_NO_CONFLICT
-    return Lazyload._jQueryInterface
+    return LazyloadIngresso._jQueryInterface
   }
 
-  return Lazyload
+  return LazyloadIngresso
 
 })(jQuery)
 
-export default Lazyload
+export default LazyloadIngresso
