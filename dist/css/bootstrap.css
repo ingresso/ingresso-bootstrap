@@ -4448,6 +4448,10 @@ input[type="button"].btn-block {
   padding: 1.25rem;
 }
 
+.card-img-placeholder {
+  height: 140px;
+}
+
 @media (min-width: 544px) {
   .card-deck {
     display: -webkit-box;
@@ -7071,6 +7075,32 @@ ol {
   fill: #ba3a3a;
 }
 
+.ic-rounded {
+  border-radius: 50%;
+  cursor: default;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  font-size: .75rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.ic-rounded.ic-r-1 {
+  background: #d3793d;
+}
+
+.ic-rounded.ic-r-2 {
+  background: #0db5b6;
+}
+
+.ic-rounded.ic-r-2 .svg-icon {
+  fill: #fff;
+}
+
 @font-face {
   font-family: 'Klavika-Regular';
   src: url("../../fonts/Klavika-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Klavika-Regular.otf") format("opentype"), url("../../fonts/Klavika-Regular.woff") format("woff"), url("../../fonts/Klavika-Regular.ttf") format("truetype"), url("../../fonts/Klavika-Regular.svg#Klavika-Regular") format("svg");
@@ -8004,9 +8034,8 @@ ol {
   width: 174px;
 }
 
-.card.ing .card-img-top {
-  width: 245px;
-  height: 100px;
+.card.ing .card-img-placeholder {
+  height: 85px;
 }
 
 .card.ing .card-title, .card.ing .card-text {
