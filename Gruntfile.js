@@ -77,6 +77,7 @@ module.exports = function (grunt) {
           'js/dist/tooltip.js'   : 'js/src/tooltip.js',
           'js/dist/popover.js'   : 'js/src/popover.js',
           'js/dist/ingresso/carousel.js'   : 'js/src/ingresso/carousel.js',
+          'js/dist/ingresso/lazyload.js'   : 'js/src/ingresso/lazyload.js',
           'js/dist/vendor/floating-labels.js'   : 'js/src/vendor/floating-labels.js'
         }
       },
