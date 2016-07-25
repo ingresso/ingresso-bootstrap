@@ -8030,6 +8030,24 @@ ol {
   color: #00ba1b;
 }
 
+/*--------------------------------------------------------------
+  7.0 - Amount
+  --------------------------------------------------------------*/
+.amount-group {
+  margin-bottom: 10px;
+  border: 1px solid #d5d5d5;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+.amount-group .amt-number {
+  margin: 0 10px;
+  color: #999;
+  font-weight: 700;
+  font-size: 0.813rem;
+  vertical-align: middle;
+}
+
 .card.ing {
   width: 174px;
 }
