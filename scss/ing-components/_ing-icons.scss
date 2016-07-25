@@ -23,24 +23,33 @@
 }
 
 .ic-rounded{
-  border-radius: 50%;
-  cursor: default;
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
   display: inline-block;
-  color: #fff;
-  font-weight: 700;
-  font-size: .75rem;
   text-align: center;
-  vertical-align: middle;
-  &.ic-r-1{
-    background: #d3793d;
-  }
-  &.ic-r-2{
-    background: #0db5b6;
+  .ic-r-ic{
+    border-radius: 50%;
+    cursor: default;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    display: block;
+    margin:0 auto;
+    font-weight: 700;
+    font-size: .75rem;
+    text-align: center;
+    vertical-align: middle;
+
     .svg-icon{
       fill:#fff;
+    }
+  }
+  &.ic-r-1{
+    .ic-r-ic{
+      background: #d3793d;
+    }
+  }
+  &.ic-r-2{
+    .ic-r-ic{
+      background: #0db5b6;
     }
   }
 }
