@@ -7076,29 +7076,34 @@ ol {
 }
 
 .ic-rounded {
+  display: inline-block;
+  text-align: center;
+}
+
+.ic-rounded .ic-r-ic {
   border-radius: 50%;
   cursor: default;
   width: 32px;
   height: 32px;
   line-height: 32px;
-  display: inline-block;
-  color: #fff;
+  display: block;
+  margin: 0 auto;
   font-weight: 700;
   font-size: .75rem;
   text-align: center;
   vertical-align: middle;
 }
 
-.ic-rounded.ic-r-1 {
+.ic-rounded .ic-r-ic .svg-icon {
+  fill: #fff;
+}
+
+.ic-rounded.ic-r-1 .ic-r-ic {
   background: #d3793d;
 }
 
-.ic-rounded.ic-r-2 {
+.ic-rounded.ic-r-2 .ic-r-ic {
   background: #0db5b6;
-}
-
-.ic-rounded.ic-r-2 .svg-icon {
-  fill: #fff;
 }
 
 @font-face {
@@ -8038,6 +8043,10 @@ ol {
   border: 1px solid #d5d5d5;
   display: inline-block;
   border-radius: 15px;
+}
+
+.amount-group .ic-rounded {
+  vertical-align: middle;
 }
 
 .amount-group .amt-number {

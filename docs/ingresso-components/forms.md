@@ -127,7 +127,7 @@ Bootstrap includes validation styles for danger, warning, and success states on 
 
 <div class="amount-group">
   <span class="ic-rounded ic-r-2">
-    <a class="amt-less" href="">
+    <a class="amt-less ic-r-ic" href="">
       <svg class="svg-icon" width="30" height="30">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-less"></use>
           </svg>
@@ -135,7 +135,7 @@ Bootstrap includes validation styles for danger, warning, and success states on 
   </span>
   <span class="amt-number">0</span>
   <span class="ic-rounded ic-r-2">
-    <a class="amt-plus" href="">
+    <a class="amt-plus ic-r-ic" href="">
       <svg class="svg-icon" width="30" height="30">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-plus"></use>
       </svg>

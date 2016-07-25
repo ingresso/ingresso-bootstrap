@@ -372,6 +372,9 @@
     border: 1px solid #d5d5d5;
     display: inline-block;
     border-radius: 15px;
+    .ic-rounded{
+      vertical-align: middle;
+    }
     .amt-number{
       margin: 0 10px;
       color: #999;
