@@ -7083,8 +7083,6 @@ ol {
 .ic-rounded .ic-r-ic {
   border-radius: 50%;
   cursor: default;
-  width: 32px;
-  height: 32px;
   line-height: 32px;
   display: block;
   margin: 0 auto;
@@ -7096,6 +7094,21 @@ ol {
 
 .ic-rounded .ic-r-ic .svg-icon {
   fill: #fff;
+}
+
+.ic-rounded.ic-rd-small .ic-r-ic {
+  width: 22px;
+  height: 22px;
+}
+
+.ic-rounded.ic-rd-medium .ic-r-ic {
+  width: 32px;
+  height: 32px;
+}
+
+.ic-rounded.ic-rd-large .ic-r-ic {
+  width: 42px;
+  height: 42px;
 }
 
 .ic-rounded.ic-r-1 .ic-r-ic {
