@@ -16,7 +16,7 @@ import Util from './util'
    * Check for Lazyload dependency
    * Lazy Load Plugin for jQuery - https://github.com/tuupola/jquery_lazyload
    */
-   if (window.Tether === undefined) {
+   if ($.fn.lazyload === undefined) {
     throw new Error('Bootstrap lazyload require Lazy Load Plugin for jQuery (https://github.com/tuupola/jquery_lazyload)')
   }
 
@@ -41,7 +41,7 @@ import Util from './util'
     container: window,
     effect : "fadeIn",
     offset : 300,
-    skip_invisible: true,
+    skip_invisible: false,
     load: null,
     placeholder:'/assets/img/spinner.gif'
   }
@@ -196,7 +196,7 @@ import Util from './util'
           this._applyLazyload($(Selector.IMG, $el))
 
         }
-      
+
       return;
 
     }
@@ -291,12 +291,14 @@ import Util from './util'
    * ------------------------------------------------------------------------
    */
 
-   $(window).on(Event.LOAD_DATA_API, () => {
+
+   $(function(){
      $(Selector.DATA_LAZY).each(function () {
        let $lazy = $(this)
        LazyloadIngresso._jQueryInterface.call($lazy, $lazy.data())
      })
    })
+
 
 
 

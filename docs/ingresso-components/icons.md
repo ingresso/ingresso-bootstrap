@@ -42,7 +42,11 @@ classes:
       <!-- Start : Arrow Left -->
       <svg class="svg-icon ic-theater" width="30" height="30">
         <use xlink:href="#icon-arrow2-2" />
+      </svg><!-- Start : Arrow right -->
+      <svg class="svg-icon ic-ingresso" width="30" height="30">
+        <use xlink:href="#icon-arrow2" />
       </svg>
+      <!-- End : Arrow right -->
       <!-- End : Arrow Left -->
     </div>
     <div class="col-xs-1">
@@ -539,7 +543,7 @@ classes:
       <!-- End : Full Star -->
     </div>
   </div>
-  
+
   <div class="row">
     <div class="col-xs-1">
       <!-- Start : Tag -->
@@ -649,8 +653,15 @@ classes:
       </svg>
       <!-- End : Error -->
     </div>
+    <div class="col-xs-1">
+      <!-- Start : Passbook -->
+      <svg class="svg-icon ic-ingresso" width="30" height="30">
+        <use xlink:href="#icon-passbook" />
+      </svg>
+      <!-- End : Passbook -->
+    </div>
   </div>
-  
+
 </div>
 
 {% endexample %}
