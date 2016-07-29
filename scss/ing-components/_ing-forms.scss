@@ -39,7 +39,7 @@
         fill: #999;
       }
       & ~ .form-control {
-        padding-left: 60px;
+        padding-left: 52px;
       }
       & ~ .fl-label {
         padding-left: 43px;
@@ -241,9 +241,19 @@
         -ms-transition: .5s padding;
             transition: .5s padding;
     }
+    textarea.form-control{
+      height:auto;
+      padding: .719rem .5rem;
+    }
+
+    &.frm-grp-01{
+      .fl-label{
+        left: 22px;
+      }
+    }
     &.frm-grp-02{
       .fl-label{
-        left:13px;
+        left:9px;
       }
     }
   }
@@ -251,7 +261,7 @@
     display: block;
     position: absolute;
     top:1rem;
-    left:21px;
+    left:13px;
     opacity: 0;
     z-index: 0;
     font-size: 0.85em;
@@ -300,6 +310,9 @@
   }
 
   .custom-checkbox, .custom-radio{
+    *{
+      vertical-align: middle;
+    }
     &:hover{
       .custom-control-indicator{
         border-color: #0db6b5;
@@ -312,6 +325,9 @@
           }
         }
       }
+    }
+    .custom-control-description{
+      display: inline-block;
     }
   }
 

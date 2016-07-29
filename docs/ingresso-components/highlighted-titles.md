@@ -97,3 +97,16 @@ Title with colors related to the events of Ingresso.com . Just follow the exampl
 <h1 class="event-name ev-nm-06">Nome do produto Promoção</h1>
 
 {% endexample %}
+
+## Example
+
+{% example html %}
+
+<h1 class="modal-title main-title" id="myModalLabel">
+  <svg class="svg-icon" width="30" height="30">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-lock-2"></use>
+  </svg>
+  RECUPERAÇÃO DE SENHA
+</h1>
+
+{% endexample %}

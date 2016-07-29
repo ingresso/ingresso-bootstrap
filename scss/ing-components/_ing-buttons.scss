@@ -27,8 +27,19 @@
   text-transform: uppercase;
 }
 
+.btn-block-xs {
+  width: 100%;
+  margin-bottom:1rem;
+}
+
 //Link não segue o padrão de uppercase dos botoes
 .btn-link {
   text-transform: initial;
 }
 
+@include media-breakpoint-up(sm) {
+  .btn-block-xs {
+    width: auto;
+    margin:0;
+  }
+}

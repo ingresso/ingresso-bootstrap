@@ -83,7 +83,7 @@
     }
     .card-block {
       display: inline-block;
-      padding: 1rem 0 0;
+      padding: .5rem 0 0;
     }
     .btn {
       width: auto;
@@ -105,44 +105,27 @@
     }
   }
 }
-.card-list {
-  .cl-wrapper {
-    white-space: nowrap;
-    overflow: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
+
+.card-product{
+  width: 190px;
+  text-align: center;
+  .cp-img{
+    margin-bottom: 1rem;
     display: block;
-    -webkit-flex-flow: initial;
+    max-width: 100%;
+    height: auto;
   }
-  .cl-item {
-    white-space: normal;
-    width: auto;
-    display: inline-block;
-    letter-spacing: normal;
-    word-spacing: normal;
-    vertical-align: top;
-    text-rendering: auto;
-    padding: 0;
-    max-width: initial;
-    margin: 0 4px 0 0;
+  .cp-description{
+    margin-bottom: 1rem;
+    display: block;
+  }
+  .cp-tax{
+    display: block;
   }
 }
-@include media-breakpoint-up(md) {
-  .card.ing {
-    max-width: 174px;
-    width: auto;
-  }
-  .card-list {
-    .cl-wrapper {
-      white-space: normal;
-      overflow: hidden;
-    }
-    .cl-item {
-      margin: 0 4px;
-    }
-  }
-}
-@include media-breakpoint-up(lg) {
+
+
+@include media-breakpoint-up(sm) {
   .card.ing {
     &.horizontal {
       display: flex;

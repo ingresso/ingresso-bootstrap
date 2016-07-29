@@ -96,3 +96,17 @@
     color: #0DB6B5;
   }
 }
+
+//
+// Main Title with Icon
+//
+
+.main-title{
+  font-size: 1rem;
+  padding-bottom:10px;
+  border-bottom:1px solid #bbb;
+  margin:15px 0 10px;
+  .svg-icon{
+    vertical-align: middle;
+  }
+}

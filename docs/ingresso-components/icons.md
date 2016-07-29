@@ -661,13 +661,18 @@ Padrão de icones redondos, podem ser usados em diversas cores, links ou svg.
 
 {% example html %}
 
-<span class="ic-rounded ic-r-1">k13</span>
-<span class="ic-rounded ic-r-2">
-  <a href="">
-    <svg class="svg-icon" width="30" height="30">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-faq"></use>
+
+
+<span class="ic-rounded ic-rd-medium ic-r-1">
+  <span class="ic-r-ic">M8</span>
+</span>
+
+<span class="ic-rounded ic-rd-large ic-r-2">
+  <span class="ic-r-ic">
+    <svg class="svg-icon" width="40" height="40">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
     </svg>
-  </a>
+  </span>
 </span>
 
 {% endexample %}

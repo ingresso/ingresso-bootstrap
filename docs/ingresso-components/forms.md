@@ -68,11 +68,11 @@ The control form combo works with grid. A div with the class `form-group-combo` 
 
 {% example html %}
   <div class="form-group-combo row">
-    <div class="form-group fl-form-group frm-grp-01 col-xs">
+    <div class="form-group fl-form-group frm-grp-01 col-xs-4">
       <label class="fl-label" for="exampleDDD1">DDD</label>
       <input type="combo" class="form-control" id="exampleDDD1" aria-describedby="dddHelp" placeholder="DDD">
     </div>
-    <div class="form-group fl-form-group frm-grp-02 col-xs-9">
+    <div class="form-group fl-form-group frm-grp-02 col-xs-8">
       <label class="fl-label" for="exampleTel1">Telefone</label>
       <input type="combo" class="form-control" id="exampleTel1" aria-describedby="telHelp" placeholder="Telefone">
     </div>

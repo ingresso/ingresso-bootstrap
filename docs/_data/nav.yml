@@ -32,6 +32,8 @@
 - title: Ingresso Components
   pages:
     - title: Alerts
+    - title: Boxes
+    - title: Buttons
     - title: Card
     - title: Card List
     - title: Card Small

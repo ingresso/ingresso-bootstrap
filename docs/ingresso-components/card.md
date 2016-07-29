@@ -20,7 +20,7 @@ The vertical version follows all Bootstrap standards. We must only add the `ing`
   <div class="card-block">
     <h1 class="card-title" itemprop="name">Truque de Mestre: O Segundo ato</h1>
     <p class="card-text" itemprop="description">Após enganar o FBI um ano antes, o grupo de mágicos é forçado a se reunir mais uma vez e realizar uma nova série de golpes elaborados que culminarão na maior ilusão que já fizeram até agora.</p>
-    <a href="#" class="btn btn-primary">Comprar Ingresso</a>
+    <a href="#" class="btn btn-primary">Comprar</a>
   </div>
   <div class="card-footer text-muted text-xs-center">
     <div class="card-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">

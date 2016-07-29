@@ -38,6 +38,52 @@
   }
 }
 
+//carousel list
+.card-list {
+  .cl-wrapper {
+    white-space: nowrap;
+    overflow: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    display: block;
+    -webkit-flex-flow: initial;
+  }
+  .cl-item {
+    white-space: normal;
+    width: auto;
+    display: inline-block;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+    padding: 0;
+    max-width: initial;
+    margin: 0 4px 0 0;
+  }
+}
+
+//carousel list
+.carousel-list {
+  white-space: nowrap;
+  overflow: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  display: block;
+  -webkit-flex-flow: initial;
+  .cl-item {
+    white-space: normal;
+    width: auto;
+    display: inline-block;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+    padding: 0;
+    max-width: initial;
+    margin: 0 4px 0 0;
+  }
+}
+
 //
 // Date List
 //
@@ -60,7 +106,7 @@
 .date-lk {
   display: block;
   color: #0DB6B5;
-  padding: 5px 10px;
+  padding: 5px 5px;
   background: #fff;
   cursor: pointer;
   -webkit-user-select: none;
@@ -89,9 +135,9 @@
     color: #fff;
     cursor:default;
     text-decoration:none;
-    background: #0DB6B5;
-    border: 1px solid #0DB6B5;
-    border-top: 10px solid #0DB6B5;
+    background: #0A9191;
+    border: 1px solid #0A9191;
+    border-top: 10px solid #0A9191;
   }
   &.disabled{
     color: #DCDCDC;
@@ -103,13 +149,13 @@
 }
 
 .date-main-info {
-  font-size: 14px;
+  font-size: 16px;
 }
 .date-month-lt .date-main-info {
   font-size: 18px;
 }
 .date-info {
-  font-size: 11px;
+  font-size: 13px;
 }
 
 
@@ -122,7 +168,8 @@
   font-size: 0;
 
   .tck-it {
-    font-size: 12px;
+    font-size: 0.875rem;
+    font-weight: bold;
     display: inline-block;
     position: relative;
     letter-spacing: normal;
@@ -152,21 +199,45 @@
   .tck-lk {
     display: block;
     color: #fff;
-    padding: 15px;
+    padding: 15px 20px;
     background: #0DB6B5;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
+    position: relative;
     &:hover {
       background: #0A9191;
       color: #fff;
       text-decoration: none;
+      .tck-buy{
+        display: block;
+      }
     }
     &:active {
       background: #086E6E;
+    }
+  }
+
+  .tck-buy {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0A9191;
+    padding: 14px 7px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .carousel-list {
+    white-space: normal;
+    overflow: hidden;
+    .cl-item {
+      margin: 0 4px;
     }
   }
 }
