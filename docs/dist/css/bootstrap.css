@@ -7158,48 +7158,65 @@ a.ic-rounded .svg-icon {
   display: inline-block;
   text-align: center;
   color: #fff;
-}
-
-.ic-rounded .ic-r-ic {
   border-radius: 50%;
   cursor: default;
-  line-height: 32px;
-  display: block;
-  margin: 0 auto;
   font-weight: 700;
   font-size: .75rem;
-  text-align: center;
   vertical-align: middle;
+  background: #d5d5d5;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
 }
 
-.ic-rounded .ic-r-ic .svg-icon {
+.ic-rounded .svg-icon {
   fill: #fff;
-}
-
-.ic-rounded.ic-rd-small .ic-r-ic {
-  width: 22px;
-  height: 22px;
-}
-
-.ic-rounded.ic-rd-medium .ic-r-ic {
   width: 32px;
   height: 32px;
 }
 
-.ic-rounded.ic-rd-large .ic-r-ic {
+.ic-rounded.ic-rd-size1 {
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+}
+
+.ic-rounded.ic-rd-size1 .svg-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.ic-rounded.ic-rd-size2 {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.ic-rounded.ic-rd-size2 .svg-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.ic-rounded.ic-rd-size3 {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+}
+
+.ic-rounded.ic-rd-size3 .svg-icon {
   width: 42px;
   height: 42px;
 }
 
-.ic-rounded.ic-r-1 .ic-r-ic {
+.ic-rounded.ic-rd-color1 {
   background: #d3793d;
 }
 
-.ic-rounded.ic-r-2 .ic-r-ic {
+.ic-rounded.ic-rd-color2 {
   background: #0db5b6;
 }
 
-.ic-rounded.ic-r-inactive .ic-r-ic {
+.ic-rounded.ic-rd-color3 {
   background: #d5d5d5;
 }
 

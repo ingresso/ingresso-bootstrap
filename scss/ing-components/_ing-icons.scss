@@ -34,55 +34,60 @@ a.ic-rounded{
   display: inline-block;
   text-align: center;
   color:#fff;
-  .ic-r-ic{
-    border-radius: 50%;
-    cursor: default;
-    line-height: 32px;
-    display: block;
-    margin:0 auto;
-    font-weight: 700;
-    font-size: .75rem;
-    text-align: center;
-    vertical-align: middle;
+  border-radius: 50%;
+  cursor: default;
+  font-weight: 700;
+  font-size: .75rem;
+  vertical-align: middle;
+  background: #d5d5d5;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
 
-    .svg-icon{
-      fill:#fff;
-    }
+  .svg-icon{
+    fill:#fff;
+    width: 32px;
+    height: 32px;
   }
-  &.ic-rd-small{
-    .ic-r-ic{
+
+  //sizes
+  &.ic-rd-size1{
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    .svg-icon{
       width: 22px;
       height: 22px;
     }
-
   }
-  &.ic-rd-medium{
-    .ic-r-ic{
+  &.ic-rd-size2{
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    .svg-icon{
       width: 32px;
       height: 32px;
     }
   }
-  &.ic-rd-large{
-    .ic-r-ic{
+  &.ic-rd-size3{
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    .svg-icon{
       width: 42px;
       height: 42px;
     }
   }
-  &.ic-r-1{
-    .ic-r-ic{
-      background: #d3793d;
-    }
-  }
-  &.ic-r-2{
-    .ic-r-ic{
-      background: #0db5b6;
-    }
-  }
 
-  &.ic-r-inactive{
-    .ic-r-ic{
+  //color
+  &.ic-rd-color1{
+      background: #d3793d;
+  }
+  &.ic-rd-color2{
+      background: #0db5b6;
+  }
+  &.ic-rd-color3{
       //background: #f2f2f2;
       background: #d5d5d5;
-    }
   }
 }
