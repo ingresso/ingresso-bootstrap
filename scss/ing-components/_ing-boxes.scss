@@ -2,7 +2,14 @@
 // Boxes
 //
 
-.box1{
-  background: #eee;
+.box{
   padding:10px;
+
+  &.row{
+    padding:0;
+  }
+}
+
+.box-tp1{
+  background: #eee;
 }
