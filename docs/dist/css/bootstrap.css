@@ -3808,7 +3808,7 @@ input[type="button"].btn-block {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: transparent;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: 50% 50%;
@@ -7144,6 +7144,14 @@ ol {
 
 .svg-icon.ic-promo {
   fill: #ba3a3a;
+}
+
+a.ic-rounded {
+  cursor: pointer;
+}
+
+a.ic-rounded .svg-icon {
+  cursor: pointer;
 }
 
 .ic-rounded {
