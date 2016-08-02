@@ -9189,9 +9189,16 @@ a.ic-rounded .svg-icon {
   }
 }
 
-.box1 {
-  background: #eee;
+.box {
   padding: 10px;
+}
+
+.box.row {
+  padding: 0;
+}
+
+.box-tp1 {
+  background: #eee;
 }
 
 /**

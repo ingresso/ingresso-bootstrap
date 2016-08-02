@@ -8,7 +8,7 @@ Highlighted Titles to the website of Ingresso.com
 
 ## Example
 
-We use the class `high- title` and add a class according to the desired event . They can also be used without the icon ( svg ) and the link ( view all ). 
+We use the class `high-title` and add a class according to the desired event . They can also be used without the icon ( svg ) and the link ( view all ). 
 
 {% example html %}
 
@@ -99,10 +99,11 @@ Title with colors related to the events of Ingresso.com . Just follow the exampl
 {% endexample %}
 
 ## Example
+Título padrão com borda e ícone.
 
 {% example html %}
 
-<h1 class="modal-title main-title" id="myModalLabel">
+<h1 class="main-title">
   <svg class="svg-icon" width="30" height="30">
     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-lock-2"></use>
   </svg>

@@ -40,6 +40,8 @@ The see more description is basically follow the example below. A div called `co
 
 ## Example
 
+Esse componente é específico para mobile. A descrição deve ser envolvida pela div com a classe `collapse-description`, seu texto deve conter a classe `collapse` e um id para ser referenciado pelo link âncora. Esse id pode ser o que você desejar.
+
 {% example html %}
 
 <div class="collapse-description">
