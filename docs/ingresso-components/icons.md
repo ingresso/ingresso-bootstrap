@@ -666,7 +666,8 @@ classes:
 
 Padrão de icones redondos, podem ser usados em diversas cores, links ou svg.
 
-Sizes
+## Rounded Sizes
+
 {% example html %}
 
 <span class="ic-rounded ic-rd-size1">
@@ -686,23 +687,8 @@ Sizes
 </span>
 {% endexample %}
 
-### Icons size
+## Rounded Colors
 
-Predefined sizes to use.
-{% example html %}
-<div class="row icon-txt-list">
-  {% for i in (1..3) %}
-
-  <div class="col-xs-12 col-sm-4">
-    <svg class="svg-icon icon-size{{i}}">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
-    </svg>
-  </div>
-  {% endfor %}
-</div>
-{% endexample %}
-
-Colors
 {% example html %}
 <span class="ic-rounded ic-rd-color1">
     <svg class="svg-icon">
@@ -779,5 +765,21 @@ These classes are used in the icon element.
       <span class="it-txt">Texto quebrando em <br> duas linhas ou <br> tres linhas</span>
     </span>
   </div>
+</div>
+{% endexample %}
+
+### Icons size
+
+Predefined sizes to use.
+{% example html %}
+<div class="row icon-txt-list">
+  {% for i in (1..3) %}
+
+  <div class="col-xs-12 col-sm-4">
+    <svg class="svg-icon icon-size{{i}}">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+    </svg>
+  </div>
+  {% endfor %}
 </div>
 {% endexample %}
