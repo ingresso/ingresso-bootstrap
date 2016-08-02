@@ -666,34 +666,45 @@ classes:
 
 Padrão de icones redondos, podem ser usados em diversas cores, links ou svg.
 
+## Rounded Sizes
+
 {% example html %}
-<span class="ic-rounded ic-rd-medium ic-r-1">
-  <span class="ic-r-ic">M8</span>
+
+<span class="ic-rounded ic-rd-size1">
+  <svg class="svg-icon">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+  </svg>
 </span>
 
-<span class="ic-rounded ic-rd-large ic-r-2">
-  <span class="ic-r-ic">
-    <svg class="svg-icon" width="40" height="40">
+<span class="ic-rounded ic-rd-size2">
+  M8
+</span>
+
+<span class="ic-rounded ic-rd-size3">
+    <svg class="svg-icon">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
     </svg>
-  </span>
 </span>
 {% endexample %}
 
-### Icons size
+## Rounded Colors
 
-Predefined sizes to use.
 {% example html %}
-<div class="row icon-txt-list">
-  {% for i in (1..3) %}
-
-  <div class="col-xs-12 col-sm-4">
-    <svg class="svg-icon icon-size{{i}}">
+<span class="ic-rounded ic-rd-color1">
+    <svg class="svg-icon">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
     </svg>
-  </div>
-  {% endfor %}
-</div>
+</span>
+<span class="ic-rounded ic-rd-color2">
+    <svg class="svg-icon">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+    </svg>
+</span>
+<span class="ic-rounded ic-rd-color3">
+    <svg class="svg-icon">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+    </svg>
+</span>
 {% endexample %}
 
 ## Text and Icon
@@ -754,5 +765,21 @@ These classes are used in the icon element.
       <span class="it-txt">Texto quebrando em <br> duas linhas ou <br> tres linhas</span>
     </span>
   </div>
+</div>
+{% endexample %}
+
+### Icons size
+
+Predefined sizes to use.
+{% example html %}
+<div class="row icon-txt-list">
+  {% for i in (1..3) %}
+
+  <div class="col-xs-12 col-sm-4">
+    <svg class="svg-icon icon-size{{i}}">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+    </svg>
+  </div>
+  {% endfor %}
 </div>
 {% endexample %}

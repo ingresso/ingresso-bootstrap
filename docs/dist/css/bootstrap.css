@@ -7158,49 +7158,153 @@ a.ic-rounded .svg-icon {
   display: inline-block;
   text-align: center;
   color: #fff;
-}
-
-.ic-rounded .ic-r-ic {
   border-radius: 50%;
   cursor: default;
-  line-height: 32px;
-  display: block;
-  margin: 0 auto;
   font-weight: 700;
   font-size: .75rem;
-  text-align: center;
   vertical-align: middle;
+  background: #d5d5d5;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
 }
 
-.ic-rounded .ic-r-ic .svg-icon {
+.ic-rounded .svg-icon {
   fill: #fff;
-}
-
-.ic-rounded.ic-rd-small .ic-r-ic {
-  width: 22px;
-  height: 22px;
-}
-
-.ic-rounded.ic-rd-medium .ic-r-ic {
   width: 32px;
   height: 32px;
 }
 
-.ic-rounded.ic-rd-large .ic-r-ic {
+.ic-rounded.ic-rd-size1 {
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+}
+
+.ic-rounded.ic-rd-size1 .svg-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.ic-rounded.ic-rd-size2 {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.ic-rounded.ic-rd-size2 .svg-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.ic-rounded.ic-rd-size3 {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+}
+
+.ic-rounded.ic-rd-size3 .svg-icon {
   width: 42px;
   height: 42px;
 }
 
-.ic-rounded.ic-r-1 .ic-r-ic {
+.ic-rounded.ic-rd-color1 {
   background: #d3793d;
 }
 
-.ic-rounded.ic-r-2 .ic-r-ic {
+.ic-rounded.ic-rd-color2 {
   background: #0db5b6;
 }
 
-.ic-rounded.ic-r-inactive .ic-r-ic {
+.ic-rounded.ic-rd-color3 {
   background: #d5d5d5;
+}
+
+/* text width icon */
+.icon-txt {
+  position: relative;
+  display: inline-block;
+  /* align icon to the right */
+}
+
+.icon-txt .it-txt {
+  display: inline-block;
+}
+
+.icon-txt .svg-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  /* default icon size */
+  width: 30px;
+  height: 30px;
+  /* if have icon, text gets padding */
+  /* alignments */
+}
+
+.icon-txt .svg-icon ~ .it-txt {
+  padding-left: 40px;
+  text-align: left;
+}
+
+.icon-txt .svg-icon.icon-size1 ~ .it-txt {
+  padding-left: 35px;
+}
+
+.icon-txt .svg-icon.icon-size2 ~ .it-txt {
+  padding-left: 40px;
+}
+
+.icon-txt .svg-icon.icon-size3 ~ .it-txt {
+  padding-left: 50px;
+}
+
+.icon-txt .svg-icon.valign-top {
+  top: 0;
+  -webkit-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+}
+
+.icon-txt .svg-icon.valign-bottom {
+  bottom: 0;
+  top: auto;
+  -webkit-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+}
+
+.icon-txt.it-right .svg-icon {
+  right: 0;
+  left: auto;
+}
+
+.icon-txt.it-right .svg-icon ~ .it-txt {
+  padding-left: 0;
+  padding-right: 40px;
+  text-align: right;
+}
+
+/* icon sizes*/
+.svg-icon.icon-size1 {
+  width: 25px;
+  height: 25px;
+}
+
+.svg-icon.icon-size2 {
+  width: 30px;
+  height: 30px;
+}
+
+.svg-icon.icon-size3 {
+  width: 40px;
+  height: 40px;
 }
 
 @font-face {
@@ -7530,6 +7634,10 @@ a.ic-rounded .svg-icon {
   transition: all 0.25s ease-in-out;
 }
 
+.tab-accordion.model1 {
+  padding-right: 30px;
+}
+
 .tab-accordion.model1:before, .tab-accordion.model1:after {
   display: block;
   width: 2px;
@@ -7565,6 +7673,10 @@ a.ic-rounded .svg-icon {
       -ms-transform: translate(2px, 0) rotate(45deg);
        -o-transform: translate(2px, 0) rotate(45deg);
           transform: translate(2px, 0) rotate(45deg);
+}
+
+.tab-accordion.model2 {
+  padding-right: 30px;
 }
 
 .tab-accordion.model2:before, .tab-accordion.model2:after {
