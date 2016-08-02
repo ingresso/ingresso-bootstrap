@@ -7111,6 +7111,7 @@ ol {
   content: "";
   display: table;
   clear: both;
+  overflow: hidden;
 }
 
 .svg-icon {
