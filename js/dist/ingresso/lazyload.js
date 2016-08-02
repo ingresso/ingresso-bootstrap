@@ -19,7 +19,7 @@ var LazyloadIngresso = (function ($) {
    * Check for Lazyload dependency
    * Lazy Load Plugin for jQuery - https://github.com/tuupola/jquery_lazyload
    */
-  if (window.Tether === undefined) {
+  if ($.fn.lazyload === undefined) {
     throw new Error('Bootstrap lazyload require Lazy Load Plugin for jQuery (https://github.com/tuupola/jquery_lazyload)');
   }
 
@@ -43,7 +43,7 @@ var LazyloadIngresso = (function ($) {
     container: window,
     effect: "fadeIn",
     offset: 300,
-    skip_invisible: true,
+    skip_invisible: false,
     load: null,
     placeholder: '/assets/img/spinner.gif'
   };
@@ -309,7 +309,7 @@ var LazyloadIngresso = (function ($) {
     return LazyloadIngresso;
   })();
 
-  $(window).on(Event.LOAD_DATA_API, function () {
+  $(function () {
     $(Selector.DATA_LAZY).each(function () {
       var $lazy = $(this);
       LazyloadIngresso._jQueryInterface.call($lazy, $lazy.data());

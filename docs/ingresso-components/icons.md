@@ -42,11 +42,7 @@ classes:
       <!-- Start : Arrow Left -->
       <svg class="svg-icon ic-theater" width="30" height="30">
         <use xlink:href="#icon-arrow2-2" />
-      </svg><!-- Start : Arrow right -->
-      <svg class="svg-icon ic-ingresso" width="30" height="30">
-        <use xlink:href="#icon-arrow2" />
       </svg>
-      <!-- End : Arrow right -->
       <!-- End : Arrow Left -->
     </div>
     <div class="col-xs-1">
