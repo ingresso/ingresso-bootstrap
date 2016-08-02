@@ -7220,6 +7220,93 @@ a.ic-rounded .svg-icon {
   background: #d5d5d5;
 }
 
+/* text width icon */
+.icon-txt {
+  position: relative;
+  display: inline-block;
+  /* align icon to the right */
+}
+
+.icon-txt .it-txt {
+  display: inline-block;
+}
+
+.icon-txt .svg-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  /* default icon size */
+  width: 30px;
+  height: 30px;
+  /* if have icon, text gets padding */
+  /* alignments */
+}
+
+.icon-txt .svg-icon ~ .it-txt {
+  padding-left: 40px;
+  text-align: left;
+}
+
+.icon-txt .svg-icon.icon-size1 ~ .it-txt {
+  padding-left: 35px;
+}
+
+.icon-txt .svg-icon.icon-size2 ~ .it-txt {
+  padding-left: 40px;
+}
+
+.icon-txt .svg-icon.icon-size3 ~ .it-txt {
+  padding-left: 50px;
+}
+
+.icon-txt .svg-icon.valign-top {
+  top: 0;
+  -webkit-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+}
+
+.icon-txt .svg-icon.valign-bottom {
+  bottom: 0;
+  top: auto;
+  -webkit-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+}
+
+.icon-txt.it-right .svg-icon {
+  right: 0;
+  left: auto;
+}
+
+.icon-txt.it-right .svg-icon ~ .it-txt {
+  padding-left: 0;
+  padding-right: 40px;
+  text-align: right;
+}
+
+/* icon sizes*/
+.svg-icon.icon-size1 {
+  width: 25px;
+  height: 25px;
+}
+
+.svg-icon.icon-size2 {
+  width: 30px;
+  height: 30px;
+}
+
+.svg-icon.icon-size3 {
+  width: 40px;
+  height: 40px;
+}
+
 @font-face {
   font-family: 'Klavika-Regular';
   src: url("../../fonts/Klavika-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Klavika-Regular.otf") format("opentype"), url("../../fonts/Klavika-Regular.woff") format("woff"), url("../../fonts/Klavika-Regular.ttf") format("truetype"), url("../../fonts/Klavika-Regular.svg#Klavika-Regular") format("svg");
@@ -7547,6 +7634,10 @@ a.ic-rounded .svg-icon {
   transition: all 0.25s ease-in-out;
 }
 
+.tab-accordion.model1 {
+  padding-right: 30px;
+}
+
 .tab-accordion.model1:before, .tab-accordion.model1:after {
   display: block;
   width: 2px;
@@ -7582,6 +7673,10 @@ a.ic-rounded .svg-icon {
       -ms-transform: translate(2px, 0) rotate(45deg);
        -o-transform: translate(2px, 0) rotate(45deg);
           transform: translate(2px, 0) rotate(45deg);
+}
+
+.tab-accordion.model2 {
+  padding-right: 30px;
 }
 
 .tab-accordion.model2:before, .tab-accordion.model2:after {
