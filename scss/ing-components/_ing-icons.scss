@@ -79,3 +79,59 @@
     }
   }
 }
+
+/* text width icon */
+
+.icon-txt{
+  position:relative;
+  display: inline-block;
+
+  .it-txt{display:inline-block;}
+
+  .svg-icon{
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+
+    /* default icon size */
+    width:30px;
+    height:30px;
+
+    /* if have icon, text gets padding */
+    ~ .it-txt{padding-left:40px;text-align: left;}
+
+    @each $size-num, $size in $icons-size {
+
+      &.icon-size#{$size-num} ~ .it-txt{padding-left:($size + 10px);}
+
+    }
+
+    /* alignments */
+    &.valign-top{top:0;transform:none;}
+    &.valign-bottom{bottom:0;top:auto;transform:none;}
+
+
+
+  }
+  /* align icon to the right */
+  &.it-right{
+
+    .svg-icon{
+      right:0;
+      left:auto;
+
+      ~ .it-txt{padding-left:0;padding-right: 40px;text-align: right;}
+    }
+  }
+}
+
+/* icon sizes*/
+
+@each $size-num, $size in $icons-size {
+
+  .svg-icon.icon-size#{$size-num}{
+    width:$size;
+    height:$size;
+  }
+}

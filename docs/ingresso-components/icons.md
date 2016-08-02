@@ -671,9 +671,6 @@ classes:
 Padrão de icones redondos, podem ser usados em diversas cores, links ou svg.
 
 {% example html %}
-
-
-
 <span class="ic-rounded ic-rd-medium ic-r-1">
   <span class="ic-r-ic">M8</span>
 </span>
@@ -685,5 +682,81 @@ Padrão de icones redondos, podem ser usados em diversas cores, links ou svg.
     </svg>
   </span>
 </span>
+{% endexample %}
 
+### Icons size
+
+Predefined sizes to use.
+{% example html %}
+<div class="row icon-txt-list">
+  {% for i in (1..3) %}
+
+  <div class="col-xs-12 col-sm-4">
+    <svg class="svg-icon icon-size{{i}}">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+    </svg>
+  </div>
+  {% endfor %}
+</div>
+{% endexample %}
+
+## Text and Icon
+
+Um ícone com texto do lado, inicialmente alinhados verticalmente ao meio.
+É possível utilizar ícone e texto do lado sem precisar deste componente, mas
+a ideia deste componente é **forçar o texto sempre ao lado do ícone, mesmo quando deveria quebrar.**
+O ícone com texto deve ser usado de forma isolada. Se desejar utilizar ícones no meio de parágrafos, faça-o apenas inserindo o ícone
+
+{% example html %}
+<span class="icon-txt">
+  <svg class="svg-icon" width="40" height="40">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+  </svg>
+  <span class="it-txt">Texto com ícone</span>
+</span>
+{% endexample %}
+
+### With line break
+
+{% example html %}
+<span class="icon-txt">
+  <svg class="svg-icon" width="40" height="40">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+  </svg>
+  <span class="it-txt">Texto quebrando em <br> duas linhas ou <br> tres linhas</span>
+</span>
+{% endexample %}
+
+### Alignments
+
+You can use Bootstrap's utilities classes like **valign-top** or **valign-bottom** to align the icon vertically.
+These classes are used in the icon element.
+
+{% example html %}
+<div class="row icon-txt-list">
+  <div class="col-xs-12 col-sm-4">
+    <span class="icon-txt">
+      <svg class="svg-icon valign-top">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+      </svg>
+      <span class="it-txt">Texto quebrando em <br> duas linhas ou <br> tres linhas</span>
+    </span>
+  </div>
+  <div class="col-xs-12 col-sm-4">
+    <span class="icon-txt">
+      <svg class="svg-icon">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+      </svg>
+      <span class="it-txt">Texto quebrando em <br> duas linhas ou <br> tres linhas</span>
+    </span>
+  </div>
+  <div class="col-xs-12 col-sm-4">
+    <span class="icon-txt">
+      <svg class="svg-icon valign-bottom">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+      </svg>
+      <span class="it-txt">Texto quebrando em <br> duas linhas ou <br> tres linhas</span>
+    </span>
+  </div>
+</div>
 {% endexample %}
