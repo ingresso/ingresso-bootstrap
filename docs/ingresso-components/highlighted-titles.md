@@ -89,12 +89,12 @@ Title with colors related to the events of Ingresso.com . Just follow the exampl
 
 {% example html %}
 
-<h1 class="event-name ev-nm-01">Nome do produto Cinema</h1>
-<h1 class="event-name ev-nm-02">Nome do produto Teatro</h1>
-<h1 class="event-name ev-nm-03">Nome do produto Show</h1>
-<h1 class="event-name ev-nm-04">Nome do produto Evento</h1>
-<h1 class="event-name ev-nm-05">Nome do produto Circo</h1>
-<h1 class="event-name ev-nm-06">Nome do produto Promoção</h1>
+<h1 class="event-name clr-cinema">Nome do produto Cinema</h1>
+<h1 class="event-name clr-theater">Nome do produto Teatro</h1>
+<h1 class="event-name clr-show">Nome do produto Show</h1>
+<h1 class="event-name clr-events">Nome do produto Evento</h1>
+<h1 class="event-name clr-circus">Nome do produto Circo</h1>
+<h1 class="event-name clr-promo">Nome do produto Promoção</h1>
 
 {% endexample %}
 

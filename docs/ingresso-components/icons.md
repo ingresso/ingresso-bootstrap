@@ -690,17 +690,17 @@ Padrão de icones redondos, podem ser usados em diversas cores, links ou svg.
 ## Rounded Colors
 
 {% example html %}
-<span class="ic-rounded ic-rd-color1">
+<span class="ic-rounded ic-rd-cinema">
     <svg class="svg-icon">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
     </svg>
 </span>
-<span class="ic-rounded ic-rd-color2">
+<span class="ic-rounded ic-rd-ingresso">
     <svg class="svg-icon">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
     </svg>
 </span>
-<span class="ic-rounded ic-rd-color3">
+<span class="ic-rounded ic-rd-inactive">
     <svg class="svg-icon">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
     </svg>
