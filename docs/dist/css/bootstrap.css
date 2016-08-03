@@ -7312,7 +7312,7 @@ a.ic-rounded .svg-icon {
   display: inline-block;
 }
 
-.icon-txt .svg-icon {
+.icon-txt > .svg-icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -7327,24 +7327,24 @@ a.ic-rounded .svg-icon {
   /* alignments */
 }
 
-.icon-txt .svg-icon ~ .it-txt {
+.icon-txt > .svg-icon ~ .it-txt {
   padding-left: 40px;
   text-align: left;
 }
 
-.icon-txt .svg-icon.icon-size1 ~ .it-txt {
+.icon-txt > .svg-icon.icon-size1 ~ .it-txt {
   padding-left: 35px;
 }
 
-.icon-txt .svg-icon.icon-size2 ~ .it-txt {
+.icon-txt > .svg-icon.icon-size2 ~ .it-txt {
   padding-left: 40px;
 }
 
-.icon-txt .svg-icon.icon-size3 ~ .it-txt {
+.icon-txt > .svg-icon.icon-size3 ~ .it-txt {
   padding-left: 50px;
 }
 
-.icon-txt .svg-icon.valign-bottom {
+.icon-txt > .svg-icon.valign-bottom {
   bottom: 0;
   top: auto;
   -webkit-transform: none;
@@ -7353,7 +7353,7 @@ a.ic-rounded .svg-icon {
           transform: none;
 }
 
-.icon-txt .svg-icon.valign-middle {
+.icon-txt > .svg-icon.valign-middle {
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -8225,6 +8225,24 @@ a.ic-rounded .svg-icon {
 
 .fl-form-group.frm-grp-02 .fl-label {
   left: 9px;
+}
+
+.fl-form-group.fl-displayed .form-control {
+  padding-top: 15px;
+}
+
+.fl-form-group.fl-displayed.frm-grp-01 .fl-label {
+  left: 22px;
+}
+
+.fl-form-group.fl-displayed.frm-grp-02 .fl-label {
+  left: 9px;
+}
+
+.fl-form-group.fl-displayed .fl-label {
+  top: 0;
+  left: 12px;
+  opacity: 1;
 }
 
 .fl-form-group .fl-label {

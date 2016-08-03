@@ -256,6 +256,27 @@
         left:9px;
       }
     }
+
+    &.fl-displayed{
+      .form-control{
+        padding-top: 15px;
+      }
+      &.frm-grp-01{
+      .fl-label{
+        left: 22px;
+      }
+      }
+      &.frm-grp-02{
+        .fl-label{
+          left:9px;
+        }
+      }
+      .fl-label{
+        top: 0;
+        left: 12px;
+        opacity: 1;
+      }
+    }
   }
   .fl-form-group .fl-label {
     display: block;
@@ -275,6 +296,8 @@
     left:13px;
     opacity: 1;
   }
+
+
 
 
   /*--------------------------------------------------------------
