@@ -40,42 +40,42 @@ a.ic-rounded{
   font-size: .75rem;
   vertical-align: middle;
   background: #d5d5d5;
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
 
   .svg-icon{
     fill:#fff;
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
   }
 
   //sizes
   &.ic-rd-size1{
-    width: 22px;
-    height: 22px;
-    line-height: 22px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
     .svg-icon{
-      width: 22px;
-      height: 22px;
+      width: 25px;
+      height: 25px;
     }
   }
   &.ic-rd-size2{
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     .svg-icon{
-      width: 32px;
-      height: 32px;
+      width: 30px;
+      height: 30px;
     }
   }
   &.ic-rd-size3{
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     .svg-icon{
-      width: 42px;
-      height: 42px;
+      width: 40px;
+      height: 40px;
     }
   }
 
@@ -117,9 +117,9 @@ a.ic-rounded{
 
   .svg-icon{
     position:absolute;
-    top:50%;
+    top:0;
     left:0;
-    transform:translateY(-50%);
+    transform:translateY(-20%);
 
     /* default icon size */
     width:30px;
@@ -135,8 +135,8 @@ a.ic-rounded{
     }
 
     /* alignments */
-    &.valign-top{top:0;transform:none;}
     &.valign-bottom{bottom:0;top:auto;transform:none;}
+    &.valign-middle{top:50%;transform:translateY(-50%);}
 
 
 
