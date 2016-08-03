@@ -734,7 +734,9 @@ O ícone com texto deve ser usado de forma isolada. Se desejar utilizar ícones 
   <svg class="svg-icon" width="40" height="40">
     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
   </svg>
-  <span class="it-txt">Texto com ícone</span>
+  <span class="it-cont">
+    <span class="it-txt">Texto com ícone</span>
+  </span>
 </span>
 {% endexample %}
 
@@ -750,7 +752,9 @@ You can use <a href="#icons-size">**icon size classes**</a> in the icon within *
   <svg class="svg-icon" width="40" height="40">
     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
   </svg>
-  <span class="it-txt">Texto quebrando em <br> duas linhas ou <br> tres linhas</span>
+  <span class="it-cont">
+    <span class="it-txt">Texto quebrando em <br> duas linhas ou <br> tres linhas</span>
+  </span>
 </span>
 {% endexample %}
 
@@ -766,7 +770,9 @@ These classes are used in the icon element.
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
       </svg>
-      <span class="it-txt">Texto quebrando em <br> duas linhas ou <br> tres linhas</span>
+      <span class="it-cont">
+        <span class="it-txt">Texto quebrando em <br> duas linhas ou <br> tres linhas</span>
+      </span>
     </span>
   </div>
   <div class="col-xs-12 col-sm-4">
@@ -774,7 +780,9 @@ These classes are used in the icon element.
       <svg class="svg-icon valign-middle">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
       </svg>
-      <span class="it-txt">Texto quebrando em <br> duas linhas ou <br> tres linhas</span>
+      <span class="it-cont">
+        <span class="it-txt">Texto quebrando em <br> duas linhas ou <br> tres linhas</span>
+      </span>
     </span>
   </div>
   <div class="col-xs-12 col-sm-4">
@@ -782,7 +790,9 @@ These classes are used in the icon element.
       <svg class="svg-icon valign-bottom">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
       </svg>
-      <span class="it-txt">Texto quebrando em <br> duas linhas ou <br> tres linhas</span>
+      <span class="it-cont">
+        <span class="it-txt">Texto quebrando em <br> duas linhas ou <br> tres linhas</span>
+      </span>
     </span>
   </div>
 </div>
