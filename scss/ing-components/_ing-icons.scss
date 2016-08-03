@@ -1,25 +1,25 @@
 .svg-icon{
-  fill:#666;
+  fill:$body-color;
   &.ic-ingresso{
-    fill:#0db6b5;
+    fill:$brand-primary;
   }
   &.ic-cinema{
-    fill:#d3793d;
+    fill:$brand-cinema;
   }
   &.ic-theater{
-    fill:#b96485;
+    fill:$brand-theater;
   }
   &.ic-events{
-    fill:#afbe3f;
+    fill:$brand-events;
   }
   &.ic-show{
-    fill:#52478a;
+    fill:$brand-show;
   }
   &.ic-circus{
-    fill:#ead11c;
+    fill:$brand-circus;
   }
   &.ic-promo{
-    fill:#ba3a3a;
+    fill:$brand-promo;
   }
 }
 
@@ -80,13 +80,28 @@ a.ic-rounded{
   }
 
   //color
-  &.ic-rd-color1{
-      background: #d3793d;
+  &.ic-rd-cinema{
+      background: $brand-cinema;
   }
-  &.ic-rd-color2{
-      background: #0db5b6;
+  &.ic-rd-theater{
+      background: $brand-theater;
   }
-  &.ic-rd-color3{
+  &.ic-rd-show{
+      background: $brand-show;
+  }
+  &.ic-rd-events{
+      background: $brand-events;
+  }
+  &.ic-rd-circus{
+      background: $brand-circus;
+  }
+  &.ic-rd-promo{
+      background: $brand-promo;;
+  }
+  &.ic-rd-ingresso{
+      background: $brand-primary;
+  }
+  &.ic-rd-inactive{
       //background: #f2f2f2;
       background: #d5d5d5;
   }
