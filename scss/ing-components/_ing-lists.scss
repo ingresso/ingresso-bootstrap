@@ -105,7 +105,7 @@
 }
 .date-lk {
   display: block;
-  color: #0DB6B5;
+  color: $brand-primary;
   padding: 5px 5px;
   background: #fff;
   cursor: pointer;
@@ -113,8 +113,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 1px solid #0DB6B5;
-  border-top: 10px solid #0DB6B5;
+  border: 1px solid $brand-primary;
+  border-top: 10px solid $brand-primary;
   text-align: center;
   width: 62px;
   min-height: 45px;
@@ -200,7 +200,7 @@
     display: block;
     color: #fff;
     padding: 15px 20px;
-    background: #0DB6B5;
+    background: $brand-primary;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
