@@ -7225,48 +7225,48 @@ a.ic-rounded .svg-icon {
   font-size: .75rem;
   vertical-align: middle;
   background: #d5d5d5;
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
 }
 
 .ic-rounded .svg-icon {
   fill: #fff;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
 }
 
 .ic-rounded.ic-rd-size1 {
-  width: 22px;
-  height: 22px;
-  line-height: 22px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
 }
 
 .ic-rounded.ic-rd-size1 .svg-icon {
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
 }
 
 .ic-rounded.ic-rd-size2 {
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
 }
 
 .ic-rounded.ic-rd-size2 .svg-icon {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
 }
 
 .ic-rounded.ic-rd-size3 {
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
 }
 
 .ic-rounded.ic-rd-size3 .svg-icon {
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
 }
 
 .ic-rounded.ic-rd-cinema {
@@ -7312,14 +7312,14 @@ a.ic-rounded .svg-icon {
   display: inline-block;
 }
 
-.icon-txt .svg-icon {
+.icon-txt > .svg-icon {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 0;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-       -o-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-20%);
+      -ms-transform: translateY(-20%);
+       -o-transform: translateY(-20%);
+          transform: translateY(-20%);
   /* default icon size */
   width: 30px;
   height: 30px;
@@ -7327,38 +7327,38 @@ a.ic-rounded .svg-icon {
   /* alignments */
 }
 
-.icon-txt .svg-icon ~ .it-txt {
+.icon-txt > .svg-icon ~ .it-txt {
   padding-left: 40px;
   text-align: left;
 }
 
-.icon-txt .svg-icon.icon-size1 ~ .it-txt {
+.icon-txt > .svg-icon.icon-size1 ~ .it-txt {
   padding-left: 35px;
 }
 
-.icon-txt .svg-icon.icon-size2 ~ .it-txt {
+.icon-txt > .svg-icon.icon-size2 ~ .it-txt {
   padding-left: 40px;
 }
 
-.icon-txt .svg-icon.icon-size3 ~ .it-txt {
+.icon-txt > .svg-icon.icon-size3 ~ .it-txt {
   padding-left: 50px;
 }
 
-.icon-txt .svg-icon.valign-top {
-  top: 0;
-  -webkit-transform: none;
-      -ms-transform: none;
-       -o-transform: none;
-          transform: none;
-}
-
-.icon-txt .svg-icon.valign-bottom {
+.icon-txt > .svg-icon.valign-bottom {
   bottom: 0;
   top: auto;
   -webkit-transform: none;
       -ms-transform: none;
        -o-transform: none;
           transform: none;
+}
+
+.icon-txt > .svg-icon.valign-middle {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .icon-txt.it-right .svg-icon {
@@ -8225,6 +8225,24 @@ a.ic-rounded .svg-icon {
 
 .fl-form-group.frm-grp-02 .fl-label {
   left: 9px;
+}
+
+.fl-form-group.fl-displayed .form-control {
+  padding-top: 15px;
+}
+
+.fl-form-group.fl-displayed.frm-grp-01 .fl-label {
+  left: 22px;
+}
+
+.fl-form-group.fl-displayed.frm-grp-02 .fl-label {
+  left: 9px;
+}
+
+.fl-form-group.fl-displayed .fl-label {
+  top: 0;
+  left: 12px;
+  opacity: 1;
 }
 
 .fl-form-group .fl-label {
@@ -9162,7 +9180,7 @@ a.ic-rounded .svg-icon {
 
 .date-lk {
   display: block;
-  color: #0DB6B5;
+  color: #0db6b5;
   padding: 5px 5px;
   background: #fff;
   cursor: pointer;
@@ -9170,8 +9188,8 @@ a.ic-rounded .svg-icon {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 1px solid #0DB6B5;
-  border-top: 10px solid #0DB6B5;
+  border: 1px solid #0db6b5;
+  border-top: 10px solid #0db6b5;
   text-align: center;
   width: 62px;
   min-height: 45px;
@@ -9258,7 +9276,7 @@ a.ic-rounded .svg-icon {
   display: block;
   color: #fff;
   padding: 15px 20px;
-  background: #0DB6B5;
+  background: #0db6b5;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;

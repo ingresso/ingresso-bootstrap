@@ -79,6 +79,18 @@ The control form combo works with grid. A div with the class `form-group-combo` 
   </div>
 {% endexample %}
 
+## Ingresso Labels Displayed
+Quando o input já vem com value, deve-se colocar uma classe `fl-displayed` para já deixar o float-label funcionando.
+
+{% example html %}
+
+<div class="form-group fl-form-group fl-displayed">
+  <label class="fl-label" for="exampleInputEmail1">*Cidade</label>
+  <input type="text" class="form-control" value="Rio de Janeiro" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="*Cidade">
+</div>
+
+{% endexample %}
+
 ## Ingresso Form Validations
 
 Bootstrap includes validation styles for danger, warning, and success states on form controls.
