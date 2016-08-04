@@ -7207,6 +7207,10 @@ ol {
   fill: #ba3a3a;
 }
 
+.svg-icon.ic-paypal {
+  fill: #209DDF;
+}
+
 a.ic-rounded {
   cursor: pointer;
 }
@@ -7826,6 +7830,16 @@ a.ic-rounded .svg-icon {
 
 .btn-link {
   text-transform: initial;
+}
+
+.btn-paypal {
+  color: #fff;
+  background-color: #003087;
+  border-color: #003087;
+}
+
+.btn-paypal:hover {
+  background-color: #001e54;
 }
 
 @media (min-width: 544px) {

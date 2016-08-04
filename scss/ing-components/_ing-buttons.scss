@@ -37,6 +37,15 @@
   text-transform: initial;
 }
 
+.btn-paypal {
+    color: #fff;
+    background-color: #003087;
+    border-color: #003087;
+    &:hover{
+      background-color: #001e54;
+    }
+}
+
 @include media-breakpoint-up(sm) {
   .btn-block-xs {
     width: auto;
