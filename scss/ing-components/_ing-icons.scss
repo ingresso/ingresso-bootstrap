@@ -24,6 +24,9 @@
   &.ic-paypal{
     fill:$brand-paypal;
   }
+  &.ic-disabled{
+    fill:$brand-disabled;
+  }
 }
 
 a.ic-rounded{

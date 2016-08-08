@@ -7175,6 +7175,10 @@ ol {
   color: #ba3a3a;
 }
 
+.clr-disabled {
+  color: #d5d5d5;
+}
+
 .svg-icon {
   fill: #666;
 }
@@ -7208,7 +7212,11 @@ ol {
 }
 
 .svg-icon.ic-paypal {
-  fill: #209DDF;
+  fill: #209ddf;
+}
+
+.svg-icon.ic-disabled {
+  fill: #d5d5d5;
 }
 
 a.ic-rounded {
@@ -7309,46 +7317,124 @@ a.ic-rounded .svg-icon {
 .icon-txt {
   position: relative;
   display: inline-block;
+  /* icon using rounded component*/
   /* align icon to the right */
 }
 
-.icon-txt .it-txt {
+.icon-txt > .it-cont {
   display: inline-block;
 }
 
+.icon-txt > .it-cont > .it-txt {
+  vertical-align: middle;
+  display: inline-block;
+  white-space: normal;
+}
+
 .icon-txt > .svg-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transform: translateY(-20%);
-      -ms-transform: translateY(-20%);
-       -o-transform: translateY(-20%);
-          transform: translateY(-20%);
   /* default icon size */
   width: 30px;
   height: 30px;
+}
+
+.icon-txt > .svg-icon.icon-size1 ~ .it-cont {
+  padding-left: 35px;
+  min-height: 25px;
+  white-space: nowrap;
+}
+
+.icon-txt > .svg-icon.icon-size1 ~ .it-cont:before {
+  content: '';
+  display: inline-block;
+  line-height: 0;
+  min-height: 25px;
+  vertical-align: middle;
+}
+
+.icon-txt > .svg-icon.icon-size2 ~ .it-cont {
+  padding-left: 40px;
+  min-height: 30px;
+  white-space: nowrap;
+}
+
+.icon-txt > .svg-icon.icon-size2 ~ .it-cont:before {
+  content: '';
+  display: inline-block;
+  line-height: 0;
+  min-height: 30px;
+  vertical-align: middle;
+}
+
+.icon-txt > .svg-icon.icon-size3 ~ .it-cont {
+  padding-left: 50px;
+  min-height: 40px;
+  white-space: nowrap;
+}
+
+.icon-txt > .svg-icon.icon-size3 ~ .it-cont:before {
+  content: '';
+  display: inline-block;
+  line-height: 0;
+  min-height: 40px;
+  vertical-align: middle;
+}
+
+.icon-txt > .ic-rounded.ic-rd-size1 ~ .it-cont {
+  padding-left: 35px;
+  min-height: 25px;
+  white-space: nowrap;
+}
+
+.icon-txt > .ic-rounded.ic-rd-size1 ~ .it-cont:before {
+  content: '';
+  display: inline-block;
+  line-height: 0;
+  min-height: 25px;
+  vertical-align: middle;
+}
+
+.icon-txt > .ic-rounded.ic-rd-size2 ~ .it-cont {
+  padding-left: 40px;
+  min-height: 30px;
+  white-space: nowrap;
+}
+
+.icon-txt > .ic-rounded.ic-rd-size2 ~ .it-cont:before {
+  content: '';
+  display: inline-block;
+  line-height: 0;
+  min-height: 30px;
+  vertical-align: middle;
+}
+
+.icon-txt > .ic-rounded.ic-rd-size3 ~ .it-cont {
+  padding-left: 50px;
+  min-height: 40px;
+  white-space: nowrap;
+}
+
+.icon-txt > .ic-rounded.ic-rd-size3 ~ .it-cont:before {
+  content: '';
+  display: inline-block;
+  line-height: 0;
+  min-height: 40px;
+  vertical-align: middle;
+}
+
+.icon-txt > .svg-icon, .icon-txt > .ic-rounded {
+  position: absolute;
+  top: 0;
+  left: 0;
   /* if have icon, text gets padding */
   /* alignments */
 }
 
-.icon-txt > .svg-icon ~ .it-txt {
+.icon-txt > .svg-icon ~ .it-cont, .icon-txt > .ic-rounded ~ .it-cont {
   padding-left: 40px;
   text-align: left;
 }
 
-.icon-txt > .svg-icon.icon-size1 ~ .it-txt {
-  padding-left: 35px;
-}
-
-.icon-txt > .svg-icon.icon-size2 ~ .it-txt {
-  padding-left: 40px;
-}
-
-.icon-txt > .svg-icon.icon-size3 ~ .it-txt {
-  padding-left: 50px;
-}
-
-.icon-txt > .svg-icon.valign-bottom {
+.icon-txt > .svg-icon.valign-bottom, .icon-txt > .ic-rounded.valign-bottom {
   bottom: 0;
   top: auto;
   -webkit-transform: none;
@@ -7357,7 +7443,7 @@ a.ic-rounded .svg-icon {
           transform: none;
 }
 
-.icon-txt > .svg-icon.valign-middle {
+.icon-txt > .svg-icon.valign-middle, .icon-txt > .ic-rounded.valign-middle {
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -7365,12 +7451,12 @@ a.ic-rounded .svg-icon {
           transform: translateY(-50%);
 }
 
-.icon-txt.it-right .svg-icon {
+.icon-txt.it-right > .svg-icon {
   right: 0;
   left: auto;
 }
 
-.icon-txt.it-right .svg-icon ~ .it-txt {
+.icon-txt.it-right > .svg-icon ~ .it-cont {
   padding-left: 0;
   padding-right: 40px;
   text-align: right;
@@ -7800,6 +7886,44 @@ a.ic-rounded .svg-icon {
 
 .tab-content .tab-cont-wp {
   padding: 10px;
+}
+
+.icon-accordion {
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.icon-accordion.collapsed .svg-icon {
+  -o-transform: rotate(180deg) scaleX(-1);
+  -webkit-transform: rotate(180deg) scaleX(-1);
+  -ms-transform: rotate(180deg) scaleX(-1);
+      transform: rotate(180deg) scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.icon-accordion .ia-txt {
+  display: none;
+}
+
+.icon-accordion:hover, .icon-accordion:focus, .icon-accordion:active {
+  text-decoration: none;
+}
+
+.icon-accordion:hover span, .icon-accordion:focus span, .icon-accordion:active span {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .icon-accordion .ia-txt {
+    display: inline-block;
+  }
 }
 
 .btn-success,
