@@ -30,7 +30,7 @@ $brand-show:#afbe3f;
 $brand-events:#52478a;
 $brand-circus:#ead11c;
 $brand-promo:#ba3a3a;
-$brand-paypal:#209DDF;
+$brand-paypal:#209ddf;
 
 // Body
 //
@@ -194,4 +194,11 @@ $icons-size: (
   1: 25px,
   2: 30px,
   3: 40px
+);
+
+// Boxes border color
+
+$box-border-color: (
+  1: #bbb,
+  2: #f2f2f2
 );
