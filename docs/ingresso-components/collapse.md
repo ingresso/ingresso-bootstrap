@@ -32,6 +32,28 @@ Be sure to use the same rules at bootstrap default accordion.
 
 {% endexample %}
 
+## Example
+Para usar a versão com icone, deve-se utilizar a estrutura abaixo, com o elemento pai posicionado relativo.
+
+{% example html %}
+
+<!-- icon tab -->
+<div style="position:relative;">
+<a class="icon-accordion collapsed" role="button" data-toggle="collapse" href="#tab-main-content03">
+  <span class="ia-txt">ver detalhes</span>
+  <span class="ic-rounded ic-rd-ingresso">
+    <svg class="svg-icon">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow2-1"></use>
+    </svg>
+</span>
+</a>
+</div>
+<div id="tab-main-content03" class="tab-content collapse">
+   <div class="tab-cont-wp">Lorem Ipsum</div>
+</div>
+
+{% endexample %}
+
 The see more description is basically follow the example below. A div called `collapse-description` encompassing tag `<p>` and `<a>`. In the `<p>` tag add `id="collapse-more-text"` and make reference in the href.
 
 {% callout info %}

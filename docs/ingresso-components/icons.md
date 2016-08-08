@@ -17,6 +17,7 @@ classes:
 `ic-show`
 `ic-circus`
 `ic-promo`
+`ic-disabled`
 
 ## Example
 

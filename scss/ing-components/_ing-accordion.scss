@@ -69,3 +69,38 @@
       padding:10px;
    }
 }
+
+.icon-accordion{
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &.collapsed{
+      .svg-icon {
+      -moz-transform: rotate(180deg) scaleX(-1);
+      -o-transform: rotate(180deg) scaleX(-1);
+      -webkit-transform: rotate(180deg) scaleX(-1);
+      transform: rotate(180deg) scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+    }
+  }
+  .ia-txt{
+    display:none;
+  }
+  &:hover, &:focus, &:active{
+    text-decoration: none;
+    span{
+      text-decoration: none;
+    }
+  }
+
+}
+
+@include media-breakpoint-up(md) {
+  .icon-accordion{
+    .ia-txt{
+      display:inline-block;
+    }
+  }
+}
