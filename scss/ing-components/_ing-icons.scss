@@ -116,7 +116,50 @@ a.ic-rounded{
 /* text width icon */
 
 .icon-txt{
-  position:relative;
+  display:table;
+
+  > .it-txt, > .it-cont {
+    display:table-cell;
+  }
+
+  > .it-cont{
+    vertical-align: top;
+
+    &.valign-middle{
+      vertical-align:middle;
+    }
+    &.valign-bottom{
+      vertical-align:bottom;
+    }
+  }
+  .it-txt{
+    padding-left:0.3125rem;
+    vertical-align:middle;
+  }
+
+  .svg-icon{
+    /* default icon size */
+    width:30px;
+    height:30px;
+
+    vertical-align: middle;
+  }
+
+  /* align icon to the right */
+  &.it-right{
+    direction:rtl;
+
+    .it-txt{
+      padding-right:0.3125rem;
+      padding-left:0;
+    }
+
+  }
+
+}
+
+
+.icon2-txt{
   display: inline-block;
 
   > .it-cont{
@@ -125,6 +168,13 @@ a.ic-rounded{
       vertical-align: middle;
       display: inline-block;
       white-space: normal;
+    }
+    &:before{
+      content:'';
+      display:inline-block;
+      line-height:0;
+      min-height:map-get($icons-size, 1);;
+      vertical-align: middle;
     }
   }
 
@@ -138,14 +188,9 @@ a.ic-rounded{
         padding-left:($size + 10px);
         min-height:$size;
         white-space: nowrap;
-
-        &:before{
-          content:'';
-          display:inline-block;
-          line-height:0;
-          min-height:$size;
-          vertical-align: middle;
-        }
+      }
+      &:before{
+        min-height:$size;
       }
     }
   }
