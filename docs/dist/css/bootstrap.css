@@ -7187,6 +7187,10 @@ ol {
   fill: #0db6b5;
 }
 
+.svg-icon.ic-white {
+  fill: #fff;
+}
+
 .svg-icon.ic-cinema {
   fill: #d3793d;
 }
@@ -7676,8 +7680,8 @@ a.ic-rounded .svg-icon {
 }
 
 #footer .ft-payment-icon {
-  width: 63px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
 }
 
 #footer .ft-smap-sub-it {
@@ -7923,6 +7927,7 @@ a.ic-rounded .svg-icon {
 @media (min-width: 768px) {
   .icon-accordion .ia-txt {
     display: inline-block;
+    margin-right: 5px;
   }
 }
 
@@ -7947,11 +7952,6 @@ a.ic-rounded .svg-icon {
   border: 0;
 }
 
-.btn-block-xs {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
 .btn-link {
   text-transform: initial;
 }
@@ -7964,13 +7964,6 @@ a.ic-rounded .svg-icon {
 
 .btn-paypal:hover {
   background-color: #001e54;
-}
-
-@media (min-width: 544px) {
-  .btn-block-xs {
-    width: auto;
-    margin: 0;
-  }
 }
 
 .nav-tabs .nav-item {
@@ -7988,6 +7981,57 @@ a.ic-rounded .svg-icon {
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
   border-color: transparent;
+}
+
+.nav-stacked .nav-item {
+  border-left: 4px solid #0db6b5;
+}
+
+.nav-stacked .nav-item + .nav-item {
+  margin-top: 2px;
+}
+
+.nav-stacked .nav-link {
+  text-transform: uppercase;
+  padding: .725em 1em;
+  font-size: 0.875rem;
+  background-color: #f2f2f2;
+}
+
+.nav-stacked .nav-link .svg-icon {
+  fill: #0db6b5;
+}
+
+.nav-stacked .nav-link.active {
+  position: relative;
+}
+
+.nav-stacked .nav-link.active:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #0db6b5;
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  z-index: 1;
+  margin-top: -8px;
+  pointer-events: none;
+}
+
+.nav-stacked .nav-link.active .svg-icon {
+  fill: #fff;
+}
+
+.nav-stacked .nav-link.disabled {
+  color: #ccc;
+}
+
+.nav-stacked .nav-link.disabled:hover {
+  background-color: #f2f2f2;
 }
 
 /* temp */

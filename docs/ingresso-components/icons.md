@@ -652,13 +652,117 @@ classes:
     </div>
     <div class="col-xs-1">
       <!-- Start : Passbook -->
-      <svg class="svg-icon ic-ingresso" width="30" height="30">
+      <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-passbook" />
       </svg>
       <!-- End : Passbook -->
     </div>
-  </div>
+    <div class="col-xs-1">
+      <!-- Start : paypal-branco -->
+      <svg class="svg-icon" width="50" height="13">
+        <use xlink:href="#icon-paypal-branco" />
+      </svg>
+      <!-- End : paypal-branco -->
+    </div>
+    <div class="col-xs-1">
+      <!-- Start : paypal -->
+      <svg class="svg-icon" width="50" height="13">
+        <use xlink:href="#icon-paypal" /> 
+      </svg>
+      <!-- End : paypal -->
+    </div>
+    <div class="col-xs-1">
+      <!-- Start : visa -->
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-visa" />
+      </svg>
+      <!-- End : visa -->
+    </div>
+    
+    <div class="col-xs-1">
+      <!-- Start : mastercard -->
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-mastercard" />
+      </svg>
+      <!-- End : mastercard -->
+    </div>
 
+    <div class="col-xs-1">
+      <!-- Start : aura -->
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-aura" />
+      </svg>
+      <!-- End : aura -->
+    </div>
+
+    <div class="col-xs-1">
+      <!-- Start : diners -->
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-diners" />
+      </svg>
+      <!-- End : diners -->
+    </div>
+
+    <div class="col-xs-1">
+      <!-- Start : amex -->
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-amex" />
+      </svg>
+      <!-- End : amex -->
+    </div>
+
+    <div class="col-xs-1">
+      <!-- Start : elo -->
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-elo" />
+      </svg>
+      <!-- End : elo -->
+    </div>
+
+  </div>
+  <div class="row">
+    
+
+    <div class="col-xs-1">
+      <!-- Start : cvv -->
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-cvv" />
+      </svg>
+      <!-- End : cvv -->
+    </div>
+
+    <div class="col-xs-1">
+      <!-- Start : discover -->
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-discover" />
+      </svg>
+      <!-- End : discover -->
+    </div>
+
+    <div class="col-xs-1">
+      <!-- Start : visacheckout -->
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-visacheckout" />
+      </svg>
+      <!-- End : visacheckout -->
+    </div>
+
+    <div class="col-xs-1">
+      <!-- Start : card2 -->
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-card2" />
+      </svg>
+      <!-- End : card2 -->
+    </div>
+
+    <div class="col-xs-1">
+      <!-- Start : card2 -->
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-visacheckout" />
+      </svg>
+      <!-- End : card2 -->
+    </div>
+  </div>
 </div>
 
 {% endexample %}

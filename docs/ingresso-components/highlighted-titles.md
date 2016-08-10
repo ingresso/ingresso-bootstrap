@@ -89,6 +89,7 @@ Title with colors related to the events of Ingresso.com . Just follow the exampl
 
 {% example html %}
 
+<h1 class="event-name">Nome do produto Padrão</h1>
 <h1 class="event-name clr-cinema">Nome do produto Cinema</h1>
 <h1 class="event-name clr-theater">Nome do produto Teatro</h1>
 <h1 class="event-name clr-show">Nome do produto Show</h1>
