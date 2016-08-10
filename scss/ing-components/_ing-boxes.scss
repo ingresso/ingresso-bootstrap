@@ -3,14 +3,15 @@
 //
 
 .box{
-  padding:10px;
+  padding:1rem;
+  box-sizing: border-box;
 
-  &.row{
-    padding:0;
-  }
 }
 
 .box-tp1{
   background: #eee;
 }
 
+.box-tp2{
+  border:1px solid map-get($box-border-color, 2);
+}

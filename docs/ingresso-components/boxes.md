@@ -13,3 +13,12 @@ Padrões de boxes usados para envolver um componente ou um grupo de componentes.
   lorem ipsum lorem dolor ipsum lorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsum
 </div>
 {% endexample %}
+
+
+### Box tipo 2
+
+{% example html %}
+<div class="box box-tp2">
+  lorem ipsum lorem dolor ipsum lorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsumlorem ipsum lorem dolor ipsum
+</div>
+{% endexample %}

@@ -9,7 +9,6 @@
 2.0 - Validation
 3.0 - Labels
 4.0 - Custom Select
-5.0 - Custom Checkbox
 --------------------------------------------------------------*/
 
   /*--------------------------------------------------------------
@@ -354,19 +353,12 @@
     }
   }
 
+  .custom-control{display: inline-block;}
+
 
 
   .custom-control-indicator {
     border:1px solid rgba(0, 0, 0, 0.15);
-  }
-
-/*--------------------------------------------------------------
-  5.0 - Custom Checkbox
-  --------------------------------------------------------------*/
-
-  .custom-control {
-    padding-top:3px;
-    padding-bottom:3px;
   }
 
 
