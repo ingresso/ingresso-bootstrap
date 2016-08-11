@@ -7187,6 +7187,10 @@ ol {
   fill: #0db6b5;
 }
 
+.svg-icon.ic-white {
+  fill: #fff;
+}
+
 .svg-icon.ic-cinema {
   fill: #d3793d;
 }
@@ -7315,77 +7319,114 @@ a.ic-rounded .svg-icon {
 
 /* text width icon */
 .icon-txt {
-  position: relative;
+  display: table;
+  /* align icon to the right */
+}
+
+.icon-txt > .it-txt, .icon-txt > .it-cont {
+  display: table-cell;
+}
+
+.icon-txt > .it-cont {
+  vertical-align: top;
+}
+
+.icon-txt > .it-cont.valign-middle {
+  vertical-align: middle;
+}
+
+.icon-txt > .it-cont.valign-bottom {
+  vertical-align: bottom;
+}
+
+.icon-txt .it-txt {
+  padding-left: 0.3125rem;
+  vertical-align: middle;
+}
+
+.icon-txt .svg-icon {
+  /* default icon size */
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.icon-txt.it-right {
+  direction: rtl;
+}
+
+.icon-txt.it-right .it-txt {
+  padding-right: 0.3125rem;
+  padding-left: 0;
+}
+
+.icon2-txt {
   display: inline-block;
   /* icon using rounded component*/
   /* align icon to the right */
 }
 
-.icon-txt > .it-cont {
+.icon2-txt > .it-cont {
   display: inline-block;
 }
 
-.icon-txt > .it-cont > .it-txt {
+.icon2-txt > .it-cont > .it-txt {
   vertical-align: middle;
   display: inline-block;
   white-space: normal;
 }
 
-.icon-txt > .svg-icon {
+.icon2-txt > .it-cont:before {
+  content: '';
+  display: inline-block;
+  line-height: 0;
+  min-height: 25px;
+  vertical-align: middle;
+}
+
+.icon2-txt > .svg-icon {
   /* default icon size */
   width: 30px;
   height: 30px;
 }
 
-.icon-txt > .svg-icon.icon-size1 ~ .it-cont {
+.icon2-txt > .svg-icon.icon-size1 ~ .it-cont {
   padding-left: 35px;
   min-height: 25px;
   white-space: nowrap;
 }
 
-.icon-txt > .svg-icon.icon-size1 ~ .it-cont:before {
-  content: '';
-  display: inline-block;
-  line-height: 0;
+.icon2-txt > .svg-icon:before {
   min-height: 25px;
-  vertical-align: middle;
 }
 
-.icon-txt > .svg-icon.icon-size2 ~ .it-cont {
+.icon2-txt > .svg-icon.icon-size2 ~ .it-cont {
   padding-left: 40px;
   min-height: 30px;
   white-space: nowrap;
 }
 
-.icon-txt > .svg-icon.icon-size2 ~ .it-cont:before {
-  content: '';
-  display: inline-block;
-  line-height: 0;
+.icon2-txt > .svg-icon:before {
   min-height: 30px;
-  vertical-align: middle;
 }
 
-.icon-txt > .svg-icon.icon-size3 ~ .it-cont {
+.icon2-txt > .svg-icon.icon-size3 ~ .it-cont {
   padding-left: 50px;
   min-height: 40px;
   white-space: nowrap;
 }
 
-.icon-txt > .svg-icon.icon-size3 ~ .it-cont:before {
-  content: '';
-  display: inline-block;
-  line-height: 0;
+.icon2-txt > .svg-icon:before {
   min-height: 40px;
-  vertical-align: middle;
 }
 
-.icon-txt > .ic-rounded.ic-rd-size1 ~ .it-cont {
+.icon2-txt > .ic-rounded.ic-rd-size1 ~ .it-cont {
   padding-left: 35px;
   min-height: 25px;
   white-space: nowrap;
 }
 
-.icon-txt > .ic-rounded.ic-rd-size1 ~ .it-cont:before {
+.icon2-txt > .ic-rounded.ic-rd-size1 ~ .it-cont:before {
   content: '';
   display: inline-block;
   line-height: 0;
@@ -7393,13 +7434,13 @@ a.ic-rounded .svg-icon {
   vertical-align: middle;
 }
 
-.icon-txt > .ic-rounded.ic-rd-size2 ~ .it-cont {
+.icon2-txt > .ic-rounded.ic-rd-size2 ~ .it-cont {
   padding-left: 40px;
   min-height: 30px;
   white-space: nowrap;
 }
 
-.icon-txt > .ic-rounded.ic-rd-size2 ~ .it-cont:before {
+.icon2-txt > .ic-rounded.ic-rd-size2 ~ .it-cont:before {
   content: '';
   display: inline-block;
   line-height: 0;
@@ -7407,13 +7448,13 @@ a.ic-rounded .svg-icon {
   vertical-align: middle;
 }
 
-.icon-txt > .ic-rounded.ic-rd-size3 ~ .it-cont {
+.icon2-txt > .ic-rounded.ic-rd-size3 ~ .it-cont {
   padding-left: 50px;
   min-height: 40px;
   white-space: nowrap;
 }
 
-.icon-txt > .ic-rounded.ic-rd-size3 ~ .it-cont:before {
+.icon2-txt > .ic-rounded.ic-rd-size3 ~ .it-cont:before {
   content: '';
   display: inline-block;
   line-height: 0;
@@ -7421,7 +7462,7 @@ a.ic-rounded .svg-icon {
   vertical-align: middle;
 }
 
-.icon-txt > .svg-icon, .icon-txt > .ic-rounded {
+.icon2-txt > .svg-icon, .icon2-txt > .ic-rounded {
   position: absolute;
   top: 0;
   left: 0;
@@ -7429,12 +7470,12 @@ a.ic-rounded .svg-icon {
   /* alignments */
 }
 
-.icon-txt > .svg-icon ~ .it-cont, .icon-txt > .ic-rounded ~ .it-cont {
+.icon2-txt > .svg-icon ~ .it-cont, .icon2-txt > .ic-rounded ~ .it-cont {
   padding-left: 40px;
   text-align: left;
 }
 
-.icon-txt > .svg-icon.valign-bottom, .icon-txt > .ic-rounded.valign-bottom {
+.icon2-txt > .svg-icon.valign-bottom, .icon2-txt > .ic-rounded.valign-bottom {
   bottom: 0;
   top: auto;
   -webkit-transform: none;
@@ -7443,7 +7484,7 @@ a.ic-rounded .svg-icon {
           transform: none;
 }
 
-.icon-txt > .svg-icon.valign-middle, .icon-txt > .ic-rounded.valign-middle {
+.icon2-txt > .svg-icon.valign-middle, .icon2-txt > .ic-rounded.valign-middle {
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -7451,12 +7492,12 @@ a.ic-rounded .svg-icon {
           transform: translateY(-50%);
 }
 
-.icon-txt.it-right > .svg-icon {
+.icon2-txt.it-right > .svg-icon {
   right: 0;
   left: auto;
 }
 
-.icon-txt.it-right > .svg-icon ~ .it-cont {
+.icon2-txt.it-right > .svg-icon ~ .it-cont {
   padding-left: 0;
   padding-right: 40px;
   text-align: right;
@@ -7676,8 +7717,8 @@ a.ic-rounded .svg-icon {
 }
 
 #footer .ft-payment-icon {
-  width: 63px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
 }
 
 #footer .ft-smap-sub-it {
@@ -7805,6 +7846,12 @@ a.ic-rounded .svg-icon {
   transition: all 0.25s ease-in-out;
 }
 
+.tab-accordion.tab-inactive {
+  opacity: 0.6;
+  position: relative;
+  pointer-events: none;
+}
+
 .tab-accordion.model1 {
   padding-right: 30px;
 }
@@ -7923,6 +7970,7 @@ a.ic-rounded .svg-icon {
 @media (min-width: 768px) {
   .icon-accordion .ia-txt {
     display: inline-block;
+    margin-right: 5px;
   }
 }
 
@@ -7947,11 +7995,6 @@ a.ic-rounded .svg-icon {
   border: 0;
 }
 
-.btn-block-xs {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
 .btn-link {
   text-transform: initial;
 }
@@ -7964,13 +8007,6 @@ a.ic-rounded .svg-icon {
 
 .btn-paypal:hover {
   background-color: #001e54;
-}
-
-@media (min-width: 544px) {
-  .btn-block-xs {
-    width: auto;
-    margin: 0;
-  }
 }
 
 .nav-tabs .nav-item {
@@ -7988,6 +8024,57 @@ a.ic-rounded .svg-icon {
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
   border-color: transparent;
+}
+
+.nav-stacked .nav-item {
+  border-left: 4px solid #0db6b5;
+}
+
+.nav-stacked .nav-item + .nav-item {
+  margin-top: 2px;
+}
+
+.nav-stacked .nav-link {
+  text-transform: uppercase;
+  padding: .725em 1em;
+  font-size: 0.875rem;
+  background-color: #f2f2f2;
+}
+
+.nav-stacked .nav-link .svg-icon {
+  fill: #0db6b5;
+}
+
+.nav-stacked .nav-link.active {
+  position: relative;
+}
+
+.nav-stacked .nav-link.active:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #0db6b5;
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  z-index: 1;
+  margin-top: -8px;
+  pointer-events: none;
+}
+
+.nav-stacked .nav-link.active .svg-icon {
+  fill: #fff;
+}
+
+.nav-stacked .nav-link.disabled {
+  color: #ccc;
+}
+
+.nav-stacked .nav-link.disabled:hover {
+  background-color: #f2f2f2;
 }
 
 /* temp */
@@ -8122,7 +8209,6 @@ a.ic-rounded .svg-icon {
 2.0 - Validation
 3.0 - Labels
 4.0 - Custom Select
-5.0 - Custom Checkbox
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
   1.0 - Input
@@ -8459,16 +8545,12 @@ a.ic-rounded .svg-icon {
   display: inline-block;
 }
 
-.custom-control-indicator {
-  border: 1px solid rgba(0, 0, 0, 0.15);
+.custom-control {
+  display: inline-block;
 }
 
-/*--------------------------------------------------------------
-  5.0 - Custom Checkbox
-  --------------------------------------------------------------*/
-.custom-control {
-  padding-top: 3px;
-  padding-bottom: 3px;
+.custom-control-indicator {
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 /*--------------------------------------------------------------
@@ -9515,15 +9597,17 @@ a.ic-rounded .svg-icon {
 }
 
 .box {
-  padding: 10px;
-}
-
-.box.row {
-  padding: 0;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .box-tp1 {
   background: #eee;
+}
+
+.box-tp2 {
+  border: 1px solid #f2f2f2;
 }
 
 /**

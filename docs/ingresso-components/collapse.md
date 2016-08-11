@@ -30,6 +30,12 @@ Be sure to use the same rules at bootstrap default accordion.
    <div class="tab-cont-wp">...</div>
 </div>
 
+<!-- inactive tab -->
+<a class="tab-accordion collapsed model2 tab-inactive" role="button" data-toggle="collapse" data-parent="#tab" href="#tab-main-contentInactive" aria-expanded="true" aria-controls="tab-main-contentInactive">Test Tab Inactive</a>
+<div id="tab-main-contentInactive" class="tab-content tab-inactive collapse">
+   <div class="tab-cont-wp">...</div>
+</div>
+
 {% endexample %}
 
 ## Example
@@ -43,7 +49,7 @@ Para usar a versão com icone, deve-se utilizar a estrutura abaixo, com o elemen
   <span class="ia-txt">ver detalhes</span>
   <span class="ic-rounded ic-rd-ingresso">
     <svg class="svg-icon">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow2-1"></use>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-top-2"></use>
     </svg>
 </span>
 </a>

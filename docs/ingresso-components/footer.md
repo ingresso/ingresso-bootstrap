@@ -166,267 +166,275 @@ A lightweight, flexible footer that can be used on your site.
     </defs>
     </svg>
       <footer id="footer" class="container-fluid">
-        
-        <div class="row ft-newsletter">
+      
+      <div class="row ft-newsletter">
 
-          <div class="col-xs-12">
-            <article class="ft-nws-wp">
-               <form class="form-inline" action="#">
-                 <div class="form-group">
-                   <label class="ft-nws-title" for="mail-newsletter">Receba as novidades da Ingresso.com</label>
-                   <div class="input-group">
-                     <input type="email" class="form-control input-lg ft-nws-ipt" placeholder="Cadastre o seu e-mail" id="mail-newsletter" >
-                     
-                       <button class="btn btn-primary btn-lg" type="button">Enviar</button>
-                    
-                   </div>
+        <div class="col-xs-12 col-md-8 offset-md-2">
+          <article class="ft-nws-wp">
+             <form class="form-inline" action="#">
+               <div class="form-group">
+                 <label class="ft-nws-title" for="mail-newsletter">Receba as novidades da Ingresso.com</label>
+                 <div class="input-group">
+                   <input type="email" class="form-control input-lg ft-nws-ipt" placeholder="Cadastre o seu e-mail" id="mail-newsletter" >
+                     <button class="btn btn-primary" type="button">Enviar</button>
                  </div>
-               </form>
-            </article>
-          </div>
+               </div>
+             </form>
+          </article>
         </div>
+      </div>
 
-        <div class="ft-user-channel row">
-          <article class="ft-phone-buy col-xs-12 col-sm-4">
-            <h1 class="title1">Televendas</h1>
-            <svg class="ft-phone-icon"><use xlink:href="#ft-icon-telesales"></use></svg>
-            <span class="ft-phone-info">
-               <strong class="ft-phn-number">4003-2330</strong><br />Exceto Cinemas
-            </span>
-          </article>
-
-          <article class="ft-apps col-xs-12 col-sm-4">
-           <h1 class="title1">Nossos Aplicativos</h1>
-           <ul class="ft-app-lt">
-             <li class="ft-app-it"><a href="http://itunes.apple.com/br/app/ingresso-com/id395159864?mt=8" title="Disponível para Iphone"><svg class="ft-app-icon"><use xlink:href="#ft-icon-apple"></use></svg></a></li>
-             <li class="ft-app-it"><a href="https://play.google.com/store/apps/details?id=br.eti.faces.ingresso&feature=search_result#?t=W251bGwsMSwxLDEsImJyLmV0aS5mYWNlcy5pbmdyZXNzbyJd" title="Disponível para Android"><svg class="ft-app-icon"><use xlink:href="#ft-icon-android"></use></svg></a></li>
-             <li class="ft-app-it"><a href="http://www.windowsphone.com/pt-br/store/app/ingresso-com/1d9fc1b7-da21-4c13-a12e-7150f32fab37" title="Disponível para Windows Phone"><svg class="ft-app-icon"><use xlink:href="#ft-icon-windows"></use></svg></a></li>
-           </ul>
-          </article>
-
-          <article class="ft-social col-xs-12 col-sm-4">
-            <h1 class="title1">Siga-nos!</h1>
-            <ul class="ft-social-lt">
-                <li class="ft-social-it"><a href="http://facebook.com/ingressocom/" title="Facebook Ingresso.com"><svg class="ft-facebook"><use xlink:href="#ft-icon-facebook"></use></svg></a></li>
-                <li class="ft-social-it"><a href="http://youtube.com/user/Ingressocom" title="YouTube Ingresso.com"><svg class="ft-youtube"><use xlink:href="#ft-icon-youtube"></use></svg></a></li>
-            </ul>
-          </article>
-
-       </div>
-
-        <article class="ft-sitemap row">
-           <div class="col-xs-12">
-              <h1 class="sr-only">Sitemap</h1>
-              <ul class="ft-smap-lt row" id="ft-smap-dropdown" role="tablist" aria-multiselectable="true">
-                <li class="ft-smap-it col-xs-12 col-sm-6 col-md-3">
-                  <a class="tab-accordion collapsed model1 js-md" role="button" data-toggle="collapse" data-parent="#ft-smap-dropdown" href="#ft-smap-it-01" aria-expanded="true" aria-controls="ft-smap-it-01">Menu</a>
-                  <div class="tab-content collapse" id="ft-smap-it-01" role="tabpanel" aria-labelledby="headingOne">
-                     <ul class="ft-smap-sub-lt tab-cont-wp">
-                       <li class="ft-smap-sub-it"><a href="#">Cinema</a></li>
-                       <li class="ft-smap-sub-it"><a href="#">Teatro</a></li>
-                       <li class="ft-smap-sub-it"><a href="#">Circo</a></li>
-                       <li class="ft-smap-sub-it"><a href="#">Promoção</a></li>
-                     </ul>
-                  </div>
-                </li>
-
-                <li class="ft-smap-it col-xs-12 col-sm-6 col-md-3">
-                  <a class="tab-accordion collapsed model1 js-md" role="button" data-toggle="collapse" data-parent="#ft-smap-dropdown" href="#ft-smap-it-02" aria-expanded="true" aria-controls="ft-smap-it-02">Institucional</a>
-                  <div class="tab-content collapse" id="ft-smap-it-02" role="tabpanel" aria-labelledby="headingTwo">
-                     <ul class="ft-smap-sub-lt tab-cont-wp">
-                       <li class="ft-smap-sub-it"><a href="#">Sobre a Ingresso.com</a></li>
-                       <li class="ft-smap-sub-it"><a href="#">Privacidade e Segurança</a></li>
-                       <li class="ft-smap-sub-it"><a href="#">Pontos de Venda</a></li>
-                       <li class="ft-smap-sub-it"><a href="#">Lei de Meia-entrada</a></li>
-                       <li class="ft-smap-sub-it"><a href="#">Retirada por Passbook</a></li>
-                       <li class="ft-smap-sub-it"><a href="#">Acessoria de Imprensa</a></li>
-                       <li class="ft-smap-sub-it"><a href="#">Guia da Marca</a></li>
-                       <li class="ft-smap-sub-it"><a href="#">Anuncie</a></li>
-                       <li class="ft-smap-sub-it"><a href="#">Venda Conosco</a></li>
-                     </ul>
-                  </div>
-                </li>
-
-                <li class="ft-smap-it col-xs-12 col-sm-6 col-md-3">
-                  <a class="tab-accordion collapsed model1 js-md" role="button" data-toggle="collapse" data-parent="#ft-smap-dropdown" href="#ft-smap-it-03" aria-expanded="true" aria-controls="ft-smap-it-03">Produtos</a>
-                  <div class="tab-content collapse" id="ft-smap-it-03" role="tabpanel" aria-labelledby="headingTree">
-                     <ul class="ft-smap-sub-lt tab-cont-wp">
-                       <li class="ft-smap-sub-it"><a href="#">Vale Presente</a></li>
-                       <li class="ft-smap-sub-it"><a href="#">Ingresso Pré-pago</a></li>
-                     </ul>
-                  </div>
-                </li>
-
-                <li class="ft-smap-it col-xs-12 col-sm-6 col-md-3">
-                  <a class="tab-accordion collapsed model1 js-md" role="button" data-toggle="collapse" data-parent="#ft-smap-dropdown" href="#ft-smap-it-04" aria-expanded="true" aria-controls="ft-smap-it-04">Dúvidas</a>
-                  <div class="tab-content collapse" id="ft-smap-it-04" role="tabpanel" aria-labelledby="headingFour">
-                     <ul class="ft-smap-sub-lt tab-cont-wp">
-                       <li class="ft-smap-sub-it"><a href="#">Atendimento</a></li>
-                       <li class="ft-smap-sub-it"><a href="#">Alerta de e-mails e Sites falsos</a></li>
-                       <li class="ft-smap-sub-it"><a href="#">Procon-RJ</a></li>
-                     </ul>
-                  </div>
-                </li>
-              </ul>
-           </div>
+      <div class="ft-user-channel row">
+        <article class="ft-phone-buy col-xs-12 col-sm-4">
+          <h1 class="title1">Televendas</h1>
+          <svg class="ft-phone-icon"><use xlink:href="#ft-icon-telesales"></use></svg>
+          <span class="ft-phone-info">
+             <strong class="ft-phn-number">4003-2330</strong><br />Exceto Cinemas
+          </span>
         </article>
-       <div class="row">
-           <article class="ft-payments col-xs-12">
-             <h1 class="title2">Você pode comprar com:</h1>
-             <ul class="ft-payment-lt">
-               <li class="ft-payment-it"><span class="sr-only">Visa</span><svg role="img" class="ft-payment-icon"><use xlink:href="#ft-icon-visa"></use></svg></li>
-               <li class="ft-payment-it"><span class="sr-only">MasterCard</span><svg role="img" class="ft-payment-icon"><use xlink:href="#ft-icon-master"></use></svg></li>
-               <li class="ft-payment-it"><span class="sr-only">Diners</span><svg role="img" class="ft-payment-icon"><use xlink:href="#ft-icon-diners"></use></svg></li>
-               <li class="ft-payment-it"><span class="sr-only">Elo</span><svg role="img" class="ft-payment-icon"><use xlink:href="#ft-icon-elo"></use></svg></li>
-               <li class="ft-payment-it"><span itemprop="name" class="sr-only">Cartão Submarino</span><svg role="img" class="ft-payment-icon"><use xlink:href="#ft-icon-submarino"></use></svg></li>
-               <li class="ft-payment-it"><span class="sr-only">Cartão Aura</span><svg role="img" class="ft-payment-icon"><use xlink:href="#ft-icon-aura"></use></svg></li>
-               <li class="ft-payment-it"><span class="sr-only">Cartão American Express</span><svg role="img" class="ft-payment-icon"><use xlink:href="#ft-icon-american"></use></svg></li>
-             </ul>
-           </article>
-           <!-- <div class="ft-security col-xs-12 col-sm-12 col-md-4">
-            <span class="ft-title">Certificados</span>
-           </div> -->
-       </div>
 
-       <div class="row">
-         <div class="ft-address col-xs-12">
-           <div class="ftr-copyright">
-               <span>Ingresso.com Ltda</span>
-               <span> / CNPJ: 008606400001-71 <br /><strong>Endereço:</strong> <span>Rua da Quitanda, 86 - 9&ordm; andar</span> - <span>Centro - RJ</span> - <span>20091-005</span></span><br />
-               <a href="https://atendimentoicom.zendesk.com/hc/pt-br">Atendimento ao cliente</a><br />
-               <span>&copy; Copyright Ingresso.com - todos os direitos reservados</span>
-           </div>
+        <article class="ft-apps col-xs-12 col-sm-4">
+         <h1 class="title1">Nossos Aplicativos</h1>
+         <ul class="ft-app-lt">
+           <li class="ft-app-it"><a href="http://itunes.apple.com/br/app/ingresso-com/id395159864?mt=8" title="Disponível para Iphone"><svg class="ft-app-icon"><use xlink:href="#ft-icon-apple"></use></svg></a></li>
+           <li class="ft-app-it"><a href="https://play.google.com/store/apps/details?id=br.eti.faces.ingresso&feature=search_result#?t=W251bGwsMSwxLDEsImJyLmV0aS5mYWNlcy5pbmdyZXNzbyJd" title="Disponível para Android"><svg class="ft-app-icon"><use xlink:href="#ft-icon-android"></use></svg></a></li>
+           <li class="ft-app-it"><a href="http://www.windowsphone.com/pt-br/store/app/ingresso-com/1d9fc1b7-da21-4c13-a12e-7150f32fab37" title="Disponível para Windows Phone"><svg class="ft-app-icon"><use xlink:href="#ft-icon-windows"></use></svg></a></li>
+         </ul>
+        </article>
+
+        <article class="ft-social col-xs-12 col-sm-4">
+          <h1 class="title1">Siga-nos!</h1>
+          <ul class="ft-social-lt">
+              <li class="ft-social-it"><a href="http://facebook.com/ingressocom/" title="Facebook Ingresso.com"><svg class="ft-facebook"><use xlink:href="#ft-icon-facebook"></use></svg></a></li>
+              <li class="ft-social-it"><a href="http://youtube.com/user/Ingressocom" title="YouTube Ingresso.com"><svg class="ft-youtube"><use xlink:href="#ft-icon-youtube"></use></svg></a></li>
+          </ul>
+        </article>
+
+     </div>
+
+      <article class="ft-sitemap row">
+         <div class="col-xs-12">
+            <h1 class="sr-only">Sitemap</h1>
+            <ul class="ft-smap-lt row" id="ft-smap-dropdown" role="tablist" aria-multiselectable="true">
+              <li class="ft-smap-it col-xs-12 col-sm-6 col-md-3">
+                <a class="tab-accordion collapsed model1 js-md" role="button" data-toggle="collapse" data-parent="#ft-smap-dropdown" href="#ft-smap-it-01" aria-expanded="true" aria-controls="ft-smap-it-01">Menu</a>
+                <div class="tab-content collapse" id="ft-smap-it-01" role="tabpanel" aria-labelledby="headingOne">
+                   <ul class="ft-smap-sub-lt tab-cont-wp">
+                     <li class="ft-smap-sub-it"><a href="#">Cinema</a></li>
+                     <li class="ft-smap-sub-it"><a href="#">Teatro</a></li>
+                     <li class="ft-smap-sub-it"><a href="#">Circo</a></li>
+                     <li class="ft-smap-sub-it"><a href="#">Promoção</a></li>
+                   </ul>
+                </div>
+              </li>
+
+              <li class="ft-smap-it col-xs-12 col-sm-6 col-md-3">
+                <a class="tab-accordion collapsed model1 js-md" role="button" data-toggle="collapse" data-parent="#ft-smap-dropdown" href="#ft-smap-it-02" aria-expanded="true" aria-controls="ft-smap-it-02">Institucional</a>
+                <div class="tab-content collapse" id="ft-smap-it-02" role="tabpanel" aria-labelledby="headingTwo">
+                   <ul class="ft-smap-sub-lt tab-cont-wp">
+                     <li class="ft-smap-sub-it"><a href="#">Sobre a Ingresso.com</a></li>
+                     <li class="ft-smap-sub-it"><a href="#">Privacidade e Segurança</a></li>
+                     <li class="ft-smap-sub-it"><a href="#">Pontos de Venda</a></li>
+                     <li class="ft-smap-sub-it"><a href="#">Lei de Meia-entrada</a></li>
+                     <li class="ft-smap-sub-it"><a href="#">Retirada por Passbook</a></li>
+                     <li class="ft-smap-sub-it"><a href="#">Acessoria de Imprensa</a></li>
+                     <li class="ft-smap-sub-it"><a href="#">Guia da Marca</a></li>
+                     <li class="ft-smap-sub-it"><a href="#">Anuncie</a></li>
+                     <li class="ft-smap-sub-it"><a href="#">Venda Conosco</a></li>
+                   </ul>
+                </div>
+              </li>
+
+              <li class="ft-smap-it col-xs-12 col-sm-6 col-md-3">
+                <a class="tab-accordion collapsed model1 js-md" role="button" data-toggle="collapse" data-parent="#ft-smap-dropdown" href="#ft-smap-it-03" aria-expanded="true" aria-controls="ft-smap-it-03">Produtos</a>
+                <div class="tab-content collapse" id="ft-smap-it-03" role="tabpanel" aria-labelledby="headingTree">
+                   <ul class="ft-smap-sub-lt tab-cont-wp">
+                     <li class="ft-smap-sub-it"><a href="#">Vale Presente</a></li>
+                     <li class="ft-smap-sub-it"><a href="#">Ingresso Pré-pago</a></li>
+                   </ul>
+                </div>
+              </li>
+
+              <li class="ft-smap-it col-xs-12 col-sm-6 col-md-3">
+                <a class="tab-accordion collapsed model1 js-md" role="button" data-toggle="collapse" data-parent="#ft-smap-dropdown" href="#ft-smap-it-04" aria-expanded="true" aria-controls="ft-smap-it-04">Dúvidas</a>
+                <div class="tab-content collapse" id="ft-smap-it-04" role="tabpanel" aria-labelledby="headingFour">
+                   <ul class="ft-smap-sub-lt tab-cont-wp">
+                     <li class="ft-smap-sub-it"><a href="#">Atendimento</a></li>
+                     <li class="ft-smap-sub-it"><a href="#">Alerta de e-mails e Sites falsos</a></li>
+                     <li class="ft-smap-sub-it"><a href="#">Procon-RJ</a></li>
+                   </ul>
+                </div>
+              </li>
+            </ul>
+         </div>
+      </article>
+     <div class="row">
+         <article class="ft-payments col-xs-12">
+           <h1 class="title2">Você pode comprar com:</h1>
+           <ul class="ft-payment-lt">
+             <li class="ft-payment-it"><span class="sr-only">Visa</span><svg role="img" class="ft-payment-icon"><use xlink:href="#icon-payment-visa"></use></svg></li>
+
+             <li class="ft-payment-it"><span class="sr-only">MasterCard</span><svg role="img" class="ft-payment-icon"><use xlink:href="#icon-payment-mastercard"></use></svg></li>
+
+             <li class="ft-payment-it"><span class="sr-only">Diners</span><svg role="img" class="ft-payment-icon"><use xlink:href="#icon-payment-diners"></use></svg></li>
+
+             <li class="ft-payment-it"><span class="sr-only">Elo</span><svg role="img" class="ft-payment-icon"><use xlink:href="#icon-payment-elo"></use></svg></li>
+
+
+             <li class="ft-payment-it"><span class="sr-only">Cartão Aura</span><svg role="img" class="ft-payment-icon"><use xlink:href="#icon-payment-aura"></use></svg></li>
+
+             <li class="ft-payment-it"><span class="sr-only">Cartão American Express</span><svg role="img" class="ft-payment-icon"><use xlink:href="#icon-payment-amex"></use></svg></li>
+                
+
+             <li class="ft-payment-it"><span class="sr-only">PayPal</span><svg role="img" class="ft-payment-icon"><use xlink:href="#icon-payment-paypal"></use></svg></li>
+
+             <li class="ft-payment-it"><span class="sr-only">Visa Checkout</span><svg role="img" class="ft-payment-icon"><use xlink:href="#icon-payment-visacheckout"></use></svg></li>
+           </ul>
+         </article>
+         <!-- <div class="ft-security col-xs-12 col-sm-12 col-md-4">
+          <span class="ft-title">Certificados</span>
+         </div> -->
+     </div>
+
+     <div class="row">
+       <div class="ft-address col-xs-12">
+         <div class="ftr-copyright">
+             <span>Ingresso.com Ltda</span>
+             <span> / CNPJ: 008606400001-71 <br /><strong>Endereço:</strong> <span>Rua da Quitanda, 86 - 9&ordm; andar</span> - <span>Centro - RJ</span> - <span>20091-005</span></span><br />
+             <a href="https://atendimentoicom.zendesk.com/hc/pt-br">Atendimento ao cliente</a><br />
+             <span>&copy; Copyright Ingresso.com - todos os direitos reservados</span>
          </div>
        </div>
+     </div>
 
-       <script type="application/ld+json">
-           {
-               "@context":"http://schema.org",
-               "@type":"Organization",
-               "name":"Ingresso.com",
-               "url":"http://www.ingresso.com",
-               "foundingDate":"1995-09-25",
-               "legalName":"Ingresso.com Ltda",
-               "email":"contato@ingresso.com",
-               "logo":"https://ingresso-a.akamaihd.net/catalogo/img/logo.png",
-               "contactPoint":{
-                   "@type":"ContactPoint",
-                   "contactType":"customer service",
-                   "url":"https://atendimento.ingresso.com/"
-               },
-               "telephone":"4003-2330",
-               "address":{
-                   "@type":"PostalAddress",
-                   "streetAddress":"Rua da Quitanda, 86 - 9&ordm; andar",
-                   "postalCode":"20091-005",
-                   "addressLocality":"Rio de Janeiro",
-                   "addressRegion":"RJ",
-                   "addressCountry":"BR"
-               },
-               "seeks":{
-                   "@type":"Demand",
-                   "acceptedPaymentMethod":[
-                       {
-                           "@type":"PaymentMethod",
-                           "name":"Visa"
-                       },
-                       {
-                           "@type":"PaymentMethod",
-                           "name":"MasterCard"
-                       },
-                       {
-                           "@type":"PaymentMethod",
-                           "name":"Diners"
-                       },
-                       {
-                           "@type":"PaymentMethod",
-                           "name":"Elo"
-                       },
-                       {
-                           "@type":"PaymentMethod",
-                           "name":"Cartão Submarino"
-                       },
-                       {
-                           "@type":"PaymentMethod",
-                           "name":"Aura"
-                       },
-                       {
-                           "@type":"PaymentMethod",
-                           "name":"American Express"
-                       }
-                   ]
-               }
-           },
-        /* exemplo com lista de filmes */
-        {
-            "@context": "http://schema.org",
-              "@type": "ItemList",
-              "itemListElement":[
-                {
-                      "@type": "ListItem",
-                      "position": 1,
-                      "item": {
-                        "@type": "Movie",
-                        "name": "Capitão América: Guerra Civil",
-                        "url": "http://marvel.com/CaptainAmericaPremiere",
-                        "image": "https://upload.wikimedia.org/wikipedia/pt/5/53/Captain_America_Civil_War_poster.jpg",
-                        "director":[
-                            {
-                                "@type": "Person",
-                                "name": "Anthony Russo"
-                            },
-                            {
-                                "@type": "Person",
-                                "name": "Joe Russo"
-                            }
-                        ],
-                        "actor": [
-                        {
-                          "@type": "Person",
-                          "name": "Robert Downey Jr."
-                       },
-                       {
-                        "@type":"Person",
-                        "name": "Chris Evans"
-                       }
-                       ],
-                      "datePublished": "2016-05-06"
-                      }
-                    },
-                    {
-                      "@type": "ListItem",
-                      "position": 2,
-                      "item": {
-                        "@type": "Movie",
-                        "name": "Capitão América: Guerra Civil 2",
-                        "url": "http://marvel.com/CaptainAmericaPremiere",
-                        "image": "https://upload.wikimedia.org/wikipedia/pt/5/53/Captain_America_Civil_War_poster.jpg",
-                        "director":[
-                            {
-                                "@type": "Person",
-                                "name": "Anthony Russo"
-                            },
-                            {
-                                "@type": "Person",
-                                "name": "Joe Russo"
-                            }
-                        ],
-                        "actor": [
-                        {
-                          "@type": "Person",
-                          "name": "Robert Downey Jr."
-                       },
-                       {
-                        "@type":"Person",
-                        "name": "Chris Evans"
-                       }
-                       ],
-                      "datePublished": "2016-05-06"
-                      }
+     <script type="application/ld+json">
+         {
+             "@context":"http://schema.org",
+             "@type":"Organization",
+             "name":"Ingresso.com",
+             "url":"http://www.ingresso.com",
+             "foundingDate":"1995-09-25",
+             "legalName":"Ingresso.com Ltda",
+             "email":"contato@ingresso.com",
+             "logo":"https://ingresso-a.akamaihd.net/catalogo/img/logo.png",
+             "contactPoint":{
+                 "@type":"ContactPoint",
+                 "contactType":"customer service",
+                 "url":"https://atendimento.ingresso.com/"
+             },
+             "telephone":"4003-2330",
+             "address":{
+                 "@type":"PostalAddress",
+                 "streetAddress":"Rua da Quitanda, 86 - 9&ordm; andar",
+                 "postalCode":"20091-005",
+                 "addressLocality":"Rio de Janeiro",
+                 "addressRegion":"RJ",
+                 "addressCountry":"BR"
+             },
+             "seeks":{
+                 "@type":"Demand",
+                 "acceptedPaymentMethod":[
+                     {
+                         "@type":"PaymentMethod",
+                         "name":"Visa"
+                     },
+                     {
+                         "@type":"PaymentMethod",
+                         "name":"MasterCard"
+                     },
+                     {
+                         "@type":"PaymentMethod",
+                         "name":"Diners"
+                     },
+                     {
+                         "@type":"PaymentMethod",
+                         "name":"Elo"
+                     },
+                     {
+                         "@type":"PaymentMethod",
+                         "name":"Cartão Submarino"
+                     },
+                     {
+                         "@type":"PaymentMethod",
+                         "name":"Aura"
+                     },
+                     {
+                         "@type":"PaymentMethod",
+                         "name":"American Express"
+                     }
+                 ]
+             }
+         },
+      /* exemplo com lista de filmes */
+      {
+          "@context": "http://schema.org",
+            "@type": "ItemList",
+            "itemListElement":[
+              {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                      "@type": "Movie",
+                      "name": "Capitão América: Guerra Civil",
+                      "url": "http://marvel.com/CaptainAmericaPremiere",
+                      "image": "https://upload.wikimedia.org/wikipedia/pt/5/53/Captain_America_Civil_War_poster.jpg",
+                      "director":[
+                          {
+                              "@type": "Person",
+                              "name": "Anthony Russo"
+                          },
+                          {
+                              "@type": "Person",
+                              "name": "Joe Russo"
+                          }
+                      ],
+                      "actor": [
+                      {
+                        "@type": "Person",
+                        "name": "Robert Downey Jr."
+                     },
+                     {
+                      "@type":"Person",
+                      "name": "Chris Evans"
+                     }
+                     ],
+                    "datePublished": "2016-05-06"
                     }
-              ]
-        }
-        </script>
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                      "@type": "Movie",
+                      "name": "Capitão América: Guerra Civil 2",
+                      "url": "http://marvel.com/CaptainAmericaPremiere",
+                      "image": "https://upload.wikimedia.org/wikipedia/pt/5/53/Captain_America_Civil_War_poster.jpg",
+                      "director":[
+                          {
+                              "@type": "Person",
+                              "name": "Anthony Russo"
+                          },
+                          {
+                              "@type": "Person",
+                              "name": "Joe Russo"
+                          }
+                      ],
+                      "actor": [
+                      {
+                        "@type": "Person",
+                        "name": "Robert Downey Jr."
+                     },
+                     {
+                      "@type":"Person",
+                      "name": "Chris Evans"
+                     }
+                     ],
+                    "datePublished": "2016-05-06"
+                    }
+                  }
+            ]
+      }
+      </script>
 
-      </footer>
+    </footer>
 {% endexample %}

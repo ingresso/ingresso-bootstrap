@@ -33,7 +33,7 @@ The only difference is the addition of an SVG . Remember to change the `svg` acc
   <div class="form-group fl-form-group">
     <span class="form-icon-group">
       <svg aria-label="Email" class="svg-icon" width="23" height="23">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail-1"></use>
       </svg>
     </span>
     <label class="fl-label" for="exampleInputEmail2">Email address</label>
@@ -42,7 +42,7 @@ The only difference is the addition of an SVG . Remember to change the `svg` acc
   <div class="form-group fl-form-group">
     <span class="form-icon-group">
       <svg aria-label="Senha" class="svg-icon" width="23" height="23">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-lock-2"></use>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-lock"></use>
       </svg>
     </span>
     <label class="fl-label" for="exampleInputPassword2">Password</label>
@@ -141,7 +141,7 @@ Bootstrap includes validation styles for danger, warning, and success states on 
   <span class="ic-rounded ic-rd-medium ic-r-2">
     <a class="amt-less ic-r-ic" href="">
       <svg class="svg-icon" width="30" height="30">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-less"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-less-2"></use>
           </svg>
     </a>
   </span>
@@ -149,7 +149,7 @@ Bootstrap includes validation styles for danger, warning, and success states on 
   <span class="ic-rounded ic-rd-medium ic-r-2">
     <a class="amt-plus ic-r-ic" href="">
       <svg class="svg-icon" width="30" height="30">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-plus"></use>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-plus-2"></use>
       </svg>
     </a>
   </span>

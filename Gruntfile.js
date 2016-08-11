@@ -436,7 +436,7 @@ module.exports = function (grunt) {
       default: {
         files: {
           'docs/_includes/svg-defs.svg':
-           ['docs/assets/img/svg/*.svg']
+           ['docs/assets/img/svg/**/*.svg']
         }
       }
     }

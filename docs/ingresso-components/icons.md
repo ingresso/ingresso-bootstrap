@@ -20,644 +20,880 @@ classes:
 `ic-disabled`
 
 ## Example
-
+GRUPO 1 DE ICONES
 {% example html %}
 
-<div class="container">
+<div class="container-fluid text-xs-center">
   <div class="row">
-    <div class="col-xs-1">
-      <!-- Start : Arrow right -->
-      <svg class="svg-icon ic-ingresso" width="30" height="30">
-        <use xlink:href="#icon-arrow2" />
-      </svg>
-      <!-- End : Arrow right -->
-    </div>
-    <div class="col-xs-1">
-     <!-- Start : Arrow Up -->
-     <svg class="svg-icon ic-cinema" width="30" height="30">
-        <use xlink:href="#icon-arrow2-1" />
-      </svg>
-    <!-- End : Arrow Up -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Arrow Left -->
-      <svg class="svg-icon ic-theater" width="30" height="30">
-        <use xlink:href="#icon-arrow2-2" />
-      </svg>
-      <!-- End : Arrow Left -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Arrow Down -->
-      <svg class="svg-icon ic-events" width="30" height="30">
-        <use xlink:href="#icon-arrow2-3" />
-      </svg>
-      <!-- End : Arrow Down -->
-    </div>
-    <div class="col-xs-1">
-       <!-- Start : Barcode -->
-      <svg class="svg-icon ic-show" width="30" height="30">
-        <use xlink:href="#icon-barcode" />
-      </svg>
-      <!-- End : Barcode -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Box -->
-      <svg class="svg-icon ic-circus" width="30" height="30">
-        <use xlink:href="#icon-box" />
-      </svg>
-      <!-- End : Box -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Calendar 1 -->
-      <svg class="svg-icon ic-promo" width="30" height="30">
-        <use xlink:href="#icon-calendar" />
-      </svg>
-      <!-- End : Calendar 1 -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Calendar 2 -->
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-calendar2" />
+        <use xlink:href="#icon-large-truck" />
       </svg>
-      <!-- End : Calendar 2 -->
+      <span class="d-block">icon-large-truck</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Card -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-card" />
+        <use xlink:href="#icon-large-print" />
       </svg>
-      <!-- End : Card -->
+      <span class="d-block">icon-large-print</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Carousel -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-carousel" />
+        <use xlink:href="#icon-large-pinch" />
       </svg>
-      <!-- End : Carousel -->
+      <span class="d-block">icon-large-pinch</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Chaise Longue -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-chaise-long" />
+        <use xlink:href="#icon-large-passbook" />
       </svg>
-      <!-- End : Chaise Longue -->
+      <span class="d-block">icon-large-passbook</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Check 1 -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-check" />
+        <use xlink:href="#icon-large-mobile" />
       </svg>
-      <!-- End : Check 1 -->
+      <span class="d-block">icon-large-mobile</span>
     </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-large-box" />
+      </svg>
+      <span class="d-block">icon-large-box</span>
+    </div>
+
   </div>
+</div>
+
+{% endexample %}
+
+## Example
+GRUPO 2 DE ICONES
+{% example html %}
+
+<div class="container-fluid text-xs-center">
   <div class="row">
-    <div class="col-xs-1">
-      <!-- Start : Check 2 -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-check-2" />
-      </svg>
-      <!-- End : Check 2 -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Circus -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-circus" />
-      </svg>
-      <!-- End : Circus -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Clock -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-clock" />
-      </svg>
-      <!-- End : Clock -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Close -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-close" />
-      </svg>
-      <!-- End : Close -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Companion -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-companion" />
-      </svg>
-      <!-- End : Companion -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Concert -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-concert" />
-      </svg>
-      <!-- End : Concert -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Dbox -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-dbox" />
-      </svg>
-      <!-- End : Dbox -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Double Arrow Left -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-double-arrow-1" />
-      </svg>
-      <!-- End : Double Arrow Left -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Double Arrow Right -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-double-arrow-2" />
-      </svg>
-      <!-- End : Double Arrow Right -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Facebook -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-facebook" />
-      </svg>
-      <!-- End : Facebook -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Faq 1 -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-faq" />
-      </svg>
-      <!-- End : Faq 1 -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Faq 2 -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-faq2" />
-      </svg>
-      <!-- End : Faq 2 -->
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-1">
-      <!-- Start : Favoriete Place 1 -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-favoriteplace" />
-      </svg>
-      <!-- End : Favoriete Place 1 -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Favoriete Place 2 -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-favoriteplace-2" />
-      </svg>
-      <!-- End : Favoriete Place 2 -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Filter -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-filter" />
-      </svg>
-      <!-- End : Filter -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Form -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-form" />
-      </svg>
-      <!-- End : Form -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Gift -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-gift" />
-      </svg>
-      <!-- End : Gift -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Alert -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-icon-alert" />
-      </svg>
-      <!-- End : Alert -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Menu -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-icon-menu" />
-      </svg>
-      <!-- End : Menu -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Phone -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-icon-phone" />
-      </svg>
-      <!-- End : Phone -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Sector -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-icon-sector" />
-      </svg>
-      <!-- End : Sector -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Truck -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-icon-truck" />
-      </svg>
-      <!-- End : Truck -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Kids -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-kids" />
-      </svg>
-      <!-- End : Kids -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Label Chaise Longue -->
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-label-chaise-long" />
       </svg>
-      <!-- End : Label Chaise Longue -->
+      <span class="d-block">icon-label-chaise-long</span>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-1">
-      <!-- Start : Label Companion -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-label-companion" />
       </svg>
-      <!-- End : Label Companion -->
+      <span class="d-block">icon-label-companion</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Label Dbox -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-label-dbox" />
       </svg>
-      <!-- End : Label Dbox -->
+      <span class="d-block">icon-label-dbox</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Label Love -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-label-love" />
       </svg>
-      <!-- End : Label Love -->
+      <span class="d-block">icon-label-love</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Label Mobility Reduced -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-label-mobility-reduced" />
       </svg>
-      <!-- End : Label Mobility Reduced -->
+      <span class="d-block">icon-label-mobility-reduced</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Label Obese -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-label-obese" />
       </svg>
-      <!-- End : Label Obese -->
+      <span class="d-block">icon-label-obese</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Labels -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-labels" />
-      </svg>
-      <!-- End : Labels -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Label Semi Vip -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-label-semi-vip" />
       </svg>
-      <!-- End : Label Semi Vip -->
+      <span class="d-block">icon-label-semi-vip</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Label Simple -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-label-simple" />
       </svg>
-      <!-- End : Label Simple -->
+      <span class="d-block">icon-label-simple</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Label Special Price -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-label-special-price" />
-      </svg>
-      <!-- End : Label Special Price -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Label Tall Seat -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-label-tall-seat" />
       </svg>
-      <!-- End : Label Tall Seat -->
+      <span class="d-block">icon-label-tall-seat</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Label Wheelchair -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-label-wheelchair" />
       </svg>
-      <!-- End : Label Wheelchair -->
+      <span class="d-block">icon-label-wheelchair</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Less -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-less" />
-      </svg>
-      <!-- End : Less -->
-    </div>
+
   </div>
+</div>
+
+{% endexample %}
+
+## Example
+GRUPO 3 DE ICONES
+{% example html %}
+
+<div class="container-fluid text-xs-center">
   <div class="row">
-    <div class="col-xs-1">
-      <!-- Start : Lock -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-lock-2" />
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-payment-amex" />
       </svg>
-      <!-- End : Lock -->
+      <span class="d-block">icon-payment-amex</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Love -->
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-payment-aura" />
+      </svg>
+      <span class="d-block">icon-payment-aura</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-payment-card" />
+      </svg>
+      <span class="d-block">icon-payment-card</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-payment-cvv" />
+      </svg>
+      <span class="d-block">icon-payment-cvv</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-payment-diners" />
+      </svg>
+      <span class="d-block">icon-payment-diners</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-payment-discover" />
+      </svg>
+      <span class="d-block">icon-payment-discover</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-payment-elo" />
+      </svg>
+      <span class="d-block">icon-payment-elo</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-payment-mastercard" />
+      </svg>
+      <span class="d-block">icon-payment-mastercard</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-payment-passbook" />
+      </svg>
+      <span class="d-block">icon-payment-passbook</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="72" height="18">
+        <use xlink:href="#icon-payment-paypal" />
+      </svg>
+      <span class="d-block">icon-payment-paypal</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="50" height="13">
+        <use xlink:href="#icon-payment-paypal-branco" />
+      </svg>
+      <span class="d-block">icon-payment-paypal-branco</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-payment-visa" />
+      </svg>
+      <span class="d-block">icon-payment-visa</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-payment-visacheckout" />
+      </svg>
+      <span class="d-block">icon-payment-visacheckout</span>
+    </div>
+
+  </div>
+</div>
+
+{% endexample %}
+
+## Example
+GRUPO 4 DE ICONES
+{% example html %}
+
+<div class="container-fluid text-xs-center">
+  <div class="row">
+    <div class="col-xs-3">
+      <svg class="svg-icon" width="97" height="112">
+        <use xlink:href="#icon-alert-assento" />
+      </svg>
+      <span class="d-block">icon-alert-assento</span>
+    </div>
+
+    <div class="col-xs-3">
+      <svg class="svg-icon" width="97" height="112">
+        <use xlink:href="#icon-alert-assento-erro" />
+      </svg>
+      <span class="d-block">icon-alert-assento-erro</span>
+    </div>
+
+    <div class="col-xs-3">
+      <svg class="svg-icon" width="97" height="112">
+        <use xlink:href="#icon-alert-carrinho" />
+      </svg>
+      <span class="d-block">icon-alert-carrinho</span>
+    </div>
+
+    <div class="col-xs-3">
+      <svg class="svg-icon" width="97" height="112">
+        <use xlink:href="#icon-alert-email" />
+      </svg>
+      <span class="d-block">icon-alert-email</span>
+    </div>
+
+    <div class="col-xs-3">
+      <svg class="svg-icon" width="97" height="112">
+        <use xlink:href="#icon-alert-ingresso" />
+      </svg>
+      <span class="d-block">icon-alert-ingresso</span>
+    </div>
+
+    <div class="col-xs-3">
+      <svg class="svg-icon" width="97" height="112">
+        <use xlink:href="#icon-alert-like" />
+      </svg>
+      <span class="d-block">icon-alert-like</span>
+    </div>
+
+    <div class="col-xs-3">
+      <svg class="svg-icon" width="97" height="112">
+        <use xlink:href="#icon-alert-senha" />
+      </svg>
+      <span class="d-block">icon-alert-senha</span>
+    </div>
+
+    <div class="col-xs-3">
+      <svg class="svg-icon" width="97" height="112">
+        <use xlink:href="#icon-alert-sms" />
+      </svg>
+      <span class="d-block">icon-alert-sms</span>
+    </div>
+
+    <div class="col-xs-3">
+      <svg class="svg-icon" width="97" height="112">
+        <use xlink:href="#icon-alert-sms-erro" />
+      </svg>
+      <span class="d-block">icon-alert-sms-erro</span>
+    </div>
+
+    <div class="col-xs-3">
+      <svg class="svg-icon" width="97" height="112">
+        <use xlink:href="#icon-alert-timer" />
+      </svg>
+      <span class="d-block">icon-alert-timer</span>
+    </div>
+
+    <div class="col-xs-3">
+      <svg class="svg-icon" width="97" height="112">
+        <use xlink:href="#icon-alert-x" />
+      </svg>
+      <span class="d-block">icon-alert-x</span>
+    </div>
+
+  </div>
+</div>
+
+{% endexample %}
+
+## Example
+GRUPO 5 DE ICONES
+{% example html %}
+
+<div class="container-fluid text-xs-center">
+  <div class="row">
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-alert" />
+      </svg>
+      <span class="d-block">icon-alert</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-alert-2" />
+      </svg>
+      <span class="d-block">icon-alert-2</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-arrow-down-1" />
+      </svg>
+      <span class="d-block">icon-arrow-down-1</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-arrow-down-2" />
+      </svg>
+      <span class="d-block">icon-arrow-down-2</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-arrow-left-1" />
+      </svg>
+      <span class="d-block">icon-arrow-left-1</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-arrow-left-2" />
+      </svg>
+      <span class="d-block">icon-arrow-left-2</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-arrow-right-1" />
+      </svg>
+      <span class="d-block">icon-arrow-right-1</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-arrow-right-2" />
+      </svg>
+      <span class="d-block">icon-arrow-right-2</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-arrow-top-1" />
+      </svg>
+      <span class="d-block">icon-arrow-top-1</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-arrow-top-2" />
+      </svg>
+      <span class="d-block">icon-arrow-top-2</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-barcode" />
+      </svg>
+      <span class="d-block">icon-barcode</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-calendar" />
+      </svg>
+      <span class="d-block">icon-calendar</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-card" />
+      </svg>
+      <span class="d-block">icon-card</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-carousel" />
+      </svg>
+      <span class="d-block">icon-carousel</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-chaise-long" />
+      </svg>
+      <span class="d-block">icon-chaise-long</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-check" />
+      </svg>
+      <span class="d-block">icon-check</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-circus" />
+      </svg>
+      <span class="d-block">icon-circus</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-city" />
+      </svg>
+      <span class="d-block">icon-city</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-clock" />
+      </svg>
+      <span class="d-block">icon-clock</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-companion" />
+      </svg>
+      <span class="d-block">icon-companion</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-concert" />
+      </svg>
+      <span class="d-block">icon-concert</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-dbox" />
+      </svg>
+      <span class="d-block">icon-dbox</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-error" />
+      </svg>
+      <span class="d-block">icon-error</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-faq" />
+      </svg>
+      <span class="d-block">icon-faq</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-favoriteplace-1" />
+      </svg>
+      <span class="d-block">icon-favoriteplace-1</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-favoriteplace-2" />
+      </svg>
+      <span class="d-block">icon-favoriteplace-2</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-filter" />
+      </svg>
+      <span class="d-block">icon-filter</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-form" />
+      </svg>
+      <span class="d-block">icon-form</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-gift" />
+      </svg>
+      <span class="d-block">icon-gift</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-gps" />
+      </svg>
+      <span class="d-block">icon-gps</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-help-1" />
+      </svg>
+      <span class="d-block">icon-help-1</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-help-2" />
+      </svg>
+      <span class="d-block">icon-help-2</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-kids" />
+      </svg>
+      <span class="d-block">icon-kids</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-labels" />
+      </svg>
+      <span class="d-block">icon-labels</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-less-1" />
+      </svg>
+      <span class="d-block">icon-less-1</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-less-2" />
+      </svg>
+      <span class="d-block">icon-less-2</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-link" />
+      </svg>
+      <span class="d-block">icon-link</span>
+    </div>
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-lock" />
+      </svg>
+      <span class="d-block">icon-lock</span>
+    </div>
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-love" />
       </svg>
-      <!-- End : Love -->
+      <span class="d-block">icon-love</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Mail 1 -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-mail" />
+        <use xlink:href="#icon-mail-1" />
       </svg>
-      <!-- End : Mail 1 -->
+      <span class="d-block">icon-mail-1</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Mail 2 -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-mail2" />
+        <use xlink:href="#icon-mail-2" />
       </svg>
-      <!-- End : Mail 2 -->
+      <span class="d-block">icon-mail-2</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Mobile -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-mobile" />
+        <use xlink:href="#icon-menu" />
       </svg>
-      <!-- End : Mobile -->
+      <span class="d-block">icon-menu</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Mobility Reduced -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-mobility-reduced" />
       </svg>
-      <!-- End : Mobility Reduced -->
+      <span class="d-block">icon-mobility-reduced</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Movie -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-movie" />
       </svg>
-      <!-- End : Movie -->
+      <span class="d-block">icon-movie</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Obese -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-obese" />
       </svg>
-      <!-- End : Obese -->
+      <span class="d-block">icon-obese</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Pinch -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-pinch" />
+        <use xlink:href="#icon-phone" />
       </svg>
-      <!-- End : Pinch -->
+      <span class="d-block">icon-phone</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Place -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-place" />
-      </svg>
-      <!-- End : Place -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Play -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-play" />
       </svg>
-      <!-- End : Play -->
+      <span class="d-block">icon-play</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Plus -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-plus" />
+        <use xlink:href="#icon-plus-1" />
       </svg>
-      <!-- End : Plus -->
+      <span class="d-block">icon-plus-1</span>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-1">
-      <!-- Start : Popcorn -->
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-plus-2" />
+      </svg>
+      <span class="d-block">icon-plus-2</span>
+    </div>
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-popcorn" />
       </svg>
-      <!-- End : Popcorn -->
+      <span class="d-block">icon-popcorn</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Print -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-print" />
+        <use xlink:href="#icon-presale" />
       </svg>
-      <!-- End : Print -->
+      <span class="d-block">icon-presale</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Promo 1 -->
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-profile" />
+      </svg>
+      <span class="d-block">icon-profile</span>
+    </div>
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-promo" />
       </svg>
-      <!-- End : Promo 1 -->
+      <span class="d-block">icon-promo</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Promo 2 -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-promo2" />
+        <use xlink:href="#icon-quit-1" />
       </svg>
-      <!-- End : Promo 2 -->
+      <span class="d-block">icon-quit-1</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Refresh -->
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-quit-2" />
+      </svg>
+      <span class="d-block">icon-quit-2</span>
+    </div>
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-refresh" />
       </svg>
-      <!-- End : Refresh -->
+      <span class="d-block">icon-refresh</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Search -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-search" />
       </svg>
-      <!-- End : Search -->
+      <span class="d-block">icon-search</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Seat -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-seat" />
       </svg>
-      <!-- End : Seat -->
+      <span class="d-block">icon-seat</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Semi Vip -->
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-sector" />
+      </svg>
+      <span class="d-block">icon-sector</span>
+    </div>
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-semi-vip" />
       </svg>
-      <!-- End : Semi Vip -->
+      <span class="d-block">icon-semi-vip</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Show -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-show" />
       </svg>
-      <!-- End : Show -->
+      <span class="d-block">icon-show</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Sports -->
+
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="30" height="30">
+        <use xlink:href="#icon-special-price" />
+      </svg>
+      <span class="d-block">icon-special-price</span>
+    </div>
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-sports" />
       </svg>
-      <!-- End : Sports -->
+      <span class="d-block">icon-sports</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Star -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-star" />
       </svg>
-      <!-- End : Star -->
+      <span class="d-block">icon-star</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Full Star -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-star-full" />
       </svg>
-      <!-- End : Full Star -->
+      <span class="d-block">icon-star-full</span>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-xs-1">
-      <!-- Start : Tag -->
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-tag" />
       </svg>
-      <!-- End : Tag -->
+      <span class="d-block">icon-tag</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Tall Seat -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-tall-seat" />
       </svg>
-      <!-- End : Tall Seat -->
+      <span class="d-block">icon-tall-seat</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Ticket -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-ticket" />
       </svg>
-      <!-- End : Ticket -->
+      <span class="d-block">icon-ticket</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Full Ticket -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-ticket-full" />
       </svg>
-      <!-- End : Full Ticket -->
+      <span class="d-block">icon-ticket-full</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Timer -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-timer" />
       </svg>
-      <!-- End : Timer -->
+      <span class="d-block">icon-timer</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Tips -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-tips" />
       </svg>
-      <!-- End : Tips -->
+      <span class="d-block">icon-tips</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Total 1 -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-total" />
+        <use xlink:href="#icon-total-1" />
       </svg>
-      <!-- End : Total 1 -->
+      <span class="d-block">icon-total-1</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Total 2 -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-total-2" />
       </svg>
-      <!-- End : Total 2 -->
+      <span class="d-block">icon-total-2</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Total 3 -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-total-3" />
+        <use xlink:href="#icon-user-1" />
       </svg>
-      <!-- End : Total 3 -->
+      <span class="d-block">icon-user-1</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : User 1 -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-user" />
+        <use xlink:href="#icon-user-2" />
       </svg>
-      <!-- End : User 1 -->
+      <span class="d-block">icon-user-2</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : User 2 -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-user2" />
-      </svg>
-      <!-- End : User 2 -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Wheelchair -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-wheelchair" />
       </svg>
-      <!-- End : Wheelchair -->
+      <span class="d-block">icon-wheelchair</span>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-1">
-      <!-- Start : Zoom In -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-zoomin" />
       </svg>
-      <!-- End : Zoom In -->
+      <span class="d-block">icon-zoomin</span>
     </div>
-    <div class="col-xs-1">
-      <!-- Start : Zoom Out -->
+
+    <div class="col-xs-2">
       <svg class="svg-icon" width="30" height="30">
         <use xlink:href="#icon-zoomout" />
       </svg>
-      <!-- End : Zoom Out -->
+      <span class="d-block">icon-zoomout</span>
     </div>
-
-    <div class="col-xs-1">
-      <!-- Start : Error -->
-      <svg class="svg-icon" width="30" height="30">
-        <use xlink:href="#icon-icon-error" />
-      </svg>
-      <!-- End : Error -->
-    </div>
-    <div class="col-xs-1">
-      <!-- Start : Passbook -->
-      <svg class="svg-icon ic-ingresso" width="30" height="30">
-        <use xlink:href="#icon-passbook" />
-      </svg>
-      <!-- End : Passbook -->
-    </div>
-  </div>
 
 </div>
 
@@ -673,7 +909,7 @@ Padrão de icones redondos, podem ser usados em diversas cores, links ou svg.
 
 <span class="ic-rounded ic-rd-size1">
   <svg class="svg-icon">
-    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-large-box"></use>
   </svg>
 </span>
 
@@ -683,7 +919,7 @@ Padrão de icones redondos, podem ser usados em diversas cores, links ou svg.
 
 <span class="ic-rounded ic-rd-size3">
     <svg class="svg-icon">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-large-box"></use>
     </svg>
 </span>
 {% endexample %}
@@ -693,17 +929,17 @@ Padrão de icones redondos, podem ser usados em diversas cores, links ou svg.
 {% example html %}
 <span class="ic-rounded ic-rd-cinema">
     <svg class="svg-icon">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-large-box"></use>
     </svg>
 </span>
 <span class="ic-rounded ic-rd-ingresso">
     <svg class="svg-icon">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-large-box"></use>
     </svg>
 </span>
 <span class="ic-rounded ic-rd-inactive">
     <svg class="svg-icon">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-large-box"></use>
     </svg>
 </span>
 {% endexample %}
@@ -716,7 +952,7 @@ Predefined sizes to use.
   {% for i in (1..3) %}
   <div class="col-xs-12 col-sm-4">
     <svg class="svg-icon icon-size{{i}}">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-large-box"></use>
     </svg>
   </div>
   {% endfor %}
@@ -734,7 +970,7 @@ O ícone com texto deve ser usado de forma isolada. Se desejar utilizar ícones 
 <div class="icon-txt">
   <span class="it-cont">
     <svg class="svg-icon">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-large-box"></use>
     </svg>
   </span>
   <span class="it-txt">
@@ -751,7 +987,7 @@ Use `.it-right` in `.icon-txt`
 <div class="icon-txt it-right">
   <span class="it-cont">
     <svg class="svg-icon">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-large-box"></use>
     </svg>
   </span>
   <span class="it-txt">
@@ -771,7 +1007,7 @@ You can use <a href="#icons-size">**icon size classes**</a> in the icon within *
 <div class="icon-txt">
   <span class="it-cont">
     <svg class="svg-icon">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-large-box"></use>
     </svg>
   </span>
   <span class="it-txt">
@@ -791,7 +1027,7 @@ These classes are used in the icon element.
     <div class="icon-txt">
       <span class="it-cont">
         <svg class="svg-icon">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-large-box"></use>
         </svg>
       </span>
       <span class="it-txt">
@@ -803,7 +1039,7 @@ These classes are used in the icon element.
     <div class="icon-txt">
       <span class="it-cont valign-middle">
         <svg class="svg-icon">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-large-box"></use>
         </svg>
       </span>
       <span class="it-txt">
@@ -815,7 +1051,7 @@ These classes are used in the icon element.
     <div class="icon-txt">
       <span class="it-cont valign-bottom">
         <svg class="svg-icon">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-box"></use>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-large-box"></use>
         </svg>
       </span>
       <span class="it-txt">

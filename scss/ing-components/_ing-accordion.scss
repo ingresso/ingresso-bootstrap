@@ -17,6 +17,13 @@
      background: $brand-primary;
      transition: all 0.25s ease-in-out;
   }
+
+  &.tab-inactive{
+    opacity: 0.6;
+    position: relative;
+    pointer-events: none;
+  }
+
   &.model1{
 		padding-right:30px;
     &:before, &:after {
@@ -101,6 +108,7 @@
   .icon-accordion{
     .ia-txt{
       display:inline-block;
+      margin-right: 5px;
     }
   }
 }

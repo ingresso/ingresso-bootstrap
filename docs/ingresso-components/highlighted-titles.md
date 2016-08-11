@@ -76,7 +76,7 @@ We use the class `high-title2`. They can also be used without the icon.
   <a class="ht-lk etmt-see-map" href="">
       <span class="hidden-sm-down">ver no mapa</span>
       <svg class="svg-icon" width="30" height="30">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-place"></use>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-city"></use>
       </svg>
   </a>
 </h1>
@@ -89,6 +89,7 @@ Title with colors related to the events of Ingresso.com . Just follow the exampl
 
 {% example html %}
 
+<h1 class="event-name">Nome do produto Padrão</h1>
 <h1 class="event-name clr-cinema">Nome do produto Cinema</h1>
 <h1 class="event-name clr-theater">Nome do produto Teatro</h1>
 <h1 class="event-name clr-show">Nome do produto Show</h1>
@@ -105,9 +106,9 @@ Título padrão com borda e ícone.
 
 <h1 class="main-title">
   <svg class="svg-icon" width="30" height="30">
-    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-lock-2"></use>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-lock"></use>
   </svg>
-  RECUPERAÇÃO DE SENHA
+  Recuperação de senha
 </h1>
 
 {% endexample %}
