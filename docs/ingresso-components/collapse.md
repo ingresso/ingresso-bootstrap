@@ -49,7 +49,7 @@ Para usar a versão com icone, deve-se utilizar a estrutura abaixo, com o elemen
   <span class="ia-txt">ver detalhes</span>
   <span class="ic-rounded ic-rd-ingresso">
     <svg class="svg-icon">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow2-1"></use>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-top-2"></use>
     </svg>
 </span>
 </a>

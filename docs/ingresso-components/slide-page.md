@@ -12,7 +12,7 @@ group: ingresso-components
               <div class="slide-page-subitem">
                 <a href="#" class="sld-pg-back">
                   <svg class="svg-icon" width="25" height="25">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow2-2"></use>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left-2"></use>
                   </svg>
                 </a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, et atque quidem cumque cum cupiditate qui ab autem aut fuga rem laudantium ea animi nesciunt adipisci voluptates magni amet reiciendis!</p>

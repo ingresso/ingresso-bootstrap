@@ -16,13 +16,13 @@ The only difference between Bootstrap's one and Ingresso's is the class <code cl
   <div class="carousel-content">
     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
       <svg class="svg-icon icon-prev" width="30" height="30">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow2-2"></use>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left-1"></use>
       </svg>
       <span class="sr-only">Previous</span>
     </a>
     <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
       <svg class="svg-icon icon-next" width="30" height="30" aria-hidden="true">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow2"></use>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right-1"></use>
       </svg>
       <span class="sr-only">Next</span>
     </a>
@@ -121,13 +121,13 @@ Another Carousel used by Ingresso.com is Swiper. See more info on <a href="http:
     <!-- Add Arrows -->
     <a class="swiper-button-next hidden-md-down" role="button">
       <svg class="svg-icon icon-next" width="45" height="45" aria-hidden="true">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow2"></use>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right-1"></use>
       </svg>
       <span class="sr-only">Next</span>
     </a>
     <a class="swiper-button-prev hidden-md-down" role="button">
       <svg class="svg-icon icon-prev" width="45" height="45" aria-hidden="true">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow2-2"></use>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left-1"></use>
       </svg>
       <span class="sr-only">Previous</span>
     </a>
@@ -182,13 +182,13 @@ Another Carousel used by Ingresso.com is Swiper. See more info on <a href="http:
     <!-- Add Arrows -->
     <a class="swiper-button-next hidden-md-down" role="button">
       <svg class="svg-icon icon-next" width="45" height="45" aria-hidden="true">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow2"></use>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right-1"></use>
       </svg>
       <span class="sr-only">Next</span>
     </a>
     <a class="swiper-button-prev hidden-md-down" role="button">
       <svg class="svg-icon icon-prev" width="45" height="45" aria-hidden="true">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow2-2"></use>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left-1"></use>
       </svg>
       <span class="sr-only">Previous</span>
     </a>
