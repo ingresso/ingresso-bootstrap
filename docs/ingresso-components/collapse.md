@@ -30,6 +30,12 @@ Be sure to use the same rules at bootstrap default accordion.
    <div class="tab-cont-wp">...</div>
 </div>
 
+<!-- inactive tab -->
+<a class="tab-accordion collapsed model2 tab-inactive" role="button" data-toggle="collapse" data-parent="#tab" href="#tab-main-contentInactive" aria-expanded="true" aria-controls="tab-main-contentInactive">Test Tab Inactive</a>
+<div id="tab-main-contentInactive" class="tab-content tab-inactive collapse">
+   <div class="tab-cont-wp">...</div>
+</div>
+
 {% endexample %}
 
 ## Example
