@@ -345,6 +345,7 @@ GRUPO 4 DE ICONES
 
 ## Example
 GRUPO 5 DE ICONES
+
 {% example html %}
 
 <div class="container-fluid text-xs-center">
@@ -895,6 +896,7 @@ GRUPO 5 DE ICONES
       <span class="d-block">icon-zoomout</span>
     </div>
 
+  </div>
 </div>
 
 {% endexample %}
