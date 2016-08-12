@@ -23,7 +23,7 @@ A lightweight, flexible Header that can be used on your site.
           <button type="button" class="navbar-toggle collapsed hidden-sm-up" data-toggle="collapse" data-target="#navigation">
               <span class="sr-only">Toggle navigation</span>
               <svg class="svg-icon" width="30" height="30">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-icon-menu"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu"></use>
               </svg>
           </button>
       </div>
@@ -44,7 +44,7 @@ A lightweight, flexible Header that can be used on your site.
       </div>
 
       <div class="main-menu navbar-collapse collapse" id="navigation">
-        
+
         <div class="hdr-sub-menu">
           <div class="hdr-user-menu">
             <strong class="user-msg">Olá, <span class="user-name">Fulano</span>!</strong>

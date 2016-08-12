@@ -1020,7 +1020,7 @@ You can use <a href="#icons-size">**icon size classes**</a> in the icon within *
 
 ### Alignments
 
-You can use Bootstrap's utilities classes like **valign-top** or **valign-bottom** to align the icon vertically.
+You can use Bootstrap's utilities classes like **valign-middle** or **valign-down** to align the icon vertically.
 These classes are used in the icon element.
 
 {% example html %}
@@ -1051,7 +1051,7 @@ These classes are used in the icon element.
   </div>
   <div class="col-xs-12 col-sm-4">
     <div class="icon-txt">
-      <span class="it-cont valign-bottom">
+      <span class="it-cont valign-down">
         <svg class="svg-icon">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-large-box"></use>
         </svg>
