@@ -35,9 +35,14 @@ const LazyloadIngresso = (($) => {
   const JQUERY_NO_CONFLICT  = $.fn[NAME]
   const TRANSITION_DURATION = 300
 
+  const Event = {
+    SCROLL          : `scroll${EVENT_KEY}${DATA_API_KEY}`,
+    LOAD_DATA_API   : `load${EVENT_KEY}${DATA_API_KEY}`
+  }
+
   const Default = {
     animation   : true,
-    trigger     : 'scroll',
+    trigger     : Event.SCROLL,
     container: window,
     data_attribute  : 'src',
     effect : "fadeIn",
@@ -58,10 +63,6 @@ const LazyloadIngresso = (($) => {
     placeholder     : 'string'
   }
 
-  const Event = {
-    SCROLL          : `scroll${EVENT_KEY}${DATA_API_KEY}`,
-    LOAD_DATA_API   : `load${EVENT_KEY}${DATA_API_KEY}`
-  }
 
   const ClassName = {
     LOADED : 'lazy-loaded',
@@ -229,7 +230,7 @@ const LazyloadIngresso = (($) => {
         if($el.attr('data-lazyload') != undefined && $el.attr('data-toggle') == 'tab'){
           $el.on('shown.bs.tab',function(){
             console.log('show tab')
-            $(window).trigger(Event.SCROLL);
+            $(window).trigger('scroll')
           })
 
           return true;
