@@ -7114,6 +7114,10 @@ ol {
   overflow: hidden;
 }
 
+.b1-0, .b2-0 {
+  border: 0 !important;
+}
+
 .b1-t, .b1-b, .b1-l, .b1-r, .b2-t, .b2-b, .b2-l, .b2-r {
   border-style: solid;
   border-width: 0;
@@ -7149,6 +7153,10 @@ ol {
 
 .b2-t, .b2-b, .b2-l, .b2-r {
   border-color: #f2f2f2;
+}
+
+.clr-ingresso {
+  color: #0db6b5;
 }
 
 .clr-cinema {
@@ -9381,6 +9389,10 @@ a.ic-rounded .svg-icon {
   margin: 0 4px 0 0;
 }
 
+.carousel-list.wide .cl-item {
+  margin: 0 15px;
+}
+
 .date-lt {
   white-space: nowrap;
   overflow-x: auto;
@@ -9608,6 +9620,11 @@ a.ic-rounded .svg-icon {
 
 .box-tp2 {
   border: 1px solid #f2f2f2;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
 }
 
 /**
