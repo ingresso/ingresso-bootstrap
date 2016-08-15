@@ -1,5 +1,5 @@
 (function(){
-	
+
 	/* TODO - precisa refazer a estrutura desse codigo */
 	var components = {
 
@@ -11,9 +11,19 @@
 							//temp
 							$('.js-md[data-toggle="collapse"]').each(function(){
 
-								var $element = $(this);
+								var $element = $(this),
+								$content = $($element.attr('href')),
+								unmatchClasses = ['model']
 
-								$($element.attr('href')).removeClass('collapse').removeAttr('style');
+								$content
+								.removeClass('collapse')
+								.removeAttr('style');
+
+								if($element.hasClass('model1')){
+									$element.data('js-md-unmatch-classes','model1')
+									$element.removeClass('model1')
+								}
+
 								$element.data('original-href',$element.attr('href'));
 								$element.removeAttr('href');
 
@@ -27,11 +37,19 @@
 							//temp
 							$('.js-md[data-toggle="collapse"]').each(function(){
 
-								var $element = $(this);
+								var $element = $(this),
+								$content = $($element.data('original-href'));
 
-								$($element.data('original-href')).addClass('collapse');
+
+								$content
+								.addClass('collapse');
+
+								if($element.data('js-md-unmatch-classes') == 'model1'){
+									$element.addClass('model1')
+								}
+
 								$element.attr('href',$element.data('original-href'));
-								
+
 
 							});
 
@@ -43,7 +61,7 @@
 					},
 					'js-sm':{
 						match:function(){
-							
+
 							console.log('match dropdown small')
 						},
 						unmatch:function(){
@@ -96,36 +114,36 @@
 				for (var component in components){
 
 					if(media == 'small'){
-						
+
 						this_media_components.push(components[component]['js-sm']);
 					}
 					else if(media == 'medium'){
 
-						this_media_components.push(components[component]['js-md']);	
+						this_media_components.push(components[component]['js-md']);
 					}
 				}
 
 				//para cada media, executa-se equire.register()
-				enquire.register(medias[media], 
+				enquire.register(medias[media],
 
 					$.extend({},{
 
 						match:function(){
-							
+
 
 							//para cada uma das funcoes de cada componente, executa-se essa funcao
 							for(var i=0, media_components_len = this_media_components.length;
 								i < media_components_len;i++
 								){
 
-								if(this_media_components[i].match){	
+								if(this_media_components[i].match){
 
 									this_media_components[i].match.apply(undefined);
 								}
 							}
 						},
 						unmatch:function(){
-							
+
 							for(var i=0, media_components_len = this_media_components.length;
 								i < media_components_len;i++
 								){
@@ -137,7 +155,7 @@
 							}
 						},
 						setup:function(){
-							
+
 							for(var i=0, media_components_len = this_media_components.length;
 								i < media_components_len;i++
 								){
@@ -150,9 +168,9 @@
 							}
 						}
 					},
-					{	
+					{
 					    // OPTIONAL, defaults to false
-					    // If set to true, defers execution of the setup function 
+					    // If set to true, defers execution of the setup function
 					    // until the first time the media query is matched
 					    deferSetup : true
 					})
