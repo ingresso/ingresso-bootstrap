@@ -1,179 +1,129 @@
 (function(){
 
 	/* TODO - precisa refazer a estrutura desse codigo */
+
+
 	var components = {
 
-
+				// applied to bootstrap's collapse
 				collapse:{
-					'js-md':{
-						match:function(){
-
-							//temp
-							$('.js-md[data-toggle="collapse"]').each(function(){
-
-								var $element = $(this),
-								$content = $($element.attr('href')),
-								unmatchClasses = ['model']
-
-								$content
-								.removeClass('collapse')
-								.removeAttr('style');
-
-								if($element.hasClass('model1')){
-									$element.data('js-md-unmatch-classes','model1')
-									$element.removeClass('model1')
-								}
-
-								$element.data('original-href',$element.attr('href'));
-								$element.removeAttr('href');
-
-
-							});
-
-							console.log('match dropdown medium');
+					'no-collapse':{
+						_params:{
+							medias:['small']
 						},
-						unmatch:function(){
+						enquireConfig:{
+							match:function(){
+								//temp
+								$('.js-md[data-toggle="collapse"]').each(function(){
 
-							//temp
-							$('.js-md[data-toggle="collapse"]').each(function(){
+									var $element = $(this),
+									$content = $($element.attr('href')),
+									unmatchClasses = ['model'];
 
-								var $element = $(this),
-								$content = $($element.data('original-href'));
+									$content
+									.removeClass('collapse')
+									.removeAttr('style');
+
+									$element.data('js-md-unmatch',{
+										classes: null,
+										attrs: null
+									});
+
+									if($element.hasClass('model1')){
+										$element.data('js-md-unmatch',{
+											classes: 'model1'
+										})
+										$element.removeClass('model1')
+									}
+
+									if($element.attr('role') == 'button'){
+										$element.data
+									}
+
+									$element.data('original-href',$element.attr('href'));
+									$element.removeAttr('href');
 
 
-								$content
-								.addClass('collapse');
+								});
 
-								if($element.data('js-md-unmatch-classes') == 'model1'){
-									$element.addClass('model1')
-								}
+								console.log('match dropdown medium');
+							},
+							unmatch:function(){
 
-								$element.attr('href',$element.data('original-href'));
+								//temp
+								$('.js-md[data-toggle="collapse"]').each(function(){
+
+									var $element = $(this),
+									$content = $($element.data('original-href'));
 
 
-							});
+									$content
+									.addClass('collapse');
 
-							console.log('unmatch dropdown medium');
-						},
-						setup:function(){
-							//console.log('iniciou dropdown medium');
-						}
-					},
-					'js-sm':{
-						match:function(){
+									if($element.data('js-md-unmatch').classes == 'model1'){
+										$element.addClass('model1')
+									}
 
-							console.log('match dropdown small')
-						},
-						unmatch:function(){
-							console.log('unmatch dropdown small');
-						},
-						setup:function(){
-							//console.log('iniciou dropdown small');
+									$element.attr('href',$element.data('original-href'));
+
+
+								});
+
+								console.log('unmatch dropdown medium');
+							},
+							setup:function(){
+
+								$('.js-md[data-toggle="collapse"]').each(function(){
+
+									var $element = $(this),
+									$content = $($element.attr('href')),
+									unmatchClasses = ['model'];
+
+								})
+
+								$element.data('js-md-unmatch',{
+									classes: null,
+									attrs: null
+								});
+								$element.data('js-md-match',{
+									classes: null,
+									attrs: null
+								});
+								//console.log('iniciou dropdown medium');
+							}
 						}
 					}
 				},
-				/*carousel:{
-					'js-md':{
-						match:function(){
-							console.log('match carousel medium');
-						},
-						unmatch:function(){
-							console.log('unmatch carousel medium');
-						},
-						setup:function(){
-							console.log('iniciou carousel medium');
-						}
-					},
-					'js-sm':{
-						match:function(){
-							console.log('match carousel small');
-						},
-						unmatch:function(){
-							console.log('unmatch carousel small');
-						},
-						setup:function(){
-							console.log('iniciou carousel small');
-						}
-					}
-				}*/
-			}
-			var medias = {
+
+			},
+			medias = {
 				small:'(min-width:568px)',
 				medium:'(min-width:769px)'
 			};
 
-			for(var media in medias){
+			function init(){
 
-				var this_media_components = [];
+			}
 
-				/*
-					para cada componente, verifica-se quais batem com a midia atual
-					reune-se todos os componentes dessa media para ser executado posteriormente
-					no local adequado
-				*/
+			function organizeComponentsByMedia(media){
+				var _components = {};
+
 				for (var component in components){
-
-					if(media == 'small'){
-
-						this_media_components.push(components[component]['js-sm']);
-					}
-					else if(media == 'medium'){
-
-						this_media_components.push(components[component]['js-md']);
+					for(var componentVariation in components[component]){
+							for(var a = 0; a < components[component][componentVariation]._params.medias.length; a++){
+								if(components[component][componentVariation]._params.medias[a] == media){
+									components[component] = components[component];
+								}
+							}
 					}
 				}
+				return components;
+			}
 
-				//para cada media, executa-se equire.register()
-				enquire.register(medias[media],
+			init()
+			for(var media in medias){
 
-					$.extend({},{
+				console.log(getComponentsByMedia(media))
 
-						match:function(){
-
-
-							//para cada uma das funcoes de cada componente, executa-se essa funcao
-							for(var i=0, media_components_len = this_media_components.length;
-								i < media_components_len;i++
-								){
-
-								if(this_media_components[i].match){
-
-									this_media_components[i].match.apply(undefined);
-								}
-							}
-						},
-						unmatch:function(){
-
-							for(var i=0, media_components_len = this_media_components.length;
-								i < media_components_len;i++
-								){
-
-								if(this_media_components[i].unmatch){
-
-									this_media_components[i].unmatch.apply(undefined);
-								}
-							}
-						},
-						setup:function(){
-
-							for(var i=0, media_components_len = this_media_components.length;
-								i < media_components_len;i++
-								){
-
-								if(this_media_components[i].setup){
-
-									this_media_components[i].setup.apply(undefined);
-								}
-
-							}
-						}
-					},
-					{
-					    // OPTIONAL, defaults to false
-					    // If set to true, defers execution of the setup function
-					    // until the first time the media query is matched
-					    deferSetup : true
-					})
-				);
 			};
 })();

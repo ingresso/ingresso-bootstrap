@@ -3,20 +3,22 @@
 //
 
 .alert {
-  display: flex;
-  align-items: center;
+  display:table;
   *{
     vertical-align: middle;
   }
   p{
     overflow:hidden;
+    width:100%;
+    box-sizing: border-box;
     margin-bottom:0;
-    flex: 1;
+    display:table-cell;
   }
   strong{
     margin-right: .3rem;
   }
   svg{
+    display:table-cell;
     margin-right:.5rem;
   }
 }
