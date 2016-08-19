@@ -25,7 +25,6 @@
 
 .nav-stacked {
   .nav-item{
-    border-left: 4px solid #0db6b5;
     + .nav-item {
       margin-top: 2px;
     }
@@ -35,36 +34,34 @@
     padding: .725em 1em;
     font-size: 0.875rem;
     background-color: #f2f2f2;
+    border-left: 4px solid #0db6b5;
     .svg-icon{
       fill:$brand-primary;
+    }
+    small{
+      font-size: 0.625rem;
+      display:block;
+      color: #a6a6a6;
     }
 
     &.active{
       position: relative;
-      &:before{
-        content: '';
-        display: block;
-        width: 0;
-        height: 0;
-        border-top: 8px solid transparent;
-        border-bottom: 8px solid transparent;
-        border-left: 8px solid #0db6b5;
-        position: absolute;
-        right: -6px;
-        top: 50%;
-        z-index: 1;
-        margin-top: -8px;
-        pointer-events: none;
-      }
       .svg-icon{
         fill:#fff;
+      }
+      small{
+        color:#93dcdc;
       }
     }
 
     &.disabled{
       color:#ccc;
+      border-color: #ccc;
       &:hover{
         background-color: #f2f2f2;
+      }
+      .svg-icon{
+        fill:#ccc;
       }
     }
   }
@@ -81,5 +78,29 @@
       margin-bottom: 2px;
     }
     .nav-link{padding:1em;}
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .nav-stacked {
+    .nav-link{
+      &.active{
+        &:before{
+          content: '';
+          display: block;
+          width: 0;
+          height: 0;
+          border-top: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+          border-left: 8px solid #0db6b5;
+          position: absolute;
+          right: -6px;
+          top: 50%;
+          z-index: 1;
+          margin-top: -8px;
+          pointer-events: none;
+        }
+      }
+    }
   }
 }

@@ -7,27 +7,27 @@ var _createClass = (function () { function defineProperties(target, props) { for
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
 /**
- * --------------------------------------------------------------------------
- * Bootstrap (v4.0.0-alpha.2): lazyload.js
- * @author Arthur Franco
- * --------------------------------------------------------------------------
- */
+* --------------------------------------------------------------------------
+* Bootstrap (v4.0.0-alpha.2): lazyload.js
+* @author Arthur Franco
+* --------------------------------------------------------------------------
+*/
 
 var LazyloadIngresso = (function ($) {
 
   /**
-   * Check for Lazyload dependency
-   * Lazy Load Plugin for jQuery - https://github.com/tuupola/jquery_lazyload
-   */
+  * Check for Lazyload dependency
+  * Lazy Load Plugin for jQuery - https://github.com/tuupola/jquery_lazyload
+  */
   if ($.fn.lazyload === undefined) {
     throw new Error('Bootstrap lazyload require Lazy Load Plugin for jQuery (https://github.com/tuupola/jquery_lazyload)');
   }
 
   /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+  * ------------------------------------------------------------------------
+  * Constants
+  * ------------------------------------------------------------------------
+  */
 
   var NAME = 'lazyloadIngresso';
   var VERSION = '4.0.0-alpha.2';
@@ -37,15 +37,21 @@ var LazyloadIngresso = (function ($) {
   var JQUERY_NO_CONFLICT = $.fn[NAME];
   var TRANSITION_DURATION = 300;
 
+  var Event = {
+    SCROLL: 'scroll' + EVENT_KEY + DATA_API_KEY,
+    LOAD_DATA_API: 'load' + EVENT_KEY + DATA_API_KEY
+  };
+
   var Default = {
     animation: true,
-    trigger: 'scroll',
+    trigger: Event.SCROLL,
     container: window,
+    data_attribute: 'src',
     effect: "fadeIn",
-    offset: 300,
-    skip_invisible: false,
+    offset: 0,
+    skip_invisible: true,
     load: null,
-    placeholder: '/assets/img/spinner.gif'
+    placeholder: '/assets/img/loading-spinner.svg'
   };
 
   var DefaultType = {
@@ -57,11 +63,6 @@ var LazyloadIngresso = (function ($) {
     skip_invisible: 'boolean',
     load: 'null|function',
     placeholder: 'string'
-  };
-
-  var Event = {
-    SCROLL: 'scroll' + EVENT_KEY + DATA_API_KEY,
-    LOAD_DATA_API: 'load' + EVENT_KEY + DATA_API_KEY
   };
 
   var ClassName = {
@@ -82,10 +83,10 @@ var LazyloadIngresso = (function ($) {
   };
 
   /**
-   * ------------------------------------------------------------------------
-   * Class Definition
-   * ------------------------------------------------------------------------
-   */
+  * ------------------------------------------------------------------------
+  * Class Definition
+  * ------------------------------------------------------------------------
+  */
 
   var LazyloadIngresso = (function () {
     function LazyloadIngresso(element, config) {
@@ -94,7 +95,7 @@ var LazyloadIngresso = (function ($) {
       // private
       this._isEnabled = true;
       this._timeout = 0;
-      this.classesOnLoad = false;
+      this._classesOnLoad = true;
 
       // protected
       this.element = element;
@@ -106,10 +107,10 @@ var LazyloadIngresso = (function ($) {
     }
 
     /**
-     * ------------------------------------------------------------------------
-     * Data Api implementation
-     * ------------------------------------------------------------------------
-     */
+    * ------------------------------------------------------------------------
+    * Data Api implementation
+    * ------------------------------------------------------------------------
+    */
 
     // getters
 
@@ -148,7 +149,7 @@ var LazyloadIngresso = (function ($) {
         var $el = $(this.element);
 
         // if havent been loaded yet
-        if (this.classesOnLoad) {
+        if (this._classesOnLoad) {
           if ($el.hasClass(ClassName.INITIATED)) {
             return;
           }
@@ -157,35 +158,34 @@ var LazyloadIngresso = (function ($) {
 
         if (this._isImage()) {
 
-          // verify if the last image lazyloaded has container
-          if (!$el.closest(Default.container).length && Default.container !== window) {
-
-            Default.container = window;
-          }
-
           this._applyLazyload();
         } else {
 
           // if not image
-          if (this._isBootstrapTabs()) {
+          if ($el.attr('data-toggle') == 'tab') {
+            this._isBootstrapTabs();
+          } else {
+            var _self = this;
+            this._applyLazyload($(Selector.IMG, $el));
+            var imgs = $(Selector.IMG, $el);
 
-            // set current element to be the tab element
-            $el = this.element = $tab.get(0);
+            $el.on(Event.SCROLL, function () {
+              $(window).trigger('scroll');
+            });
           }
-
-          // set container for recursive use of this function
-          Default.container = $el;
-          this._applyLazyload($(Selector.IMG, $el));
         }
-
-        return;
+      }
+    }, {
+      key: '_isLoaded',
+      value: function _isLoaded(element) {
+        var $element = $(element);
+        return $element.data('lazyload-loaded');
       }
     }, {
       key: '_applyLazyload',
       value: function _applyLazyload(el) {
-
-        if (typeof this._onloadCallback == 'function') {
-          Default.load = this._onloadCallback;
+        if (typeof this._onLoadCallback == 'function') {
+          Default.load = this._onLoadCallback;
         }
 
         $(el || this.element).lazyload(Default);
@@ -193,13 +193,10 @@ var LazyloadIngresso = (function ($) {
     }, {
       key: '_isImage',
       value: function _isImage() {
-
         if (this.element.nodeType == Node.ELEMENT_NODE) {
-
           if (this.element.tagName == 'IMG') {
             return true;
           }
-
           return false;
         }
       }
@@ -208,33 +205,24 @@ var LazyloadIngresso = (function ($) {
     }, {
       key: '_isBootstrapTabs',
       value: function _isBootstrapTabs() {
-        var _this = this;
+        var $el = $(this.element);
+        // set referenced tab
+        var $tab = $($el.attr('href'));
 
-        if ($(this.element).attr('href')) {
-          (function () {
+        if ($el.attr('data-lazyload') != undefined && $el.attr('data-toggle') == 'tab') {
+          $el.on('shown.bs.tab', function () {
+            console.log('show tab');
+            $(window).trigger('scroll');
+          });
 
-            var $el = $(_this.element);
-            // set referenced tab
-            var $tab = $($el.attr('href'));
-
-            if ($el.attr('data-lazyload') && $el.attr('data-toggle') == 'tab') {
-
-              $el.on('shown.bs.tab', function () {
-
-                // fire scroll on tab to force images to show
-                $(Selector.IMG, $tab).trigger(Event.SCROLL);
-
-                return true;
-              });
-            }
-          })();
+          return true;
         }
       }
     }, {
-      key: '_onloadCallback',
-      value: function _onloadCallback() {
-
-        if (this.classesOnLoad) $(this).toggleClass('lazy-load lazy-loaded');
+      key: '_onLoadCallback',
+      value: function _onLoadCallback() {
+        $(this).toggleClass('lazy-load lazy-loaded');
+        $(this).data('lazyload-loaded', true);
       }
     }, {
       key: '_addClasses',
@@ -248,7 +236,6 @@ var LazyloadIngresso = (function ($) {
       key: '_jQueryInterface',
       value: function _jQueryInterface(config) {
         return this.each(function () {
-          console.log('jq interface');
           var data = $(this).data(DATA_KEY);
           var _config = typeof config === 'object' ? config : null;
 
@@ -282,7 +269,7 @@ var LazyloadIngresso = (function ($) {
     }, {
       key: 'NAME',
       get: function get() {
-        return NAME$(Selector.IMG, $el);
+        return NAME;
       }
     }, {
       key: 'DATA_KEY',
@@ -317,10 +304,10 @@ var LazyloadIngresso = (function ($) {
   });
 
   /**
-   * ------------------------------------------------------------------------
-   * jQuery
-   * ------------------------------------------------------------------------
-   */
+  * ------------------------------------------------------------------------
+  * jQuery
+  * ------------------------------------------------------------------------
+  */
 
   $.fn[NAME] = LazyloadIngresso._jQueryInterface;
   $.fn[NAME].Constructor = LazyloadIngresso;

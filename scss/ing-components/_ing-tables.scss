@@ -1,8 +1,44 @@
 // Tables
 
 .table {
+  caption, legend {
+    display: none;
+  }
   th,
   td {
     vertical-align: middle;
+  }
+}
+
+.table-checkout{
+  th,td{
+    padding: .3rem;
+  }
+  .table-thead th {
+    border:0;
+  }
+  .table-foot{
+    .table-total{
+      td{
+        font-size: 1.063rem;
+        font-weight: 700;
+      }
+    }
+  }
+  .table-body{
+    th,td{
+      border-top:0;
+      font-size:0.750rem;
+    }
+    .tb-event{
+      font-size: 0.813rem;
+      padding-left: 40px;
+      text-align: left;
+      border-top: 1px solid #eceeef;
+      border-bottom: 1px solid #eceeef;
+    }
+  }
+  .tb-lb{
+    text-align: right;
   }
 }
