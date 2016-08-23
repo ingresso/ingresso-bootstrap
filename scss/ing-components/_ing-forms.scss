@@ -76,9 +76,6 @@
       padding-left: 0;
       padding-right: 10px;
 
-      .form-control {
-        border-left-width: 1px;
-      }
       .frm-lbl {
         padding-left: 0;
       }
@@ -256,6 +253,12 @@
       }
     }
 
+    &.frm-grp-03{
+      .fl-label{
+        left:9px;
+      }
+    }
+
     &.fl-displayed{
       .form-control{
         padding-top: 15px;
@@ -266,6 +269,12 @@
       }
       }
       &.frm-grp-02{
+        .fl-label{
+          left:9px;
+        }
+      }
+
+      &.frm-grp-03{
         .fl-label{
           left:9px;
         }

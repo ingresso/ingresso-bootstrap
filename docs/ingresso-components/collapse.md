@@ -78,3 +78,54 @@ Esse componente é específico para mobile. A descrição deve ser envolvida pel
 </div>
 
 {% endexample %}
+
+## Example
+
+{% example html %}
+ 
+<div class="collapse-radio">
+  <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="cr-lnk collapsed">
+      <label class="custom-control custom-radio">
+        <input id="radio1" name="radio" type="radio" class="custom-control-input">
+        <span class="custom-control-indicator"></span>
+        <span class="custom-control-description">
+          <svg class="svg-icon" width="30" height="30">
+            <use xlink:href="#icon-payment-card" />
+          </svg>
+          Cartão de crédito
+          <span class="cr-value">R$ 50,00</span>
+        </span>
+      </label>
+  </a>
+  <div class="collapse" id="collapseExample">
+    <div class="cr-content">
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+    </div>
+  </div>
+</div>  
+
+{% endexample %}
+
+## Example
+
+{% example html %}
+
+<!-- add/remove tab -->
+<div class="add-remove-tab">
+  <a class="tab-accordion collapsed model2" role="button" data-toggle="collapse" data-parent="#tab" href="#tab-main-content04" aria-expanded="true" aria-controls="tab-main-content04">
+    <svg class="svg-icon valign-middle ic-ingresso" width="30" height="30">
+      <use xlink:href="#icon-tag" />
+    </svg>
+    <span class="art-txt">ingresso pré-pago ou vale-ingresso</span>
+  </a>
+  <div id="tab-main-content04" class="tab-content collapse">
+     <div class="tab-cont-wp">
+       <div class="form-group fl-form-group form-group-btn">
+        <label class="fl-label" for="cupom-code">Código do cupom</label>
+        <input type="text" class="form-control" id="cupom-code"  placeholder="Código do cupom"/>
+        <button type="button" class="btn btn-primary">OK</button>
+       </div>
+     </div>
+  </div>
+</div>
+{% endexample %}

@@ -29,12 +29,16 @@
       margin-top: 2px;
     }
   }
+  .icon-txt{
+    float:left;
+  }
   .nav-link{
     text-transform: uppercase;
     padding: .725em 1em;
     font-size: 0.875rem;
     background-color: #f2f2f2;
     border-left: 4px solid #0db6b5;
+    overflow: hidden;
     .svg-icon{
       fill:$brand-primary;
     }
@@ -43,7 +47,6 @@
       display:block;
       color: #a6a6a6;
     }
-
     &.active{
       position: relative;
       .svg-icon{
