@@ -119,11 +119,13 @@ Esse componente é específico para mobile. A descrição deve ser envolvida pel
     <span class="art-txt">ingresso pré-pago ou vale-ingresso</span>
   </a>
   <div id="tab-main-content04" class="tab-content collapse">
-     <div class="tab-cont-wp">
-       <div class="form-group fl-form-group form-group-btn">
-        <label class="fl-label" for="cupom-code">Código do cupom</label>
-        <input type="text" class="form-control" id="cupom-code"  placeholder="Código do cupom"/>
-        <button type="button" class="btn btn-primary">OK</button>
+     <div class="tab-cont-wp row">
+      <div class="col-xs-12 col-md-6">
+         <div class="form-group fl-form-group form-group-btn">
+          <label class="fl-label" for="cupom-code">Código do cupom</label>
+          <input type="text" class="form-control" id="cupom-code"  placeholder="Código do cupom"/>
+          <button type="button" class="btn btn-primary">OK</button>
+         </div>
        </div>
      </div>
   </div>
