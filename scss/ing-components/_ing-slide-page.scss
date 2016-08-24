@@ -10,7 +10,7 @@ $slide-page-padding:15px;
 
   100% {
      height:0;
-     
+
   }
 }
 
@@ -21,7 +21,7 @@ $slide-page-padding:15px;
 
   100% {
     height:0;
-    
+
   }
 }
 
@@ -32,19 +32,16 @@ $slide-page-padding:15px;
 
   100% {
     height:0;
-    
+
   }
 }
 
 .slide-page{
-  
+
   position:relative;
 
   /* pra remover scroll lateral */
   overflow-x:hidden;
-  bottom: 0;
-  top: 0;
-  left: 0;
 
     &.active{
 
@@ -60,16 +57,8 @@ $slide-page-padding:15px;
 
 
         .slide-page-content{
-          
+
           overflow:hidden;
-          -webkit-animation-duration:.5s;
-          -webkit-animation-name:hide;
-          -webkit-animation-delay:.5s;
-          -webkit-animation-fill-mode:forwards;
-          -moz-animation-duration:.5s;
-          -moz-animation-name:hide;
-          -moz-animation-delay:.5s;
-          -moz-animation-fill-mode:forwards;
 
           animation-duration:.5s;
           animation-name:hide;
@@ -91,6 +80,7 @@ $slide-page-padding:15px;
     padding:15px;
     overflow:auto;
     opacity:0;
+    visibility: hidden;
 
     position:absolute;
     top:0;
@@ -102,21 +92,14 @@ $slide-page-padding:15px;
 
     background-color:#fff;
 
-    -webkit-transition: opacity 0.5s ease-in;
-    transition: opacity 0.5s ease-in;
+    transition-property: opacity, visibility;
+    transition-duration: .5s, 0s;
+    transition-delay: 0s, .5s;
 
-  }
-
-  .sld-pg-lk{
-
-    &.active {
-      > .slide-page-subitem{
-        
-        opacity:1;
-      }
+    &.active{
+      visibility: visible;
+      transition-delay: 0s, 0s;
+      opacity:1;
     }
-
   }
-
-
 }

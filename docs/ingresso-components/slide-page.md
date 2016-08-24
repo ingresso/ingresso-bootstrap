@@ -4,13 +4,13 @@ title: Slide Page
 group: ingresso-components
 ---
 {% example html %}
-<div class="slide-page">
+<div class="slide-page" data-slide-page>
         <div class="slide-page-wp">
         <div class="slide-page-content">
           <div class="sld-pg-lk">
-              <a href="#" class="menu-lk">Clique aqui</a>
-              <div class="slide-page-subitem">
-                <a href="#" class="sld-pg-back">
+              <a href="#" class="menu-lk" data-slide-page-link="#testando">Clique aqui</a>
+              <div class="slide-page-subitem" id="testando">
+                <a href="#" class="sld-pg-back" data-slide-page-back="#testando">
                   <svg class="svg-icon" width="25" height="25">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left-2"></use>
                   </svg>

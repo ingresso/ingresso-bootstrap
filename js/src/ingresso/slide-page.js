@@ -17,9 +17,9 @@ const SlidePage = (($) => {
    * ------------------------------------------------------------------------
    */
 
-  const NAME                = 'page-slide'
+  const NAME                = 'slide-page'
   const VERSION             = '4.0.0-alpha.2'
-  const DATA_KEY            = 'bs.page-slide'
+  const DATA_KEY            = 'bs.slide-page'
   const EVENT_KEY           = `.${DATA_KEY}`
   const DATA_API_KEY        = '.data-api'
   const JQUERY_NO_CONFLICT  = $.fn[NAME]
@@ -41,8 +41,8 @@ const SlidePage = (($) => {
   }
 
   const Selector = {
-    SLIDE_PAGE                     : '.slide-page',
-    SLIDE_PAGE_WP                    : '.slide-page-wp',
+    SLIDE_PAGE                     : '[data-slide-page]',
+    SLIDE_PAGE_WP                    : '[data-slide-page-wp]',
 
 
   }
@@ -54,86 +54,18 @@ const SlidePage = (($) => {
    * ------------------------------------------------------------------------
    */
 
-  class PageSlide {
+  class SlidePage {
 
     constructor(element) {
       this._element = element
     }
 
-
     // getters
-
     static get VERSION() {
       return VERSION
     }
 
-
     // public
-
-    show() {
-      if (this._element.parentNode &&
-         (this._element.parentNode.nodeType === Node.ELEMENT_NODE) &&
-         ($(this._element).hasClass(ClassName.ACTIVE))) {
-        return
-      }
-
-      let target
-      let previous
-      let ulElement = $(this._element).closest(Selector.UL)[0]
-      let selector  = Util.getSelectorFromElement(this._element)
-
-      if (ulElement) {
-        previous = $.makeArray($(ulElement).find(Selector.ACTIVE))
-        previous = previous[previous.length - 1]
-      }
-
-      let hideEvent = $.Event(Event.HIDE, {
-        relatedTarget: this._element
-      })
-
-      let showEvent = $.Event(Event.SHOW, {
-        relatedTarget: previous
-      })
-
-      if (previous) {
-        $(previous).trigger(hideEvent)
-      }
-
-      $(this._element).trigger(showEvent)
-
-      if (showEvent.isDefaultPrevented() ||
-         (hideEvent.isDefaultPrevented())) {
-        return
-      }
-
-      if (selector) {
-        target = $(selector)[0]
-      }
-
-      this._activate(
-        this._element,
-        ulElement
-      )
-
-      let complete = () => {
-        let hiddenEvent = $.Event(Event.HIDDEN, {
-          relatedTarget: this._element
-        })
-
-        let shownEvent  = $.Event(Event.SHOWN, {
-          relatedTarget: previous
-        })
-
-        $(previous).trigger(hiddenEvent)
-        $(this._element).trigger(shownEvent)
-      }
-
-      if (target) {
-        this._activate(target, target.parentNode, complete)
-      } else {
-        complete()
-      }
-    }
 
     dispose() {
       $.removeClass(this._element, DATA_KEY)
@@ -223,7 +155,7 @@ const SlidePage = (($) => {
         let data  = $this.data(DATA_KEY)
 
         if (!data) {
-          data = data = new Tab(this)
+          data = new SlidePage(this)
           $this.data(DATA_KEY, data)
         }
 
@@ -245,11 +177,11 @@ const SlidePage = (($) => {
    * ------------------------------------------------------------------------
    */
 
-  $(document)
-    .on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE, function (event) {
-      event.preventDefault()
-      SlidePage._jQueryInterface.call($(this), 'show')
+  $.ready(function(){
+    $(Selector.DATA_TOGGLE).each(function(){
+      SlidePage._jQueryInterface.call($(this))
     })
+  })
 
 
   /**
@@ -258,15 +190,15 @@ const SlidePage = (($) => {
    * ------------------------------------------------------------------------
    */
 
-  $.fn[NAME]             = PageSlide._jQueryInterface
-  $.fn[NAME].Constructor = PageSlide
+  $.fn[NAME]             = SlidePage._jQueryInterface
+  $.fn[NAME].Constructor = SlidePage
   $.fn[NAME].noConflict  = function () {
     $.fn[NAME] = JQUERY_NO_CONFLICT
-    return PageSlide._jQueryInterface
+    return SlidePage._jQueryInterface
   }
 
-  return PageSlide
+  return SlidePage
 
 })(jQuery)
 
-export default PageSlide
+export default SlidePage

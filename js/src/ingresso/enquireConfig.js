@@ -3,18 +3,36 @@
 	/* TODO - precisa refazer a estrutura desse codigo */
 
 
+	// methods
+	function createMediaComponent(prefix,selector){
+		//js-md- + no-collapse
+		//$(prefix+selector)
+	}
+
+	function getComponentsByMedia(media){
+		var _components = [];
+		var _counter = 0;
+		for(var component in components[media]){
+			for(var componentVariant in components[media][component]){
+				if(typeof componentVariant.match == 'function' || typeof componentVariant.unmatch == 'function'){
+					_components[_counter] = components[media][component][componentVariant];
+					_counter++
+				}
+			}
+		}
+		return _components;
+	}
+
+	// attributes
 	var components = {
 
 				// applied to bootstrap's collapse
-				collapse:{
-					'no-collapse':{
-						_params:{
-							medias:['small']
-						},
-						enquireConfig:{
+				medium:{
+					collapse:{
+						'no-collapse':{
 							match:function(){
 								//temp
-								$('.js-md[data-toggle="collapse"]').each(function(){
+								$('.js-md-no-collapse').each(function(){
 
 									var $element = $(this),
 									$content = $($element.attr('href')),
@@ -37,7 +55,7 @@
 									}
 
 									if($element.attr('role') == 'button'){
-										$element.data
+										$element.data()
 									}
 
 									$element.data('original-href',$element.attr('href'));
@@ -46,12 +64,12 @@
 
 								});
 
-								console.log('match dropdown medium');
+								console.log('enquire - match');
 							},
 							unmatch:function(){
 
 								//temp
-								$('.js-md[data-toggle="collapse"]').each(function(){
+								$('.js-md-no-collapse').each(function(){
 
 									var $element = $(this),
 									$content = $($element.data('original-href'));
@@ -69,61 +87,46 @@
 
 								});
 
-								console.log('unmatch dropdown medium');
+								console.log('enquire - unmatch');
 							},
 							setup:function(){
 
-								$('.js-md[data-toggle="collapse"]').each(function(){
+								$('.js-md-no-collapse').each(function(){
 
 									var $element = $(this),
 									$content = $($element.attr('href')),
-									unmatchClasses = ['model'];
+									unmatchClasses = ['model','model1'];
+
+
+									$element.data('js-md-no-collapse-unmatch',{
+										classes: null,
+										attrs: null
+									});
+									$element.data('js-md-no-collapse-match',{
+										classes: ['!model','!model1'],
+										attrs: {
+											role:'button'
+										}
+									});
 
 								})
 
-								$element.data('js-md-unmatch',{
-									classes: null,
-									attrs: null
-								});
-								$element.data('js-md-match',{
-									classes: null,
-									attrs: null
-								});
-								//console.log('iniciou dropdown medium');
+								console.log('enquire - setup');
 							}
 						}
 					}
-				},
-
-			},
-			medias = {
-				small:'(min-width:568px)',
-				medium:'(min-width:769px)'
-			};
-
-			function init(){
-
-			}
-
-			function organizeComponentsByMedia(media){
-				var _components = {};
-
-				for (var component in components){
-					for(var componentVariation in components[component]){
-							for(var a = 0; a < components[component][componentVariation]._params.medias.length; a++){
-								if(components[component][componentVariation]._params.medias[a] == media){
-									components[component] = components[component];
-								}
-							}
-					}
 				}
-				return components;
-			}
 
-			init()
-			for(var media in medias){
+	},
+	medias = {
+		small:'(min-width:568px)',
+		medium:'(min-width:769px)'
+	};
 
-				console.log(getComponentsByMedia(media))
-
-			};
+	for(var media in medias){
+		var _comps = getComponentsByMedia(media);
+		if(_comps.length){
+			enquire.register(medias[media],_comps);
+		}
+	};
 })();

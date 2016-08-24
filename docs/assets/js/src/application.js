@@ -32,9 +32,24 @@
     $('.bd-example-indeterminate [type="checkbox"]').prop('indeterminate', true)
 
     // Slide page component
-    $('.bd-example .menu-lk, .bd-example .sld-pg-back').click(function (e) {
-      $(this).closest('.sld-pg-lk').toggleClass('active')
-      $(this).closest('.slide-page').toggleClass('active')
+    $('.bd-example [data-slide-page-link], .bd-example [data-slide-page-back]').each(function () {
+      var $el = $(this);
+
+      if (typeof $el.attr('data-slide-page-link') == 'string'){
+        var _$link = $($el.attr('data-slide-page-link'));
+        $el.click(function (e) {
+          _$link.toggleClass('active')
+          $el.closest('[data-slide-page]').toggleClass('active')
+        })
+      }
+      else {
+        var _$link = $($el.attr('data-slide-page-back'));
+        $el.click(function (e) {
+          _$link.toggleClass('active')
+          $el.closest('[data-slide-page]').toggleClass('active')
+        })
+      }
+
 
     })
 
