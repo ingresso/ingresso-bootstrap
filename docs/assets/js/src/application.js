@@ -16,6 +16,7 @@
 
   $(function () {
 
+
     // Tooltip and popover demos
     $('.tooltip-demo').tooltip({
       selector: '[data-toggle="tooltip"]',
@@ -32,25 +33,27 @@
     $('.bd-example-indeterminate [type="checkbox"]').prop('indeterminate', true)
 
     // Slide page component
-    $('.bd-example [data-slide-page-link], .bd-example [data-slide-page-back]').each(function () {
+    $('[data-slide-page-link], [data-slide-page-back]').each(function () {
       var $el = $(this);
 
       if (typeof $el.attr('data-slide-page-link') == 'string'){
         var _$link = $($el.attr('data-slide-page-link'));
         $el.click(function (e) {
+
           _$link.toggleClass('active')
-          $el.closest('[data-slide-page]').toggleClass('active')
+          .find('> .slide-page-wp > [data-slide-page-side]')
+          .toggleClass('active')
         })
       }
       else {
         var _$link = $($el.attr('data-slide-page-back'));
         $el.click(function (e) {
+
           _$link.toggleClass('active')
-          $el.closest('[data-slide-page]').toggleClass('active')
+          .find('> .slide-page-wp > [data-slide-page-side]')
+          .toggleClass('active')
         })
       }
-
-
     })
 
     // Disable empty links in docs examples

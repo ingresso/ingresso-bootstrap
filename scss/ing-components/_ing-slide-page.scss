@@ -2,29 +2,6 @@
 
 $slide-page-padding:15px;
 
-@-webkit-keyframes slide-page-hide {
-  0% {
-    height:auto;
-
-  }
-
-  100% {
-     height:0;
-
-  }
-}
-
-@-moz-keyframes slide-page-hide {
-  0% {
-    height:auto;
-  }
-
-  100% {
-    height:0;
-
-  }
-}
-
 @keyframes slide-page-hide {
   0% {
     height:auto;
@@ -38,68 +15,67 @@ $slide-page-padding:15px;
 
 .slide-page{
 
-  position:relative;
 
   /* pra remover scroll lateral */
   overflow-x:hidden;
+  overflow-y:auto;
 
     &.active{
-
-    /*overflow-y:hidden;*/
-      .slide-page-wp{
-
-        padding:$slide-page-padding;
-
-        -webkit-transform: translate3d(-100%, 0px, 0px);
-        -moz-transform: translate3d(-100%, 0px, 0px);
-        -ms-transform: translate3d(-100%, 0px, 0px);
+      > .slide-page-wp{
         transform: translate3d(-100%, 0px, 0px);
 
 
-        .slide-page-content{
-
+        > .slide-page-content{
           overflow:hidden;
-
-          animation-duration:.5s;
-          animation-name:hide;
-          animation-delay:.5s;
-          animation-fill-mode:forwards;
         }
       }
     }
 
-    .slide-page-wp{
-
-      height:100%;
-      -webkit-transition: transform 0.5s ease;
+    > .slide-page-wp{
       transition: transform 0.5s ease;
+      white-space: nowrap;
+      letter-spacing: -3px;
+
+      > .slide-page-side{
+
+        /*animatable properties*/
+        visibility: hidden;
+        opacity: 0;
+
+        overflow: hidden;
+        background-color:#fff;
+
+        transition-property:visibility, opacity;
+        transition-duration:0s, .5s;
+        transition-delay:.5s, 0s;
+
+        animation-duration: .5s;
+        animation-name: slide-page-hide;
+        animation-delay: .5s;
+        animation-fill-mode: forwards;
+
+        &.active{
+
+          /*animatable properties*/
+          visibility: visible;
+          opacity: 1;
+          height:auto;
+          overflow: auto;
+
+          animation: initial;
+
+          transition-delay:0s, 0s;
+          transition-duration:0s, .25s;
+        }
+      }
+      > .slide-page-side, > .slide-page-content{
+        white-space: normal;
+        vertical-align: top;
+        letter-spacing: normal;
+        display:inline-block;
+        width:100%;
+      }
     }
 
-  .slide-page-subitem{
 
-    padding:15px;
-    overflow:auto;
-    opacity:0;
-    visibility: hidden;
-
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:100%;
-    right:-100%;
-
-    color:#666;
-
-    background-color:#fff;
-
-    transition-property: opacity, visibility;
-    transition-duration: .5s, 0s;
-    transition-delay: 0s, .5s;
-
-    &.active{
-      visibility: visible;
-      transition-delay: 0s, 0s;
-      opacity:1;
-    }
-  }
 }
