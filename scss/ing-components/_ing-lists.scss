@@ -10,10 +10,15 @@
   vertical-align: middle;
   .lt-tp01-it {
     display: inline-block;
-    font-size: 11px;
-    padding: 2px 20px 2px 10px;
     border-left: 1px solid #666;
-    margin: 3px 0 3px -11px;
+    font-size: 0.688rem;
+    padding: 5px 0 5px 7px;
+    margin: 0 0 10px 7px;
+    &:first-child{
+      border-left:0;
+      margin-left:0;
+      padding-left:0;
+    }
   }
 }
 
@@ -204,7 +209,7 @@
   .tck-lk {
     display: block;
     color: #fff;
-    padding: 15px 20px;
+    padding: 10px 20px;
     background: $brand-primary;
     cursor: pointer;
     -webkit-user-select: none;

@@ -7963,7 +7963,6 @@ a.ic-rounded .svg-icon {
   font-size: 0.875rem;
   background-color: #f2f2f2;
   border-left: 4px solid #0db6b5;
-  overflow: hidden;
 }
 
 .nav-stacked .nav-link .svg-icon {
@@ -8070,6 +8069,7 @@ a.ic-rounded .svg-icon {
 
 .tag {
   letter-spacing: 0.1em;
+  font-size: 0.625rem;
 }
 
 .tag-rating {
@@ -9252,10 +9252,16 @@ a.ic-rounded .svg-icon {
 
 .list-type01 .lt-tp01-it {
   display: inline-block;
-  font-size: 11px;
-  padding: 2px 20px 2px 10px;
   border-left: 1px solid #666;
-  margin: 3px 0 3px -11px;
+  font-size: 0.688rem;
+  padding: 5px 0 5px 7px;
+  margin: 0 0 10px 7px;
+}
+
+.list-type01 .lt-tp01-it:first-child {
+  border-left: 0;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .list-type02 {
@@ -9439,7 +9445,7 @@ a.ic-rounded .svg-icon {
 .tickets-lt .tck-lk {
   display: block;
   color: #fff;
-  padding: 15px 20px;
+  padding: 10px 20px;
   background: #0db6b5;
   cursor: pointer;
   -webkit-user-select: none;
