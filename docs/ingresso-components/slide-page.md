@@ -13,36 +13,20 @@ group: ingresso-components
       </div>
     </div>
     <!-- start second slide page -->
-    <div class="slide-page-side" data-slide-page-side>
-      <div class="slide-page" data-slide-page id="testando-dois">
-        <div class="slide-page-wp">
-          <div class="slide-page-content">
-            <a href="#" class="sld-pg-back" data-slide-page-back="#testando">
-              <svg class="svg-icon" width="25" height="25">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left-2"></use>
-              </svg>
-            </a>
-            <div class="sld-pg-lk">
-              <a href="#" class="menu-lk" data-slide-page-link="#testando-dois">Clique aqui</a>
-            </div>
-          </div>
-          <div class="slide-page-side" data-slide-page-side>
-            <a href="#" class="sld-pg-back" data-slide-page-back="#testando-dois">
-              <svg class="svg-icon" width="25" height="25">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left-2"></use>
-              </svg>
-            </a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, et atque quidem cumque cum cupiditate qui ab autem aut fuga rem laudantium ea animi nesciunt adipisci voluptates magni amet reiciendis!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, et atque quidem cumque cum cupiditate qui ab autem aut fuga rem laudantium ea animi nesciunt adipisci voluptates magni amet reiciendis!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae pariatur iure aperiam adipisci et praesentium non, enim, aut ad delectus dolorum minima, id esse, nesciunt vero magnam ducimus aspernatur facere?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus accusantium consectetur, veritatis, aperiam eveniet asperiores? Provident et alias eum, ex accusamus eligendi molestiae, autem, libero ducimus laborum expedita. Quidem, ut.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil, corporis quam veniam eos maxime perspiciatis iste, nulla, atque quia labore! Accusantium recusandae voluptate iste quod. Voluptas magnam, similique ad!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae pariatur iure aperiam adipisci et praesentium non, enim, aut ad delectus dolorum minima, id esse, nesciunt vero magnam ducimus aspernatur facere?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus accusantium consectetur, veritatis, aperiam eveniet asperiores? Provident et alias eum, ex accusamus eligendi molestiae, autem, libero ducimus laborum expedita. Quidem, ut.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil, corporis quam veniam eos maxime perspiciatis iste, nulla, atque quia labore! Accusantium recusandae voluptate iste quod. Voluptas magnam, similique ad! FINAL</p>
-          </div>
-        </div>
-      </div>
+    <div class="slide-page-side">
+      <a href="#" class="sld-pg-back" data-slide-page-back="#testando">
+        <svg class="svg-icon" width="25" height="25">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left-2"></use>
+        </svg>
+      </a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, et atque quidem cumque cum cupiditate qui ab autem aut fuga rem laudantium ea animi nesciunt adipisci voluptates magni amet reiciendis!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, et atque quidem cumque cum cupiditate qui ab autem aut fuga rem laudantium ea animi nesciunt adipisci voluptates magni amet reiciendis!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae pariatur iure aperiam adipisci et praesentium non, enim, aut ad delectus dolorum minima, id esse, nesciunt vero magnam ducimus aspernatur facere?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus accusantium consectetur, veritatis, aperiam eveniet asperiores? Provident et alias eum, ex accusamus eligendi molestiae, autem, libero ducimus laborum expedita. Quidem, ut.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil, corporis quam veniam eos maxime perspiciatis iste, nulla, atque quia labore! Accusantium recusandae voluptate iste quod. Voluptas magnam, similique ad!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae pariatur iure aperiam adipisci et praesentium non, enim, aut ad delectus dolorum minima, id esse, nesciunt vero magnam ducimus aspernatur facere?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus accusantium consectetur, veritatis, aperiam eveniet asperiores? Provident et alias eum, ex accusamus eligendi molestiae, autem, libero ducimus laborum expedita. Quidem, ut.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nihil, corporis quam veniam eos maxime perspiciatis iste, nulla, atque quia labore! Accusantium recusandae voluptate iste quod. Voluptas magnam, similique ad! FINAL</p>
     </div>
   </div>
 </div>
