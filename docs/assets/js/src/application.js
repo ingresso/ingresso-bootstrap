@@ -16,6 +16,7 @@
 
   $(function () {
 
+
     // Tooltip and popover demos
     $('.tooltip-demo').tooltip({
       selector: '[data-toggle="tooltip"]',
@@ -31,12 +32,6 @@
     // Indeterminate checkbox example
     $('.bd-example-indeterminate [type="checkbox"]').prop('indeterminate', true)
 
-    // Slide page component
-    $('.bd-example .menu-lk, .bd-example .sld-pg-back').click(function (e) {
-      $(this).closest('.sld-pg-lk').toggleClass('active')
-      $(this).closest('.slide-page').toggleClass('active')
-
-    })
 
     // Disable empty links in docs examples
     $('.bd-example [href="#"]').click(function (e) {

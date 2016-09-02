@@ -2,29 +2,6 @@
 
 $slide-page-padding:15px;
 
-@-webkit-keyframes slide-page-hide {
-  0% {
-    height:auto;
-
-  }
-
-  100% {
-     height:0;
-     
-  }
-}
-
-@-moz-keyframes slide-page-hide {
-  0% {
-    height:auto;
-  }
-
-  100% {
-    height:0;
-    
-  }
-}
-
 @keyframes slide-page-hide {
   0% {
     height:auto;
@@ -32,91 +9,72 @@ $slide-page-padding:15px;
 
   100% {
     height:0;
-    
+
   }
 }
 
 .slide-page{
-  
-  position:relative;
 
   /* pra remover scroll lateral */
   overflow-x:hidden;
-  bottom: 0;
-  top: 0;
-  left: 0;
+  overflow-y:auto;
 
     &.active{
-
-    /*overflow-y:hidden;*/
-      .slide-page-wp{
-
-        padding:$slide-page-padding;
-
-        -webkit-transform: translate3d(-100%, 0px, 0px);
-        -moz-transform: translate3d(-100%, 0px, 0px);
-        -ms-transform: translate3d(-100%, 0px, 0px);
+      > .slide-page-wp{
         transform: translate3d(-100%, 0px, 0px);
 
 
-        .slide-page-content{
-          
+        > .slide-page-content{
           overflow:hidden;
-          -webkit-animation-duration:.5s;
-          -webkit-animation-name:hide;
-          -webkit-animation-delay:.5s;
-          -webkit-animation-fill-mode:forwards;
-          -moz-animation-duration:.5s;
-          -moz-animation-name:hide;
-          -moz-animation-delay:.5s;
-          -moz-animation-fill-mode:forwards;
-
-          animation-duration:.5s;
-          animation-name:hide;
-          animation-delay:.5s;
-          animation-fill-mode:forwards;
         }
       }
     }
 
-    .slide-page-wp{
-
-      height:100%;
-      -webkit-transition: transform 0.5s ease;
+    > .slide-page-wp{
       transition: transform 0.5s ease;
-    }
+      white-space: nowrap;
+      letter-spacing: -3px;
 
-  .slide-page-subitem{
+      > .slide-page-side{
 
-    padding:15px;
-    overflow:auto;
-    opacity:0;
+        /*animatable properties*/
+        visibility: hidden;
+        opacity: 0;
 
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:100%;
-    right:-100%;
+        overflow: hidden;
+        background-color:#fff;
 
-    color:#666;
+        transition-property:visibility, opacity;
+        transition-duration:0s, .5s;
+        transition-delay:.5s, 0s;
 
-    background-color:#fff;
+        animation-duration: .5s;
+        animation-name: slide-page-hide;
+        animation-delay: .5s;
+        animation-fill-mode: forwards;
 
-    -webkit-transition: opacity 0.5s ease-in;
-    transition: opacity 0.5s ease-in;
+        &.active{
 
-  }
+          /*animatable properties*/
+          visibility: visible;
+          opacity: 1;
+          height:auto;
+          overflow: auto;
 
-  .sld-pg-lk{
+          animation: initial;
 
-    &.active {
-      > .slide-page-subitem{
-        
-        opacity:1;
+          transition-delay:0s, 0s;
+          transition-duration:0s, .25s;
+        }
+      }
+      > .slide-page-side, > .slide-page-content{
+        white-space: normal;
+        vertical-align: top;
+        letter-spacing: normal;
+        display:inline-block;
+        width:100%;
       }
     }
-
-  }
 
 
 }

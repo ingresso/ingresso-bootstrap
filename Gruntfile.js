@@ -188,7 +188,8 @@ module.exports = function (grunt) {
       ingresso:{
         src:[
           'js/src/ingresso/enquireConfig.js',
-          'js/src/ingresso/swiper.js'
+          'js/src/ingresso/swiper.js',
+          'js/src/ingresso/slide-page.js'
         ],
         dest: 'dist/js/ingresso.js'
       }
