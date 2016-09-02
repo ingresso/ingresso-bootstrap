@@ -1,122 +1,112 @@
 // header Ingresso
-#header{
-  position: relative;
-  overflow:hidden;
-  padding:10px 0;
 
-
-  .hdr-logo{
-    width: 60px;
-    height: 47px;
-    background-image: url("../img/ingresso/logo-i.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+.header{
+  margin-bottom:10px;
+  .logo{
+    float:left;
+    margin-bottom:0;
   }
-  // User menu and FAQ
-  .hdr-user-lt{
-    overflow: hidden;
-    text-align: right;
-    .hdr-user-it{
+  .hd-top{
+    margin-bottom:10px;
+  }
+  .hd-local{
+    background-color: #0db6b5;
+    text-align: center;
+    padding: 10px;
+    a{
+      color:#fff;
+    }
+  }
+  .hd-botton{
+
+  }
+  .hd-user-menu, .hd-search{
+    display: inline-block;
+    margin: 15px 0 0 5px;
+  }
+  .hd-search-cont{
+    display: none;
+  }
+  .umenu-text{
+    display:none;
+  }
+  .hd-main-menu{
+    background-color: #f4f4f4;
+    ul{
+      white-space: nowrap;
+      overflow: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      display: block;
+      -webkit-flex-flow: initial;
+      padding:0;
+      text-align: center;
+      margin:0;
+    }
+    li{
+      white-space: normal;
+      width: auto;
       display: inline-block;
+      letter-spacing: normal;
+      word-spacing: normal;
+      vertical-align: top;
+      text-rendering: auto;
+      padding: 0;
+      max-width: initial;
+      margin-right:5px;
     }
-    .btn{
-      border-radius: 20px;
-      padding: 8px 11px;
-      &:focus{
-        outline: none;
-      }
+    a{
+      padding:10px;
+      display: block;
+      width: 85px;
+      border-bottom:2px solid #000;
+    }
+
+    .hd-mm-cinema a{
+      border-color:#df7446;
+    }
+    .hd-mm-theater a{
+      border-color:#c45f83;
+    }
+    .hd-mm-show a{
+      border-color:#acbf52;
+    }
+    .hd-mm-event a{
+      border-color:#524785;
+    }
+    .hd-mm-circus a{
+      border-color:#ead11c;
+    }
+    .hd-mm-promo a{
+      border-color:#ba3a3a;
     }
   }
+}
 
-  .nav-justified {
-    width: 100%;
-    background-color: #eee;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    clear: both;
-    .nav-item {
-      float: none;
-      &:first-child {
-        .nav-link {
-          border-radius: 5px 5px 0 0;
-        }
-      }
-      &:last-child {
-        .nav-link {
-          border-radius: 0 0 5px 5px;
-        }
-      }
+@include media-breakpoint-up(md) {
+  .header{
+    .umenu-text{
+      display:none;
     }
-    .nav-link {
-      width: 100%;
-      margin-bottom: 5px;
-      text-align: center;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      margin-bottom: 0;
-      font-weight: bold;
-      color: #777;
-      text-align: center;
-      background-color: #e5e5e5; /* Old browsers */
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e5e5e5));
-      background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
-      background-image:      -o-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5),to(#e5e5e5));
-      background-image: -webkit-linear-gradient(top, #f5f5f5 0%,#e5e5e5 100%);
-      background-image:      -o-linear-gradient(top, #f5f5f5 0%,#e5e5e5 100%);
-      background-image:         linear-gradient(to bottom, #f5f5f5 0%,#e5e5e5 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
-      background-repeat: repeat-x; /* Repeat the gradient */
-      border-bottom: 1px solid #d5d5d5;
-      &.active, &:hover, &:focus {
-        background-color: #ddd;
-        background-image: none;
-        -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
-        box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+    .hd-botton{
+      background-color: #f4f4f4;
+      padding:15px;
+    }
+    .hd-main-menu{
+      background-color: #f4f4f4;
+      padding:15px;
+      ul{
+        display: flex;
+        margin:0;
+      }
+      li{
+        flex:1;
+        text-align: center;
       }
     }
   }
 }
 
-//mobile header
-@media screen and (min-width: 35.5em){
-  #header{
-    .hdr-logo{
-      background-image: url("../img/ingresso/logo-completo.svg");
-      width: 123px;
-      height: 46px;
-    }
+@include media-breakpoint-up(lg) {
 
-    .main-menu,.search{
-      display:block !important; /* TEMPORARIO, VERSAO FINAL VAI USAR MATCHMEDIA */
-    }
-
-    .search {
-      height: 55px !important;
-      width: 300px;
-      overflow: hidden;
-    }
-    .hdr-user-menu, .hdr-location-menu{
-      display: inline-block;
-    }
-    .hdr-sub-menu{
-      position: absolute;
-      right: 0;
-      top: 0;
-      padding-right: 50px;
-      width: 225px;
-    }
-    .hdr-support{
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .nav-item {
-      display: table-cell;
-      width: 1%;
-    }
-    .nav-link {
-      margin-bottom: 0;
-    }
-  }
 }

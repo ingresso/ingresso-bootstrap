@@ -9,96 +9,85 @@ A lightweight, flexible Header that can be used on your site.
 ## Example
 
 {% example html %}
-    <header id="header" class="container-fluid">
-      <div class="navbar-brand">
-        <h1><a class="hdr-logo" href="">Ingresso.com</a></h1>
-      </div>
-      <div class="navbar-buttons pull-xs-right">
-        <button type="button" class="navbar-toggle hidden-sm-up" data-toggle="collapse" data-target="#search">
-                <span class="sr-only">Toggle search</span>
-                <svg class="svg-icon" width="30" height="30">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
-                </svg>
-          </button>
-          <button type="button" class="navbar-toggle collapsed hidden-sm-up" data-toggle="collapse" data-target="#navigation">
-              <span class="sr-only">Toggle navigation</span>
-              <svg class="svg-icon" width="30" height="30">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu"></use>
+    
+    <header id="header" class="header">
+
+      <div class="hd-top row">
+        <div class="col-xs-6">
+          <h1 class="logo">
+            <a href="#">
+              <svg class="svg-icon" width="127" height="50">
+                <use xlink:href="#icon-logo" />
               </svg>
-          </button>
-      </div>
-
-      <div class="search clearfix collapse" id="search" style="height: 1px;">
-          <form class="navbar-form" role="search">
-              <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                  <span class="input-group-btn">
-                    <button type="submit" class="btn btn-primary">
-                      <svg class="svg-icon" width="30" height="30">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
-                      </svg>
-                    </button>
-                  </span>
-              </div>
-          </form>
-      </div>
-
-      <div class="main-menu navbar-collapse collapse" id="navigation">
-
-        <div class="hdr-sub-menu">
-          <div class="hdr-user-menu">
-            <strong class="user-msg">Olá, <span class="user-name">Fulano</span>!</strong>
-            <button type="button" class="navbar-toggle hidden-xs-down" data-toggle="collapse" data-target="#hdr-user-lt">
-                <span class="sr-only">Toggle User Menu</span>
+            </a>
+          </h1>
+        </div>
+        <div class="col-xs-6 text-xs-right">
+          <div class="hd-user-menu">
+            <a href="">
+              <span class="umenu-text">Olá, Visitante</span>
+              <span class="ic-rounded ic-rd-ingresso ic-rd-size2">
                 <svg class="svg-icon" width="30" height="30">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-user2"></use>
+                  <use xlink:href="#icon-profile" />
                 </svg>
-            </button>
-            <ul class="hdr-user-lt collapse" id="hdr-user-lt">
-              <li class="hdr-user-it"><a class="hdr-user-lk" href="">Meus Pedidos</a></li>
-              <li class="hdr-user-it"><a class="hdr-user-lk" href="">Minha Conta</a></li>
-              <li class="hdr-user-it"><a class="hdr-user-lk" href="">Sair da conta</a></li>
-            </ul>
+              </span>
+            </a>
+            <div class="hd-umenu-cont">
+
+            </div>
           </div>
-
-          <div class="hdr-location-menu">
-            <button type="button" class="navbar-toggle hidden-xs-down" data-toggle="collapse" data-target="#hdr-lct-cont">
-                <span class="sr-only">Toggle Location Menu</span>
+          <div class="hd-search">
+            <a href="">
+              <span class="ic-rounded ic-rd-ingresso ic-rd-size2">
                 <svg class="svg-icon" width="30" height="30">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-place"></use>
+                  <use xlink:href="#icon-search" />
                 </svg>
-            </button>
-            <div class="hdr-lct-cont collapse" id="hdr-lct-cont">
-              locais
-              locais
+              </span>
+            </a>
+            <div class="hd-search-cont">
+              <div class="form-group fl-form-group form-group-btn">
+                <label class="fl-label" for="exampleCEP1">Buscar</label>
+                <input type="combo" class="form-control" id="exampleCEP1" aria-describedby="cepHelp" placeholder="Busque filmes, teatros, shows...">
+                <button type="button" class="btn btn-primary">
+                  <svg class="svg-icon ic-white" width="25" height="25">
+                    <use xlink:href="#icon-search" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-
-        <nav>
-          <ul class="nav nav-justified">
-            <li class="nav-item"><a class="nav-link active" href="#">Cinema</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Teatro</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Show</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Evento</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Circo</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Promoção</a></li>
-          </ul>
-        </nav>
-
-        <div class="hdr-support">
-          <button type="button" class="navbar-toggle hidden-xs-down" data-toggle="collapse" data-target="#hdr-spprt-cont">
-              <span class="sr-only">Toggle Support Menu</span>
-              <svg class="svg-icon" width="30" height="30">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-faq2"></use>
+      </div>
+      <div class="hd-botton row">
+        <div class="col-xs-12 col-md-3">
+          <div class="hd-local">
+            <a href="">
+              <svg class="svg-icon ic-white valign-middle" width="30" height="30">
+                <use xlink:href="#icon-city" />
               </svg>
-          </button>
-          <div class="hdr-spprt-cont collapse" id="hdr-spprt-cont">
-            <strong>Atendimento</strong>
-            <p>Lorem Ipsum, lalalala, lilili lololo e lululu.</p>
+              São josé do vale do Rio Preto
+              <svg class="svg-icon ic-white valign-middle" width="30" height="30">
+                <use xlink:href="#icon-arrow-down-2" />
+              </svg>
+            </a>
+            <div class="hd-local-cont">
+
+            </div>
           </div>
         </div>
+        <div class="col-xs-12 col-md-9">
+          <nav class="hd-main-menu">
+            <ul>
+              <li class="hd-mm-cinema active"><a href="#">Cinema</a></li>
+              <li class="hd-mm-theater"><a href="#">Teatro</a></li>
+              <li class="hd-mm-show"><a href="#">Show</a></li>
+              <li class="hd-mm-event"><a href="#">Evento</a></li>
+              <li class="hd-mm-circus"><a href="#">Circo</a></li>
+              <li class="hd-mm-promo"><a href="#">Promoção</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
+</header>
 
-    </header>
 {% endexample %}
