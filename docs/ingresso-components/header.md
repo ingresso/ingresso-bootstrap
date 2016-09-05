@@ -13,7 +13,7 @@ A lightweight, flexible Header that can be used on your site.
     <header id="header" class="header">
 
       <div class="hd-top row">
-        <div class="col-xs-6">
+        <div class="col-xs-4">
           <h1 class="logo">
             <a href="#">
               <svg class="svg-icon" width="127" height="50">
@@ -22,37 +22,47 @@ A lightweight, flexible Header that can be used on your site.
             </a>
           </h1>
         </div>
-        <div class="col-xs-6 text-xs-right">
-          <div class="hd-user-menu">
-            <a href="">
-              <span class="umenu-text">Olá, Visitante</span>
-              <span class="ic-rounded ic-rd-ingresso ic-rd-size2">
-                <svg class="svg-icon" width="30" height="30">
-                  <use xlink:href="#icon-profile" />
-                </svg>
-              </span>
-            </a>
-            <div class="hd-umenu-cont">
-
+        <div class="col-xs-8 text-xs-right">
+          <div class="row">
+            <div class="hd-user-menu col-xs col-md">
+              <a class="hd-um-link" href="">
+                <span class="umenu-text">Olá, Visitante</span>
+                <span class="ic-rounded ic-rd-ingresso ic-rd-size2">
+                  <svg class="svg-icon" width="30" height="30">
+                    <use xlink:href="#icon-profile" />
+                  </svg>
+                </span>
+              </a>
+              <div class="hd-umenu-cont">
+                <div class="hd-support">
+                  <a class="hd-support-link" href="">
+                    <span class="ic-rounded ic-rd-ingresso ic-rd-size2">
+                      <svg class="svg-icon" width="30" height="30">
+                        <use xlink:href="#icon-help-1" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="hd-search">
-            <a href="">
-              <span class="ic-rounded ic-rd-ingresso ic-rd-size2">
-                <svg class="svg-icon" width="30" height="30">
-                  <use xlink:href="#icon-search" />
-                </svg>
-              </span>
-            </a>
-            <div class="hd-search-cont">
-              <div class="form-group fl-form-group form-group-btn">
-                <label class="fl-label" for="exampleCEP1">Buscar</label>
-                <input type="combo" class="form-control" id="exampleCEP1" aria-describedby="cepHelp" placeholder="Busque filmes, teatros, shows...">
-                <button type="button" class="btn btn-primary">
-                  <svg class="svg-icon ic-white" width="25" height="25">
+            <div class="hd-search col-md">
+              <a class="hd-search-link" href="">
+                <span class="ic-rounded ic-rd-ingresso ic-rd-size2">
+                  <svg class="svg-icon" width="30" height="30">
                     <use xlink:href="#icon-search" />
                   </svg>
-                </button>
+                </span>
+              </a>
+              <div class="hd-search-cont">
+                <div class="form-group fl-form-group form-group-btn">
+                  <label class="fl-label" for="exampleCEP1">Buscar</label>
+                  <input type="combo" class="form-control" id="exampleCEP1" aria-describedby="cepHelp" placeholder="Busque filmes, teatros, shows...">
+                  <button type="button" class="btn btn-primary">
+                    <svg class="svg-icon ic-white" width="25" height="25">
+                      <use xlink:href="#icon-search" />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -61,12 +71,12 @@ A lightweight, flexible Header that can be used on your site.
       <div class="hd-botton row">
         <div class="col-xs-12 col-md-3">
           <div class="hd-local">
-            <a href="">
-              <svg class="svg-icon ic-white valign-middle" width="30" height="30">
+            <a class="hd-local-link" href="">
+              <svg class="svg-icon hd-local-ic-1 valign-middle" width="25" height="25">
                 <use xlink:href="#icon-city" />
               </svg>
               São josé do vale do Rio Preto
-              <svg class="svg-icon ic-white valign-middle" width="30" height="30">
+              <svg class="svg-icon hd-local-ic-2 valign-middle" width="25" height="25">
                 <use xlink:href="#icon-arrow-down-2" />
               </svg>
             </a>
