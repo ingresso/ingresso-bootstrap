@@ -181,6 +181,7 @@ module.exports = function (grunt) {
           'js/src/vendor/enquire.js',
           'js/src/vendor/floating-labels.js',
           'js/src/vendor/swiper.jquery.js',
+          'js/src/vendor/fastclick.js',
           'js/src/vendor/jquery.lazyload.js'
         ],
         dest: 'dist/js/vendor.js'
@@ -189,7 +190,8 @@ module.exports = function (grunt) {
         src:[
           'js/src/ingresso/enquireConfig.js',
           'js/src/ingresso/swiper.js',
-          'js/src/ingresso/slide-page.js'
+          'js/src/ingresso/slide-page.js',
+          'js/src/ingresso/fastclick.js'
         ],
         dest: 'dist/js/ingresso.js'
       }

@@ -2,17 +2,6 @@
 
 $slide-page-padding:15px;
 
-@keyframes slide-page-hide {
-  0% {
-    height:auto;
-  }
-
-  100% {
-    height:0;
-
-  }
-}
-
 .slide-page{
 
   /* pra remover scroll lateral */
@@ -21,11 +10,23 @@ $slide-page-padding:15px;
 
     &.active{
       > .slide-page-wp{
-        transform: translate3d(-100%, 0px, 0px);
+        transform: translateX(-100%);
+
+        /* this transition is only for a smoothy transition between pages */
+        transition-delay:.1s;
 
 
         > .slide-page-content{
           overflow:hidden;
+        }
+      }
+    }
+
+    &.is-animating{
+      > .slide-page-wp {
+        will-change:transform, opacity;
+        > .slide-page-side{
+          display:inline-block;
         }
       }
     }
@@ -35,38 +36,6 @@ $slide-page-padding:15px;
       white-space: nowrap;
       letter-spacing: -3px;
 
-      > .slide-page-side{
-
-        /*animatable properties*/
-        visibility: hidden;
-        opacity: 0;
-
-        overflow: hidden;
-        background-color:#fff;
-
-        transition-property:visibility, opacity;
-        transition-duration:0s, .5s;
-        transition-delay:.5s, 0s;
-
-        animation-duration: .5s;
-        animation-name: slide-page-hide;
-        animation-delay: .5s;
-        animation-fill-mode: forwards;
-
-        &.active{
-
-          /*animatable properties*/
-          visibility: visible;
-          opacity: 1;
-          height:auto;
-          overflow: auto;
-
-          animation: initial;
-
-          transition-delay:0s, 0s;
-          transition-duration:0s, .25s;
-        }
-      }
       > .slide-page-side, > .slide-page-content{
         white-space: normal;
         vertical-align: top;
@@ -74,6 +43,33 @@ $slide-page-padding:15px;
         display:inline-block;
         width:100%;
       }
+
+      > .slide-page-side{
+
+        /*animatable properties*/
+        opacity: 0;
+        display:none;
+        background-color:#fff;
+
+        transition-property:opacity;
+        transition-duration:.5s;
+
+        // animation-duration: .5s;
+        // animation-name: slide-page-hide;
+        // animation-delay: .5s;
+        // animation-fill-mode: forwards;
+
+        &.active{
+
+          /*animatable properties*/
+          opacity: 1;
+          display:inline-block;
+          overflow: auto;
+
+          //animation: initial;
+        }
+      }
+
     }
 
 

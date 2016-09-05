@@ -1,132 +1,179 @@
 (function(){
 
 	/* TODO - precisa refazer a estrutura desse codigo */
-
-
-	// methods
-	function createMediaComponent(prefix,selector){
-		//js-md- + no-collapse
-		//$(prefix+selector)
-	}
-
-	function getComponentsByMedia(media){
-		var _components = [];
-		var _counter = 0;
-		for(var component in components[media]){
-			for(var componentVariant in components[media][component]){
-				if(typeof componentVariant.match == 'function' || typeof componentVariant.unmatch == 'function'){
-					_components[_counter] = components[media][component][componentVariant];
-					_counter++
-				}
-			}
-		}
-		return _components;
-	}
-
-	// attributes
 	var components = {
 
-				// applied to bootstrap's collapse
-				medium:{
-					collapse:{
-						'no-collapse':{
-							match:function(){
-								//temp
-								$('.js-md-no-collapse').each(function(){
 
-									var $element = $(this),
-									$content = $($element.attr('href')),
-									unmatchClasses = ['model'];
+				collapse:{
+					'js-md':{
+						match:function(){
 
-									$content
-									.removeClass('collapse')
-									.removeAttr('style');
+							//temp
+							$('.js-md[data-toggle="collapse"]').each(function(){
 
-									$element.data('js-md-unmatch',{
-										classes: null,
-										attrs: null
-									});
+								var $element = $(this),
+								$content = $($element.attr('href')),
+								unmatchClasses = ['model']
 
-									if($element.hasClass('model1')){
-										$element.data('js-md-unmatch',{
-											classes: 'model1'
-										})
-										$element.removeClass('model1')
-									}
+								$content
+								.removeClass('collapse')
+								.removeAttr('style');
 
-									if($element.attr('role') == 'button'){
-										$element.data()
-									}
+								if($element.hasClass('model1')){
+									$element.data('js-md-unmatch-classes','model1')
+									$element.removeClass('model1')
+								}
 
-									$element.data('original-href',$element.attr('href'));
-									$element.removeAttr('href');
+								$element.data('original-href',$element.attr('href'));
+								$element.removeAttr('href');
 
 
-								});
+							});
 
-								console.log('enquire - match');
-							},
-							unmatch:function(){
+							console.log('match dropdown medium');
+						},
+						unmatch:function(){
 
-								//temp
-								$('.js-md-no-collapse').each(function(){
+							//temp
+							$('.js-md[data-toggle="collapse"]').each(function(){
 
-									var $element = $(this),
-									$content = $($element.data('original-href'));
-
-
-									$content
-									.addClass('collapse');
-
-									if($element.data('js-md-unmatch').classes == 'model1'){
-										$element.addClass('model1')
-									}
-
-									$element.attr('href',$element.data('original-href'));
+								var $element = $(this),
+								$content = $($element.data('original-href'));
 
 
-								});
+								$content
+								.addClass('collapse');
 
-								console.log('enquire - unmatch');
-							},
-							setup:function(){
+								if($element.data('js-md-unmatch-classes') == 'model1'){
+									$element.addClass('model1')
+								}
 
-								$('.js-md-no-collapse').each(function(){
-
-									var $element = $(this),
-									$content = $($element.attr('href')),
-									unmatchClasses = ['model','model1'];
+								$element.attr('href',$element.data('original-href'));
 
 
-									$element.data('js-md-no-collapse-unmatch',{
-										classes: null,
-										attrs: null
-									});
-									$element.data('js-md-no-collapse-match',{
-										classes: ['!model','!model1'],
-										attrs: {
-											role:'button'
-										}
-									});
+							});
 
-								})
-
-								console.log('enquire - setup');
-							}
+							console.log('unmatch dropdown medium');
+						},
+						setup:function(){
+							//console.log('iniciou dropdown medium');
 						}
+					},
+					'js-sm':{
+						match:function(){
+
+							console.log('match dropdown small')
+						},
+						unmatch:function(){
+							console.log('unmatch dropdown small');
+						},
+						setup:function(){
+							//console.log('iniciou dropdown small');
+						}
+					}
+				},
+				/*carousel:{
+					'js-md':{
+						match:function(){
+							console.log('match carousel medium');
+						},
+						unmatch:function(){
+							console.log('unmatch carousel medium');
+						},
+						setup:function(){
+							console.log('iniciou carousel medium');
+						}
+					},
+					'js-sm':{
+						match:function(){
+							console.log('match carousel small');
+						},
+						unmatch:function(){
+							console.log('unmatch carousel small');
+						},
+						setup:function(){
+							console.log('iniciou carousel small');
+						}
+					}
+				}*/
+			}
+			var medias = {
+				small:'(min-width:568px)',
+				medium:'(min-width:769px)'
+			};
+
+			for(var media in medias){
+
+				var this_media_components = [];
+
+				/*
+					para cada componente, verifica-se quais batem com a midia atual
+					reune-se todos os componentes dessa media para ser executado posteriormente
+					no local adequado
+				*/
+				for (var component in components){
+
+					if(media == 'small'){
+
+						this_media_components.push(components[component]['js-sm']);
+					}
+					else if(media == 'medium'){
+
+						this_media_components.push(components[component]['js-md']);
 					}
 				}
 
-	},
-	medias = {
-		small:'(min-width:568px)',
-		medium:'(min-width:769px)'
-	};
+				//para cada media, executa-se equire.register()
+				enquire.register(medias[media],
 
-	for(var media in medias){
-		var _comps = getComponentsByMedia(media);
-		if(_comps.length){
-			enquire.register(medias[media],_comps);
-		}
-	};
+					$.extend({},{
+
+						match:function(){
+
+
+							//para cada uma das funcoes de cada componente, executa-se essa funcao
+							for(var i=0, media_components_len = this_media_components.length;
+								i < media_components_len;i++
+								){
+
+								if(this_media_components[i].match){
+
+									this_media_components[i].match.apply(undefined);
+								}
+							}
+						},
+						unmatch:function(){
+
+							for(var i=0, media_components_len = this_media_components.length;
+								i < media_components_len;i++
+								){
+
+								if(this_media_components[i].unmatch){
+
+									this_media_components[i].unmatch.apply(undefined);
+								}
+							}
+						},
+						setup:function(){
+
+							for(var i=0, media_components_len = this_media_components.length;
+								i < media_components_len;i++
+								){
+
+								if(this_media_components[i].setup){
+
+									this_media_components[i].setup.apply(undefined);
+								}
+
+							}
+						}
+					},
+					{
+					    // OPTIONAL, defaults to false
+					    // If set to true, defers execution of the setup function
+					    // until the first time the media query is matched
+					    deferSetup : true
+					})
+				);
+			};
 })();

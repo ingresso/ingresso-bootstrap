@@ -13,7 +13,7 @@ group: ingresso-components
       </div>
     </div>
     <!-- start second slide page -->
-    <div class="slide-page-side">
+    <div class="slide-page-side" data-slide-page-side>
       <a href="#" class="sld-pg-back" data-slide-page-back="#testando">
         <svg class="svg-icon" width="25" height="25">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left-2"></use>
