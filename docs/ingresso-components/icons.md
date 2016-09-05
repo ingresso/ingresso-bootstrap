@@ -902,6 +902,23 @@ GRUPO 5 DE ICONES
 {% endexample %}
 
 ## Example
+GRUPO 6 DE ICONES
+{% example html %}
+
+<div class="container-fluid text-xs-center">
+  <div class="row">
+    <div class="col-xs-3">
+      <svg class="svg-icon" width="97" height="112">
+        <use xlink:href="#icon-logo" />
+      </svg>
+      <span class="d-block">icon-logo</span>
+    </div>
+  </div>
+</div> 
+
+{% endexample %}
+
+## Example
 
 Padrão de icones redondos, podem ser usados em diversas cores, links ou svg.
 

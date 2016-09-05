@@ -7390,128 +7390,127 @@ a.ic-rounded .svg-icon {
   font-style: normal;
 }
 
-#header {
-  position: relative;
-  overflow: hidden;
-  padding: 10px 0;
+.header {
+  margin-bottom: 10px;
 }
 
-#header .hdr-logo {
-  width: 60px;
-  height: 47px;
-  background-image: url("../img/ingresso/logo-i.svg");
-  background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
-}
-
-#header .hdr-user-lt {
-  overflow: hidden;
-  text-align: right;
-}
-
-#header .hdr-user-lt .hdr-user-it {
-  display: inline-block;
-}
-
-#header .hdr-user-lt .btn {
-  border-radius: 20px;
-  padding: 8px 11px;
-}
-
-#header .hdr-user-lt .btn:focus {
-  outline: none;
-}
-
-#header .nav-justified {
-  width: 100%;
-  background-color: #eee;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  clear: both;
-}
-
-#header .nav-justified .nav-item {
-  float: none;
-}
-
-#header .nav-justified .nav-item:first-child .nav-link {
-  border-radius: 5px 5px 0 0;
-}
-
-#header .nav-justified .nav-item:last-child .nav-link {
-  border-radius: 0 0 5px 5px;
-}
-
-#header .nav-justified .nav-link {
-  width: 100%;
-  margin-bottom: 5px;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+.header .logo {
+  float: left;
   margin-bottom: 0;
-  font-weight: bold;
-  color: #777;
+}
+
+.header .hd-top {
+  margin-bottom: 10px;
+}
+
+.header .hd-local {
+  background-color: #0db6b5;
   text-align: center;
-  background-color: #e5e5e5;
-  /* Old browsers */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e5e5e5));
-  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
-  background-image: -o-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e5e5e5));
-  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
-  background-image: -o-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
-  background-image: linear-gradient(to bottom, #f5f5f5 0%, #e5e5e5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e5e5e5',GradientType=0 );
-  /* IE6-9 */
-  background-repeat: repeat-x;
-  /* Repeat the gradient */
-  border-bottom: 1px solid #d5d5d5;
+  padding: 10px;
 }
 
-#header .nav-justified .nav-link.active, #header .nav-justified .nav-link:hover, #header .nav-justified .nav-link:focus {
-  background-color: #ddd;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15);
+.header .hd-local a {
+  color: #fff;
 }
 
-@media screen and (min-width: 35.5em) {
-  #header .hdr-logo {
-    background-image: url("../img/ingresso/logo-completo.svg");
-    width: 123px;
-    height: 46px;
+.header .hd-user-menu, .header .hd-search {
+  display: inline-block;
+  margin: 15px 0 0 5px;
+}
+
+.header .hd-search-cont {
+  display: none;
+}
+
+.header .umenu-text {
+  display: none;
+}
+
+.header .hd-main-menu {
+  background-color: #f4f4f4;
+}
+
+.header .hd-main-menu ul {
+  white-space: nowrap;
+  overflow: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  display: block;
+  -webkit-flex-flow: initial;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+.header .hd-main-menu li {
+  white-space: normal;
+  width: auto;
+  display: inline-block;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  padding: 0;
+  max-width: initial;
+  margin-right: 5px;
+}
+
+.header .hd-main-menu a {
+  padding: 10px;
+  display: block;
+  width: 85px;
+  border-bottom: 2px solid #000;
+}
+
+.header .hd-main-menu .hd-mm-cinema a {
+  border-color: #df7446;
+}
+
+.header .hd-main-menu .hd-mm-theater a {
+  border-color: #c45f83;
+}
+
+.header .hd-main-menu .hd-mm-show a {
+  border-color: #acbf52;
+}
+
+.header .hd-main-menu .hd-mm-event a {
+  border-color: #524785;
+}
+
+.header .hd-main-menu .hd-mm-circus a {
+  border-color: #ead11c;
+}
+
+.header .hd-main-menu .hd-mm-promo a {
+  border-color: #ba3a3a;
+}
+
+@media (min-width: 768px) {
+  .header .umenu-text {
+    display: none;
   }
-  #header .main-menu, #header .search {
-    display: block !important;
-    /* TEMPORARIO, VERSAO FINAL VAI USAR MATCHMEDIA */
+  .header .hd-botton {
+    background-color: #f4f4f4;
+    padding: 15px;
   }
-  #header .search {
-    height: 55px !important;
-    width: 300px;
-    overflow: hidden;
+  .header .hd-main-menu {
+    background-color: #f4f4f4;
+    padding: 15px;
   }
-  #header .hdr-user-menu, #header .hdr-location-menu {
-    display: inline-block;
+  .header .hd-main-menu ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
   }
-  #header .hdr-sub-menu {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding-right: 50px;
-    width: 225px;
-  }
-  #header .hdr-support {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  #header .nav-item {
-    display: table-cell;
-    width: 1%;
-  }
-  #header .nav-link {
-    margin-bottom: 0;
+  .header .hd-main-menu li {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center;
   }
 }
 
@@ -7963,7 +7962,6 @@ a.ic-rounded .svg-icon {
   font-size: 0.875rem;
   background-color: #f2f2f2;
   border-left: 4px solid #0db6b5;
-  overflow: hidden;
 }
 
 .nav-stacked .nav-link .svg-icon {
@@ -8070,6 +8068,7 @@ a.ic-rounded .svg-icon {
 
 .tag {
   letter-spacing: 0.1em;
+  font-size: 0.625rem;
 }
 
 .tag-rating {
@@ -9261,10 +9260,16 @@ a.ic-rounded .svg-icon {
 
 .list-type01 .lt-tp01-it {
   display: inline-block;
-  font-size: 11px;
-  padding: 2px 20px 2px 10px;
   border-left: 1px solid #666;
-  margin: 3px 0 3px -11px;
+  font-size: 0.688rem;
+  padding: 5px 0 5px 7px;
+  margin: 0 0 10px 7px;
+}
+
+.list-type01 .lt-tp01-it:first-child {
+  border-left: 0;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .list-type02 {
@@ -9448,7 +9453,7 @@ a.ic-rounded .svg-icon {
 .tickets-lt .tck-lk {
   display: block;
   color: #fff;
-  padding: 15px 20px;
+  padding: 10px 20px;
   background: #0db6b5;
   cursor: pointer;
   -webkit-user-select: none;
