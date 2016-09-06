@@ -8846,33 +8846,6 @@ a.ic-rounded .svg-icon {
   margin: 0;
 }
 
-@-webkit-keyframes slide-page-hide {
-  0% {
-    height: auto;
-  }
-  100% {
-    height: 0;
-  }
-}
-
-@-o-keyframes slide-page-hide {
-  0% {
-    height: auto;
-  }
-  100% {
-    height: 0;
-  }
-}
-
-@keyframes slide-page-hide {
-  0% {
-    height: auto;
-  }
-  100% {
-    height: 0;
-  }
-}
-
 .slide-page {
   /* pra remover scroll lateral */
   overflow-x: hidden;
@@ -8880,12 +8853,26 @@ a.ic-rounded .svg-icon {
 }
 
 .slide-page.active > .slide-page-wp {
-  -webkit-transform: translate3d(-100%, 0px, 0px);
-          transform: translate3d(-100%, 0px, 0px);
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+       -o-transform: translateX(-100%);
+          transform: translateX(-100%);
+  /* this transition is only for a smoothy transition between pages */
+  -webkit-transition-delay: .1s;
+       -o-transition-delay: .1s;
+          transition-delay: .1s;
 }
 
 .slide-page.active > .slide-page-wp > .slide-page-content {
   overflow: hidden;
+}
+
+.slide-page.is-animating > .slide-page-wp {
+  will-change: transform, opacity;
+}
+
+.slide-page.is-animating > .slide-page-wp > .slide-page-side {
+  display: inline-block;
 }
 
 .slide-page > .slide-page-wp {
@@ -8898,58 +8885,32 @@ a.ic-rounded .svg-icon {
   letter-spacing: -3px;
 }
 
-.slide-page > .slide-page-wp > .slide-page-side {
-  /*animatable properties*/
-  visibility: hidden;
-  opacity: 0;
-  overflow: hidden;
-  background-color: #fff;
-  -webkit-transition-property: visibility, opacity;
-  -o-transition-property: visibility, opacity;
-  transition-property: visibility, opacity;
-  -webkit-transition-duration: 0s, .5s;
-       -o-transition-duration: 0s, .5s;
-          transition-duration: 0s, .5s;
-  -webkit-transition-delay: .5s, 0s;
-       -o-transition-delay: .5s, 0s;
-          transition-delay: .5s, 0s;
-  -webkit-animation-duration: .5s;
-       -o-animation-duration: .5s;
-          animation-duration: .5s;
-  -webkit-animation-name: slide-page-hide;
-       -o-animation-name: slide-page-hide;
-          animation-name: slide-page-hide;
-  -webkit-animation-delay: .5s;
-       -o-animation-delay: .5s;
-          animation-delay: .5s;
-  -webkit-animation-fill-mode: forwards;
-       -o-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.slide-page > .slide-page-wp > .slide-page-side.active {
-  /*animatable properties*/
-  visibility: visible;
-  opacity: 1;
-  height: auto;
-  overflow: auto;
-  -webkit-animation: initial;
-       -o-animation: initial;
-          animation: initial;
-  -webkit-transition-delay: 0s, 0s;
-       -o-transition-delay: 0s, 0s;
-          transition-delay: 0s, 0s;
-  -webkit-transition-duration: 0s, .25s;
-       -o-transition-duration: 0s, .25s;
-          transition-duration: 0s, .25s;
-}
-
 .slide-page > .slide-page-wp > .slide-page-side, .slide-page > .slide-page-wp > .slide-page-content {
   white-space: normal;
   vertical-align: top;
   letter-spacing: normal;
   display: inline-block;
   width: 100%;
+}
+
+.slide-page > .slide-page-wp > .slide-page-side {
+  /*animatable properties*/
+  opacity: 0;
+  display: none;
+  background-color: #fff;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: .5s;
+       -o-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.slide-page > .slide-page-wp > .slide-page-side.active {
+  /*animatable properties*/
+  opacity: 1;
+  display: inline-block;
+  overflow: auto;
 }
 
 .carousel-ingresso {
