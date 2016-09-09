@@ -15,6 +15,7 @@
 								$content = $($element.attr('href')),
 								unmatchClasses = ['model']
 
+								$element.removeClass('collapsed');
 								$content
 								.removeClass('collapse')
 								.removeAttr('style');
@@ -40,7 +41,7 @@
 								var $element = $(this),
 								$content = $($element.data('original-href'));
 
-
+								$element.addClass('collapsed');
 								$content
 								.addClass('collapse');
 

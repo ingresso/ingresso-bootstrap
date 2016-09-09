@@ -6,7 +6,6 @@
     cursor:pointer;
   	padding:10px 30px 10px 10px;
   	border-bottom:1px solid #eee;
-  	position: relative;
   	text-decoration: none;
   	font-size: 0.875rem;
 
@@ -22,20 +21,33 @@
      }
     }
   }
+  &-wp{
+    overflow: auto;
+    height:250px;
+  }
   &-has-val{
-    cursor: default;
-
+    .filter-head{
+      pointer-events: none;
+      cursor: default;
+    }
     .filter-label{
       transform:scale(0.8);
       font-weight: normal;
     }
-
-    .filter-action:before, .filter-action:after{
-      transform: rotate(45deg);
+    .filter-action{
+      pointer-events:auto;
+      &:before, &:after{
+        transform: rotate(45deg);
+      }
     }
     .filter-val{
       transform:scale(1);
     }
+
+    .filter-wp{
+      height:229px;
+    }
+
   }
   &-val{
     display: block;
@@ -54,13 +66,13 @@
   }
 
   &-action{
-    background: red; /*temp*/
     position: absolute;
     right:0;
     top:0;
     bottom:0;
     width: 40px;
     cursor: pointer;
+    pointer-events:none;
     &:before, &:after{
       content: '';
       position: absolute;
@@ -85,6 +97,4 @@
       transform: rotate( 0 );
     }
   }
-
-
 }
