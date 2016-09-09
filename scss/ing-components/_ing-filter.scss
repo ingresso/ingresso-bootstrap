@@ -1,0 +1,90 @@
+.filter{
+
+  &-head{
+    position: relative;
+    display: block;
+    cursor:pointer;
+  	padding:10px 30px 10px 10px;
+  	border-bottom:1px solid #eee;
+  	position: relative;
+  	text-decoration: none;
+  	font-size: 0.875rem;
+
+    &:focus, &:active, &:hover{
+  		text-decoration: none;
+  	}
+
+    @at-root{
+      &.collapsed {
+        .filter-action{
+          &:before{transform:rotate( 0 );}
+        }
+     }
+    }
+  }
+  &-has-val{
+    cursor: default;
+
+    .filter-label{
+      transform:scale(0.8);
+      font-weight: normal;
+    }
+
+    .filter-action:before, .filter-action:after{
+      transform: rotate(45deg);
+    }
+    .filter-val{
+      transform:scale(1);
+    }
+  }
+  &-val{
+    display: block;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transform:scale(0);
+    transform-origin:left;
+    transition: transform 0.25s ease-in-out;
+  }
+  &-label{
+    display: block;
+    transform-origin:left;
+    transition: transform 0.25s ease-in-out;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  &-action{
+    background: red; /*temp*/
+    position: absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    width: 40px;
+    cursor: pointer;
+    &:before, &:after{
+      content: '';
+      position: absolute;
+      top:50%;
+      background: $brand-primary;
+      transition: transform 0.25s ease-in-out;
+      right: 0;
+      margin: -8px 0 0;
+    }
+    &:before{
+      right: 15px;
+      width: 2px;
+      height: 12px;
+      margin-top: -7px;
+      transform: rotate( 90deg );
+    }
+    &:after{
+      right: 10px;
+      width: 12px;
+      height: 2px;
+      margin-top: -2px;
+      transform: rotate( 0 );
+    }
+  }
+
+
+}

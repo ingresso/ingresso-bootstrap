@@ -9643,6 +9643,135 @@ a.ic-rounded .svg-icon {
   text-align: right;
 }
 
+.filter-head {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding: 10px 30px 10px 10px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.filter-head:focus, .filter-head:active, .filter-head:hover {
+  text-decoration: none;
+}
+
+.filter-head.collapsed .filter-action:before {
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+       -o-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.filter-has-val {
+  cursor: default;
+}
+
+.filter-has-val .filter-label {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+       -o-transform: scale(0.8);
+          transform: scale(0.8);
+  font-weight: normal;
+}
+
+.filter-has-val .filter-action:before, .filter-has-val .filter-action:after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.filter-has-val .filter-val {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+       -o-transform: scale(1);
+          transform: scale(1);
+}
+
+.filter-val {
+  display: block;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+       -o-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+       -o-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  -o-transition: transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;
+}
+
+.filter-label {
+  display: block;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+       -o-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  -o-transition: transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+}
+
+.filter-action {
+  background: red;
+  /*temp*/
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  cursor: pointer;
+}
+
+.filter-action:before, .filter-action:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  background: #0db6b5;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  -o-transition: transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;
+  right: 0;
+  margin: -8px 0 0;
+}
+
+.filter-action:before {
+  right: 15px;
+  width: 2px;
+  height: 12px;
+  margin-top: -7px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.filter-action:after {
+  right: 10px;
+  width: 12px;
+  height: 2px;
+  margin-top: -2px;
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+       -o-transform: rotate(0);
+          transform: rotate(0);
+}
+
 /**
  * Swiper 3.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
