@@ -192,7 +192,8 @@ module.exports = function (grunt) {
           'js/src/ingresso/swiper.js',
           'js/src/ingresso/filter.js',
           'js/src/ingresso/slide-page.js',
-          'js/src/ingresso/fastclick.js'
+          'js/src/ingresso/fastclick.js',
+          'js/src/ingresso/header.js'
         ],
         dest: 'dist/js/ingresso.js'
       }
