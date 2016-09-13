@@ -2,6 +2,10 @@
 .header {
   margin-bottom: 10px;
 
+  div[class*="col-"] {
+    position: inherit;
+  }
+
   .logo {
     float: left;
     margin-bottom: 0;
@@ -55,7 +59,7 @@
   .hd-main-menu {
     background-color: #f4f4f4;
     border-top: 4px solid #fff;
-
+    position: relative;
     .hd-mm-lt{
       white-space: nowrap;
       overflow: auto;
@@ -81,7 +85,7 @@
     }
     .hd-mm-lnk{
       position: absolute;
-      top: 4px;
+      top: 0;
       left: 0;
       width: 100%;
       display: block;
@@ -161,7 +165,7 @@
     }
 
     .hd-cont.collapse.in, .hd-cont.collapsing{
-      top:158px;
+      top:48px;
     }
 
     .hd-mm-options{
@@ -328,7 +332,7 @@
       background-color: #525453;
       width: 100%;
       z-index: 50;
-      position: fixed;
+      position: absolute;
       top: 60px;
       left: 0;
       right: 0;
@@ -403,7 +407,7 @@
     .hd-main-menu {
       background-color: transparent;
       border: 0;
-
+      position: inherit;
       .hd-mm-lt{
         white-space: initial;
         overflow: initial;
