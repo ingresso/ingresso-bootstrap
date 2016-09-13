@@ -7476,11 +7476,11 @@ a.ic-rounded .svg-icon {
 
 .header .hd-main-menu .hd-mm-lnk {
   position: absolute;
-  top: 0;
+  top: 4px;
   left: 0;
   width: 100%;
   display: block;
-  padding: 15px;
+  padding: 12px;
   font-family: 'Klavika-Regular';
   font-size: 1rem;
   color: #fff;
@@ -7494,7 +7494,7 @@ a.ic-rounded .svg-icon {
   border-bottom: 2px solid #000;
   font-family: 'Klavika-Regular';
   font-size: 1rem;
-  color: #0a8686;
+  color: #0db6b5;
 }
 
 .header .hd-main-menu .hd-mm-cinema .hd-mm-lnk {
@@ -7572,7 +7572,76 @@ a.ic-rounded .svg-icon {
 }
 
 .header .hd-main-menu .hd-cont.collapse.in, .header .hd-main-menu .hd-cont.collapsing {
-  top: 170px;
+  top: 158px;
+}
+
+.header .hd-main-menu .hd-mm-options {
+  margin-bottom: 15px;
+}
+
+.header .hd-main-menu .filter {
+  margin-bottom: 1px;
+}
+
+.header .hd-main-menu .filter .filter-head {
+  border: 0;
+  background-color: #5d5d5d;
+  color: #fff;
+  padding: 10px;
+}
+
+.header .hd-main-menu .filter .filter-head.collapsed .filter-label {
+  border: 0;
+  padding-bottom: 0;
+}
+
+.header .hd-main-menu .filter .filter-label {
+  border-bottom: 1px solid #525453;
+  padding-bottom: 5px;
+}
+
+.header .hd-main-menu .filter .filter-content {
+  background-color: #5d5d5d;
+}
+
+.header .hd-main-menu .filter .filter-wp {
+  height: 200px;
+}
+
+.header .hd-main-menu .filter .filter-wp::-webkit-scrollbar {
+  width: 3px;
+}
+
+.header .hd-main-menu .filter .filter-wp::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(93, 93, 93, 0.3);
+  border-radius: 10px;
+}
+
+.header .hd-main-menu .filter .filter-wp::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(13, 182, 181, 0.8);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.header .hd-main-menu .filter .filter-wp::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(13, 182, 181, 0.8);
+}
+
+.header .hd-main-menu .btn-filter {
+  margin-top: 15px;
+}
+
+.header .hd-main-menu .hd-mm-cat-link {
+  margin: 10px 0 15px;
+  display: block;
+}
+
+.header .hd-main-menu .date-month-lt2 {
+  padding: 10px;
+}
+
+.header .hd-main-menu .date-month-lt2 .date-it {
+  margin: 0 5px 10px 5px;
 }
 
 .header .hd-umenu-options .tab-accordion {
@@ -7620,7 +7689,7 @@ a.ic-rounded .svg-icon {
 }
 
 .header .hd-local .hd-cont.collapse.in, .header .hd-local .hd-cont.collapsing {
-  top: 116px;
+  top: 106px;
 }
 
 .header .hd-local form {
@@ -7649,7 +7718,7 @@ a.ic-rounded .svg-icon {
 }
 
 .header .hd-local .hd-local-cont .hd-cont-wp {
-  height: calc(100vh - 116px);
+  height: calc(100vh - 106px);
 }
 
 .header .hd-support {
@@ -7680,7 +7749,7 @@ a.ic-rounded .svg-icon {
 
 .header .hd-cont .hd-cont-wp {
   padding: 25px;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 60px);
 }
 
 .header .hd-cont.collapse.in, .header .hd-cont.collapsing {
@@ -7688,7 +7757,7 @@ a.ic-rounded .svg-icon {
   width: 100%;
   z-index: 50;
   position: fixed;
-  top: 70px;
+  top: 60px;
   left: 0;
   right: 0;
 }
@@ -7696,6 +7765,7 @@ a.ic-rounded .svg-icon {
 @media (min-width: 768px) {
   #header {
     overflow: visible;
+    margin-bottom: 15px;
   }
   .header .hd-user-menu, .header .hd-search, .header .hd-support {
     margin: 15px 0 0 5px;
@@ -7772,6 +7842,32 @@ a.ic-rounded .svg-icon {
   .header .hd-main-menu .hd-mm-lnk {
     width: 100%;
     min-height: 50px;
+    position: inherit;
+    padding: 10px;
+  }
+  .header .hd-main-menu .hd-mm-lnk.collapsed {
+    width: 100%;
+  }
+  .header .hd-main-menu .hd-cont.collapse.in, .header .hd-main-menu .hd-cont.collapsing {
+    top: 118px;
+  }
+  .header .hd-main-menu .hd-mm-cinema .hd-mm-cont {
+    border-top: 3px solid #df7446;
+  }
+  .header .hd-main-menu .hd-mm-theater .hd-mm-cont {
+    border-top: 3px solid #c45f83;
+  }
+  .header .hd-main-menu .hd-mm-show .hd-mm-cont {
+    border-top: 3px solid #acbf52;
+  }
+  .header .hd-main-menu .hd-mm-event .hd-mm-cont {
+    border-top: 3px solid #524785;
+  }
+  .header .hd-main-menu .hd-mm-circus .hd-mm-cont {
+    border-top: 3px solid #ead11c;
+  }
+  .header .hd-main-menu .hd-mm-promo .hd-mm-cont {
+    border-top: 3px solid #ba3a3a;
   }
   .header .hd-local {
     background-color: transparent;
@@ -7809,7 +7905,7 @@ a.ic-rounded .svg-icon {
     text-overflow: ellipsis;
   }
   .header .hd-local .hd-local-link .svg-icon {
-    fill: #0db6b5;
+    fill: #fff;
   }
   .header .hd-support {
     display: inline-block;
