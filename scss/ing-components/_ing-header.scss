@@ -40,7 +40,7 @@ $font_0: Klavika-Regular;
 
 @charset "UTF-8";
 .header {
-  margin-bottom: 10px;
+  margin: 10px auto;
   position: relative;
   div[class*="col-"] {
     position: inherit;
@@ -73,11 +73,12 @@ $font_0: Klavika-Regular;
     .form-group {
       margin-bottom: 0;
     }
-    .hd-search-input {
-      margin-bottom: 20px;
-    }
-    .hd-search-suggestions li {
-      margin-bottom: 10px;
+    .hd-search-suggestions {
+      margin-top:20px;
+      li{
+        margin-bottom: 10px;
+      }
+
     }
   }
   .umenu-text {
@@ -329,6 +330,7 @@ $font_0: Klavika-Regular;
     .hd-cont-wp {
       padding: 25px;
       height: calc(100vh - 60px);
+      overflow-y: auto;
     }
     &.collapsing {
       @extend %extend_2;
@@ -504,7 +506,6 @@ $font_0: Klavika-Regular;
     .hd-local {
       background-color: transparent;
       padding: 0;
-      position: relative;
       .hd-local-link {
         background-color: $color_java_approx;
         color: $white;
@@ -571,6 +572,16 @@ $font_0: Klavika-Regular;
     .hd-search-link {
       display: none;
     }
+    .hd-local{
+      position: relative;
+    }
+    .hd-search{
+      &.is-opened{
+        .hd-search-suggestions {
+          display: block;
+        }
+      }
+    }
     .hd-search-cont {
       width: 280px;
       display: inline-block;
@@ -579,17 +590,19 @@ $font_0: Klavika-Regular;
         padding: 0;
         max-width: initial;
         margin: 0;
+        position: relative;
+        overflow-y: visible;
       }
       .hd-search-suggestions {
         display: none;
         position: absolute;
-        top: 40px;
+        top: 39px;
         left: 0;
         background: $white;
         border: 1px solid $color_java_approx;
         z-index: 1;
         padding: 10px;
-        margin: 0 10px;
+        margin: 0 ;
         ul {
           margin: -10px;
         }
