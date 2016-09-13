@@ -168,6 +168,31 @@
   font-size: 13px;
 }
 
+.date-month-lt2{
+  white-space: initial;
+  overflow: visible;
+  .date-it{
+    margin:0 2px;
+  }
+  .date-lk{
+    width: 33px;
+    height: 33px;
+    border-top:0;
+    padding: 0;
+    min-height: initial;
+  }
+  .date-info{
+    display: block;
+    background-color: #0db6b5;
+    color: #fff;
+    font-size: 0.625rem;
+  }
+  .date-main-info{
+    font-weight: normal;
+    font-size: 0.813rem;
+  }
+}
+
 
 //
 // Tickets List

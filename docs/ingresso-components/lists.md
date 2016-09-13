@@ -267,3 +267,77 @@ date-month list
 </ul>
 
 {% endexample %}
+
+## Example
+date-month list 2
+
+{% example html %}
+
+<ul class="date-lt date-month-lt2">
+  <li class="date-it is-selected">
+    <a href="" class="date-lk">
+      <time datetime="28/07/2016" title="2015-07">
+        <span class="date-info">JUL</span><br>
+        <strong class="date-main-info">28</strong>
+      </time>
+    </a>
+  </li>
+  <li class="date-it is-selected">
+    <a href="" class="date-lk">
+      <time datetime="28/07/2016" title="2015-07">
+        <span class="date-info">JUL</span><br>
+        <strong class="date-main-info">28</strong>
+      </time>
+    </a>
+  </li>
+  <li class="date-it is-selected">
+    <a href="" class="date-lk">
+      <time datetime="28/07/2016" title="2015-07">
+        <span class="date-info">JUL</span><br>
+        <strong class="date-main-info">28</strong>
+      </time>
+    </a>
+  </li>
+  <li class="date-it is-selected">
+    <a href="" class="date-lk">
+      <time datetime="28/07/2016" title="2015-07">
+        <span class="date-info">JUL</span><br>
+        <strong class="date-main-info">28</strong>
+      </time>
+    </a>
+  </li>
+  <li class="date-it is-selected">
+    <a href="" class="date-lk">
+      <time datetime="28/07/2016" title="2015-07">
+        <span class="date-info">JUL</span><br>
+        <strong class="date-main-info">28</strong>
+      </time>
+    </a>
+  </li>
+  <li class="date-it is-selected">
+    <a href="" class="date-lk">
+      <time datetime="28/07/2016" title="2015-07">
+        <span class="date-info">JUL</span><br>
+        <strong class="date-main-info">28</strong>
+      </time>
+    </a>
+  </li>
+  <li class="date-it is-selected">
+    <a href="" class="date-lk">
+      <time datetime="28/07/2016" title="2015-07">
+        <span class="date-info">JUL</span><br>
+        <strong class="date-main-info">28</strong>
+      </time>
+    </a>
+  </li>
+  <li class="date-it is-selected">
+    <a href="" class="date-lk">
+      <time datetime="28/07/2016" title="2015-07">
+        <span class="date-info">JUL</span><br>
+        <strong class="date-main-info">28</strong>
+      </time>
+    </a>
+  </li>
+</ul>
+
+{% endexample %}
