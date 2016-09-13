@@ -18,14 +18,14 @@
         $headerSearch.removeClass('is-opened');
       }
     });
+    // toggle item when openening another
+    var $toggleItems = $('#header [data-toggle=collapse]');
 
-    // header menu
-    $('#header .hd-mm-lnk').click(function(){
-
-      var $expandedItem = $('#header .hd-mm-lnk').filter('[aria-expanded=true]');
+    $('#header .hd-cont').on('show.bs.collapse',function(){
+      var $expandedItem = $('#header [data-toggle=collapse]').filter('[aria-expanded=true]');
 
       if($expandedItem.length){
-        $expandedItem.collapse('hide');
+        $($expandedItem.attr('href')).collapse('hide');
       }
     });
   },2000);
