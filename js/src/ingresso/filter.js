@@ -15,8 +15,11 @@
       if(getFilterValue() !== val){
         $head.children('.filter-val').text(val);
         $options.filter('.is-selected').removeClass('is-selected');
-        $(this).closest('.filter-it').addClass('is-selected');
         $filter.addClass('filter-has-val');
+
+        $(this).closest('.filter-it')
+        .addClass('is-selected')
+        .trigger('filter.added');
       }
 
     }

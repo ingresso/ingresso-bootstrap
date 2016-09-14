@@ -6,12 +6,22 @@
     var $headerSearchInput = $('#header #search-ipt');
     var $headerSearch = $headerSearchInput.closest('.hd-search');
     var $toggleItems = $('#header .hd-mm-lnk, #header .hd-local-link, #header .hd-um-link');
+    var $window = $(window);
+    var resolutions = {
+      small:568,
+      medium:769,
+      large:992
+    };
 
     function toggleCloseButton(){
       $('[href="#'+$(this).attr('id')+'"]').find('.svg-icon').toggleClass('hidden-xs-up');
     }
 
-    // generic close collapse
+    function toggleFilter(){
+      $('.collapse.in',this).collapse('hide');
+    }
+
+    // generic close collapse button
     $('[data-close-collapse]').click(function(){
       $(this).closest('.collapse.in').collapse('hide');
     });
@@ -22,7 +32,7 @@
       $headerSearch.addClass('is-opened');
       console.log('focus');
     });
-    // remove class and collapse items when click out
+    // remove classes and collapse items when click out
     $(document).on('click',function(e){
       // if not clicking on search content
       if(!$(e.target).closest('.hd-search').length){
@@ -34,21 +44,44 @@
       }
     });
     // end - search suggestions
+
     // toggle items
     $('#header .hd-cont')
     .on('show.bs.collapse',function(){
       toggleCloseButton.call(this);
-      if(!$('body.page-overlay').length){
+      if(!$('body.page-overlay').length && $(window).width() < resolutions.large){
         $('body').addClass('page-overlay');
       }
     })
     .on('hide.bs.collapse',function(){
       toggleCloseButton.call(this);
-      if($('body.page-overlay').length){
+    })
+    .on('hidden.bs.collapse',function(){
+      if($('body.page-overlay').length && !$('#header .hd-cont.collapse.in').length){
         $('body').removeClass('page-overlay');
       }
     });
+    $window.resize(function(){
+      if($window.width() < resolutions.large){
+
+        // overlay class
+        if($('#header .hd-cont.collapse.in').length){
+          $('body').addClass('page-overlay');
+        }else{
+          $('body').removeClass('page-overlay');
+        }
+
+        // filter
+      }else{
+        $('.filter').off('filter.added').on('filter.added',toggleFilter);
+      }
+    })
     // end - toggle items
+    // filter
+    $('.filter').on('filter.added',toggleFilter);
+    // end -filter
+
+
   },2000);
 
 

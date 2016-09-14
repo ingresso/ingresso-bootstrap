@@ -60,6 +60,61 @@
 							//console.log('iniciou dropdown medium');
 						}
 					},
+					'js-lg':{
+						match:function(){
+
+							//temp
+							$('.js-lg[data-toggle="collapse"]').each(function(){
+
+								var $element = $(this),
+								$content = $($element.attr('href')),
+								unmatchClasses = ['model']
+
+								$element.removeClass('collapsed');
+								$content
+								.removeClass('collapse')
+								.removeAttr('style');
+
+								if($element.hasClass('model1')){
+									$element.data('js-md-unmatch-classes','model1')
+									$element.removeClass('model1')
+								}
+
+								$element.data('original-href',$element.attr('href'));
+								$element.removeAttr('href');
+
+
+							});
+
+							console.log('match dropdown medium');
+						},
+						unmatch:function(){
+
+							//temp
+							$('.js-lg[data-toggle="collapse"]').each(function(){
+
+								var $element = $(this),
+								$content = $($element.data('original-href'));
+
+								$element.addClass('collapsed');
+								$content
+								.addClass('collapse');
+
+								if($element.data('js-md-unmatch-classes') == 'model1'){
+									$element.addClass('model1')
+								}
+
+								$element.attr('href',$element.data('original-href'));
+
+
+							});
+
+							console.log('unmatch dropdown medium');
+						},
+						setup:function(){
+							//console.log('iniciou dropdown medium');
+						}
+					},
 					'js-sm':{
 						match:function(){
 
@@ -100,7 +155,8 @@
 			}
 			var medias = {
 				small:'(min-width:568px)',
-				medium:'(min-width:769px)'
+				medium:'(min-width:769px)',
+				large:'(min-width:992px)'
 			};
 
 			for(var media in medias){
@@ -121,6 +177,10 @@
 					else if(media == 'medium'){
 
 						this_media_components.push(components[component]['js-md']);
+					}
+					else if(media == 'large'){
+
+						this_media_components.push(components[component]['js-lg']);
 					}
 				}
 

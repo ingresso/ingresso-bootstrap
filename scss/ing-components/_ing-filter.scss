@@ -30,17 +30,18 @@
     .filter-head{
       pointer-events: none;
       cursor: default;
+
+      .filter-action{
+        pointer-events:auto;
+        &:before, &:after{
+          transform: rotate(45deg);
+        }
+      }
     }
 
     .filter-label{
       transform:scale(0.8);
       font-weight: normal;
-    }
-    .filter-action{
-      pointer-events:auto;
-      &:before, &:after{
-        transform: rotate(45deg);
-      }
     }
     .filter-val{
       transform:scale(1);
