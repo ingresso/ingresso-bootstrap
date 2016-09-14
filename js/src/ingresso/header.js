@@ -3,7 +3,8 @@
   // settimeout because of w3data.js include system
   setTimeout(function(){
 
-    var $headerSearchInput = $('#header #search-ipt');
+    var $header = $('#header');
+    var $headerSearchInput = $('#search-ipt',$header);
     var $headerSearch = $headerSearchInput.closest('.hd-search');
     var $toggleItems = $('#header .hd-mm-lnk, #header .hd-local-link, #header .hd-um-link');
     var $window = $(window);
@@ -46,7 +47,7 @@
     // end - search suggestions
 
     // toggle items
-    $('#header .hd-cont')
+    $('.hd-cont',$header)
     .on('show.bs.collapse',function(){
       toggleCloseButton.call(this);
       if(!$('body.page-overlay').length && $(window).width() < resolutions.large){
@@ -57,7 +58,7 @@
       toggleCloseButton.call(this);
     })
     .on('hidden.bs.collapse',function(){
-      if($('body.page-overlay').length && !$('#header .hd-cont.collapse.in').length){
+      if($('body.page-overlay').length && !$('.hd-cont.collapse.in',$header).length){
         $('body').removeClass('page-overlay');
       }
     });
@@ -65,7 +66,7 @@
       if($window.width() < resolutions.large){
 
         // overlay class
-        if($('#header .hd-cont.collapse.in').length){
+        if($('.hd-cont.collapse.in',$header).length){
           $('body').addClass('page-overlay');
         }else{
           $('body').removeClass('page-overlay');
@@ -78,7 +79,7 @@
     })
     // end - toggle items
     // filter
-    $('.filter').on('filter.added',toggleFilter);
+    $('.filter',$header).on('filter.added',toggleFilter);
     // end -filter
 
 

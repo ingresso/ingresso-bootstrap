@@ -76,7 +76,7 @@
 								.removeAttr('style');
 
 								if($element.hasClass('model1')){
-									$element.data('js-md-unmatch-classes','model1')
+									$element.data('js-lg-unmatch-classes','model1')
 									$element.removeClass('model1')
 								}
 
@@ -86,7 +86,7 @@
 
 							});
 
-							console.log('match dropdown medium');
+							console.log('match dropdown large');
 						},
 						unmatch:function(){
 
@@ -100,16 +100,16 @@
 								$content
 								.addClass('collapse');
 
-								if($element.data('js-md-unmatch-classes') == 'model1'){
+								if($element.data('js-lg-unmatch-classes') == 'model1'){
 									$element.addClass('model1')
-								}
 
+								}
 								$element.attr('href',$element.data('original-href'));
 
 
 							});
 
-							console.log('unmatch dropdown medium');
+							console.log('unmatch dropdown large');
 						},
 						setup:function(){
 							//console.log('iniciou dropdown medium');
@@ -183,58 +183,11 @@
 						this_media_components.push(components[component]['js-lg']);
 					}
 				}
-
+				console.log('executando media '+media);
 				//para cada media, executa-se equire.register()
-				enquire.register(medias[media],
+				enquire.register(medias[media],this_media_components);
 
-					$.extend({},{
-
-						match:function(){
-
-
-							//para cada uma das funcoes de cada componente, executa-se essa funcao
-							for(var i=0, media_components_len = this_media_components.length;
-								i < media_components_len;i++
-								){
-
-								if(this_media_components[i].match){
-
-									this_media_components[i].match.apply(undefined);
-								}
-							}
-						},
-						unmatch:function(){
-
-							for(var i=0, media_components_len = this_media_components.length;
-								i < media_components_len;i++
-								){
-
-								if(this_media_components[i].unmatch){
-
-									this_media_components[i].unmatch.apply(undefined);
-								}
-							}
-						},
-						setup:function(){
-
-							for(var i=0, media_components_len = this_media_components.length;
-								i < media_components_len;i++
-								){
-
-								if(this_media_components[i].setup){
-
-									this_media_components[i].setup.apply(undefined);
-								}
-
-							}
-						}
-					},
-					{
-					    // OPTIONAL, defaults to false
-					    // If set to true, defers execution of the setup function
-					    // until the first time the media query is matched
-					    deferSetup : true
-					})
-				);
+				// reseting
+				this_media_components = [];
 			};
 })();
