@@ -25,11 +25,13 @@
     overflow: auto;
     height:250px;
   }
+
   &-has-val{
     .filter-head{
       pointer-events: none;
       cursor: default;
     }
+
     .filter-label{
       transform:scale(0.8);
       font-weight: normal;
