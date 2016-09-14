@@ -45,6 +45,9 @@ $font_0: Klavika-Regular;
   div[class*="col-"] {
     position: inherit;
   }
+  .week-highlights{
+    display:none;
+  }
   .logo {
     float: left;
     margin-bottom: 0;
@@ -313,6 +316,7 @@ $font_0: Klavika-Regular;
     }
     .hd-local-cont .hd-cont-wp {
       height: calc(100vh - 106px);
+      display: block;
     }
   }
   .hd-local-link {
@@ -361,6 +365,16 @@ $font_0: Klavika-Regular;
     margin-bottom: 15px;
   }
   .header {
+    .week-highlights{
+      display: block;
+      border-left: 1px solid #c9cbca;
+      margin-left: 2rem;
+      padding-left: 2rem;
+      .event-name{
+        color: $white;
+        font-weight: normal;
+      }
+    }
     .hd-user-menu {
       margin: 15px 0 0 5px;
       .hd-cont {
@@ -396,6 +410,9 @@ $font_0: Klavika-Regular;
       .hd-cont {
         &.collapsing, &.collapse.in {
           top:70px;
+        }
+        .hd-cont-wp{
+          overflow: visible;
         }
       }
       .ic-rounded{
@@ -528,17 +545,21 @@ $font_0: Klavika-Regular;
         }
       }
       .hd-cont {
-        &.collapsing {
-          top: 50px;
+        &.collapsing, &.collapse.in {
+          top: inherit;
           position: absolute;
-        }
-        &.collapse.in {
-          top: 50px;
-          position: absolute;
+          border-top: 3px solid #0db6b5;
+          margin-top: -2px;
         }
       }
       .hd-local-cont .hd-cont-wp {
         height: auto;
+        display: flex;
+      }
+      .hd-local-options{
+        border-left: 1px solid #c9cbca;
+        margin-left: 2rem;
+        padding-left: 2rem;
       }
     }
     .hd-um-link {
@@ -569,11 +590,22 @@ $font_0: Klavika-Regular;
 }
 @media(min-width: 992px) {
   .header {
+    .week-highlights{
+      display: none;
+    }
     .hd-search-link {
       display: none;
     }
     .hd-local{
       position: relative;
+      .hd-cont-wp{
+        padding:15px;
+      }
+      .hd-local-options{
+        border-left: 0;
+        margin-left: 0;
+        padding-left: 1rem;
+      }
     }
     .hd-search{
       &.is-opened{

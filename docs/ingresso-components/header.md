@@ -131,51 +131,55 @@ A lightweight, flexible Header that can be used on your site.
                         </svg>
                     </a>
                     <div class="hd-local-cont hd-cont collapse" id="hd-local-cont">
-                        <div class="hd-cont-wp">
-                            <form action="#">
-                                <div class="form-group">
-                                    <select class="form-control" id="hd-form-state">
-                                        <option>Selecione o estado</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <select class="form-control" id="hd-form-state">
-                                        <option>Selecione a cidade</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <button type="submit" class="btn w-100 btn-primary">TROCAR CIDADE</button>
-                            </form>
-                            <a class="hd-local-update" href="#">
-                                <svg class="svg-icon valign-middle ic-ingresso" width="20" height="20">
-                                    <use xlink:href="#icon-gps" />
-                                </svg>
-                                Atualizar localização
-                            </a>
-                            <div class="latest-locals hd-local-places">
-                                <strong>Ultimos Locais</strong>
-                                <ul>
-                                    <li><a href="">Niterói</a></li>
-                                    <li><a href="">São Gonçalo</a></li>
-                                    <li><a href="">Alcântara</a></li>
-                                    <li><a href="">Árvore Seca</a></li>
-                                    <li><a href="">Colombia</a></li>
-                                </ul>
+                        <div class="hd-cont-wp row">
+                            <div class="hd-local-form col-xs-12 col-md-6 col-lg-12">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <select class="form-control" id="hd-form-state">
+                                            <option>Selecione o estado</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" id="hd-form-state">
+                                            <option>Selecione a cidade</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn w-100 btn-primary">TROCAR CIDADE</button>
+                                </form>
+                                <a class="hd-local-update" href="#">
+                                    <svg class="svg-icon valign-middle ic-ingresso" width="20" height="20">
+                                        <use xlink:href="#icon-gps" />
+                                    </svg>
+                                    Atualizar localização
+                                </a>
                             </div>
-                            <div class="suggestion-locals hd-local-places">
-                                <strong>Sugestões</strong>
-                                <ul>
-                                    <li><a href="">Mangueira</a></li>
-                                    <li><a href="">Salgueiro</a></li>
-                                    <li><a href="">Turano</a></li>
-                                </ul>
+                            <div class="hd-local-options col-xs-12 col-md-5 col-lg-12">
+                                <div class="latest-locals hd-local-places">
+                                    <strong>Ultimos Locais</strong>
+                                    <ul>
+                                        <li><a href="">Niterói</a></li>
+                                        <li><a href="">São Gonçalo</a></li>
+                                        <li><a href="">Alcântara</a></li>
+                                        <li><a href="">Árvore Seca</a></li>
+                                        <li><a href="">Colombia</a></li>
+                                    </ul>
+                                </div>
+                                <div class="suggestion-locals hd-local-places">
+                                    <strong>Sugestões</strong>
+                                    <ul>
+                                        <li><a href="">Mangueira</a></li>
+                                        <li><a href="">Salgueiro</a></li>
+                                        <li><a href="">Turano</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -193,198 +197,210 @@ A lightweight, flexible Header that can be used on your site.
                                     <a class="hd-mm-cat-link" href="#">Ir para Home Cinema</a>
                                   </div>
                                   <div class="col-xs-4 text-xs-right">
-                                    <a href="#">
+                                    <a href="#" data-close-collapse>
                                       <svg class="svg-icon ic-ingresso" width="44" height="44">
                                         <use xlink:href="#icon-arrow-top-1" />
                                       </svg>
                                     </a>
                                   </div>
                                 </div>
-                                <div class="row hd-mm-filters">
-                                  <div class="col-xs-12 col-md">
-                                    <div role="listbox" class="filter">
-                                      <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content01">
-                                        <span class="filter-label">Gênero</span>
-                                        <span class="filter-val"></span>
-                                        <span class="filter-action"></span>
-                                      </span>
-                                      <div class="filter-content collapse" id="filter-content01">
-                                        <div class="filter-wp">
-                                          <ul class="list-group list-group-nostyle filter-options">
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 1</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 2</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 3</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 4</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 5</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 6</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 7</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 8</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 9</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 10</a></li>
-                                          </ul>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-5 col-lg-12 hd-mm-filters">
+                                        <div class="row">
+                                          <div class="col-xs-12 col-lg">
+                                            <div role="listbox" class="filter">
+                                              <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content01">
+                                                <span class="filter-label">Gênero</span>
+                                                <span class="filter-val"></span>
+                                                <span class="filter-action"></span>
+                                              </span>
+                                              <div class="filter-content collapse" id="filter-content01">
+                                                <div class="filter-wp">
+                                                  <ul class="list-group list-group-nostyle filter-options">
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 1</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 2</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 3</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 4</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 5</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 6</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 7</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 8</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 9</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 10</a></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xs-12 col-lg">
+                                            <div role="listbox" class="filter">
+                                              <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content02">
+                                                <span class="filter-label">Filmes</span>
+                                                <span class="filter-val"></span>
+                                                <span class="filter-action"></span>
+                                              </span>
+                                              <div class="filter-content collapse" id="filter-content02">
+                                                <div class="filter-wp">
+                                                  <ul class="list-group list-group-nostyle filter-options">
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 1</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 2</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 3</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 4</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 5</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 6</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 7</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 8</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 9</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 10</a></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xs-12 col-lg">
+                                            <div role="listbox" class="filter">
+                                              <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content03">
+                                                <span class="filter-label">Bairro</span>
+                                                <span class="filter-val"></span>
+                                                <span class="filter-action"></span>
+                                              </span>
+                                              <div class="filter-content collapse" id="filter-content03">
+                                                <div class="filter-wp">
+                                                  <ul class="list-group list-group-nostyle filter-options">
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 1</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 2</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 3</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 4</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 5</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 6</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 7</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 8</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 9</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 10</a></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xs-12 col-lg">
+                                            <div role="listbox" class="filter">
+                                              <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content04">
+                                                <span class="filter-label">Cinemas</span>
+                                                <span class="filter-val"></span>
+                                                <span class="filter-action"></span>
+                                              </span>
+                                              <div class="filter-content collapse" id="filter-content04">
+                                                <div class="filter-wp">
+                                                  <ul class="list-group list-group-nostyle filter-options">
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 1</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 2</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 3</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 4</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 5</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 6</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 7</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 8</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 9</a></li>
+                                                    <li role="option" class="list-group-item filter-it"><a href="#">opção 10</a></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xs-12 col-lg">
+                                            <div role="listbox" class="filter">
+                                              <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content05">
+                                                <span class="filter-label">Data</span>
+                                                <span class="filter-val"></span>
+                                                <span class="filter-action"></span>
+                                              </span>
+                                              <div class="filter-content collapse" id="filter-content05">
+                                                <div class="filter-wp">
+                                                  <ul class="date-lt date-month-lt2">
+                                                    <li class="date-it is-selected">
+                                                      <a href="" class="date-lk">
+                                                        <time datetime="28/07/2016" title="2015-07">
+                                                          <span class="date-info">JUL</span><br>
+                                                          <strong class="date-main-info">28</strong>
+                                                        </time>
+                                                      </a>
+                                                    </li>
+                                                    <li class="date-it is-selected">
+                                                      <a href="" class="date-lk">
+                                                        <time datetime="28/07/2016" title="2015-07">
+                                                          <span class="date-info">JUL</span><br>
+                                                          <strong class="date-main-info">28</strong>
+                                                        </time>
+                                                      </a>
+                                                    </li>
+                                                    <li class="date-it is-selected">
+                                                      <a href="" class="date-lk">
+                                                        <time datetime="28/07/2016" title="2015-07">
+                                                          <span class="date-info">JUL</span><br>
+                                                          <strong class="date-main-info">28</strong>
+                                                        </time>
+                                                      </a>
+                                                    </li>
+                                                    <li class="date-it is-selected">
+                                                      <a href="" class="date-lk">
+                                                        <time datetime="28/07/2016" title="2015-07">
+                                                          <span class="date-info">JUL</span><br>
+                                                          <strong class="date-main-info">28</strong>
+                                                        </time>
+                                                      </a>
+                                                    </li>
+                                                    <li class="date-it is-selected">
+                                                      <a href="" class="date-lk">
+                                                        <time datetime="28/07/2016" title="2015-07">
+                                                          <span class="date-info">JUL</span><br>
+                                                          <strong class="date-main-info">28</strong>
+                                                        </time>
+                                                      </a>
+                                                    </li>
+                                                    <li class="date-it is-selected">
+                                                      <a href="" class="date-lk">
+                                                        <time datetime="28/07/2016" title="2015-07">
+                                                          <span class="date-info">JUL</span><br>
+                                                          <strong class="date-main-info">28</strong>
+                                                        </time>
+                                                      </a>
+                                                    </li>
+                                                    <li class="date-it is-selected">
+                                                      <a href="" class="date-lk">
+                                                        <time datetime="28/07/2016" title="2015-07">
+                                                          <span class="date-info">JUL</span><br>
+                                                          <strong class="date-main-info">28</strong>
+                                                        </time>
+                                                      </a>
+                                                    </li>
+                                                    <li class="date-it is-selected">
+                                                      <a href="" class="date-lk">
+                                                        <time datetime="28/07/2016" title="2015-07">
+                                                          <span class="date-info">JUL</span><br>
+                                                          <strong class="date-main-info">28</strong>
+                                                        </time>
+                                                      </a>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-xs-12 col-lg-2 offset-lg-10">
+                                                <div class="hd-mm-button">
+                                                    <button type="submit" class="btn btn-primary btn-block btn-filter">Filtrar</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
-                                  </div>
-                                  <div class="col-xs-12 col-md">
-                                    <div role="listbox" class="filter">
-                                      <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content02">
-                                        <span class="filter-label">Filmes</span>
-                                        <span class="filter-val"></span>
-                                        <span class="filter-action"></span>
-                                      </span>
-                                      <div class="filter-content collapse" id="filter-content02">
-                                        <div class="filter-wp">
-                                          <ul class="list-group list-group-nostyle filter-options">
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 1</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 2</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 3</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 4</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 5</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 6</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 7</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 8</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 9</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 10</a></li>
-                                          </ul>
-                                        </div>
-                                      </div>
+                                    <div class="col-xs-12 col-md-6 col-lg-12 week-highlights">
+                                        <strong class="event-name m-b-1 d-block">Destaque da semana</strong>
+                                        <a href="#">
+                                            <img class="w-100 m-b-05" src="http://lorempixel.com/g/400/200/" alt="imagem exemplo" />
+                                            <span>Como eu era antes de você</span>
+                                        </a>
                                     </div>
-                                  </div>
-                                  <div class="col-xs-12 col-md">
-                                    <div role="listbox" class="filter">
-                                      <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content03">
-                                        <span class="filter-label">Bairro</span>
-                                        <span class="filter-val"></span>
-                                        <span class="filter-action"></span>
-                                      </span>
-                                      <div class="filter-content collapse" id="filter-content03">
-                                        <div class="filter-wp">
-                                          <ul class="list-group list-group-nostyle filter-options">
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 1</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 2</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 3</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 4</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 5</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 6</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 7</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 8</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 9</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 10</a></li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-xs-12 col-md">
-                                    <div role="listbox" class="filter">
-                                      <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content04">
-                                        <span class="filter-label">Cinemas</span>
-                                        <span class="filter-val"></span>
-                                        <span class="filter-action"></span>
-                                      </span>
-                                      <div class="filter-content collapse" id="filter-content04">
-                                        <div class="filter-wp">
-                                          <ul class="list-group list-group-nostyle filter-options">
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 1</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 2</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 3</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 4</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 5</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 6</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 7</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 8</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 9</a></li>
-                                            <li role="option" class="list-group-item filter-it"><a href="#">opção 10</a></li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-xs-12 col-md">
-                                    <div role="listbox" class="filter">
-                                      <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content05">
-                                        <span class="filter-label">Data</span>
-                                        <span class="filter-val"></span>
-                                        <span class="filter-action"></span>
-                                      </span>
-                                      <div class="filter-content collapse" id="filter-content05">
-                                        <div class="filter-wp">
-                                          <ul class="date-lt date-month-lt2">
-                                            <li class="date-it is-selected">
-                                              <a href="" class="date-lk">
-                                                <time datetime="28/07/2016" title="2015-07">
-                                                  <span class="date-info">JUL</span><br>
-                                                  <strong class="date-main-info">28</strong>
-                                                </time>
-                                              </a>
-                                            </li>
-                                            <li class="date-it is-selected">
-                                              <a href="" class="date-lk">
-                                                <time datetime="28/07/2016" title="2015-07">
-                                                  <span class="date-info">JUL</span><br>
-                                                  <strong class="date-main-info">28</strong>
-                                                </time>
-                                              </a>
-                                            </li>
-                                            <li class="date-it is-selected">
-                                              <a href="" class="date-lk">
-                                                <time datetime="28/07/2016" title="2015-07">
-                                                  <span class="date-info">JUL</span><br>
-                                                  <strong class="date-main-info">28</strong>
-                                                </time>
-                                              </a>
-                                            </li>
-                                            <li class="date-it is-selected">
-                                              <a href="" class="date-lk">
-                                                <time datetime="28/07/2016" title="2015-07">
-                                                  <span class="date-info">JUL</span><br>
-                                                  <strong class="date-main-info">28</strong>
-                                                </time>
-                                              </a>
-                                            </li>
-                                            <li class="date-it is-selected">
-                                              <a href="" class="date-lk">
-                                                <time datetime="28/07/2016" title="2015-07">
-                                                  <span class="date-info">JUL</span><br>
-                                                  <strong class="date-main-info">28</strong>
-                                                </time>
-                                              </a>
-                                            </li>
-                                            <li class="date-it is-selected">
-                                              <a href="" class="date-lk">
-                                                <time datetime="28/07/2016" title="2015-07">
-                                                  <span class="date-info">JUL</span><br>
-                                                  <strong class="date-main-info">28</strong>
-                                                </time>
-                                              </a>
-                                            </li>
-                                            <li class="date-it is-selected">
-                                              <a href="" class="date-lk">
-                                                <time datetime="28/07/2016" title="2015-07">
-                                                  <span class="date-info">JUL</span><br>
-                                                  <strong class="date-main-info">28</strong>
-                                                </time>
-                                              </a>
-                                            </li>
-                                            <li class="date-it is-selected">
-                                              <a href="" class="date-lk">
-                                                <time datetime="28/07/2016" title="2015-07">
-                                                  <span class="date-info">JUL</span><br>
-                                                  <strong class="date-main-info">28</strong>
-                                                </time>
-                                              </a>
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row hd-mm-button">
-                                  <div class="col-xs-12 col-md-2 offset-md-10">
-                                    <button type="submit" class="btn btn-primary btn-block btn-filter">Filtrar</button>
-                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -398,7 +414,7 @@ A lightweight, flexible Header that can be used on your site.
                                     <a class="hd-mm-cat-link" href="#">Ir para Home Teatro</a>
                                   </div>
                                   <div class="col-xs-4 text-xs-right">
-                                    <a href="#">
+                                    <a href="#" data-close-collapse>
                                       <svg class="svg-icon ic-ingresso" width="44" height="44">
                                         <use xlink:href="#icon-arrow-top-1" />
                                       </svg>
@@ -406,7 +422,7 @@ A lightweight, flexible Header that can be used on your site.
                                   </div>
                                 </div>
                                 <div class="row hd-mm-filters">
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content26">
                                         <span class="filter-label">Gênero</span>
@@ -431,7 +447,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content27">
                                         <span class="filter-label">Filmes</span>
@@ -456,7 +472,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content28">
                                         <span class="filter-label">Bairro</span>
@@ -481,7 +497,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content29">
                                         <span class="filter-label">Cinemas</span>
@@ -506,7 +522,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content30">
                                         <span class="filter-label">Data</span>
@@ -603,7 +619,7 @@ A lightweight, flexible Header that can be used on your site.
                                     <a class="hd-mm-cat-link" href="#">Ir para Home Show</a>
                                   </div>
                                   <div class="col-xs-4 text-xs-right">
-                                    <a href="#">
+                                    <a href="#" data-close-collapse>
                                       <svg class="svg-icon ic-ingresso" width="44" height="44">
                                         <use xlink:href="#icon-arrow-top-1" />
                                       </svg>
@@ -611,7 +627,7 @@ A lightweight, flexible Header that can be used on your site.
                                   </div>
                                 </div>
                                 <div class="row hd-mm-filters">
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content06">
                                         <span class="filter-label">Gênero</span>
@@ -636,7 +652,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content07">
                                         <span class="filter-label">Filmes</span>
@@ -661,7 +677,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content08">
                                         <span class="filter-label">Bairro</span>
@@ -686,7 +702,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content09">
                                         <span class="filter-label">Cinemas</span>
@@ -711,7 +727,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content10">
                                         <span class="filter-label">Data</span>
@@ -808,7 +824,7 @@ A lightweight, flexible Header that can be used on your site.
                                     <a class="hd-mm-cat-link" href="#">Ir para Home Evento</a>
                                   </div>
                                   <div class="col-xs-4 text-xs-right">
-                                    <a href="#">
+                                    <a href="#" data-close-collapse>
                                       <svg class="svg-icon ic-ingresso" width="44" height="44">
                                         <use xlink:href="#icon-arrow-top-1" />
                                       </svg>
@@ -816,7 +832,7 @@ A lightweight, flexible Header that can be used on your site.
                                   </div>
                                 </div>
                                 <div class="row hd-mm-filters">
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content11">
                                         <span class="filter-label">Gênero</span>
@@ -841,7 +857,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content12">
                                         <span class="filter-label">Filmes</span>
@@ -866,7 +882,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content13">
                                         <span class="filter-label">Bairro</span>
@@ -891,7 +907,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content14">
                                         <span class="filter-label">Cinemas</span>
@@ -916,7 +932,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content15">
                                         <span class="filter-label">Data</span>
@@ -1013,7 +1029,7 @@ A lightweight, flexible Header that can be used on your site.
                                     <a class="hd-mm-cat-link" href="#">Ir para Home Circo</a>
                                   </div>
                                   <div class="col-xs-4 text-xs-right">
-                                    <a href="#">
+                                    <a href="#" data-close-collapse>
                                       <svg class="svg-icon ic-ingresso" width="44" height="44">
                                         <use xlink:href="#icon-arrow-top-1" />
                                       </svg>
@@ -1021,7 +1037,7 @@ A lightweight, flexible Header that can be used on your site.
                                   </div>
                                 </div>
                                 <div class="row hd-mm-filters">
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content16">
                                         <span class="filter-label">Gênero</span>
@@ -1046,7 +1062,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content17">
                                         <span class="filter-label">Filmes</span>
@@ -1071,7 +1087,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content18">
                                         <span class="filter-label">Bairro</span>
@@ -1096,7 +1112,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content19">
                                         <span class="filter-label">Cinemas</span>
@@ -1121,7 +1137,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content20">
                                         <span class="filter-label">Data</span>
@@ -1218,7 +1234,7 @@ A lightweight, flexible Header that can be used on your site.
                                     <a class="hd-mm-cat-link" href="#">Ir para Home Promoção</a>
                                   </div>
                                   <div class="col-xs-4 text-xs-right">
-                                    <a href="#">
+                                    <a href="#" data-close-collapse>
                                       <svg class="svg-icon ic-ingresso" width="44" height="44">
                                         <use xlink:href="#icon-arrow-top-1" />
                                       </svg>
@@ -1226,7 +1242,7 @@ A lightweight, flexible Header that can be used on your site.
                                   </div>
                                 </div>
                                 <div class="row hd-mm-filters">
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content21">
                                         <span class="filter-label">Gênero</span>
@@ -1251,7 +1267,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content22">
                                         <span class="filter-label">Filmes</span>
@@ -1276,7 +1292,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content23">
                                         <span class="filter-label">Bairro</span>
@@ -1301,7 +1317,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content24">
                                         <span class="filter-label">Cinemas</span>
@@ -1326,7 +1342,7 @@ A lightweight, flexible Header that can be used on your site.
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-xs-12 col-md">
+                                  <div class="col-xs-12 col-lg">
                                     <div role="listbox" class="filter">
                                       <span class="filter-head collapsed js-md" data-toggle="collapse" href="#filter-content25">
                                         <span class="filter-label">Data</span>
