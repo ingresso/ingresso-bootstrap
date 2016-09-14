@@ -7407,7 +7407,7 @@ a.ic-rounded .svg-icon {
 }
 
 .header {
-  margin-bottom: 10px;
+  margin: 10px auto;
   position: relative;
 }
 
@@ -7441,8 +7441,8 @@ a.ic-rounded .svg-icon {
   margin-bottom: 0;
 }
 
-.header .hd-search-cont .hd-search-input {
-  margin-bottom: 20px;
+.header .hd-search-cont .hd-search-suggestions {
+  margin-top: 20px;
 }
 
 .header .hd-search-cont .hd-search-suggestions li {
@@ -7755,6 +7755,7 @@ a.ic-rounded .svg-icon {
 .header .hd-cont .hd-cont-wp {
   padding: 25px;
   height: calc(100vh - 60px);
+  overflow-y: auto;
 }
 
 .header .ic-rounded.ic-rd-size2 {
@@ -7926,7 +7927,6 @@ a.ic-rounded .svg-icon {
   .header .hd-local {
     background-color: transparent;
     padding: 0;
-    position: relative;
   }
   .header .hd-local .hd-local-link {
     background-color: #0db6b5;
@@ -7990,6 +7990,12 @@ a.ic-rounded .svg-icon {
   .header .hd-search-link {
     display: none;
   }
+  .header .hd-local {
+    position: relative;
+  }
+  .header .hd-search.is-opened .hd-search-suggestions {
+    display: block;
+  }
   .header .hd-search-cont {
     width: 280px;
     display: inline-block;
@@ -7999,17 +8005,19 @@ a.ic-rounded .svg-icon {
     padding: 0;
     max-width: initial;
     margin: 0;
+    position: relative;
+    overflow-y: visible;
   }
   .header .hd-search-cont .hd-search-suggestions {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 39px;
     left: 0;
     background: #fff;
     border: 1px solid #0db6b5;
     z-index: 1;
     padding: 10px;
-    margin: 0 10px;
+    margin: 0;
   }
   .header .hd-search-cont .hd-search-suggestions ul {
     margin: -10px;
