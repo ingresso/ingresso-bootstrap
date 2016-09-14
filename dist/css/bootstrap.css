@@ -7415,6 +7415,10 @@ a.ic-rounded .svg-icon {
   position: inherit;
 }
 
+.header .week-highlights {
+  display: none;
+}
+
 .header .logo {
   float: left;
   margin-bottom: 0;
@@ -7733,6 +7737,7 @@ a.ic-rounded .svg-icon {
 
 .header .hd-local .hd-local-cont .hd-cont-wp {
   height: calc(100vh - 106px);
+  display: block;
 }
 
 .header .hd-local-link {
@@ -7782,6 +7787,16 @@ a.ic-rounded .svg-icon {
     overflow: visible;
     margin-bottom: 15px;
   }
+  .header .week-highlights {
+    display: block;
+    border-left: 1px solid #c9cbca;
+    margin-left: 2rem;
+    padding-left: 2rem;
+  }
+  .header .week-highlights .event-name {
+    color: #fff;
+    font-weight: normal;
+  }
   .header .hd-user-menu {
     margin: 15px 0 0 5px;
   }
@@ -7821,6 +7836,9 @@ a.ic-rounded .svg-icon {
   }
   .header .hd-search .hd-cont.collapsing, .header .hd-search .hd-cont.collapse.in {
     top: 70px;
+  }
+  .header .hd-search .hd-cont .hd-cont-wp {
+    overflow: visible;
   }
   .header .hd-search .ic-rounded.ic-rd-size2 .svg-icon {
     margin-top: 5px;
@@ -7949,16 +7967,23 @@ a.ic-rounded .svg-icon {
   .header .hd-local .hd-local-link.collapsed .svg-icon {
     fill: #0db6b5;
   }
-  .header .hd-local .hd-cont.collapsing {
-    top: 50px;
+  .header .hd-local .hd-cont.collapsing, .header .hd-local .hd-cont.collapse.in {
+    top: inherit;
     position: absolute;
-  }
-  .header .hd-local .hd-cont.collapse.in {
-    top: 50px;
-    position: absolute;
+    border-top: 3px solid #0db6b5;
+    margin-top: -2px;
   }
   .header .hd-local .hd-local-cont .hd-cont-wp {
     height: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .hd-local .hd-local-options {
+    border-left: 1px solid #c9cbca;
+    margin-left: 2rem;
+    padding-left: 2rem;
   }
   .header .hd-um-link {
     margin-right: 10px;
@@ -7987,11 +8012,22 @@ a.ic-rounded .svg-icon {
 }
 
 @media (min-width: 992px) {
+  .header .week-highlights {
+    display: none;
+  }
   .header .hd-search-link {
     display: none;
   }
   .header .hd-local {
     position: relative;
+  }
+  .header .hd-local .hd-cont-wp {
+    padding: 15px;
+  }
+  .header .hd-local .hd-local-options {
+    border-left: 0;
+    margin-left: 0;
+    padding-left: 1rem;
   }
   .header .hd-search.is-opened .hd-search-suggestions {
     display: block;
@@ -8497,6 +8533,7 @@ a.ic-rounded .svg-icon {
   font-size: 0.875rem;
   background-color: #f2f2f2;
   border-left: 4px solid #0db6b5;
+  overflow: hidden;
 }
 
 .nav-stacked .nav-link .svg-icon {
