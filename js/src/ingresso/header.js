@@ -82,6 +82,22 @@
     $('.filter',$header).on('filter.added',toggleFilter);
     // end -filter
 
+    // fixed header
+    $window.scroll(function(){
+
+      if($window.scrollTop() > $header.outerHeight()){
+        $header.addClass('is-reduced is-reducing');
+      }else{
+        $header
+        .removeClass('is-reduced')
+        .addClass('is-reducing');
+      }
+    })
+    $header.on('transitionend',function(){
+      $header.removeClass('is-reducing');
+    });
+    // end - fixed header
+
 
   },2000);
 

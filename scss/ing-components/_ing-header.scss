@@ -39,9 +39,8 @@ $font_0: Klavika-Regular;
 }
 
 @charset "UTF-8";
-.header {
-  margin: 10px auto;
-  position: relative;
+#header {
+
   div[class*="col-"] {
     position: inherit;
   }
@@ -224,12 +223,12 @@ $font_0: Klavika-Regular;
       }
       &-has-val{
         .filter-wp{
-          height:179px;
+          height:194px;
         }
         .filter-it{
           font-size: 90%;
           &.is-selected{
-            font-size:1rem;
+            display: none;
           }
           a{
             color:$link-color;
@@ -372,8 +371,7 @@ $font_0: Klavika-Regular;
   #header {
     overflow: visible;
     margin-bottom: 15px;
-  }
-  .header {
+
     .week-highlights{
       display: block;
       border-left: 1px solid #c9cbca;
@@ -598,7 +596,15 @@ $font_0: Klavika-Regular;
   }
 }
 @media(min-width: 992px) {
-  .header {
+  #header {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    margin:0;
+    z-index: 9999; /* TODO - bootstrap works with z-index variables. Check it */
+    transition: height .25s;
+    height:122px;
     .week-highlights{
       display: none;
     }
@@ -677,5 +683,20 @@ $font_0: Klavika-Regular;
     .filter {
       .filter-head{cursor: default;}
     }
+    &.is-reduced{
+      box-shadow:0px 1px 4px #ccc;
+      height:70px;
+      .hd-bottom{
+        visibility: hidden;
+      }
+    }
+    // states
+    &.is-reducing{
+      overflow: hidden;
+      .hd-bottom{
+        visibility: visible;
+      }
+    }
   }
+
 }
