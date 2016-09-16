@@ -149,6 +149,7 @@ $font_0: Klavika-Regular;
           border-color: $color_tapestry_approx;
         }
       }
+      .filter-val{color:$color_tapestry_approx;}
     }
     .hd-mm-show {
       border-color: $color_celery_approx;
@@ -159,6 +160,7 @@ $font_0: Klavika-Regular;
           border-color: $color_celery_approx;
         }
       }
+      .filter-val{color:$color_celery_approx;}
     }
     .hd-mm-event {
       border-color: $color_victoria_approx;
@@ -169,6 +171,7 @@ $font_0: Klavika-Regular;
           border-color: $color_victoria_approx;
         }
       }
+      .filter-val{color:$color_victoria_approx;}
     }
     .hd-mm-circus {
       border-color: $color_sunflower_approx;
@@ -179,6 +182,7 @@ $font_0: Klavika-Regular;
           border-color: $color_sunflower_approx;
         }
       }
+      .filter-val{color:$color_sunflower_approx;}
     }
     .hd-mm-promo {
       border-color: $color_well_read_approx;
@@ -189,6 +193,7 @@ $font_0: Klavika-Regular;
           border-color: $color_well_read_approx;
         }
       }
+      .filter-val{color:$color_well_read_approx;}
     }
     .hd-mm-options {
       margin-bottom: 15px;
@@ -201,9 +206,6 @@ $font_0: Klavika-Regular;
       }
       .filter-content {
         background-color: $color_chicago_approx;
-      }
-      &-val{
-        color:$color_red_damask_approx;
       }
       .filter-wp {
         height: 200px;
@@ -223,7 +225,7 @@ $font_0: Klavika-Regular;
       }
       &-has-val{
         .filter-wp{
-          height:194px;
+          height:189px;
         }
         .filter-it{
           font-size: 90%;
@@ -682,6 +684,12 @@ $font_0: Klavika-Regular;
     }
     .filter {
       .filter-head{cursor: default;}
+      .filter-action{display: none;}
+      &-has-val{
+        .filter-action{
+          display: block;
+        }
+      }
     }
     &.is-reduced{
       box-shadow:0px 1px 4px #ccc;

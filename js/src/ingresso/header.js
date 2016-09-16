@@ -85,9 +85,9 @@
     // fixed header
     $window.scroll(function(){
 
-      if($window.scrollTop() > $header.outerHeight()){
+      if($window.scrollTop() > $header.outerHeight() && !$('.hd-cont.collapse.in',$header).length){
         $header.addClass('is-reduced is-reducing');
-      }else{
+      }else if($header.hasClass('is-reduced')){
         $header
         .removeClass('is-reduced')
         .addClass('is-reducing');
