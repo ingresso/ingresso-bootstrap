@@ -38,7 +38,7 @@
     font-size: 0.875rem;
     background-color: #f2f2f2;
     border-left: 4px solid #0db6b5;
-    overflow: hidden;
+    min-height: 50px;
     .svg-icon{
       fill:$brand-primary;
     }

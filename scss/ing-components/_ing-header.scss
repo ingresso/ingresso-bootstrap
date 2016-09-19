@@ -1,16 +1,7 @@
 //colors
 $wild_sand: #f4f4f4;
-$color_red_damask_approx: #df7446;
-$color_tapestry_approx: #c45f83;
-$color_celery_approx: #acbf52;
-$color_victoria_approx: #524785;
-$color_sunflower_approx: #ead11c;
-$color_well_read_approx: #ba3a3a;
-$color_java_approx: #0db6b5;
-$white: #fff;
 $color_masala_approx: #3a3c3b;
 $color_fuscous_gray_approx: #525453;
-$black: #000;
 $color_chicago_approx: #5d5d5d;
 $color_java_80_approx: rgba(13, 182, 181, 0.8);
 
@@ -35,12 +26,14 @@ $font_0: Klavika-Regular;
   position: absolute;
   left: 0;
   right: 0;
-  top: 60px;
+  top: 70px;
+  overflow: hidden;
 }
 
 @charset "UTF-8";
 #header {
-
+  margin-bottom: 15px;
+  padding-top:10px;
   div[class*="col-"] {
     position: inherit;
   }
@@ -88,7 +81,7 @@ $font_0: Klavika-Regular;
   }
   .hd-main-menu {
     background-color: $wild_sand;
-    border-top: 4px solid $white;
+    border-top: 4px solid $color-white;
     position: relative;
     .hd-cont {
       &.collapsing {
@@ -97,6 +90,9 @@ $font_0: Klavika-Regular;
       &.collapse.in {
         top: 48px;
       }
+    }
+    .hd-mm-cont .hd-cont-wp{
+      height: calc(100vh - 168px);
     }
     .hd-mm-lt {
       white-space: nowrap;
@@ -128,72 +124,131 @@ $font_0: Klavika-Regular;
       padding: 12px;
       font-family: $font_0;
       font-size: 1rem;
-      color: $white;
+      color: $color-white;
       &.collapsed {
         position: inherit;
         padding: 10px;
         display: block;
         width: 85px;
-        border-bottom: 2px solid $black;
+        border-bottom: 2px solid $close-color;
         font-family: $font_0;
         font-size: 1rem;
-        color: $color_java_approx;
+        color: $brand-primary;
+      }
+    }
+    .hd-mm-cinema {
+      border-color: $brand-cinema;
+      .hd-mm-lnk {
+        background-color: $brand-cinema;
+        &.collapsed {
+          background-color: transparent;
+          border-color: $brand-cinema;
+        }
+      }
+      .filter{
+        .filter-val {color: $brand-cinema-lighter;}
+        /* &.filter-has-val{
+          .date-it a {color: $brand-cinema;}
+          .date-info{
+            background-color: $brand-cinema;
+          }
+        } */
       }
     }
     .hd-mm-theater {
-      border-color: $color_tapestry_approx;
+      border-color: $brand-theater;
       .hd-mm-lnk {
-        background-color: $color_tapestry_approx;
+        background-color: $brand-theater;
         &.collapsed {
           background-color: transparent;
-          border-color: $color_tapestry_approx;
+          border-color: $brand-theater;
         }
       }
-      .filter-val{color:$color_tapestry_approx;}
+      .filter{
+        .filter-val {color: $brand-theater-lighter;}
+        /* &.filter-has-val{
+          .date-it a {color: $brand-theater;}
+          .date-info{
+            background-color: $brand-theater;
+          }
+        } */
+      }
     }
     .hd-mm-show {
-      border-color: $color_celery_approx;
+      border-color: $brand-show;
       .hd-mm-lnk {
-        background-color: $color_celery_approx;
+        background-color: $brand-show;
         &.collapsed {
           background-color: transparent;
-          border-color: $color_celery_approx;
+          border-color: $brand-show;
         }
       }
-      .filter-val{color:$color_celery_approx;}
+      .filter{
+        .filter-val {color: $brand-show-lighter;}
+        /* &.filter-has-val{
+          .date-it a {color: $brand-show;}
+          .date-info{
+            background-color: $brand-show;
+          }
+        } */
+      }
     }
     .hd-mm-event {
-      border-color: $color_victoria_approx;
+      border-color: $brand-events;
       .hd-mm-lnk {
-        background-color: $color_victoria_approx;
+        background-color: $brand-events;
         &.collapsed {
           background-color: transparent;
-          border-color: $color_victoria_approx;
+          border-color: $brand-events;
         }
       }
-      .filter-val{color:$color_victoria_approx;}
+      .filter{
+        .filter-val {color: $brand-events-lighter;}
+        /* &.filter-has-val{
+          .date-it a {color: $brand-events;}
+          .date-info{
+            background-color: $brand-events;
+          }
+        } */
+      }
     }
     .hd-mm-circus {
-      border-color: $color_sunflower_approx;
+      border-color: $brand-circus;
       .hd-mm-lnk {
-        background-color: $color_sunflower_approx;
+        background-color: $brand-circus;
         &.collapsed {
           background-color: transparent;
-          border-color: $color_sunflower_approx;
+          border-color: $brand-circus;
         }
       }
-      .filter-val{color:$color_sunflower_approx;}
+      .filter{
+        .filter-val {color: $brand-circus-lighter;}
+        /* &.filter-has-val{
+          .date-it a {color: $brand-circus;}
+          .date-info{
+            background-color: $brand-circus;
+          }
+        } */
+      }
     }
     .hd-mm-promo {
-      border-color: $color_well_read_approx;
+      border-color: $brand-promo;
       .hd-mm-lnk {
-        background-color: $color_well_read_approx;
+        background-color: $brand-promo;
         &.collapsed {
           background-color: transparent;
-          border-color: $color_well_read_approx;
+          border-color: $brand-promo;
         }
       }
-      .filter-val{color:$color_well_read_approx;}
+      .filter{
+        .filter-val {color: $brand-promo-lighter;}
+        /* &.filter-has-val{
+          .date-it a {color: $brand-promo;}
+          .date-info{
+            background-color: $brand-promo;
+          }
+        } */
+      }
     }
     .hd-mm-options {
       margin-bottom: 15px;
@@ -202,7 +257,7 @@ $font_0: Klavika-Regular;
       .filter-head {
         background-color: $color_chicago_approx;
         border-color:$color_fuscous_gray_approx;
-        color: $white;
+        color: $color-white;
       }
       .filter-content {
         background-color: $color_chicago_approx;
@@ -220,6 +275,12 @@ $font_0: Klavika-Regular;
           background: $color_java_80_approx;
           &:window-inactive {
             background: $color_java_80_approx;
+          }
+        }
+        a{
+          color:#10e0df;
+          &:hover{
+            color:#0db0b0;
           }
         }
       }
@@ -246,25 +307,32 @@ $font_0: Klavika-Regular;
     .hd-mm-cat-link {
       margin: 10px 0 15px;
       display: block;
+      color:#10e0df;
+      &:hover{
+        color:#0db0b0;
+      }
     }
     .date-month-lt2 {
       padding: 10px;
       .date-it {
         margin: 0 5px 10px;
       }
+      .date-lk{
+        border:0;
+      }
     }
     .hd-mm-cinema .hd-mm-lnk {
-      background-color: $color_red_damask_approx;
+      background-color: $brand-cinema;
       &.collapsed {
         background-color: transparent;
-        border-color: $color_red_damask_approx;
+        border-color: $brand-cinema;
       }
     }
   }
   .hd-umenu-options {
     .tab-accordion {
       border-bottom: 0;
-      color: $white;
+      color: $color-white;
       font-size: 0.938rem;
     }
     .tab-content {
@@ -272,11 +340,17 @@ $font_0: Klavika-Regular;
       li {
         margin-bottom: 15px;
       }
+      a{
+        color:#10e0df;
+        &:hover{
+          color:#0db0b0;
+        }
+      }
     }
   }
   .umenu-tips {
     text-align: center;
-    color: $white;
+    color: $color-white;
     .svg-icon {
       margin-bottom: 10px;
     }
@@ -285,21 +359,18 @@ $font_0: Klavika-Regular;
     }
   }
   .hd-local {
-    background-color: $color_java_approx;
+    background-color: $brand-primary;
     text-align: center;
     padding: 10px;
     .hd-local-link {
-      color: $white;
+      color: $color-white;
       &.collapsed .hd-local-ic-2 {
         transform: rotate(180deg) scaleX(-1);
       }
     }
     .hd-cont {
-      &.collapsing {
-        top: 106px;
-      }
-      &.collapse.in {
-        top: 106px;
+      &.collapsing, &.collapse.in {
+        top: 116px;
       }
     }
     form {
@@ -308,10 +379,14 @@ $font_0: Klavika-Regular;
     .hd-local-update {
       display: block;
       margin-bottom: 25px;
+      color:#10e0df;
+      &:hover{
+        color:#0db0b0;
+      }
     }
     .hd-local-places {
       strong {
-        color: $white;
+        color: $color-white;
         font-size: 0.938rem;
         font-weight: normal;
         margin-bottom: 20px;
@@ -323,9 +398,15 @@ $font_0: Klavika-Regular;
       li {
         margin-bottom: 10px;
       }
+      a{
+        color:#10e0df;
+        &:hover{
+          color:#0db0b0;
+        }
+      }
     }
     .hd-local-cont .hd-cont-wp {
-      height: calc(100vh - 106px);
+      height: calc(100vh - 116px);
       display: block;
     }
   }
@@ -333,7 +414,7 @@ $font_0: Klavika-Regular;
     font-family: $font_0;
     font-size: 1rem;
     .svg-icon {
-      fill: $white;
+      fill: $color-white;
     }
   }
   .svg-icon {
@@ -343,7 +424,7 @@ $font_0: Klavika-Regular;
     text-align: left;
     .hd-cont-wp {
       padding: 25px;
-      height: calc(100vh - 60px);
+      height: calc(100vh - 70px);
       overflow-y: auto;
     }
     &.collapsing {
@@ -372,7 +453,6 @@ $font_0: Klavika-Regular;
 @media(min-width: 768px) {
   #header {
     overflow: visible;
-    margin-bottom: 15px;
 
     .week-highlights{
       display: block;
@@ -380,7 +460,7 @@ $font_0: Klavika-Regular;
       margin-left: 2rem;
       padding-left: 2rem;
       .event-name{
-        color: $white;
+        color: $color-white;
         font-weight: normal;
       }
     }
@@ -411,6 +491,11 @@ $font_0: Klavika-Regular;
         padding: 35px 25px;
         .tab-content {
           padding: 0;
+        }
+      }
+      .hd-um-link{
+        .svg-icon{
+          margin-bottom: 2px;
         }
       }
     }
@@ -488,6 +573,9 @@ $font_0: Klavika-Regular;
           top: inherit;
           margin-top: -2px;
         }
+        .hd-cont-wp {
+          height: auto;
+        }
       }
       .hd-mm-lt {
         white-space: initial;
@@ -511,45 +599,45 @@ $font_0: Klavika-Regular;
         }
       }
       .hd-mm-cinema .hd-mm-cont {
-        border-top: 3px solid $color_red_damask_approx;
+        border-top: 3px solid $brand-cinema;
       }
       .hd-mm-theater .hd-mm-cont {
-        border-top: 3px solid $color_tapestry_approx;
+        border-top: 3px solid $brand-theater;
       }
       .hd-mm-show .hd-mm-cont {
-        border-top: 3px solid $color_celery_approx;
+        border-top: 3px solid $brand-show;
       }
       .hd-mm-event .hd-mm-cont {
-        border-top: 3px solid $color_victoria_approx;
+        border-top: 3px solid $brand-events;
       }
       .hd-mm-circus .hd-mm-cont {
-        border-top: 3px solid $color_sunflower_approx;
+        border-top: 3px solid $brand-circus;
       }
       .hd-mm-promo .hd-mm-cont {
-        border-top: 3px solid $color_well_read_approx;
+        border-top: 3px solid $brand-promo;
       }
     }
     .hd-local {
       background-color: transparent;
       padding: 0;
       .hd-local-link {
-        background-color: $color_java_approx;
-        color: $white;
+        background-color: $brand-primary;
+        color: $color-white;
         display: block;
         padding: 10px;
-        border-bottom: 2px solid $color_java_approx;
+        border-bottom: 2px solid $brand-primary;
         min-height: 50px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         .svg-icon {
-          fill: $white;
+          fill: $color-white;
         }
         &.collapsed {
           background-color: transparent;
-          color: $color_java_approx;
+          color: $brand-primary;
           .svg-icon {
-            fill: $color_java_approx;
+            fill: $brand-primary;
           }
         }
       }
@@ -625,6 +713,7 @@ $font_0: Klavika-Regular;
       }
     }
     .hd-search{
+      margin-top:10px;
       &.is-opened{
         .hd-search-suggestions {
           display: block;
@@ -647,8 +736,8 @@ $font_0: Klavika-Regular;
         position: absolute;
         top: 39px;
         left: 0;
-        background: $white;
-        border: 1px solid $color_java_approx;
+        background: $color-white;
+        border: 1px solid $brand-primary;
         z-index: 1;
         padding: 10px;
         margin: 0 ;
@@ -665,8 +754,8 @@ $font_0: Klavika-Regular;
           padding: 5px 10px;
           display: block;
           &:hover {
-            background-color: $color_java_approx;
-            color: $white;
+            background-color: $brand-primary;
+            color: $color-white;
             text-decoration: none;
           }
         }
