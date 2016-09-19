@@ -1,8 +1,5 @@
 ;(function(){
 
-  // settimeout because of w3data.js include system
-  setTimeout(function(){
-
     var $header = $('#header');
     var $headerSearchInput = $('#search-ipt',$header);
     var $headerSearch = $headerSearchInput.closest('.hd-search');
@@ -99,10 +96,5 @@
       $header.removeClass('is-reducing');
     });
     // end - fixed header
-
-
-  },2000);
-
-
 
 })();

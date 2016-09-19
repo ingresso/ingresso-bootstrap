@@ -250,6 +250,13 @@ GRUPO 3 DE ICONES
       <span class="d-block">icon-payment-visacheckout</span>
     </div>
 
+    <div class="col-xs-2">
+      <svg class="svg-icon" width="38" height="38">
+        <use xlink:href="#icon-payment-visalogo" />
+      </svg>
+      <span class="d-block">icon-payment-visalogo</span>
+    </div>
+
   </div>
 </div>
 
