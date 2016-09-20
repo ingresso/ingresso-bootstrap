@@ -7454,6 +7454,10 @@ a.ic-rounded .svg-icon {
   margin-bottom: 10px;
 }
 
+#header .hd-search-cont .hd-search-suggestions a {
+  color: #10e0df;
+}
+
 #header .umenu-text {
   display: none;
 }
@@ -8220,6 +8224,7 @@ a.ic-rounded .svg-icon {
   #header .hd-search-cont .hd-search-suggestions a {
     padding: 5px 10px;
     display: block;
+    color: #0db6b5;
   }
   #header .hd-search-cont .hd-search-suggestions a:hover {
     background-color: #0db6b5;
@@ -10142,8 +10147,8 @@ a.ic-rounded .svg-icon {
 }
 
 .date-month-lt2 .date-lk {
-  width: 33px;
-  height: 33px;
+  width: 43px;
+  height: 43px;
   border-top: 0;
   padding: 0;
   min-height: initial;

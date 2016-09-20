@@ -73,7 +73,9 @@ $font_0: Klavika-Regular;
       li{
         margin-bottom: 10px;
       }
-
+      a{
+        color: $brand-primary-lighter;
+      }
     }
   }
   .umenu-text {
@@ -753,6 +755,7 @@ $font_0: Klavika-Regular;
         a {
           padding: 5px 10px;
           display: block;
+          color: $brand-primary;
           &:hover {
             background-color: $brand-primary;
             color: $color-white;
