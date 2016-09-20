@@ -12,9 +12,9 @@
     };
 
     function toggleCloseButton(e){
-      //if(!e.target.closest('#'+$(this).attr('id')) || $('[href="#'+$(this).attr('id')+'"]').length){
+      if($(e.target).is($('#'+$(this).attr('id')))){
         $('[href="#'+$(this).attr('id')+'"]').not('.hd-local-link').find('.svg-icon').toggleClass('hidden-xs-up');
-      //}
+      }
     }
 
     function toggleFilter(){

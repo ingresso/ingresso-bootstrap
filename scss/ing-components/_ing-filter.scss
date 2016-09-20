@@ -28,12 +28,13 @@
 
   &-has-val{
     .filter-head{
-      pointer-events: none;
-      cursor: default;
       padding-top:5px;
       padding-bottom:5px;
 
       .filter-action{
+        &:hover{
+          color:$link-hover-color;
+        }
         pointer-events:auto;
         &:before, &:after{
           transform: rotate(45deg);
@@ -78,12 +79,13 @@
     bottom:0;
     width: 40px;
     cursor: pointer;
+    color:$link-color;
     pointer-events:none;
     &:before, &:after{
       content: '';
       position: absolute;
       top:50%;
-      background: $brand-primary;
+      background: currentColor;
       transition: transform 0.25s ease-in-out;
       right: 0;
       margin: -8px 0 0;

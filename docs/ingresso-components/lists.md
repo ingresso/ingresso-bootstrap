@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Lists 
+title: Lists
 group: ingresso-components
 ---
 
@@ -277,7 +277,7 @@ date-month list 2
   <li class="date-it is-selected">
     <a href="" class="date-lk">
       <time datetime="28/07/2016" title="2015-07">
-        <span class="date-info">JUL</span><br>
+        <span class="date-info">JUL</span>
         <strong class="date-main-info">28</strong>
       </time>
     </a>
@@ -285,7 +285,7 @@ date-month list 2
   <li class="date-it is-selected">
     <a href="" class="date-lk">
       <time datetime="28/07/2016" title="2015-07">
-        <span class="date-info">JUL</span><br>
+        <span class="date-info">JUL</span>
         <strong class="date-main-info">28</strong>
       </time>
     </a>
@@ -293,7 +293,7 @@ date-month list 2
   <li class="date-it is-selected">
     <a href="" class="date-lk">
       <time datetime="28/07/2016" title="2015-07">
-        <span class="date-info">JUL</span><br>
+        <span class="date-info">JUL</span>
         <strong class="date-main-info">28</strong>
       </time>
     </a>
@@ -301,7 +301,7 @@ date-month list 2
   <li class="date-it is-selected">
     <a href="" class="date-lk">
       <time datetime="28/07/2016" title="2015-07">
-        <span class="date-info">JUL</span><br>
+        <span class="date-info">JUL</span>
         <strong class="date-main-info">28</strong>
       </time>
     </a>
@@ -309,7 +309,7 @@ date-month list 2
   <li class="date-it is-selected">
     <a href="" class="date-lk">
       <time datetime="28/07/2016" title="2015-07">
-        <span class="date-info">JUL</span><br>
+        <span class="date-info">JUL</span>
         <strong class="date-main-info">28</strong>
       </time>
     </a>
@@ -317,7 +317,7 @@ date-month list 2
   <li class="date-it is-selected">
     <a href="" class="date-lk">
       <time datetime="28/07/2016" title="2015-07">
-        <span class="date-info">JUL</span><br>
+        <span class="date-info">JUL</span>
         <strong class="date-main-info">28</strong>
       </time>
     </a>
@@ -325,7 +325,7 @@ date-month list 2
   <li class="date-it is-selected">
     <a href="" class="date-lk">
       <time datetime="28/07/2016" title="2015-07">
-        <span class="date-info">JUL</span><br>
+        <span class="date-info">JUL</span>
         <strong class="date-main-info">28</strong>
       </time>
     </a>
@@ -333,7 +333,7 @@ date-month list 2
   <li class="date-it is-selected">
     <a href="" class="date-lk">
       <time datetime="28/07/2016" title="2015-07">
-        <span class="date-info">JUL</span><br>
+        <span class="date-info">JUL</span>
         <strong class="date-main-info">28</strong>
       </time>
     </a>
