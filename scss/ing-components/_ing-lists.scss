@@ -108,6 +108,7 @@
   margin-bottom: 10px;
 }
 .date-it {
+  font-size: 1rem;
   display: inline-block;
   position: relative;
   letter-spacing: normal;
@@ -159,13 +160,13 @@
 }
 
 .date-main-info {
-  font-size: 16px;
+  font-size: 1rem;
 }
 .date-month-lt .date-main-info {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .date-info {
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .date-month-lt2{
@@ -189,7 +190,6 @@
   }
   .date-main-info{
     font-weight: normal;
-    font-size: 0.813rem;
   }
 }
 

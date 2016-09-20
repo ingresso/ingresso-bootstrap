@@ -121,12 +121,16 @@ $font_0: Klavika-Regular;
       position: absolute;
       top: 0;
       left: 0;
+      right:0;
       width: 100%;
       display: block;
       padding: 12px;
       font-family: $font_0;
       font-size: 1rem;
       color: $color-white;
+      transition-duration:.25s;
+      transition-property:background-color, color, top, left, right;
+
       &.collapsed {
         position: inherit;
         padding: 10px;
@@ -256,15 +260,21 @@ $font_0: Klavika-Regular;
       margin-bottom: 15px;
     }
     .filter {
-      .filter-head {
+      &-head {
         background-color: $color_chicago_approx;
         border-color:$color_fuscous_gray_approx;
         color: $color-white;
       }
-      .filter-content {
+      &-action{
+        color:#10e0df;
+        &:hover{
+          color:#0db0b0;
+        }
+      }
+      &-content {
         background-color: $color_chicago_approx;
       }
-      .filter-wp {
+      &-wp {
         height: 200px;
         &::-webkit-scrollbar {
           width: 3px;
@@ -288,7 +298,7 @@ $font_0: Klavika-Regular;
       }
       &-has-val{
         .filter-wp{
-          height:189px;
+          height:194px;
         }
         .filter-it{
           font-size: 90%;
@@ -296,11 +306,9 @@ $font_0: Klavika-Regular;
             display: none;
           }
           a{
-            color:$link-color;
             text-decoration: none;
           }
         }
-
       }
     }
     .btn-filter {
