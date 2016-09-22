@@ -1,3 +1,43 @@
+.modal-dialog{
+  margin:0;
+  height:100%;
+  .modal-content{
+    min-height: 100%;
+  }
+}
+
+.modal-header {
+  .close{
+    margin-right: -15px;
+    margin-top: -10px;
+    width:44px;
+    height:44px;
+  }
+}
+
+.modal-title{clear:right;}
+
+// modal small
+.modal-sm {
+  &, .modal-footer{
+    text-align: center;
+  }
+  .modal-title{
+    font-weight: bold;
+  }
+
+  .modal-header{
+    padding-bottom:10px;
+  }
+  .modal-body{
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .modal-fotter{
+    padding-top:5px;
+  }
+}
+
 // Actual modal
 .modal-content {
   &:before{
@@ -26,5 +66,23 @@
   font-size: 1.5rem;
   &:hover{
     color:#0a8686;
+  }
+}
+
+// used usually on body
+.modal-icon{
+  display:block;
+  margin:3rem auto 0.5rem;
+  width:97px;
+  height:112px;
+}
+
+@include media-breakpoint-up(sm) {
+  .modal-dialog{
+    margin:10px auto;
+    height:auto;
+    .model-content{
+      min-height:none;
+    }
   }
 }
