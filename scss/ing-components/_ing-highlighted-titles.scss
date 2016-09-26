@@ -92,3 +92,20 @@
     vertical-align: middle;
   }
 }
+
+//
+// Title Bar for Panel and Checkout
+//
+
+.title-bar{
+    text-transform: uppercase;
+    padding: .725em 1em;
+    font-size: .875rem;
+    background-color: #0db6b5;
+    min-height: 50px;
+    color: #fff;
+    cursor: default;
+    .svg-icon{
+      fill: #fff;
+    }
+}

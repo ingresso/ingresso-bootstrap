@@ -7507,12 +7507,19 @@ a.ic-rounded .svg-icon {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   display: block;
   padding: 12px;
   font-family: Klavika-Regular;
   font-size: 1rem;
   color: #fff;
+  -webkit-transition-duration: .25s;
+       -o-transition-duration: .25s;
+          transition-duration: .25s;
+  -webkit-transition-property: background-color, color, top, left, right;
+  -o-transition-property: background-color, color, top, left, right;
+  transition-property: background-color, color, top, left, right;
 }
 
 #header .hd-main-menu .hd-mm-lnk.collapsed {
@@ -7686,47 +7693,55 @@ a.ic-rounded .svg-icon {
   margin-bottom: 15px;
 }
 
-#header .hd-main-menu .filter .filter-head {
+#header .hd-main-menu .filter-head {
   background-color: #5d5d5d;
   border-color: #525453;
   color: #fff;
 }
 
-#header .hd-main-menu .filter .filter-content {
-  background-color: #5d5d5d;
-}
-
-#header .hd-main-menu .filter .filter-wp {
-  height: 200px;
-}
-
-#header .hd-main-menu .filter .filter-wp::-webkit-scrollbar {
-  width: 3px;
-}
-
-#header .hd-main-menu .filter .filter-wp::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-
-#header .hd-main-menu .filter .filter-wp::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: rgba(13, 182, 181, 0.8);
-}
-
-#header .hd-main-menu .filter .filter-wp::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(13, 182, 181, 0.8);
-}
-
-#header .hd-main-menu .filter .filter-wp a {
+#header .hd-main-menu .filter-action {
   color: #10e0df;
 }
 
-#header .hd-main-menu .filter .filter-wp a:hover {
+#header .hd-main-menu .filter-action:hover {
+  color: #0db0b0;
+}
+
+#header .hd-main-menu .filter-content {
+  background-color: #5d5d5d;
+}
+
+#header .hd-main-menu .filter-wp {
+  height: 200px;
+}
+
+#header .hd-main-menu .filter-wp::-webkit-scrollbar {
+  width: 3px;
+}
+
+#header .hd-main-menu .filter-wp::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+#header .hd-main-menu .filter-wp::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(13, 182, 181, 0.8);
+}
+
+#header .hd-main-menu .filter-wp::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(13, 182, 181, 0.8);
+}
+
+#header .hd-main-menu .filter-wp a {
+  color: #10e0df;
+}
+
+#header .hd-main-menu .filter-wp a:hover {
   color: #0db0b0;
 }
 
 #header .hd-main-menu .filter-has-val .filter-wp {
-  height: 189px;
+  height: 194px;
 }
 
 #header .hd-main-menu .filter-has-val .filter-it {
@@ -7738,7 +7753,6 @@ a.ic-rounded .svg-icon {
 }
 
 #header .hd-main-menu .filter-has-val .filter-it a {
-  color: #0db6b5;
   text-decoration: none;
 }
 
@@ -8916,7 +8930,7 @@ a.ic-rounded .svg-icon {
   border-right: 1px solid #e0e0e0;
   background-color: #fff;
   left: 4px;
-  top: 50%;
+  top: 19px;
   margin-top: -11.5px;
   overflow: visible;
 }
@@ -9255,11 +9269,13 @@ a.ic-rounded .svg-icon {
   6.0 - Security Level
   --------------------------------------------------------------*/
 .security-level {
-  font-size: 0.750rem;
-}
-
-.security-level * {
-  vertical-align: middle;
+  /*weak pass*/
+  /*moderate pass*/
+  /*good pass*/
+  padding: 0 5px;
+  margin: 0 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .security-level .sl-level {
@@ -9269,25 +9285,40 @@ a.ic-rounded .svg-icon {
   vertical-align: middle;
   display: inline-block;
   background: #c8c8c8;
+  margin-right: 3px;
   -webkit-transition: background .3s;
   -o-transition: background .3s;
   transition: background .3s;
 }
 
-.security-level .sl-wp {
-  margin: 0 5px;
+.security-level .sl-status-1 .pc-is-active {
+  background: #C00000;
 }
 
-.security-level .sl-1 {
+.security-level .sl-status-1 + .sl-current {
   color: #C00000;
 }
 
-.security-level .sl-2 {
-  color: orange;
+.security-level .sl-status-2 .pc-is-active {
+  background: #FFA500;
 }
 
-.security-level .sl-3 {
+.security-level .sl-status-2 + .sl-current {
+  color: #FFA500;
+}
+
+.security-level .sl-status-3 .pc-is-active {
+  background: #00ba1b;
+}
+
+.security-level .sl-status-3 + .sl-current {
   color: #00ba1b;
+}
+
+.security-level .sl-current {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 7px;
 }
 
 /*--------------------------------------------------------------
@@ -9949,6 +9980,20 @@ a.ic-rounded .svg-icon {
   vertical-align: middle;
 }
 
+.title-bar {
+  text-transform: uppercase;
+  padding: .725em 1em;
+  font-size: .875rem;
+  background-color: #0db6b5;
+  min-height: 50px;
+  color: #fff;
+  cursor: default;
+}
+
+.title-bar .svg-icon {
+  fill: #fff;
+}
+
 .card-small {
   padding: 12px;
 }
@@ -10070,6 +10115,7 @@ a.ic-rounded .svg-icon {
 }
 
 .date-it {
+  font-size: 1rem;
   display: inline-block;
   position: relative;
   letter-spacing: normal;
@@ -10126,15 +10172,15 @@ a.ic-rounded .svg-icon {
 }
 
 .date-main-info {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .date-month-lt .date-main-info {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .date-info {
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .date-month-lt2 {
@@ -10163,7 +10209,6 @@ a.ic-rounded .svg-icon {
 
 .date-month-lt2 .date-main-info {
   font-weight: normal;
-  font-size: 0.813rem;
 }
 
 .tickets-lt {
@@ -10383,14 +10428,16 @@ a.ic-rounded .svg-icon {
 }
 
 .filter-has-val .filter-head {
-  pointer-events: none;
-  cursor: default;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
 .filter-has-val .filter-head .filter-action {
   pointer-events: auto;
+}
+
+.filter-has-val .filter-head .filter-action:hover {
+  color: #086f6e;
 }
 
 .filter-has-val .filter-head .filter-action:before, .filter-has-val .filter-head .filter-action:after {
@@ -10461,6 +10508,7 @@ a.ic-rounded .svg-icon {
   bottom: 0;
   width: 40px;
   cursor: pointer;
+  color: #0db6b5;
   pointer-events: none;
 }
 
@@ -10468,7 +10516,7 @@ a.ic-rounded .svg-icon {
   content: '';
   position: absolute;
   top: 50%;
-  background: #0db6b5;
+  background: currentColor;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   transition: -webkit-transform 0.25s ease-in-out;
   -o-transition: transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;

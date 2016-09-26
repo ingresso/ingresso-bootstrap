@@ -112,3 +112,21 @@ Título padrão com borda e ícone.
 </h1>
 
 {% endexample %}
+
+## Example
+Título padrão para painel e checkout (mobile).
+
+{% example html %}
+
+<h1 class="title-bar">
+  <span class="icon-txt">
+    <span class="it-cont valign-middle">
+      <svg class="svg-icon">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ticket"></use>
+      </svg>
+    </span>
+    <span class="it-txt">Pedidos</span>
+  </span>
+</h1> 
+
+{% endexample %}

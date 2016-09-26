@@ -114,6 +114,18 @@ Bootstrap includes validation styles for danger, warning, and success states on 
     <input type="email" class="form-control form-control-danger" id="exampleInputEmail4" aria-describedby="emailHelp" placeholder="Enter email">
     <span class="frm-msg-error">É obrigatório preencher o Email.</span>
   </div>
+
+  <div class="form-group fl-form-group has-danger">
+    <span class="form-icon-group">
+      <svg aria-label="Senha" class="svg-icon" width="23" height="23">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-lock"></use>
+      </svg>
+    </span>
+    <label class="fl-label" for="exampleInputPassword2">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+    <span class="frm-msg-error">É obrigatório preencher o Email.</span>
+  </div>
+
 {% endexample %}
 
 ## Ingresso Password Security Level
@@ -129,6 +141,17 @@ Bootstrap includes validation styles for danger, warning, and success states on 
       <span class="sl-level"></span>
     </span>
     <span class="sl-1">Muito Simples</span>
+</div>
+
+<div class="security-level">
+    <span>Sua senha está:</span>
+    <span class="sl-wp sl-status-3">
+        <span class="sl-level pc-is-active"></span>
+        <span class="sl-level pc-is-active"></span>
+        <span class="sl-level pc-is-active"></span>
+        <span class="sl-level pc-is-active"></span>
+    </span>
+    <span class="sl-current">Excelente</span>
 </div>
 
 {% endexample %}

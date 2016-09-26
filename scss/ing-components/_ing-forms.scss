@@ -30,7 +30,7 @@
       border-right: 1px solid #e0e0e0;
       background-color: #fff;
       left: 4px;
-      top: 50%;
+      top: 19px;
       margin-top: -11.5px;
       overflow: visible;
 
@@ -379,34 +379,49 @@
 /*--------------------------------------------------------------
   6.0 - Security Level
   --------------------------------------------------------------*/
-
 .security-level{
-  font-size: 0.750rem;
-  *{
-    vertical-align: middle;
-  }
+  $color_status1:#C00000;/*weak pass*/
+  $color_status2:#FFA500;/*moderate pass*/
+  $color_status3:#00ba1b;/*good pass*/
+  $passmeter_size:10px;
+  padding:0 5px;
+  margin:0 0 10px;
+  box-sizing:border-box;
   .sl-level{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    vertical-align: middle;
-    display: inline-block;
-    background: #c8c8c8;
-    transition: background .3s;
+    width:$passmeter_size;
+    height:$passmeter_size;
+    border-radius:50%;
+    vertical-align:middle;
+    display:inline-block;
+    background:#c8c8c8;
+    margin-right:3px;
+    transition:background .3s;
   }
-  .sl-wp{
-    margin:0 5px;
+  .sl-status-1{
+    .pc-is-active{background:$color_status1;}
+    & + .sl-current {
+      color:$color_status1;
+    }
   }
-  .sl-1{
-    color:#C00000;
+  .sl-status-2{
+    .pc-is-active{background:$color_status2;}
+    & + .sl-current {
+      color:$color_status2;
+    }
   }
-  .sl-2{
-    color:orange;
+  .sl-status-3{
+    .pc-is-active{background:$color_status3;}
+    & + .sl-current {
+      color:$color_status3;
+    }
   }
-  .sl-3{
-    color:#00ba1b;
+  .sl-current{
+    display:inline-block;
+    vertical-align:middle;
+    margin-left:7px;
   }
 }
+
 
 /*--------------------------------------------------------------
   7.0 - Amount
