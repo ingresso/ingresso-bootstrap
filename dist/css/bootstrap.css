@@ -8812,6 +8812,47 @@ a.ic-rounded .svg-icon {
   color: #fff;
 }
 
+.modal-dialog {
+  margin: 0;
+  height: 100%;
+}
+
+.modal-dialog .modal-content {
+  min-height: 100%;
+}
+
+.modal-header .close {
+  margin-right: -15px;
+  margin-top: -10px;
+  width: 44px;
+  height: 44px;
+}
+
+.modal-title {
+  clear: right;
+}
+
+.modal-sm, .modal-sm .modal-footer {
+  text-align: center;
+}
+
+.modal-sm .modal-title {
+  font-weight: bold;
+}
+
+.modal-sm .modal-header {
+  padding-bottom: 10px;
+}
+
+.modal-sm .modal-body {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.modal-sm .modal-fotter {
+  padding-top: 5px;
+}
+
 .modal-content:before {
   content: '';
   display: block;
@@ -8836,6 +8877,23 @@ a.ic-rounded .svg-icon {
 
 .modal-header .close:hover {
   color: #0a8686;
+}
+
+.modal-icon {
+  display: block;
+  margin: 3rem auto 0.5rem;
+  width: 97px;
+  height: 112px;
+}
+
+@media (min-width: 544px) {
+  .modal-dialog {
+    margin: 10px auto;
+    height: auto;
+  }
+  .modal-dialog .model-content {
+    min-height: none;
+  }
 }
 
 .tag {
