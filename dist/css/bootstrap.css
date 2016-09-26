@@ -7503,12 +7503,19 @@ a.ic-rounded .svg-icon {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   display: block;
   padding: 12px;
   font-family: Klavika-Regular;
   font-size: 1rem;
   color: #fff;
+  -webkit-transition-duration: .25s;
+       -o-transition-duration: .25s;
+          transition-duration: .25s;
+  -webkit-transition-property: background-color, color, top, left, right;
+  -o-transition-property: background-color, color, top, left, right;
+  transition-property: background-color, color, top, left, right;
 }
 
 #header .hd-main-menu .hd-mm-lnk.collapsed {
@@ -7682,47 +7689,55 @@ a.ic-rounded .svg-icon {
   margin-bottom: 15px;
 }
 
-#header .hd-main-menu .filter .filter-head {
+#header .hd-main-menu .filter-head {
   background-color: #5d5d5d;
   border-color: #525453;
   color: #fff;
 }
 
-#header .hd-main-menu .filter .filter-content {
-  background-color: #5d5d5d;
-}
-
-#header .hd-main-menu .filter .filter-wp {
-  height: 200px;
-}
-
-#header .hd-main-menu .filter .filter-wp::-webkit-scrollbar {
-  width: 3px;
-}
-
-#header .hd-main-menu .filter .filter-wp::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-
-#header .hd-main-menu .filter .filter-wp::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: rgba(13, 182, 181, 0.8);
-}
-
-#header .hd-main-menu .filter .filter-wp::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(13, 182, 181, 0.8);
-}
-
-#header .hd-main-menu .filter .filter-wp a {
+#header .hd-main-menu .filter-action {
   color: #10e0df;
 }
 
-#header .hd-main-menu .filter .filter-wp a:hover {
+#header .hd-main-menu .filter-action:hover {
+  color: #0db0b0;
+}
+
+#header .hd-main-menu .filter-content {
+  background-color: #5d5d5d;
+}
+
+#header .hd-main-menu .filter-wp {
+  height: 200px;
+}
+
+#header .hd-main-menu .filter-wp::-webkit-scrollbar {
+  width: 3px;
+}
+
+#header .hd-main-menu .filter-wp::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+#header .hd-main-menu .filter-wp::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(13, 182, 181, 0.8);
+}
+
+#header .hd-main-menu .filter-wp::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(13, 182, 181, 0.8);
+}
+
+#header .hd-main-menu .filter-wp a {
+  color: #10e0df;
+}
+
+#header .hd-main-menu .filter-wp a:hover {
   color: #0db0b0;
 }
 
 #header .hd-main-menu .filter-has-val .filter-wp {
-  height: 189px;
+  height: 194px;
 }
 
 #header .hd-main-menu .filter-has-val .filter-it {
@@ -7734,7 +7749,6 @@ a.ic-rounded .svg-icon {
 }
 
 #header .hd-main-menu .filter-has-val .filter-it a {
-  color: #0db6b5;
   text-decoration: none;
 }
 
@@ -8149,19 +8163,6 @@ a.ic-rounded .svg-icon {
 }
 
 @media (min-width: 992px) {
-  #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    z-index: 9999;
-    /* TODO - bootstrap works with z-index variables. Check it */
-    -webkit-transition: height .25s;
-    -o-transition: height .25s;
-    transition: height .25s;
-    height: 122px;
-  }
   #header .week-highlights {
     display: none;
   }
@@ -8244,6 +8245,19 @@ a.ic-rounded .svg-icon {
   }
   #header .filter-has-val .filter-action {
     display: block;
+  }
+  #header.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 9999;
+    /* TODO - bootstrap works with z-index variables. Check it */
+    -webkit-transition: height .25s;
+    -o-transition: height .25s;
+    transition: height .25s;
+    height: 122px;
   }
   #header.is-reduced {
     -webkit-box-shadow: 0px 1px 4px #ccc;
@@ -8788,6 +8802,47 @@ a.ic-rounded .svg-icon {
   color: #fff;
 }
 
+.modal-dialog {
+  margin: 0;
+  height: 100%;
+}
+
+.modal-dialog .modal-content {
+  min-height: 100%;
+}
+
+.modal-header .close {
+  margin-right: -15px;
+  margin-top: -10px;
+  width: 44px;
+  height: 44px;
+}
+
+.modal-title {
+  clear: right;
+}
+
+.modal-sm, .modal-sm .modal-footer {
+  text-align: center;
+}
+
+.modal-sm .modal-title {
+  font-weight: bold;
+}
+
+.modal-sm .modal-header {
+  padding-bottom: 10px;
+}
+
+.modal-sm .modal-body {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.modal-sm .modal-fotter {
+  padding-top: 5px;
+}
+
 .modal-content:before {
   content: '';
   display: block;
@@ -8812,6 +8867,23 @@ a.ic-rounded .svg-icon {
 
 .modal-header .close:hover {
   color: #0a8686;
+}
+
+.modal-icon {
+  display: block;
+  margin: 3rem auto 0.5rem;
+  width: 97px;
+  height: 112px;
+}
+
+@media (min-width: 544px) {
+  .modal-dialog {
+    margin: 10px auto;
+    height: auto;
+  }
+  .modal-dialog .model-content {
+    min-height: none;
+  }
 }
 
 .tag {
@@ -10065,6 +10137,7 @@ a.ic-rounded .svg-icon {
 }
 
 .date-it {
+  font-size: 1rem;
   display: inline-block;
   position: relative;
   letter-spacing: normal;
@@ -10121,15 +10194,15 @@ a.ic-rounded .svg-icon {
 }
 
 .date-main-info {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .date-month-lt .date-main-info {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .date-info {
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .date-month-lt2 {
@@ -10142,8 +10215,8 @@ a.ic-rounded .svg-icon {
 }
 
 .date-month-lt2 .date-lk {
-  width: 33px;
-  height: 33px;
+  width: 43px;
+  height: 43px;
   border-top: 0;
   padding: 0;
   min-height: initial;
@@ -10158,7 +10231,6 @@ a.ic-rounded .svg-icon {
 
 .date-month-lt2 .date-main-info {
   font-weight: normal;
-  font-size: 0.813rem;
 }
 
 .tickets-lt {
@@ -10378,14 +10450,16 @@ a.ic-rounded .svg-icon {
 }
 
 .filter-has-val .filter-head {
-  pointer-events: none;
-  cursor: default;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
 .filter-has-val .filter-head .filter-action {
   pointer-events: auto;
+}
+
+.filter-has-val .filter-head .filter-action:hover {
+  color: #086f6e;
 }
 
 .filter-has-val .filter-head .filter-action:before, .filter-has-val .filter-head .filter-action:after {
@@ -10456,6 +10530,7 @@ a.ic-rounded .svg-icon {
   bottom: 0;
   width: 40px;
   cursor: pointer;
+  color: #0db6b5;
   pointer-events: none;
 }
 
@@ -10463,7 +10538,7 @@ a.ic-rounded .svg-icon {
   content: '';
   position: absolute;
   top: 50%;
-  background: #0db6b5;
+  background: currentColor;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   transition: -webkit-transform 0.25s ease-in-out;
   -o-transition: transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;

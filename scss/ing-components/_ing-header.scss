@@ -695,14 +695,7 @@ $font_0: Klavika-Regular;
 }
 @media(min-width: 992px) {
   #header {
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    margin:0;
-    z-index: 9999; /* TODO - bootstrap works with z-index variables. Check it */
-    transition: height .25s;
-    height:122px;
+
     .week-highlights{
       display: none;
     }
@@ -788,6 +781,18 @@ $font_0: Klavika-Regular;
         }
       }
     }
+    // states
+    // .is-reducing and .is-reduced are used together with .is-fixed
+    &.is-fixed{
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      margin:0;
+      z-index: 9999; /* TODO - bootstrap works with z-index variables. Check it */
+      transition: height .25s;
+      height:122px;
+    }
     &.is-reduced{
       box-shadow:0px 1px 4px #ccc;
       height:70px;
@@ -795,13 +800,13 @@ $font_0: Klavika-Regular;
         visibility: hidden;
       }
     }
-    // states
     &.is-reducing{
       overflow: hidden;
       .hd-bottom{
         visibility: visible;
       }
     }
+
   }
 
 }
