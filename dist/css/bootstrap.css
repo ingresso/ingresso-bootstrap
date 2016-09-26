@@ -8167,19 +8167,6 @@ a.ic-rounded .svg-icon {
 }
 
 @media (min-width: 992px) {
-  #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    z-index: 9999;
-    /* TODO - bootstrap works with z-index variables. Check it */
-    -webkit-transition: height .25s;
-    -o-transition: height .25s;
-    transition: height .25s;
-    height: 122px;
-  }
   #header .week-highlights {
     display: none;
   }
@@ -8263,6 +8250,19 @@ a.ic-rounded .svg-icon {
   }
   #header .filter-has-val .filter-action {
     display: block;
+  }
+  #header.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 9999;
+    /* TODO - bootstrap works with z-index variables. Check it */
+    -webkit-transition: height .25s;
+    -o-transition: height .25s;
+    transition: height .25s;
+    height: 122px;
   }
   #header.is-reduced {
     -webkit-box-shadow: 0px 1px 4px #ccc;

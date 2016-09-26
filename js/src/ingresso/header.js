@@ -1,5 +1,6 @@
 ;(function(){
 
+    var $body = $('body');
     var $header = $('#header');
     var $headerSearchInput = $('#search-ipt',$header);
     var $headerSearch = $headerSearchInput.closest('.hd-search');
@@ -10,6 +11,7 @@
       medium:769,
       large:992
     };
+
 
     function toggleCloseButton(e){
       if($(e.target).is($('#'+$(this).attr('id')))){
@@ -77,24 +79,32 @@
       }
     })
     // end - toggle items
+
     // filter
     $('.filter',$header).on('filter.added',toggleFilter);
     // end -filter
 
     // fixed header
-    $window.scroll(function(){
+    if(typeof $header.attr('data-fixed') !== 'undefined'){
+      $body.addClass('has-fixed-header');
+      $window.scroll(function(){
 
-      if($window.scrollTop() > $header.outerHeight() && !$('.hd-cont.collapse.in',$header).length){
-        $header.addClass('is-reduced is-reducing');
-      }else if($header.hasClass('is-reduced')){
-        $header
-        .removeClass('is-reduced')
-        .addClass('is-reducing');
-      }
-    })
-    $header.on('transitionend',function(){
-      $header.removeClass('is-reducing');
-    });
+        if($window.scrollTop() > $header.outerHeight() && !$('.hd-cont.collapse.in',$header).length){
+          if(!$header.hasClass('is-reduced')){
+            $header.addClass('is-reduced is-reducing');
+          }
+        }else if($header.hasClass('is-reduced')){
+          $header
+          .removeClass('is-reduced')
+          .addClass('is-reducing');
+        }
+      })
+      $header.on('transitionend',function(){
+        $header.removeClass('is-reducing');
+      })
+      .addClass('is-fixed');
+    }
+
     // end - fixed header
 
 })();
