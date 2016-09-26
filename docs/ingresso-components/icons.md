@@ -344,6 +344,12 @@ GRUPO 4 DE ICONES
       </svg>
       <span class="d-block">icon-alert-x</span>
     </div>
+    <div class="col-xs-3">
+      <svg class="svg-icon" width="97" height="112">
+        <use xlink:href="#icon-alert-info" />
+      </svg>
+      <span class="d-block">icon-alert-info</span>
+    </div>
 
   </div>
 </div>
@@ -921,7 +927,7 @@ GRUPO 6 DE ICONES
       <span class="d-block">icon-logo</span>
     </div>
   </div>
-</div> 
+</div>
 
 {% endexample %}
 
