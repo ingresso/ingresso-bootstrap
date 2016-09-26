@@ -81,7 +81,11 @@
   text-decoration: none;
   position: absolute;
   top: 50%;
+  cursor: pointer;
   transform: translateY(-50%);
+  .svg-icon{
+    cursor: pointer;
+  }
   &.collapsed{
       .svg-icon {
       -moz-transform: rotate(180deg) scaleX(-1);

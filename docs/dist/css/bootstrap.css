@@ -8561,10 +8561,15 @@ a.ic-rounded .svg-icon {
   text-decoration: none;
   position: absolute;
   top: 50%;
+  cursor: pointer;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
        -o-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.icon-accordion .svg-icon {
+  cursor: pointer;
 }
 
 .icon-accordion.collapsed .svg-icon {
