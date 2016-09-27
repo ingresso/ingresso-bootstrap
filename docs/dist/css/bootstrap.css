@@ -7408,7 +7408,6 @@ a.ic-rounded .svg-icon {
 }
 
 #header {
-  margin-bottom: 15px;
   padding-top: 10px;
 }
 
@@ -7935,6 +7934,7 @@ a.ic-rounded .svg-icon {
 @media (min-width: 768px) {
   #header {
     overflow: visible;
+    margin-bottom: 15px;
   }
   #header .week-highlights {
     display: block;
@@ -10051,6 +10051,7 @@ a.ic-rounded .svg-icon {
   min-height: 50px;
   color: #fff;
   cursor: default;
+  margin-bottom: 15px;
 }
 
 .title-bar .svg-icon {

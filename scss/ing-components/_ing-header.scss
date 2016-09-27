@@ -32,7 +32,6 @@ $font_0: Klavika-Regular;
 
 @charset "UTF-8";
 #header {
-  margin-bottom: 15px;
   padding-top:10px;
   div[class*="col-"] {
     position: inherit;
@@ -463,7 +462,7 @@ $font_0: Klavika-Regular;
 @media(min-width: 768px) {
   #header {
     overflow: visible;
-
+    margin-bottom: 15px;
     .week-highlights{
       display: block;
       border-left: 1px solid #c9cbca;
