@@ -921,10 +921,16 @@ GRUPO 6 DE ICONES
 <div class="container-fluid text-xs-center">
   <div class="row">
     <div class="col-xs-3">
-      <svg class="svg-icon" width="97" height="112">
+      <svg class="svg-icon" width="97" height="37">
         <use xlink:href="#icon-logo" />
       </svg>
       <span class="d-block">icon-logo</span>
+    </div>
+    <div class="col-xs-3">
+      <svg class="svg-icon" width="40" height="40">
+        <use xlink:href="#icon-loading" />
+      </svg>
+      <span class="d-block">icon-loading</span>
     </div>
   </div>
 </div>
