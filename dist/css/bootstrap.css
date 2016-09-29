@@ -10617,39 +10617,6 @@ a.ic-rounded .svg-icon {
   background-color: transparent;
 }
 
-.loading-icon {
-  display: none;
-}
-
-.loading-content {
-  position: relative;
-  overflow: hidden;
-  min-height: 370px;
-}
-
-.loading-content .loading-icon {
-  position: absolute;
-  top: 120px;
-  left: 50%;
-  margin-left: -20px;
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  z-index: 3;
-}
-
-.loading-content:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #fff;
-  z-index: 2;
-  display: block;
-}
-
 /**
  * Swiper 3.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions

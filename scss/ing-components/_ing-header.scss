@@ -432,7 +432,7 @@ $font_0: Klavika-Regular;
   .hd-cont {
     text-align: left;
     .hd-cont-wp {
-      padding: 25px;
+      padding: 10px 15px;
       height: calc(100vh - 70px);
       overflow-y: auto;
     }
@@ -712,6 +712,13 @@ $font_0: Klavika-Regular;
         border-left: 0;
         margin-left: 0;
         padding-left: 1rem;
+      }
+    }
+    .hd-user-menu{
+      .hd-cont{
+        &.collapsing, &.collapse.in {
+          background:transparent;
+        }
       }
     }
     .hd-search{
