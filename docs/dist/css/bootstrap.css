@@ -7408,6 +7408,7 @@ a.ic-rounded .svg-icon {
 }
 
 #header {
+  overflow-x: hidden;
   padding-top: 10px;
 }
 
@@ -7476,7 +7477,7 @@ a.ic-rounded .svg-icon {
 }
 
 #header .hd-main-menu .hd-mm-cont .hd-cont-wp {
-  height: calc(100vh - 168px);
+  height: calc(200vh - 148px);
 }
 
 #header .hd-main-menu .list-group-item {
@@ -7888,7 +7889,7 @@ a.ic-rounded .svg-icon {
 }
 
 #header .hd-local .hd-local-cont .hd-cont-wp {
-  height: calc(100vh - 116px);
+  height: calc(200vh - 98px);
   display: block;
 }
 
@@ -7911,7 +7912,7 @@ a.ic-rounded .svg-icon {
 
 #header .hd-cont .hd-cont-wp {
   padding: 10px 15px;
-  height: calc(100vh - 70px);
+  height: calc(200vh - 52px);
   overflow-y: auto;
 }
 
@@ -10624,6 +10625,39 @@ a.ic-rounded .svg-icon {
 .list-group-nostyle .list-group-item {
   border-color: transparent;
   background-color: transparent;
+}
+
+.loading-icon {
+  display: none;
+}
+
+.loading-content {
+  position: relative;
+  overflow: hidden;
+  min-height: 370px;
+}
+
+.loading-content .loading-icon {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  margin-left: -20px;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  z-index: 3;
+}
+
+.loading-content:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 2;
+  display: block;
 }
 
 /**
