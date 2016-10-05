@@ -88,13 +88,13 @@
   }
   &.collapsed{
       .svg-icon {
-      -moz-transform: rotate(180deg) scaleX(-1);
-      -o-transform: rotate(180deg) scaleX(-1);
-      -webkit-transform: rotate(180deg) scaleX(-1);
-      transform: rotate(180deg) scaleX(-1);
-      filter: FlipH;
-      -ms-filter: "FlipH";
-    }
+        -moz-transform: rotate(180deg) scaleX(-1);
+        -o-transform: rotate(180deg) scaleX(-1);
+        -webkit-transform: rotate(180deg) scaleX(-1);
+        transform: rotate(180deg) scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+      }
   }
   .ia-txt{
     display:none;

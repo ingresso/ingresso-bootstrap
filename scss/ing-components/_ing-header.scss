@@ -31,7 +31,9 @@ $font_0: Klavika-Regular;
 }
 
 @charset "UTF-8";
+
 #header {
+  overflow-x:hidden;
   padding-top:10px;
   div[class*="col-"] {
     position: inherit;
@@ -86,14 +88,17 @@ $font_0: Klavika-Regular;
     position: relative;
     .hd-cont {
       &.collapsing {
-        top: 48px;
+        top: 46px;
       }
       &.collapse.in {
-        top: 48px;
+        top: 46px;
       }
     }
     .hd-mm-cont .hd-cont-wp{
-      height: calc(100vh - 168px);
+      height: calc(200vh - 148px);
+    }
+    .list-group-item{
+      padding: 5px 10px;
     }
     .hd-mm-lt {
       white-space: nowrap;
@@ -114,7 +119,6 @@ $font_0: Klavika-Regular;
       text-rendering: auto;
       padding: 0;
       max-width: initial;
-      margin-right: 5px;
     }
     .hd-mm-lnk {
       position: absolute;
@@ -256,7 +260,7 @@ $font_0: Klavika-Regular;
       }
     }
     .hd-mm-options {
-      margin-bottom: 15px;
+      padding: 5px 0 15px;
     }
     .filter {
       &-head {
@@ -314,7 +318,7 @@ $font_0: Klavika-Regular;
       margin-top: 15px;
     }
     .hd-mm-cat-link {
-      margin: 10px 0 15px;
+      /* margin: 10px 0 15px; */
       display: block;
       color:#10e0df;
       &:hover{
@@ -415,7 +419,7 @@ $font_0: Klavika-Regular;
       }
     }
     .hd-local-cont .hd-cont-wp {
-      height: calc(100vh - 116px);
+      height: calc(200vh - 98px);
       display: block;
     }
   }
@@ -433,7 +437,7 @@ $font_0: Klavika-Regular;
     text-align: left;
     .hd-cont-wp {
       padding: 10px 15px;
-      height: calc(100vh - 70px);
+      height: calc(200vh - 52px);
       overflow-y: auto;
     }
     &.collapsing {
@@ -494,6 +498,9 @@ $font_0: Klavika-Regular;
       .umenu-tips {
         background-color: $color_masala_approx;
         padding: 35px 25px;
+        p{
+          padding: 0 25px;
+        }
       }
       .hd-umenu-options {
         background-color: $color_fuscous_gray_approx;
@@ -552,7 +559,7 @@ $font_0: Klavika-Regular;
     .hd-bottom {
       background-color: $wild_sand;
       div[class*="col-md-3"] {
-        padding-right: 3px;
+        padding-right: 0;
       }
       div[class*="col-md-9"] {
         padding-left: 0;
