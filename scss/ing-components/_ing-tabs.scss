@@ -23,7 +23,7 @@
   }
 }
 
-.nav-stacked {
+.nav-stacked.nav-menu{
   .nav-item{
     + .nav-item {
       margin-top: 2px;
@@ -33,7 +33,6 @@
     float:left;
   }
   .nav-link{
-    text-transform: uppercase;
     padding: .725em 1em;
     font-size: 0.875rem;
     background-color: #f2f2f2;
@@ -42,19 +41,34 @@
     .svg-icon{
       fill:$brand-primary;
     }
-    small{
-      font-size: 0.625rem;
-      display:block;
-      color: #a6a6a6;
+    &.past-step{
+      color:#0db6b5;
+      .nav-link-title{
+        font-size: 0.625rem;
+        display:block;
+        color: #a6a6a6;
+        text-transform:none;
+      }
     }
+    .nav-link-title{
+      color:#0db6b5;
+      text-transform: uppercase;
+    }
+
     &.active{
+      background-color:#0db6b5;
+      color:#fff;
       position: relative;
       .svg-icon{
         fill:#fff;
       }
-      small{
-        color:#93dcdc;
+      .nav-link-title{
+        color:#fff;
       }
+    }
+
+    &.active.past-step .nav-link-title{
+      color:#93dcdc;
     }
 
     &.disabled{
