@@ -89,7 +89,7 @@ a.ic-rounded{
   }
 
   //color
-  &.ic-rd-cinema{
+  &.ic-rd-cinema, &.ic-rd-active{
       background: $brand-cinema;
   }
   &.ic-rd-theater{
