@@ -24,6 +24,8 @@
 }
 
 .nav-stacked.nav-menu{
+
+
   .nav-item{
     + .nav-item {
       margin-top: 2px;
@@ -34,6 +36,27 @@
     font-size: 0.875rem;
     background-color: #f2f2f2;
     border-left: 4px solid #0db6b5;
+    position: relative;
+
+    &:before, &:after {
+       content: '';
+       position: absolute;
+       top:50%;
+       display: block;
+       width:2px;
+       height:8px;
+       margin-top: -5px;
+       background-color: $brand-primary;
+    }
+    &:before{
+      right:20px;
+      transform: translate( 2px,-3px ) rotate( 135deg );
+    }
+    &:after{
+      right:15px;
+      transform: translate( -3px,2px) rotate( -135deg );
+    }
+
     .svg-icon{
       fill:$brand-primary;
     }
@@ -55,6 +78,9 @@
       background-color:#0db6b5;
       color:#fff;
       position: relative;
+      &:before, &:after{
+        background-color:currentColor;
+      }
       .svg-icon{
         fill:#fff;
       }
@@ -70,6 +96,10 @@
     &.disabled{
       color:#ccc;
       border-color: #ccc;
+
+      &:before, &:after{
+        background-color:currentColor;
+      }
       &:hover{
         background-color: #f2f2f2;
       }
@@ -95,24 +125,27 @@
 }
 
 @include media-breakpoint-up(lg) {
-  .nav-stacked {
+  .nav-stacked.nav-menu {
     .nav-link{
+      &:before, &:after{
+        display:none;
+        transform:none;
+      }
+      &:before{
+        background-color:transparent;
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid #0db6b5;
+        right: -6px;
+        top: 50%;
+        z-index: 1;
+        margin-top: -8px;
+        pointer-events: none;
+      }
       &.active{
-        &:before{
-          content: '';
-          display: block;
-          width: 0;
-          height: 0;
-          border-top: 8px solid transparent;
-          border-bottom: 8px solid transparent;
-          border-left: 8px solid #0db6b5;
-          position: absolute;
-          right: -6px;
-          top: 50%;
-          z-index: 1;
-          margin-top: -8px;
-          pointer-events: none;
-        }
+        &:before{display:block;}
       }
     }
   }

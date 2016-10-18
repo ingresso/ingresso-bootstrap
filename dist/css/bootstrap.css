@@ -5000,6 +5000,7 @@ base::-moz-progress-bar,
 .media-middle {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
 }
 
@@ -5326,7 +5327,7 @@ button.close {
 .modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform .3s ease-out;
   transition: -webkit-transform .3s ease-out;
-  -o-transition: transform .3s ease-out, -o-transform .3s ease-out;
+  -o-transition: -o-transform .3s ease-out;
   transition: transform .3s ease-out;
   transition: transform .3s ease-out, -webkit-transform .3s ease-out, -o-transform .3s ease-out;
   -webkit-transform: translate(0, -25%);
@@ -5707,7 +5708,7 @@ button.close {
   .carousel-inner > .carousel-item {
     -webkit-transition: -webkit-transform .6s ease-in-out;
     transition: -webkit-transform .6s ease-in-out;
-    -o-transition: transform .6s ease-in-out, -o-transform .6s ease-in-out;
+    -o-transition: -o-transform .6s ease-in-out;
     transition: transform .6s ease-in-out;
     transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out, -o-transform .6s ease-in-out;
     -webkit-backface-visibility: hidden;
@@ -6002,7 +6003,6 @@ a.bg-danger:focus, a.bg-danger:hover {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
-              -ms-grid-row-align: flex-start;
           align-items: flex-start;
 }
 
@@ -6010,7 +6010,6 @@ a.bg-danger:focus, a.bg-danger:hover {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
 }
 
@@ -6018,7 +6017,6 @@ a.bg-danger:focus, a.bg-danger:hover {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
-              -ms-grid-row-align: flex-end;
           align-items: flex-end;
 }
 
@@ -6031,6 +6029,7 @@ a.bg-danger:focus, a.bg-danger:hover {
 .flex-xs-middle {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
 }
 
@@ -6094,21 +6093,18 @@ a.bg-danger:focus, a.bg-danger:hover {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
-                -ms-grid-row-align: flex-start;
             align-items: flex-start;
   }
   .flex-items-sm-middle {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-                -ms-grid-row-align: center;
             align-items: center;
   }
   .flex-items-sm-bottom {
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
-                -ms-grid-row-align: flex-end;
             align-items: flex-end;
   }
 }
@@ -6122,6 +6118,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   .flex-sm-middle {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
             align-self: center;
   }
   .flex-sm-bottom {
@@ -6183,21 +6180,18 @@ a.bg-danger:focus, a.bg-danger:hover {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
-                -ms-grid-row-align: flex-start;
             align-items: flex-start;
   }
   .flex-items-md-middle {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-                -ms-grid-row-align: center;
             align-items: center;
   }
   .flex-items-md-bottom {
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
-                -ms-grid-row-align: flex-end;
             align-items: flex-end;
   }
 }
@@ -6211,6 +6205,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   .flex-md-middle {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
             align-self: center;
   }
   .flex-md-bottom {
@@ -6272,21 +6267,18 @@ a.bg-danger:focus, a.bg-danger:hover {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
-                -ms-grid-row-align: flex-start;
             align-items: flex-start;
   }
   .flex-items-lg-middle {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-                -ms-grid-row-align: center;
             align-items: center;
   }
   .flex-items-lg-bottom {
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
-                -ms-grid-row-align: flex-end;
             align-items: flex-end;
   }
 }
@@ -6300,6 +6292,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   .flex-lg-middle {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
             align-self: center;
   }
   .flex-lg-bottom {
@@ -6361,21 +6354,18 @@ a.bg-danger:focus, a.bg-danger:hover {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
-                -ms-grid-row-align: flex-start;
             align-items: flex-start;
   }
   .flex-items-xl-middle {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-                -ms-grid-row-align: center;
             align-items: center;
   }
   .flex-items-xl-bottom {
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
-                -ms-grid-row-align: flex-end;
             align-items: flex-end;
   }
 }
@@ -6389,6 +6379,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   .flex-xl-middle {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
             align-self: center;
   }
   .flex-xl-bottom {
@@ -7293,7 +7284,7 @@ a.ic-rounded .svg-icon {
   height: 40px;
 }
 
-.ic-rounded.ic-rd-cinema {
+.ic-rounded.ic-rd-cinema, .ic-rounded.ic-rd-active {
   background: #d3793d;
 }
 
@@ -7358,6 +7349,8 @@ a.ic-rounded .svg-icon {
 .icon-txt.it-right .it-txt {
   padding-right: 0.3125rem;
   padding-left: 0;
+  direction: initial;
+  text-align: right;
 }
 
 /* icon sizes*/
@@ -8734,16 +8727,39 @@ a.ic-rounded .svg-icon {
   margin-top: 2px;
 }
 
-.nav-stacked.nav-menu .icon-txt {
-  float: left;
-}
-
 .nav-stacked.nav-menu .nav-link {
   padding: .725em 1em;
   font-size: 0.875rem;
   background-color: #f2f2f2;
   border-left: 4px solid #0db6b5;
-  min-height: 50px;
+  position: relative;
+}
+
+.nav-stacked.nav-menu .nav-link:before, .nav-stacked.nav-menu .nav-link:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 2px;
+  height: 8px;
+  margin-top: -5px;
+  background-color: #0db6b5;
+}
+
+.nav-stacked.nav-menu .nav-link:before {
+  right: 20px;
+  -webkit-transform: translate(2px, -3px) rotate(135deg);
+      -ms-transform: translate(2px, -3px) rotate(135deg);
+       -o-transform: translate(2px, -3px) rotate(135deg);
+          transform: translate(2px, -3px) rotate(135deg);
+}
+
+.nav-stacked.nav-menu .nav-link:after {
+  right: 15px;
+  -webkit-transform: translate(-3px, 2px) rotate(-135deg);
+      -ms-transform: translate(-3px, 2px) rotate(-135deg);
+       -o-transform: translate(-3px, 2px) rotate(-135deg);
+          transform: translate(-3px, 2px) rotate(-135deg);
 }
 
 .nav-stacked.nav-menu .nav-link .svg-icon {
@@ -8772,6 +8788,10 @@ a.ic-rounded .svg-icon {
   position: relative;
 }
 
+.nav-stacked.nav-menu .nav-link.active:before, .nav-stacked.nav-menu .nav-link.active:after {
+  background-color: currentColor;
+}
+
 .nav-stacked.nav-menu .nav-link.active .svg-icon {
   fill: #fff;
 }
@@ -8787,6 +8807,10 @@ a.ic-rounded .svg-icon {
 .nav-stacked.nav-menu .nav-link.disabled {
   color: #ccc;
   border-color: #ccc;
+}
+
+.nav-stacked.nav-menu .nav-link.disabled:before, .nav-stacked.nav-menu .nav-link.disabled:after {
+  background-color: currentColor;
 }
 
 .nav-stacked.nav-menu .nav-link.disabled:hover {
@@ -8812,20 +8836,28 @@ a.ic-rounded .svg-icon {
 }
 
 @media (min-width: 992px) {
-  .nav-stacked .nav-link.active:before {
-    content: '';
-    display: block;
+  .nav-stacked.nav-menu .nav-link:before, .nav-stacked.nav-menu .nav-link:after {
+    display: none;
+    -webkit-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+  }
+  .nav-stacked.nav-menu .nav-link:before {
+    background-color: transparent;
     width: 0;
     height: 0;
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
     border-left: 8px solid #0db6b5;
-    position: absolute;
     right: -6px;
     top: 50%;
     z-index: 1;
     margin-top: -8px;
     pointer-events: none;
+  }
+  .nav-stacked.nav-menu .nav-link.active:before {
+    display: block;
   }
 }
 
@@ -9564,7 +9596,7 @@ a.ic-rounded .svg-icon {
 }
 
 .card-product .cp-img {
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
   display: block;
   max-width: 100%;
   height: auto;
@@ -9682,7 +9714,7 @@ a.ic-rounded .svg-icon {
 .slide-page > .slide-page-wp {
   -webkit-transition: -webkit-transform 0.5s ease;
   transition: -webkit-transform 0.5s ease;
-  -o-transition: transform 0.5s ease, -o-transform 0.5s ease;
+  -o-transition: -o-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease, -o-transform 0.5s ease;
   white-space: nowrap;
@@ -9937,7 +9969,6 @@ a.ic-rounded .svg-icon {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -10490,6 +10521,11 @@ a.ic-rounded .svg-icon {
 
 .table-checkout .tb-lb {
   text-align: right;
+  width: 50%;
+}
+
+.table-checkout .tb-value {
+  width: 50%;
 }
 
 .filter-head {
@@ -10573,7 +10609,7 @@ a.ic-rounded .svg-icon {
           transform-origin: left;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   transition: -webkit-transform 0.25s ease-in-out;
-  -o-transition: transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;
+  -o-transition: -o-transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;
 }
@@ -10586,7 +10622,7 @@ a.ic-rounded .svg-icon {
           transform-origin: left;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   transition: -webkit-transform 0.25s ease-in-out;
-  -o-transition: transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;
+  -o-transition: -o-transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;
   -webkit-font-smoothing: antialiased;
@@ -10610,7 +10646,7 @@ a.ic-rounded .svg-icon {
   background: currentColor;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   transition: -webkit-transform 0.25s ease-in-out;
-  -o-transition: transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;
+  -o-transition: -o-transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;
   right: 0;
@@ -10722,7 +10758,6 @@ a.ic-rounded .svg-icon {
   -webkit-transition-property: -webkit-transform;
   -o-transition-property: -o-transform;
   transition-property: -webkit-transform;
-  -o-transition-property: transform, -o-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform, -o-transform;
   -webkit-box-sizing: content-box;
@@ -10772,13 +10807,12 @@ a.ic-rounded .svg-icon {
   -webkit-box-align: start;
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
-  -ms-grid-row-align: flex-start;
-      align-items: flex-start;
+  align-items: flex-start;
   -webkit-transition-property: -webkit-transform, height;
   -o-transition-property: -o-transform;
   -webkit-transition-property: height, -webkit-transform;
   transition-property: height, -webkit-transform;
-  -o-transition-property: transform, height, -o-transform;
+  -o-transition-property: height, -o-transform;
   transition-property: transform, height;
   transition-property: transform, height, -webkit-transform, -o-transform;
 }
