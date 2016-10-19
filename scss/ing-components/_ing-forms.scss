@@ -437,6 +437,8 @@
     }
     .amt-number{
       margin: 0 10px;
+      min-width:10px;
+      display: inline-block;
       color: #999;
       font-weight: 700;
       font-size: 0.813rem;
