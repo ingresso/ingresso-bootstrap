@@ -34,6 +34,7 @@
   .nav-link{
     padding: .725em 1em;
     font-size: 0.875rem;
+    cursor:pointer;
     background-color: #f2f2f2;
     border-left: 4px solid #0db6b5;
     position: relative;
@@ -95,6 +96,7 @@
 
     &.disabled{
       color:#ccc;
+      cursor:not-allowed;
       border-color: #ccc;
 
       &:before, &:after{
@@ -138,7 +140,7 @@
         border-top: 8px solid transparent;
         border-bottom: 8px solid transparent;
         border-left: 8px solid #0db6b5;
-        right: -6px;
+        right: -8px;
         top: 50%;
         z-index: 1;
         margin-top: -8px;
