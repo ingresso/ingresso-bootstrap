@@ -13,8 +13,8 @@ source:           docs
 destination:      _site
 host:             0.0.0.0
 port:             9001
-baseurl:          ""
-url:              http://ingresso.com
+baseurl:          "/ingresso-bootstrap"
+url:              https://ingresso.github.io/ingresso-bootstrap/
 liquid:
   error_mode: lax
 encoding:         UTF-8
