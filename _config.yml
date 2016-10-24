@@ -14,7 +14,7 @@ destination:      _gh_pages
 host:             0.0.0.0
 port:             9001
 baseurl:          ""
-url:              http://getbootstrap.com
+url:              http://ingresso.com
 encoding:         UTF-8
 exclude:          [assets/scss/]
 
@@ -24,7 +24,7 @@ gems:
 
 # Custom vars
 current_version:  4.0.0-alpha.2
-repo:             https://github.com/twbs/bootstrap
+repo:             https://github.com/ingresso/ingresso-bootstrap
 slack:            https://bootstrap-slack.herokuapp.com
 
 download:

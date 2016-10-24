@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#gem 'github-pages', group: :jekyll_plugins
+
 group :development, :test do
   gem 'jekyll', '~> 3.1.2'
   gem 'jekyll-redirect-from', '~> 0.10.0'
