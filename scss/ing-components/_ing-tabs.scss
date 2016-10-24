@@ -99,6 +99,10 @@
       cursor:not-allowed;
       border-color: #ccc;
 
+      .nav-link-title{
+        color:currentColor;
+      }
+
       &:before, &:after{
         background-color:currentColor;
       }
