@@ -14,560 +14,595 @@
     
         {
             "title" : "Accessibility",
-            "url"   : "/ingresso-bootstrap/getting-started/accessibility/"
+            "url"   : "/getting-started/accessibility/"
         } ,
     
 
     
         {
             "title" : "Alerts",
-            "url"   : "/ingresso-bootstrap/components/alerts/"
+            "url"   : "/ingresso-components/alerts/"
         } ,
     
 
     
         {
             "title" : "Alerts",
-            "url"   : "/ingresso-bootstrap/ingresso-components/alerts/"
+            "url"   : "/components/alerts/"
         } ,
     
 
     
         {
             "title" : "Approach",
-            "url"   : "/ingresso-bootstrap/extend/approach/"
+            "url"   : "/extend/approach/"
+        } ,
+    
+
+    
+        {
+            "title" : "Autocomplete",
+            "url"   : "/ingresso-components/autocomplete/"
         } ,
     
 
     
         {
             "title" : "Best practices",
-            "url"   : "/ingresso-bootstrap/getting-started/best-practices/"
+            "url"   : "/getting-started/best-practices/"
         } ,
     
 
     
         {
             "title" : "Bootstrap &middot; The world's most popular mobile-first and responsive front-end framework.",
-            "url"   : "/ingresso-bootstrap/"
+            "url"   : "/"
         } ,
     
 
     
         {
             "title" : "Boxes",
-            "url"   : "/ingresso-bootstrap/ingresso-components/boxes/"
+            "url"   : "/ingresso-components/boxes/"
         } ,
     
 
     
         {
             "title" : "Brand guidelines",
-            "url"   : "/ingresso-bootstrap/about/brand/"
+            "url"   : "/about/brand/"
         } ,
     
 
     
         {
             "title" : "Breadcrumb",
-            "url"   : "/ingresso-bootstrap/components/breadcrumb/"
+            "url"   : "/components/breadcrumb/"
+        } ,
+    
+
+    
+        {
+            "title" : "Breadcrumb",
+            "url"   : "/ingresso-components/breadcrumb/"
         } ,
     
 
     
         {
             "title" : "Browsers and devices",
-            "url"   : "/ingresso-bootstrap/getting-started/browsers-devices/"
+            "url"   : "/getting-started/browsers-devices/"
         } ,
     
 
     
         {
             "title" : "Build tools",
-            "url"   : "/ingresso-bootstrap/getting-started/build-tools/"
+            "url"   : "/getting-started/build-tools/"
         } ,
     
 
     
         {
             "title" : "Button group",
-            "url"   : "/ingresso-bootstrap/components/button-group/"
+            "url"   : "/components/button-group/"
         } ,
     
 
     
         {
             "title" : "Buttons",
-            "url"   : "/ingresso-bootstrap/components/buttons/"
+            "url"   : "/components/buttons/"
         } ,
     
 
     
         {
             "title" : "Buttons",
-            "url"   : "/ingresso-bootstrap/ingresso-components/buttons/"
+            "url"   : "/ingresso-components/buttons/"
         } ,
     
 
     
         {
             "title" : "Card",
-            "url"   : "/ingresso-bootstrap/ingresso-components/card/"
+            "url"   : "/ingresso-components/card/"
         } ,
     
 
     
         {
             "title" : "Card List",
-            "url"   : "/ingresso-bootstrap/ingresso-components/card-list/"
-        } ,
-    
-
-    
-        {
-            "title" : "Card Small",
-            "url"   : "/ingresso-bootstrap/ingresso-components/card-small/"
+            "url"   : "/ingresso-components/card-list/"
         } ,
     
 
     
         {
             "title" : "Cards",
-            "url"   : "/ingresso-bootstrap/components/card/"
+            "url"   : "/components/card/"
         } ,
     
 
     
         {
             "title" : "Carousel",
-            "url"   : "/ingresso-bootstrap/components/carousel/"
+            "url"   : "/components/carousel/"
         } ,
     
 
     
         {
             "title" : "Carousel",
-            "url"   : "/ingresso-bootstrap/ingresso-components/carousel/"
+            "url"   : "/ingresso-components/carousel/"
         } ,
     
 
     
         {
             "title" : "Code",
-            "url"   : "/ingresso-bootstrap/content/code/"
+            "url"   : "/content/code/"
         } ,
     
 
     
         {
             "title" : "Collapse",
-            "url"   : "/ingresso-bootstrap/components/collapse/"
+            "url"   : "/ingresso-components/collapse/"
         } ,
     
 
     
         {
             "title" : "Collapse",
-            "url"   : "/ingresso-bootstrap/ingresso-components/collapse/"
+            "url"   : "/components/collapse/"
         } ,
     
 
     
         {
             "title" : "Contents",
-            "url"   : "/ingresso-bootstrap/getting-started/contents/"
+            "url"   : "/getting-started/contents/"
         } ,
     
 
     
         {
             "title" : "Customization options",
-            "url"   : "/ingresso-bootstrap/getting-started/options/"
+            "url"   : "/getting-started/options/"
         } ,
     
 
     
         {
             "title" : "Date List",
-            "url"   : "/ingresso-bootstrap/ingresso-components/date-list/"
+            "url"   : "/ingresso-components/date-list/"
+        } ,
+    
+
+    
+        {
+            "title" : "Dividing Lines",
+            "url"   : "/ingresso-components/dividing-lines/"
         } ,
     
 
     
         {
             "title" : "Download",
-            "url"   : "/ingresso-bootstrap/getting-started/download/"
+            "url"   : "/getting-started/download/"
         } ,
     
 
     
         {
             "title" : "Dropdowns",
-            "url"   : "/ingresso-bootstrap/components/dropdowns/"
+            "url"   : "/components/dropdowns/"
         } ,
     
 
     
         {
             "title" : "Examples",
-            "url"   : "/ingresso-bootstrap/examples/"
+            "url"   : "/examples/"
         } ,
     
 
     
         {
             "title" : "Extend",
-            "url"   : "/ingresso-bootstrap/extend/"
+            "url"   : "/extend/"
         } ,
     
 
     
         {
             "title" : "Figures",
-            "url"   : "/ingresso-bootstrap/content/figures/"
+            "url"   : "/content/figures/"
         } ,
     
 
     
         {
             "title" : "Filter",
-            "url"   : "/ingresso-bootstrap/ingresso-components/filter/"
+            "url"   : "/ingresso-components/filter/"
         } ,
     
 
     
         {
             "title" : "Flexbox",
-            "url"   : "/ingresso-bootstrap/getting-started/flexbox/"
+            "url"   : "/getting-started/flexbox/"
         } ,
     
 
     
         {
             "title" : "Flexbox grid system",
-            "url"   : "/ingresso-bootstrap/layout/flexbox-grid/"
+            "url"   : "/layout/flexbox-grid/"
         } ,
     
 
     
         {
             "title" : "Footer Ingresso",
-            "url"   : "/ingresso-bootstrap/ingresso-components/footer/"
+            "url"   : "/ingresso-components/footer/"
         } ,
     
 
     
         {
             "title" : "Forms",
-            "url"   : "/ingresso-bootstrap/components/forms/"
+            "url"   : "/components/forms/"
         } ,
     
 
     
         {
             "title" : "Forms",
-            "url"   : "/ingresso-bootstrap/ingresso-components/forms/"
+            "url"   : "/ingresso-components/forms/"
         } ,
     
 
     
         {
             "title" : "Grid system",
-            "url"   : "/ingresso-bootstrap/layout/grid/"
+            "url"   : "/layout/grid/"
         } ,
     
 
     
         {
             "title" : "Header",
-            "url"   : "/ingresso-bootstrap/ingresso-components/header/"
-        } ,
-    
-
-    
-        {
-            "title" : "Highlighted Titles",
-            "url"   : "/ingresso-bootstrap/ingresso-components/highlighted-titles/"
+            "url"   : "/ingresso-components/header/"
         } ,
     
 
     
         {
             "title" : "History",
-            "url"   : "/ingresso-bootstrap/about/history/"
+            "url"   : "/about/history/"
         } ,
     
 
     
         {
             "title" : "Icon fonts",
-            "url"   : "/ingresso-bootstrap/extend/icon-fonts/"
+            "url"   : "/extend/icon-fonts/"
         } ,
     
 
     
         {
             "title" : "Icons",
-            "url"   : "/ingresso-bootstrap/ingresso-components/icons/"
+            "url"   : "/ingresso-components/icons/"
         } ,
     
 
     
         {
             "title" : "Images",
-            "url"   : "/ingresso-bootstrap/content/images/"
+            "url"   : "/content/images/"
         } ,
     
 
     
         {
             "title" : "Input group",
-            "url"   : "/ingresso-bootstrap/components/input-group/"
+            "url"   : "/components/input-group/"
         } ,
     
 
     
         {
             "title" : "Introduction",
-            "url"   : "/ingresso-bootstrap/getting-started/introduction/"
+            "url"   : "/getting-started/introduction/"
         } ,
     
 
     
         {
             "title" : "JavaScript",
-            "url"   : "/ingresso-bootstrap/getting-started/javascript/"
+            "url"   : "/getting-started/javascript/"
         } ,
     
 
     
         {
             "title" : "Jumbotron",
-            "url"   : "/ingresso-bootstrap/components/jumbotron/"
+            "url"   : "/components/jumbotron/"
         } ,
     
 
     
         {
             "title" : "Lazyload",
-            "url"   : "/ingresso-bootstrap/ingresso-components/lazyload/"
+            "url"   : "/ingresso-components/lazyload/"
         } ,
     
 
     
         {
             "title" : "License FAQs",
-            "url"   : "/ingresso-bootstrap/about/license/"
+            "url"   : "/about/license/"
         } ,
     
 
     
         {
             "title" : "Link dropdown",
-            "url"   : "/ingresso-bootstrap/ingresso-components/link-dropdown/"
+            "url"   : "/ingresso-components/link-dropdown/"
         } ,
     
 
     
         {
             "title" : "List group",
-            "url"   : "/ingresso-bootstrap/components/list-group/"
+            "url"   : "/components/list-group/"
         } ,
     
 
     
         {
             "title" : "Lists",
-            "url"   : "/ingresso-bootstrap/ingresso-components/lists/"
+            "url"   : "/ingresso-components/lists/"
         } ,
     
 
     
         {
             "title" : "Media",
-            "url"   : "/ingresso-bootstrap/ingresso-components/media/"
+            "url"   : "/ingresso-components/media/"
         } ,
     
 
     
         {
             "title" : "Media object",
-            "url"   : "/ingresso-bootstrap/layout/media-object/"
+            "url"   : "/layout/media-object/"
         } ,
     
 
     
         {
             "title" : "Microformats",
-            "url"   : "/ingresso-bootstrap/getting-started/microformats/"
+            "url"   : "/getting-started/microformats/"
         } ,
     
 
     
         {
             "title" : "Migrating to v4",
-            "url"   : "/ingresso-bootstrap/migration/"
+            "url"   : "/migration/"
         } ,
     
 
     
         {
             "title" : "Modal",
-            "url"   : "/ingresso-bootstrap/components/modal/"
+            "url"   : "/ingresso-components/modal/"
+        } ,
+    
+
+    
+        {
+            "title" : "Modal",
+            "url"   : "/components/modal/"
         } ,
     
 
     
         {
             "title" : "Navbar",
-            "url"   : "/ingresso-bootstrap/components/navbar/"
+            "url"   : "/components/navbar/"
         } ,
     
 
     
         {
             "title" : "Navs",
-            "url"   : "/ingresso-bootstrap/components/navs/"
+            "url"   : "/components/navs/"
         } ,
     
 
     
         {
             "title" : "Overview",
-            "url"   : "/ingresso-bootstrap/layout/overview/"
+            "url"   : "/layout/overview/"
         } ,
     
 
     
         {
             "title" : "Pagination",
-            "url"   : "/ingresso-bootstrap/components/pagination/"
+            "url"   : "/components/pagination/"
         } ,
     
 
     
         {
             "title" : "Popovers",
-            "url"   : "/ingresso-bootstrap/components/popovers/"
+            "url"   : "/components/popovers/"
         } ,
     
 
     
         {
             "title" : "Progress",
-            "url"   : "/ingresso-bootstrap/components/progress/"
+            "url"   : "/components/progress/"
         } ,
     
 
     
         {
             "title" : "Rating",
-            "url"   : "/ingresso-bootstrap/ingresso-components/rating/"
+            "url"   : "/ingresso-components/rating/"
         } ,
     
 
     
         {
             "title" : "Reboot",
-            "url"   : "/ingresso-bootstrap/content/reboot/"
+            "url"   : "/content/reboot/"
         } ,
     
 
     
         {
             "title" : "Responsive utilities",
-            "url"   : "/ingresso-bootstrap/layout/responsive-utilities/"
+            "url"   : "/layout/responsive-utilities/"
         } ,
     
 
     
         {
             "title" : "Scrollspy",
-            "url"   : "/ingresso-bootstrap/components/scrollspy/"
+            "url"   : "/components/scrollspy/"
         } ,
     
 
     
         {
             "title" : "Slide Page",
-            "url"   : "/ingresso-bootstrap/ingresso-components/slide-page/"
+            "url"   : "/ingresso-components/slide-page/"
         } ,
     
 
     
         {
             "title" : "Tables",
-            "url"   : "/ingresso-bootstrap/content/tables/"
+            "url"   : "/ingresso-components/tables/"
         } ,
     
 
     
         {
             "title" : "Tables",
-            "url"   : "/ingresso-bootstrap/ingresso-components/tables/"
+            "url"   : "/content/tables/"
         } ,
     
 
     
         {
             "title" : "Tags",
-            "url"   : "/ingresso-bootstrap/components/tag/"
+            "url"   : "/components/tag/"
         } ,
     
 
     
         {
             "title" : "Tags",
-            "url"   : "/ingresso-bootstrap/ingresso-components/tag/"
+            "url"   : "/ingresso-components/tag/"
         } ,
     
 
     
         {
             "title" : "Team",
-            "url"   : "/ingresso-bootstrap/about/team/"
+            "url"   : "/about/team/"
         } ,
     
 
     
         {
             "title" : "Tickets List",
-            "url"   : "/ingresso-bootstrap/ingresso-components/tickets-list/"
+            "url"   : "/ingresso-components/tickets-list/"
+        } ,
+    
+
+    
+        {
+            "title" : "Timeline",
+            "url"   : "/ingresso-components/timeline/"
         } ,
     
 
     
         {
             "title" : "Tooltips",
-            "url"   : "/ingresso-bootstrap/components/tooltips/"
+            "url"   : "/components/tooltips/"
         } ,
     
 
     
         {
             "title" : "Translations",
-            "url"   : "/ingresso-bootstrap/about/translations/"
+            "url"   : "/about/translations/"
         } ,
     
 
     
         {
             "title" : "Typography",
-            "url"   : "/ingresso-bootstrap/content/typography/"
+            "url"   : "/content/typography/"
+        } ,
+    
+
+    
+        {
+            "title" : "Typos",
+            "url"   : "/ingresso-components/typos/"
         } ,
     
 
     
         {
             "title" : "Utility classes",
-            "url"   : "/ingresso-bootstrap/components/utilities/"
+            "url"   : "/components/utilities/"
+        } ,
+    
+
+    
+        {
+            "title" : "Videos",
+            "url"   : "/ingresso-components/videos/"
         } ,
     
 
     
         {
             "title" : "Wall of browser bugs",
-            "url"   : "/ingresso-bootstrap/browser-bugs/"
+            "url"   : "/browser-bugs/"
         } 
     
 
